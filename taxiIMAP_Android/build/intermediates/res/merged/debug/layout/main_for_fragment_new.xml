@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_ether"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/activityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/top_back"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/archivLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_style"
+        android:visibility="gone"
+        android:weightSum="6" >
+
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.2"
+            android:visibility="visible"
+            android:weightSum="4.2" >
+
+            <TextView
+                android:id="@+id/dateFrom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/price_in_order_list"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="55.55.55"
+                android:textColor="@color/greyText"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/separator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                android:src="@drawable/date_separator" />
+
+            <TextView
+                android:id="@+id/dateTill"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/price_in_order_list"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="55.55.55"
+                android:textColor="@color/greyText"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="4.2"
+            android:background="@drawable/custom_edittext"
+            android:ems="10"
+            android:padding="2dp"
+            android:textColor="@color/orangeEditText"
+            android:textSize="20sp"
+            android:visibility="gone" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/searchImg"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="0.9"
+            android:src="@drawable/action_bar_search" />
+
+        <ImageView
+            android:id="@+id/switchView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="0.9"
+            android:src="@drawable/action_bar_view" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/iconLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_style"
+        android:padding="2dp"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/internet_indication"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/balanceIcon"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/gps_indication"
+            android:layout_toRightOf="@+id/gps_indication"
+            android:src="@drawable/no_gprs_working" />
+
+        <ImageView
+            android:id="@+id/server_indication"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/no_server_working"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/gps_indication"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/no_gps_working" />
+
+        <ImageView
+            android:id="@+id/driverState"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/driver_gray" />
+
+        <ImageView
+            android:id="@+id/balanceIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/balance_gray" />
+
+        <RelativeLayout
+            android:id="@+id/parkingIco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/server_indication" >
+
+            <ImageView
+                android:id="@+id/parkingImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/parkings_stand" />
+
+            <TextView
+                android:id="@+id/driverNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/theme_changer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/parkingIco"
+            android:src="@drawable/ch"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/bt_danger"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/parkingIco"
+            android:src="@drawable/people_minus"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="right" >
+
+            <com.innotech.imap_taxi.customViews.CustomDigitalClock
+                android:id="@+id/digitalClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/shape_black_back"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/orangeEditText"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/state_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps_indication"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="НЕ ПОДКЛЮЧЕН"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>  
+
+  <!--  <RelativeLayout
+        android:id="@+id/iconLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_style"
+        android:padding="2dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/gps_indication"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/no_gps_working" />
+
+        <ImageView
+            android:id="@+id/internet_indication"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/balanceIcon"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/gps_indication"
+            android:layout_toRightOf="@+id/gps_indication"
+            android:src="@drawable/no_gprs_working" />
+
+        <ImageView
+            android:id="@+id/server_indication"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/internet_indication"
+            android:src="@drawable/no_server_working"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/parkingIco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/server_indication" >
+
+            <ImageView
+                android:id="@+id/parkingImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/parkings_stand" />
+
+            <TextView
+                android:id="@+id/driverNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/theme_changer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/parkingIco"
+            android:src="@drawable/ch"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/balanceIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/parkingIco"
+            android:src="@drawable/balance_gray" />
+
+        <ImageView
+            android:id="@+id/driverState"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/balanceIcon"
+            android:src="@drawable/driver_gray" />
+
+        <ImageView
+            android:id="@+id/bt_danger"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/parkingIco"
+            android:src="@drawable/people_minus"
+            android:visibility="gone" />
+
+        <DigitalClock
+            android:id="@+id/digitalClock"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/shape_black_back"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingRight="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/orangeEditText"
+            android:textSize="44sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/state_driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps_indication"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="НЕ ПОДКЛЮЧЕН"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>  -->
+
+    <LinearLayout
+        android:id="@+id/frgmCont"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

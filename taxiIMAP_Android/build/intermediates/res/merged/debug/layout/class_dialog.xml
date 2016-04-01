@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/class_standard"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_margin="1dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/search_dialog_btn_background"/>
+
+    <Button
+        android:id="@+id/business"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/class_business"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_margin="1dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/search_dialog_btn_background"/>
+
+    <Button
+        android:id="@+id/premium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/class_premium"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_margin="1dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/search_dialog_btn_background"/>
+
+    <Button
+        android:id="@+id/no_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/class_no_class"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_margin="1dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="@drawable/search_dialog_btn_background"/>
+
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:id="@+id/linearLayout2">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/scrollView"
+                android:layout_weight="0.3">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="15dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium" android:text="Адрес подачи:"
+                      android:id="@+id/textView3" android:textColor="@android:color/white" android:textStyle="bold"
+                    />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceLarge" android:text="Large Text"
+                      android:id="@+id/adrsFrom1" android:textColor="@color/orangeEditText"
+                      android:layout_below="@+id/textView3" android:layout_marginTop="10dp"
+                      android:background="@drawable/dark_back" android:padding="10dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium" android:text="Маршрут:"
+                      android:id="@+id/textView" android:textColor="@android:color/white" android:textStyle="bold"
+                      android:layout_marginTop="10dp" android:layout_below="@+id/adrsFrom1"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_below="@+id/textView"
+                    android:background="@drawable/dark_back" android:padding="10dp" android:id="@+id/routeLL"
+                    android:gravity="center_vertical|center_horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/adrsFrom2" android:layout_weight=".5"
+                        android:textColor="@color/orangeEditText"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView13" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+                        android:src="@drawable/point_white"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/adrsTo" android:layout_weight=".5"
+                        android:textColor="@color/orangeEditText"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/routeLL" android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp" android:id="@+id/priceLL">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Цена: "
+                        android:id="@+id/textView9" android:textColor="@android:color/white" android:textStyle="bold"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="100"
+                        android:id="@+id/price" android:textColor="@color/orangeEditText" android:textStyle="bold"/>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView14" android:src="@drawable/cash_white" android:paddingLeft="5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/imageView6"
+               android:background="@drawable/divider"/>
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:background="@drawable/dark_back4" android:padding="5dp">
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:paddingBottom="10dp" android:gravity="center_vertical">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="wrap_content" android:layout_weight=".3"
+                          android:gravity="center_vertical|center_horizontal" android:id="@+id/linearLayout7"
+                          android:layout_marginTop="5dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:id="@+id/imageView5" android:src="@drawable/calend_img"
+                           android:paddingRight="10dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="15.15.2015"
+                          android:id="@+id/date" android:textColor="@android:color/white"
+                          android:textSize="@dimen/transparent_button_text_size"/>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="match_parent"
+                       android:id="@+id/imageView4" android:background="@drawable/separator3"
+                    />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="wrap_content" android:layout_weight=".3"
+                          android:gravity="center_vertical|center_horizontal" android:id="@+id/linearLayout8"
+                          android:layout_marginTop="5dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:id="@+id/imageView8" android:src="@drawable/clock_white" android:paddingRight="10dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="16:40"
+                          android:id="@+id/time" android:textColor="@android:color/white" android:textSize="@dimen/transparent_button_text_size"/>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="match_parent"
+                       android:id="@+id/imageView16" android:background="@drawable/separator3"
+                    />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Детали"
+                    android:id="@+id/btn_details" android:textColor="@drawable/transparent_button_text"
+                    android:background="@drawable/transparent_button" android:layout_weight=".3"
+                    android:textSize="@dimen/transparent_button_text_size" android:layout_marginTop="5dp"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/imageView9" android:layout_weight=".5" android:background="@drawable/separator2"
+                       android:layout_marginRight="5dp" android:layout_marginLeft="5dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/imageView10"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/imageView11" android:layout_weight=".5"
+                       android:background="@drawable/separator2" android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/imageView17"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/imageView18" android:layout_weight=".5"
+                       android:background="@drawable/separator2" android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:paddingTop="10dp" android:paddingBottom="10dp"
+                android:gravity="center_vertical">
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Принять"
+                    android:id="@+id/btn_accept_order" android:textColor="@drawable/transparent_button_text"
+                    android:background="@drawable/transparent_button" android:layout_weight=".3"
+                    android:textSize="@dimen/transparent_button_text_size"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="match_parent"
+                       android:id="@+id/imageView15" android:background="@drawable/separator3"
+                    />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Отменить" android:id="@+id/btn_cancel_ord"
+                    android:textColor="@drawable/transparent_button_text"
+                    android:background="@drawable/transparent_button" android:layout_weight=".3"
+                    android:textSize="@dimen/transparent_button_text_size"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="match_parent"
+                       android:id="@+id/imageView7" android:background="@drawable/separator3"
+                    />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Связь с &#10; заказчиком" android:id="@+id/btn_connectDriverClient"
+                    android:textColor="@drawable/transparent_button_text" android:background="@drawable/transparent_button"
+                    android:layout_weight=".3" android:textSize="@dimen/transparent_button_text_size"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/img_do_my_order" android:layout_weight=".5" android:background="@drawable/separator2"
+                       android:layout_marginRight="5dp" android:layout_marginLeft="5dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/imageView3"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/imageView12" android:layout_weight=".5" android:background="@drawable/separator2"
+                       android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/imageView20"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/imageView21" android:layout_weight=".5"
+                       android:background="@drawable/separator2" android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:paddingTop="10dp" android:gravity="center_vertical">
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="На месте"
+                    android:id="@+id/btn_arrived" android:textColor="@drawable/transparent_button_text"
+                    android:background="@drawable/transparent_button" android:layout_weight=".3"
+                    android:textSize="@dimen/transparent_button_text_size" android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="match_parent"
+                       android:id="@+id/imageView2" android:background="@drawable/separator3"
+                    />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Выполняю"
+                    android:id="@+id/btn_do" android:textColor="@drawable/transparent_button_text"
+                    android:background="@android:color/transparent" android:layout_weight=".3"
+                    android:textSize="@dimen/transparent_button_text_size" android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="match_parent"
+                       android:id="@+id/imageView19" android:background="@drawable/separator3"
+                    />
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Назад"
+                    android:id="@+id/btn_back" android:textColor="@drawable/transparent_button_text"
+                    android:background="@android:color/transparent" android:layout_weight=".3"
+                    android:textSize="@dimen/transparent_button_text_size" android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:id="@+id/linearLayout"
+                  android:layout_below="@+id/routeLL" android:visibility="gone">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text"
+                  android:id="@+id/txt_details" android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>

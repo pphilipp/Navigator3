@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="1" android:padding="5dp">
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="позывной"
+                    android:imeOptions="actionDone"
+                    android:windowSoftInputMode="adjustPan"
+                    android:id="@+id/first_driver_fild">
+                <requestFocus />
+            </EditText>
+            <ListView
+                    android:id="@+id/accounts_list_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_weight="1" android:padding="5dp">
+            <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:hint="позывной" android:id="@+id/second_driver_field"/>
+            <ListView android:layout_width="wrap_content" android:layout_height="fill_parent"
+                      android:id="@+id/listView1" android:background="#fff" android:layout_margin="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+                android:id="@+id/add_driver_account"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="+"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+        <Button
+                android:id="@+id/delete_account"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="-" android:layout_weight="1" android:textStyle="bold"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Редакт."
+                android:id="@+id/btn_back" android:layout_weight="0.9"/>
+        <Button
+                android:id="@+id/cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Закрыть"
+                android:layout_weight="0.9"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Регистрация"
+                android:id="@+id/connect_to_server"
+                android:layout_weight="0.9"/>
+        
+        <Button
+            android:id="@+id/test_test"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.9"
+            android:text="Test connect"
+            android:textColor="#FF0000" />
+
+    </LinearLayout>
+</LinearLayout>

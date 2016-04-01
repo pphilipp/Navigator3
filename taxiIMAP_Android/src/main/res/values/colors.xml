@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orangeEditText">#F8AB15</color>
+    <color name="blueBack">#ff243365</color>
+    <color name="darkBlueBack">#12111F</color>
+    <color name="greyText">#CCCCFF</color>
+</resources>

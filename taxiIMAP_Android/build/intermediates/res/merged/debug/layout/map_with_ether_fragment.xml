@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <fragment
+            android:id="@+id/mapWithEther"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/zoom_in"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_zoom_in_" />
+
+            <com.innotech.imap_taxi.utile.VerticalSeekBar
+                android:id="@+id/zoom_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/seek_bar_progress"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/seek_progress"
+                android:thumb="@drawable/seek_bar_thumb" />
+
+            <Button
+                android:id="@+id/zoom_out"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ic_zoom_out_" />
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/hide_ether"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_hide_ether"
+            android:checked="false"
+            android:text="New ToggleButton"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/mapEther"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:visibility="gone"
+        android:dividerHeight="4dp"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/noEtherLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/noEther"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical"
+            android:text="@string/ether"
+            android:textColor="@color/orangeEditText"
+            android:textSize="@dimen/text_large" />
+
+    </LinearLayout>
+
+</LinearLayout>

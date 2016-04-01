@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+    <string name="app_name">IMAP Navigator3</string>
+    <string name="title_activity_order_details">OrderDetails</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_swipe">Swipe</string>
+    <string name="title_activity_main_taxometr">Main_taxometr</string>
+    <string name="title_activity_taxometr_load_">Taxometr_load_Activity</string>
+    <string name="no_gps_connection">GPS выключен. Перейти в настройки?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="driver_status_changed_on_busy">Вы изменили свой статус на ЗАНЯТ</string>
+    <string name="format_price"><xliff:g id="price">%.2f</xliff:g>\u20B4</string>
+    <string name="ofOrders">Заказов</string>
+    <string name="ether">Эфир</string>
+    <string name="km">км</string>
+    <string name="noFeature">Без дополнительных условий</string>
+    <string name="decline">ОТКЛОНИТЬ</string>
+    <string name="accept">ПРИНЯТЬ</string>
+    <string name="noRegion">Регион не указан</string>
+    <string name="noClient">НЕТ КЛИЕНТА</string>
+    <string name="arrived">НА МЕСТЕ</string>
+    <string name="callClient">ЗВОНОК КЛИЕНТУ</string>
+    <string name="doing">ВЫПОЛНЯЮ</string>
+    <string name="done">ВЫПОЛНИЛ</string>
+    <string name="sort_by_name_a_z">ПО НАЗВАНИЮ А-Я</string>
+    <string name="sort_by_name_z_a">ПО НАЗВАНИЮ Я-А</string>
+    <string name="sort_by_distance">ПО БЛИЗОСТИ</string>
+    <string name="sort_by_queue">ПО КОЛИЧЕСТВУ В ОЧЕРЕДИ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">ОТМЕНА</string>
+    <string name="create">СОЗДАТЬ</string>
+    <string name="class_standard">СТАНДАРТ</string>
+    <string name="class_business">БИЗНЕС</string>
+    <string name="class_premium">ПРЕМИУМ</string>
+    <string name="class_no_class">БЕЗ КЛАССА</string>
+    <string name="air_condition">КОНДИЦИОНЕР</string>
+    <string name="taxometer">ТАКСОМЕТР</string>
+    <string name="pets_transportation">ПЕРЕВОЗКА ЖИВОТНЫХ</string>
+    <string name="pos_terminal">POS ТЕРМИНАЛ</string>
+    <string name="luggage">МНОГО БАГАЖА</string>
+    <string name="nosmoking">НЕ КУРИТЬ</string>
+    <string name="ok">ОК</string>
+    <string name="comments">ПРИМЕЧАНИЕ</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="address_deleted">Адрес удален</string>
+    <string name="address_cannt_be_deleted">Нет адресов для удаления</string>
+    <string name="let_me_in">Стать на стоянку</string>
+    <string name="let_me_out">Сняться со стоянки</string>
+    <string name="order_is_yours">Заказ Ваш</string>
+    <string name="order_is_not_yours">Заказ не Ваш</string>
+
+</resources>

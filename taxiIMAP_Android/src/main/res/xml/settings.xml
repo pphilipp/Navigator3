@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Настройки пользователя" >
+        <EditTextPreference
+            android:key="prefNick"
+            android:singleLine="true"
+            android:title="Позывной" />
+        <EditTextPreference
+            android:key="prefLogin"
+            android:singleLine="true"
+            android:title="Логин" />
+        <EditTextPreference
+            android:inputType="textPassword"
+            android:key="prefPass"
+            android:singleLine="true"
+            android:title="Пароль" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Настройки сервера" >
+
+     <!--отличие от imap_symi-->
+        <EditTextPreference
+                android:digits="0123456789."
+                android:key="prefHost"
+                android:singleLine="true"
+                android:title="Сервер" />
+        <EditTextPreference
+                android:digits="0123456789"
+                android:inputType="number"
+                android:key="prefPort"
+                android:singleLine="true"
+                android:title="Порт" />
+        <EditTextPreference
+                android:digits="0123456789."
+                android:key="prefHostSlave"
+                android:singleLine="true"
+                android:title="Резервный Сервер" />
+        <EditTextPreference
+                android:digits="0123456789"
+                android:inputType="number"
+                android:key="prefPortSlave"
+                android:singleLine="true"
+                android:title="Резервный Порт" />
+
+        <!--<EditTextPreference-->
+            <!--android:digits="0123456789."-->
+            <!--android:key="prefHost"-->
+
+            <!--android:defaultValue="193.178.228.37"-->
+            <!--android:enabled="false"-->
+            <!--android:editable="false"-->
+
+            <!--android:singleLine="true"-->
+            <!--android:title="Сервер" />-->
+
+        <!--<EditTextPreference-->
+            <!--android:digits="0123456789"-->
+            <!--android:inputType="number"-->
+            <!--android:key="prefPort"-->
+
+            <!--android:defaultValue="1111"-->
+            <!--android:enabled="false"-->
+            <!--android:editable="false"-->
+
+            <!--android:singleLine="true"-->
+            <!--android:title="Порт" />-->
+
+        <!--<EditTextPreference-->
+            <!--android:digits="0123456789."-->
+            <!--android:key="prefHostSlave"-->
+
+            <!--android:defaultValue="77.120.202.200"-->
+            <!--android:enabled="false"-->
+            <!--android:editable="false"-->
+
+            <!--android:singleLine="true"-->
+            <!--android:title="Резервный Сервер" />-->
+
+        <!--<EditTextPreference-->
+            <!--android:digits="0123456789"-->
+            <!--android:inputType="number"-->
+            <!--android:key="prefPortSlave"-->
+
+            <!--android:defaultValue="1111"-->
+            <!--android:enabled="false"-->
+            <!--android:editable="false"-->
+
+            <!--android:singleLine="true"-->
+            <!--android:title="Резервный Порт" />-->
+
+
+
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefIsAutoEnter"
+            android:summary="Включите/Выключите автовход"
+            android:title="Автовход" >
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefIsAutoSearch"
+            android:summary="Отображать 1й и 2й круг автопоиска"
+            android:title="Эфир" >
+        </CheckBoxPreference>
+        
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Настройки приложения" >
+        <com.innotech.imap_taxi.utile.SeekBarPreference
+            android:defaultValue="50"
+            android:dialogMessage="Выберите громкость"
+            android:key="prefVolume"
+            android:summary="Звук на уровне 50"
+            android:title="Громкость" >
+        </com.innotech.imap_taxi.utile.SeekBarPreference>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefIsNightTheme"
+            android:summary="Включите/Выключите ночную тему (будет изменена после перезагрузки)"
+            android:title="Ночная тема" >
+        </CheckBoxPreference>
+
+        <EditTextPreference
+            android:digits="0123456789+"
+            android:inputType="phone"
+            android:key="prefDispPhone"
+            android:singleLine="true"
+            android:title="Телефон диспетчера" />
+        <EditTextPreference
+            android:digits="0123456789"
+            android:inputType="number"
+            android:key="prefTextSize"
+            android:singleLine="true"
+            android:title="Размер шрифта в заказе" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Уведомления" >
+        <PreferenceScreen
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:summary="Настроить уведомления автопоиска"
+            android:title="Автопоиск" >
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="prefAutoSearch1"
+                android:summary="Показывать первый круг поиска"
+                android:title="Первый круг поиска" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="prefAutoSearch2"
+                android:summary="Показывать второй круг поиска"
+                android:title="Второй круг поиска" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="prefAutoSearchEfir"
+                android:summary="Показывать эфир"
+                android:title="Эфир" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <!--
+    <PreferenceCategory android:title="Заказ" >
+        
+        <CheckBoxPreference
+            android:key="dispNum"
+            android:summary="Не показывать стоимость заказа"
+            android:title="Не показывать стоимость" >
+        </CheckBoxPreference>
+        
+    </PreferenceCategory>
+    -->
+
+</PreferenceScreen>

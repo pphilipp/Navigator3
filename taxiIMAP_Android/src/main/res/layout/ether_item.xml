@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/background_ether">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderClass" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clock" android:layout_toRightOf="@+id/orderClass" android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/distance"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distance" android:layout_below="@+id/orderClass"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fromTo" android:layout_toRightOf="@+id/distance" android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text"
+              android:id="@+id/txt_details"
+              android:textColor="@color/orangeEditText" android:gravity="center_vertical" android:padding="5dp"
+              android:layout_toLeftOf="@+id/price" android:layout_toRightOf="@+id/fromTo"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Text"
+              android:id="@+id/routeTo" android:textColor="@color/orangeEditText" android:gravity="center_vertical"
+              android:padding="5dp" android:layout_below="@+id/txt_details" android:layout_toRightOf="@+id/fromTo"
+              android:layout_toLeftOf="@+id/imageView3"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price" android:layout_alignParentRight="true"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2" android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/imageView"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3" android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/imageView2"/>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout-large-v4/order_fragment.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout-large/order_fragment.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout-large-v4/activity_order_details.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout-large/activity_order_details.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout-large-v4/activity_main_taxometr.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout-large/activity_main_taxometr.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout-large-v4/main_for_fragment.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout-large/main_for_fragment.xml"
+    }
+]

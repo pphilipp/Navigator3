@@ -1,0 +1,744 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From TaxiIMAP_Android:
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\dictionaries\
+* .idea\dictionaries\Ura.xml
+* .idea\encodings.xml
+* .idea\inspectionProfiles\
+* .idea\inspectionProfiles\Project_Default.xml
+* .idea\inspectionProfiles\profiles_settings.xml
+* .idea\libraries\
+* .idea\libraries\android_support_v4.xml
+* .idea\libraries\google_play_services1.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\scopes\
+* .idea\scopes\scope_settings.xml
+* .idea\uiDesigner.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* AndroidManifest.xml.mine
+* AndroidManifest.xml.r101
+* AndroidManifest.xml.r98
+* IMAP_Navigator3.iml
+* fabric.properties
+* ic_launcher-web.png
+* kit-libs\
+* kit-libs\com-crashlytics-sdk-android_answers_3\
+* kit-libs\com-crashlytics-sdk-android_answers_3\.classpath
+* kit-libs\com-crashlytics-sdk-android_answers_3\.project
+* kit-libs\com-crashlytics-sdk-android_answers_3\AndroidManifest.xml
+* kit-libs\com-crashlytics-sdk-android_answers_3\bin\
+* kit-libs\com-crashlytics-sdk-android_answers_3\bin\AndroidManifest.xml
+* kit-libs\com-crashlytics-sdk-android_answers_3\bin\classes\
+* kit-libs\com-crashlytics-sdk-android_answers_3\bin\classes\com\
+* kit-libs\com-crashlytics-sdk-android_answers_3\bin\classes\com\crashlytics\
+* kit-libs\com-crashlytics-sdk-android_answers_3\bin\classes\com\crashlytics\android\
+* kit-libs\com-crashlytics-sdk-android_answers_3\bin\classes\com\crashlytics\android\answers\
+* kit-libs\com-crashlytics-sdk-android_answers_3\bin\classes\com\crashlytics\android\answers\BuildConfig.class
+* kit-libs\com-crashlytics-sdk-android_answers_3\bin\com-crashlytics-sdk-android_answers_3.jar
+* kit-libs\com-crashlytics-sdk-android_answers_3\bin\jarlist.cache
+* kit-libs\com-crashlytics-sdk-android_answers_3\build.xml
+* kit-libs\com-crashlytics-sdk-android_answers_3\gen\
+* kit-libs\com-crashlytics-sdk-android_answers_3\gen\com\
+* kit-libs\com-crashlytics-sdk-android_answers_3\gen\com\crashlytics\
+* kit-libs\com-crashlytics-sdk-android_answers_3\gen\com\crashlytics\android\
+* kit-libs\com-crashlytics-sdk-android_answers_3\gen\com\crashlytics\android\answers\
+* kit-libs\com-crashlytics-sdk-android_answers_3\gen\com\crashlytics\android\answers\BuildConfig.java
+* kit-libs\com-crashlytics-sdk-android_answers_3\kit-version.properties
+* kit-libs\com-crashlytics-sdk-android_answers_3\libs\
+* kit-libs\com-crashlytics-sdk-android_answers_3\libs\com-crashlytics-sdk-android_answers-classes.jar
+* kit-libs\com-crashlytics-sdk-android_answers_3\project.properties
+* kit-libs\com-crashlytics-sdk-android_beta_3\
+* kit-libs\com-crashlytics-sdk-android_beta_3\.classpath
+* kit-libs\com-crashlytics-sdk-android_beta_3\.project
+* kit-libs\com-crashlytics-sdk-android_beta_3\AndroidManifest.xml
+* kit-libs\com-crashlytics-sdk-android_beta_3\bin\
+* kit-libs\com-crashlytics-sdk-android_beta_3\bin\AndroidManifest.xml
+* kit-libs\com-crashlytics-sdk-android_beta_3\bin\classes\
+* kit-libs\com-crashlytics-sdk-android_beta_3\bin\classes\com\
+* kit-libs\com-crashlytics-sdk-android_beta_3\bin\classes\com\crashlytics\
+* kit-libs\com-crashlytics-sdk-android_beta_3\bin\classes\com\crashlytics\android\
+* kit-libs\com-crashlytics-sdk-android_beta_3\bin\classes\com\crashlytics\android\beta\
+* kit-libs\com-crashlytics-sdk-android_beta_3\bin\classes\com\crashlytics\android\beta\BuildConfig.class
+* kit-libs\com-crashlytics-sdk-android_beta_3\bin\com-crashlytics-sdk-android_beta_3.jar
+* kit-libs\com-crashlytics-sdk-android_beta_3\bin\jarlist.cache
+* kit-libs\com-crashlytics-sdk-android_beta_3\build.xml
+* kit-libs\com-crashlytics-sdk-android_beta_3\gen\
+* kit-libs\com-crashlytics-sdk-android_beta_3\gen\com\
+* kit-libs\com-crashlytics-sdk-android_beta_3\gen\com\crashlytics\
+* kit-libs\com-crashlytics-sdk-android_beta_3\gen\com\crashlytics\android\
+* kit-libs\com-crashlytics-sdk-android_beta_3\gen\com\crashlytics\android\beta\
+* kit-libs\com-crashlytics-sdk-android_beta_3\gen\com\crashlytics\android\beta\BuildConfig.java
+* kit-libs\com-crashlytics-sdk-android_beta_3\kit-version.properties
+* kit-libs\com-crashlytics-sdk-android_beta_3\libs\
+* kit-libs\com-crashlytics-sdk-android_beta_3\libs\com-crashlytics-sdk-android_beta-classes.jar
+* kit-libs\com-crashlytics-sdk-android_beta_3\project.properties
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\.classpath
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\.project
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\AndroidManifest.xml
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\bin\
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\bin\AndroidManifest.xml
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\bin\classes\
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\bin\classes\com\
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\bin\classes\com\crashlytics\
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\bin\classes\com\crashlytics\android\
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\bin\classes\com\crashlytics\android\BuildConfig.class
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\bin\com-crashlytics-sdk-android_crashlytics_3.jar
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\bin\jarlist.cache
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\build.xml
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\gen\
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\gen\com\
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\gen\com\crashlytics\
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\gen\com\crashlytics\android\
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\gen\com\crashlytics\android\BuildConfig.java
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\kit-version.properties
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\libs\
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\libs\com-crashlytics-sdk-android_crashlytics-classes.jar
+* kit-libs\com-crashlytics-sdk-android_crashlytics_3\project.properties
+* kit-libs\io-fabric-sdk-android_fabric_3\
+* kit-libs\io-fabric-sdk-android_fabric_3\.classpath
+* kit-libs\io-fabric-sdk-android_fabric_3\.project
+* kit-libs\io-fabric-sdk-android_fabric_3\AndroidManifest.xml
+* kit-libs\io-fabric-sdk-android_fabric_3\bin\
+* kit-libs\io-fabric-sdk-android_fabric_3\bin\AndroidManifest.xml
+* kit-libs\io-fabric-sdk-android_fabric_3\bin\classes\
+* kit-libs\io-fabric-sdk-android_fabric_3\bin\classes\io\
+* kit-libs\io-fabric-sdk-android_fabric_3\bin\classes\io\fabric\
+* kit-libs\io-fabric-sdk-android_fabric_3\bin\classes\io\fabric\sdk\
+* kit-libs\io-fabric-sdk-android_fabric_3\bin\classes\io\fabric\sdk\android\
+* kit-libs\io-fabric-sdk-android_fabric_3\bin\classes\io\fabric\sdk\android\BuildConfig.class
+* kit-libs\io-fabric-sdk-android_fabric_3\bin\io-fabric-sdk-android_fabric_3.jar
+* kit-libs\io-fabric-sdk-android_fabric_3\bin\jarlist.cache
+* kit-libs\io-fabric-sdk-android_fabric_3\build.xml
+* kit-libs\io-fabric-sdk-android_fabric_3\gen\
+* kit-libs\io-fabric-sdk-android_fabric_3\gen\io\
+* kit-libs\io-fabric-sdk-android_fabric_3\gen\io\fabric\
+* kit-libs\io-fabric-sdk-android_fabric_3\gen\io\fabric\sdk\
+* kit-libs\io-fabric-sdk-android_fabric_3\gen\io\fabric\sdk\android\
+* kit-libs\io-fabric-sdk-android_fabric_3\gen\io\fabric\sdk\android\BuildConfig.java
+* kit-libs\io-fabric-sdk-android_fabric_3\kit-version.properties
+* kit-libs\io-fabric-sdk-android_fabric_3\libs\
+* kit-libs\io-fabric-sdk-android_fabric_3\libs\io-fabric-sdk-android_fabric-classes.jar
+* kit-libs\io-fabric-sdk-android_fabric_3\project.properties
+* kits.properties
+* longlog.txt
+* out\
+* out\production\
+* out\production\IMAP_Navigator3\
+* out\production\IMAP_Navigator3\IMAP_Navigator3.apk
+* out\production\IMAP_Navigator3\IMAP_Navigator3.unaligned.apk
+* out\production\IMAP_Navigator3\com\
+* out\production\IMAP_Navigator3\com\google\
+* out\production\IMAP_Navigator3\com\google\android\
+* out\production\IMAP_Navigator3\com\google\android\gms\
+* out\production\IMAP_Navigator3\com\google\android\gms\BuildConfig.class
+* out\production\IMAP_Navigator3\com\google\android\gms\R$attr.class
+* out\production\IMAP_Navigator3\com\google\android\gms\R$color.class
+* out\production\IMAP_Navigator3\com\google\android\gms\R$drawable.class
+* out\production\IMAP_Navigator3\com\google\android\gms\R$id.class
+* out\production\IMAP_Navigator3\com\google\android\gms\R$integer.class
+* out\production\IMAP_Navigator3\com\google\android\gms\R$raw.class
+* out\production\IMAP_Navigator3\com\google\android\gms\R$string.class
+* out\production\IMAP_Navigator3\com\google\android\gms\R$style.class
+* out\production\IMAP_Navigator3\com\google\android\gms\R$styleable.class
+* out\production\IMAP_Navigator3\com\google\android\gms\R.class
+* out\production\IMAP_Navigator3\com\innotech\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\BuildConfig.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$attr.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$color.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$dimen.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$drawable.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$id.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$integer.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$layout.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$menu.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$raw.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$string.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$style.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$styleable.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R$xml.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi2\R.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\Main_taxometr.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\MyImapApp$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\MyImapApp.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$1$1$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$1$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$1$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$10.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$11.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$12.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$13.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$14.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$15.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$16.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$17.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$18.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$19.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$20.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$21.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$22.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$23.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$24.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$25.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$26.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$27.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$28.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$29.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$30.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$31$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$31$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$31.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$32$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$32$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$32.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$33.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$34.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$35.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$36.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$6.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$7.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$8.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity$9.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\NavigatorMenuActivity.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\Swipe$SectionsPagerAdapter.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\Swipe.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\UserSettingActivity$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\UserSettingActivity.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ArchivOrdersFragment$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ArchivOrdersFragment$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ArchivOrdersFragment$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ArchivOrdersFragment$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ArchivOrdersFragment$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ArchivOrdersFragment$ViewHolder.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ArchivOrdersFragment.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ClassiTarifov$1$1$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ClassiTarifov$1$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ClassiTarifov$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ClassiTarifov.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$5$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$5$2$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$5$2$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$5$2$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$5$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$6.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$7.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$8.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$9.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment$ViewHolderNewDesign.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\CurrentOrdersFragment.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder$10$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder$10.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder$11.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder$6.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder$7.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder$8.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder$9.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EfirOrder.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$2$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$3$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$4$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$4$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$4$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$4$4$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$4$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$4$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$5$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$5$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$6.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$7.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$8.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$9$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$9.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$ListViewComparator.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment$ViewHolder.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\EthearFragment.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\FragmentPacket.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\MapFragment$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\MapFragment$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\MapFragment$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\MapFragment$4$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\MapFragment$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\MapFragment$5$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\MapFragment$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\MapFragment.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$10.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$11.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$12$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$12.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$13.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$14.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$15.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$16.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$17.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$18.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$19.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$20.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$21$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$21$2$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$21$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$21.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$22.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$23.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$24.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$25.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$26.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$6$1$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$6$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$6.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$7.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$8.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails$9.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrderDetails.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrdersFragment$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrdersFragment$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrdersFragment$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrdersFragment$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrdersFragment$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\OrdersFragment.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$10.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$5$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$5$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$6$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$6.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$7$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$7$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$7.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$8.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$9.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment$ViewHolder.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\ParkingsFragment.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$10$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$10$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$10.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$11.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$12.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$13.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$14.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$15.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$16.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$17.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$18$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$18$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$18.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$19.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$20.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$21.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$22$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$22.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$23.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$24$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$24$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$24.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$25$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$25.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$26$1$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$26$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$26$10.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$26$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$26$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$26$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$26$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$26$6.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$26$7.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$26$8.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$26$9.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$26.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$27$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$27$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$27$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$27$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$27$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$27.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$28$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$28$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$28.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$29$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$29.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$30$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$30.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$31$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$31$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$31$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$31.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$32.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$33$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$33.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$34$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$34.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$35$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$35.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$36$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$36$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$36$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$36$4$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$36$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$36$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$36.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$37$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$37$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$37.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$38.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$39$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$39.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$40$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$40.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$6.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$7.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$8.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$9.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$ListViewComparator.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$SamplePagerAdapter.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment$ViewHolder.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\SwipeFragment.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TarifAccept$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TarifAccept$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TarifAccept.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\Tarifs$1$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\Tarifs$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\Tarifs.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TaxometrFragment$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TaxometrFragment$2$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TaxometrFragment$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TaxometrFragment$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TaxometrFragment$4$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TaxometrFragment$4$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TaxometrFragment$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TaxometrFragment$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TaxometrFragment$6.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentPacket\TaxometrFragment.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentTransactionManager.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\activity\fragment_manager\FragmentTransactionManagerTaxometr.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\adapters\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\adapters\TarifAdapter.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\core\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\core\OrderManager$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\core\OrderManager.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\core\StateObserver.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\core\TaxometrManager.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\DispOrder$DispSubOrder.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\DispOrder.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\DispOrder2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\DispOrder3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\DispOrder4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\Order.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\ParkingRegion.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\Position.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\PreliminaryOrder.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\ServerData.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\SettingsFromXml.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\Statistic.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\datamodel\Tarif.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\helpers\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\helpers\ContextHelper$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\helpers\ContextHelper.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\helpers\DataBaseHelper.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\helpers\LogHelper$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\helpers\LogHelper.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\helpers\RequestHelper.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\model\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\model\DriverModel.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\model\UIData.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\model\arch.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\model\parking.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\BuilderStream.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\ConnectionHelper.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\MultiPacketListener.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\OnConnectionEstablishedListener.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\OnNetworkErrorListener.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\OnNetworkPacketListener.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\PacketParser.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\RequestBuilder.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\SocketService$LocalBinder.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\SocketService.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\StringUtils.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\Utils.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\WatchSocket.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\CallSignChangedResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\DispOrderResponse.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\DispOrderResponse2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\DispOrderResponse3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\DispOrderResponse4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\DriverBalanceChange.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\DriverBlockedPack.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\DriverParkingPositionResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\GetCSBalanceResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\GetOrdersResponse.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\GetRoutesResponse.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\GetTaximeterRates.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\LoginResponse.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\PPCSettingsResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\PPSChangeStateResponse.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\Packet.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\PingResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\PingStateAnswer.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\PreOrdersResponse.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\RefusePreliminaryOrdeResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\RegisterOnTaxiParkingResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\RelayCommunicationResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\SearchInEtherOrderOverResponse.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\ServerErrorResponse.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\SetYourOrdersAnswer.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\SettingXmlResponse.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\SignPrelimOrdeResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\SrvMessageResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\SrvTransferDataResponse.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\TCPMessageResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\TaxiParkingStatisticResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\TaxiParkingsResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\TaxiParkingsResponce2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\network\packet\UnRegisterOnTaxiParkingResponce.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\MyLocationListener.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\PingHelper.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\PingTask$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\PingTask$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\PingTask$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\PingTask.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\RunPingAndGeo$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\RunPingAndGeo$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\RunPingAndGeo$3.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\RunPingAndGeo$4.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\RunPingAndGeo$5.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\RunPingAndGeo$6$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\RunPingAndGeo$6$2.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\RunPingAndGeo$6.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\ping\RunPingAndGeo.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\AlertDHelper$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\AlertDHelper.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\CustomComparator.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\DbArchHelper.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\MyApplication.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\MyLocation.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\MyLocationListener.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\NotificationService.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\PlaySound$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\PlaySound.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\RangeSeekBar$1.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\RangeSeekBar$NumberType.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\RangeSeekBar$OnRangeSeekBarChangeListener.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\RangeSeekBar$Thumb.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\RangeSeekBar.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\ScreenReceiver.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\SeekBarPreference.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\VerticalSeekBar.class
+* out\production\IMAP_Navigator3\com\innotech\imap_taxi\utile\XMLParser.class
+* out\production\google-play-services_lib1\
+* out\production\google-play-services_lib1\com\
+* out\production\google-play-services_lib1\com\google\
+* out\production\google-play-services_lib1\com\google\android\
+* out\production\google-play-services_lib1\com\google\android\gms\
+* out\production\google-play-services_lib1\com\google\android\gms\BuildConfig.class
+* out\production\google-play-services_lib1\com\google\android\gms\R$attr.class
+* out\production\google-play-services_lib1\com\google\android\gms\R$id.class
+* out\production\google-play-services_lib1\com\google\android\gms\R$string.class
+* out\production\google-play-services_lib1\com\google\android\gms\R$styleable.class
+* out\production\google-play-services_lib1\com\google\android\gms\R.class
+* out\production\google-play-services_lib\
+* out\production\google-play-services_lib\android\
+* out\production\google-play-services_lib\android\UnusedStub.class
+* out\production\google-play-services_lib\com\
+* out\production\google-play-services_lib\com\google\
+* out\production\google-play-services_lib\com\google\android\
+* out\production\google-play-services_lib\com\google\android\gms\
+* out\production\google-play-services_lib\com\google\android\gms\BuildConfig.class
+* out\production\google-play-services_lib\com\google\android\gms\R$attr.class
+* out\production\google-play-services_lib\com\google\android\gms\R$color.class
+* out\production\google-play-services_lib\com\google\android\gms\R$drawable.class
+* out\production\google-play-services_lib\com\google\android\gms\R$id.class
+* out\production\google-play-services_lib\com\google\android\gms\R$integer.class
+* out\production\google-play-services_lib\com\google\android\gms\R$raw.class
+* out\production\google-play-services_lib\com\google\android\gms\R$string.class
+* out\production\google-play-services_lib\com\google\android\gms\R$style.class
+* out\production\google-play-services_lib\com\google\android\gms\R$styleable.class
+* out\production\google-play-services_lib\com\google\android\gms\R.class
+From com-crashlytics-sdk-android_answers:
+* build.gradle
+* build.xml
+* com-crashlytics-sdk-android_answers.iml
+* kit-version.properties
+From com-crashlytics-sdk-android_answers_3:
+* build.xml
+* kit-version.properties
+From com-crashlytics-sdk-android_beta:
+* build.gradle
+* build.xml
+* com-crashlytics-sdk-android_beta.iml
+* kit-version.properties
+From com-crashlytics-sdk-android_beta_3:
+* build.xml
+* kit-version.properties
+From com-crashlytics-sdk-android_crashlytics:
+* build.gradle
+* build.xml
+* com-crashlytics-sdk-android_crashlytics.iml
+* kit-version.properties
+From com-crashlytics-sdk-android_crashlytics_3:
+* build.xml
+* kit-version.properties
+From io-fabric-sdk-android_fabric:
+* build.gradle
+* build.xml
+* io-fabric-sdk-android_fabric.iml
+* kit-version.properties
+From io-fabric-sdk-android_fabric_3:
+* build.xml
+* kit-version.properties
+From library:
+* build.gradle
+* library.iml
+* pom.xml
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+google-play-services_lib => [com.google.android.gms:play-services:+]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In com-crashlytics-sdk-android_answers_3:
+* AndroidManifest.xml => comcrashlyticssdkandroid_answers_3\src\main\AndroidManifest.xml
+* assets\ => comcrashlyticssdkandroid_answers_3\src\main\assets
+* libs\com-crashlytics-sdk-android_answers-classes.jar => comcrashlyticssdkandroid_answers_3\libs\com-crashlytics-sdk-android_answers-classes.jar
+* res\ => comcrashlyticssdkandroid_answers_3\src\main\res
+* src\ => comcrashlyticssdkandroid_answers_3\src\main\java
+In com-crashlytics-sdk-android_beta_3:
+* AndroidManifest.xml => comcrashlyticssdkandroid_beta_3\src\main\AndroidManifest.xml
+* assets\ => comcrashlyticssdkandroid_beta_3\src\main\assets
+* libs\com-crashlytics-sdk-android_beta-classes.jar => comcrashlyticssdkandroid_beta_3\libs\com-crashlytics-sdk-android_beta-classes.jar
+* res\ => comcrashlyticssdkandroid_beta_3\src\main\res
+* src\ => comcrashlyticssdkandroid_beta_3\src\main\java
+In io-fabric-sdk-android_fabric:
+* AndroidManifest.xml => iofabricsdkandroid_fabric\src\main\AndroidManifest.xml
+* assets\ => iofabricsdkandroid_fabric\src\main\assets
+* libs\io-fabric-sdk-android_fabric-classes.jar => iofabricsdkandroid_fabric\libs\io-fabric-sdk-android_fabric-classes.jar
+* res\ => iofabricsdkandroid_fabric\src\main\res
+* src\ => iofabricsdkandroid_fabric\src\main\java
+In com-crashlytics-sdk-android_answers:
+* AndroidManifest.xml => comcrashlyticssdkandroid_answers\src\main\AndroidManifest.xml
+* assets\ => comcrashlyticssdkandroid_answers\src\main\assets
+* libs\com-crashlytics-sdk-android_answers-classes.jar => comcrashlyticssdkandroid_answers\libs\com-crashlytics-sdk-android_answers-classes.jar
+* res\ => comcrashlyticssdkandroid_answers\src\main\res
+* src\ => comcrashlyticssdkandroid_answers\src\main\java
+In com-crashlytics-sdk-android_beta:
+* AndroidManifest.xml => comcrashlyticssdkandroid_beta\src\main\AndroidManifest.xml
+* assets\ => comcrashlyticssdkandroid_beta\src\main\assets
+* libs\com-crashlytics-sdk-android_beta-classes.jar => comcrashlyticssdkandroid_beta\libs\com-crashlytics-sdk-android_beta-classes.jar
+* res\ => comcrashlyticssdkandroid_beta\src\main\res
+* src\ => comcrashlyticssdkandroid_beta\src\main\java
+In com-crashlytics-sdk-android_crashlytics:
+* AndroidManifest.xml => comcrashlyticssdkandroid_crashlytics\src\main\AndroidManifest.xml
+* assets\ => comcrashlyticssdkandroid_crashlytics\src\main\assets
+* libs\com-crashlytics-sdk-android_crashlytics-classes.jar => comcrashlyticssdkandroid_crashlytics\libs\com-crashlytics-sdk-android_crashlytics-classes.jar
+* res\ => comcrashlyticssdkandroid_crashlytics\src\main\res
+* src\ => comcrashlyticssdkandroid_crashlytics\src\main\java
+In io-fabric-sdk-android_fabric_3:
+* AndroidManifest.xml => iofabricsdkandroid_fabric_3\src\main\AndroidManifest.xml
+* assets\ => iofabricsdkandroid_fabric_3\src\main\assets
+* libs\io-fabric-sdk-android_fabric-classes.jar => iofabricsdkandroid_fabric_3\libs\io-fabric-sdk-android_fabric-classes.jar
+* res\ => iofabricsdkandroid_fabric_3\src\main\res
+* src\ => iofabricsdkandroid_fabric_3\src\main\java
+In com-crashlytics-sdk-android_crashlytics_3:
+* AndroidManifest.xml => comcrashlyticssdkandroid_crashlytics_3\src\main\AndroidManifest.xml
+* assets\ => comcrashlyticssdkandroid_crashlytics_3\src\main\assets
+* libs\com-crashlytics-sdk-android_crashlytics-classes.jar => comcrashlyticssdkandroid_crashlytics_3\libs\com-crashlytics-sdk-android_crashlytics-classes.jar
+* res\ => comcrashlyticssdkandroid_crashlytics_3\src\main\res
+* src\ => comcrashlyticssdkandroid_crashlytics_3\src\main\java
+In library:
+* AndroidManifest.xml => library\src\main\AndroidManifest.xml
+* assets\ => library\src\main\assets
+* res\ => library\src\main\res\
+* src\ => library\src\main\java\
+In TaxiIMAP_Android:
+* and2.PNG => and2.png
+* AndroidManifest.xml => taxiIMAP_Android\src\main\AndroidManifest.xml
+* assets\ => taxiIMAP_Android\src\main\assets\
+* lint.xml => taxiIMAP_Android\lint.xml
+* res\ => taxiIMAP_Android\src\main\res\
+* src\ => taxiIMAP_Android\src\main\java\
+* mail2.PNG => mail2.png
+* tel_2.PNG => tel_2.png
+* web2.PNG => web2.png
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

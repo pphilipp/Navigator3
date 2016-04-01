@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/version"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/version"
+        android:layout_toStartOf="@id/version" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/connection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_background_new"
+                android:drawableLeft="@drawable/ic_connect"
+                android:drawablePadding="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:lines="1"
+                android:layout_marginBottom="1dp"
+                android:gravity="center_vertical|left"
+                android:text="Подключится"
+                android:textColor="#E2E2E2"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnOrders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_menu_selector"
+                android:drawableLeft="@drawable/ic_orders"
+                android:gravity="center_vertical|left"
+                android:text="Заказы"
+                android:layout_marginBottom="1dp"
+                android:textColor="#E2E2E2"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:drawablePadding="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:lines="1" />
+
+            <Button
+                android:id="@+id/btn_do_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_menu_selector"
+                android:drawableLeft="@drawable/ic_your_orders"
+                android:gravity="center_vertical|left"
+                android:text="Свой заказ"
+                android:textColor="#E2E2E2"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:layout_marginBottom="1dp"
+                android:drawablePadding="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:lines="1" />
+
+            <Button
+                android:id="@+id/btnmap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_menu_selector"
+                android:drawableLeft="@drawable/ic_map"
+                android:gravity="center_vertical|left"
+                android:text="Карта"
+                android:layout_marginBottom="1dp"
+                android:textColor="#E2E2E2"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:drawablePadding="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:lines="1" />
+
+            <Button
+                android:id="@+id/balanceButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_menu_selector"
+                android:drawableLeft="@drawable/ic_balance"
+                android:gravity="center_vertical|left"
+                android:text="Баланс"
+                android:layout_marginBottom="1dp"
+                android:textColor="#E2E2E2"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:drawablePadding="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:lines="1" />
+
+            <Button
+                android:id="@+id/btnPrelim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_menu_selector"
+                android:drawableLeft="@drawable/ic_prelim_orders"
+                android:gravity="center_vertical|left"
+                android:text="Предварительный"
+                android:layout_marginBottom="1dp"
+                android:textColor="#E2E2E2"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:drawablePadding="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:lines="1" />
+
+            <Button
+                android:id="@+id/btn_taxometr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_menu_selector"
+                android:drawableLeft="@drawable/ic_taxometr"
+                android:gravity="center_vertical|left"
+                android:text="Таксометр"
+                android:layout_marginBottom="1dp"
+                android:textColor="#E2E2E2"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:drawablePadding="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:lines="1" />
+
+            <Button
+                android:id="@+id/parkingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_menu_selector"
+                android:drawableLeft="@drawable/ic_parkings"
+                android:gravity="center_vertical|left"
+                android:text="Стоянки"
+                android:textColor="#E2E2E2"
+                android:layout_marginBottom="1dp"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:drawablePadding="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:lines="1" />
+
+            <Button
+                android:id="@+id/btn_prefs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_menu_selector"
+                android:drawableLeft="@drawable/ic_settings"
+                android:gravity="center_vertical|left"
+                android:text="Настройки"
+                android:textColor="#E2E2E2"
+                android:layout_marginBottom="1dp"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:drawablePadding="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:lines="1" />
+
+            <Button
+                android:id="@+id/sendCrash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/btn_background_new"
+                android:drawableLeft="@drawable/ic_connect"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical|left"
+                android:lines="1"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:text="Send Crash"
+                android:textColor="#E2E2E2"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:soundEffectsEnabled="true"/>
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_menu_selector"
+                android:drawableLeft="@drawable/ic_exit"
+                android:gravity="center_vertical|left"
+                android:text="Выход"
+                android:textColor="#E2E2E2"
+                android:layout_marginBottom="1dp"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:drawablePadding="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:lines="1" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
