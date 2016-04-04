@@ -39,7 +39,6 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -95,27 +94,38 @@ import com.innotech.imap_taxi.utile.VerticalSeekBar;
 import com.innotech.imap_taxi3.R;
 import com.viewpagerindicator.CirclePageIndicator;
 import com.viewpagerindicator.PageIndicator;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
 //import com.innotech.imap_taxi.activity.Main_taxometr;
 
-public class SwipeFragment extends FragmentPacket implements OnTouchListener {
-
+public class SwipeFragment extends FragmentPacket implements OnTouchListener, OnClickListener {
     public static final String  LOG_TAG = SwipeFragment.class.getSimpleName();
-    private static final int RESULT_SETTINGS = 1;
-    static public Button ethear, parkings, myOwnOrder;
-    public static boolean reCon = false;
     private final String TAG = "IMAP";
+    private static final int RESULT_SETTINGS = 1;
+    public static boolean reCon = false;
     private PlaySound play;
     private LoginResponse lr;
     public static Button connection;
-    private Button busy, btnOrder, closeConnection, btnPrefs, map, btnTaxoMetr,
-            btnOrders, btnPrelim, zoomIn, zoomOut;
+    static public Button ethear;
+    static public Button myOwnOrder;
+    static public Button parkings;
+    Button busy;
+    Button btnOrder;
+    Button closeConnection;
+    Button btnPrefs;
+    Button btnTaxoMetr;
+    Button map;
+    Button btnOrders;
+    Button zoomIn;
+    Button btnPrelim;
+    Button zoomOut;
+    Button btnTest;
+    Button btnSendCrash;
     private ToggleButton hide;
-    private TextView balance, version;
+    private TextView balance;
+    private TextView version;
     private String alertText;
     private boolean exit;
     private boolean cansel_progress_dialog;
@@ -134,10 +144,17 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
     LinearLayout noEther, noEther_second;
     public OrdersAdapterDisp4 mAdapter;
     Boolean etherIsVisible;
-
     VerticalSeekBar zoomBar;
-
     List<DispOrder4> orders;
+    AlertDialog alertDialog;
+    SharedPreferences sharedPrefs;
+    ServerData sData;
+    OrderManager orderManager;
+    int i;
+    private boolean isOrderYours = false;
+    private Button back, refresh;
+    private ListView orders_listView;
+    protected boolean xmlOk = false;
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
@@ -151,20 +168,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
     }
 
     private static class ViewHolder {
+
         TextView text;
     }
-
-
-    AlertDialog alertDialog;
-    SharedPreferences sharedPrefs;
-    ServerData sData;
-    OrderManager orderManager;
-    int i;
-    private boolean isOrderYours = false;
-    private Button back, refresh;
-    private ListView orders_listView;
-    protected boolean xmlOk = false;
-
     public SwipeFragment() {
         super(SWIPE);
     }
@@ -172,7 +178,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        Log.d("Swipe", "onSaveInstanceState-SWIPE");
+        Log.d(LOG_TAG, "onSaveInstanceState()");
         setUserVisibleHint(true);
     }
 
@@ -180,20 +186,22 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
     public void onPause() {
         // TODO Auto-generated method stub
         super.onPause();
-        Log.d("Swipe", "onPause");
+        Log.d(LOG_TAG, "onPause()");
     }
 
     @Override
     public void onDestroy() {
         // TODO Auto-generated method stub
         super.onDestroy();
-        Log.d("Swipe", "onDestroy");
+        Log.d(LOG_TAG, "onDestroy()");
     }
 
     @Override
     public void onViewStateRestored(Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);
-        Log.d("Swipe", "SwipeFragment onViewStateRestored");
+
+        Log.d(LOG_TAG, "onViewStateRestored()");
+
         if (PreferenceManager.getDefaultSharedPreferences(
                 ContextHelper.getInstance().getCurrentContext()).getBoolean(
                 "prefIsAutoSearch", false)) // autosearch 1 2
@@ -216,7 +224,8 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
     @Override
     public void onStart() {
         super.onStart();
-        Log.d("Swipe", "SwipeFragment onStat");
+        Log.d(LOG_TAG, "onStart()");
+
         if (mMap != null) {
             mMap.animateCamera(
                     CameraUpdateFactory.newLatLngZoom(new LatLng(48.6, 32), 6),
@@ -241,14 +250,11 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
         }
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        Log.d("Swipe", "SwipeFragment onCreate");
+        Log.d(LOG_TAG, "onCreateView");
         myView = inflater.inflate(R.layout.activity_swipe, container, false);
-
 
         play = PlaySound.getInstance();
         sharedPrefs = PreferenceManager
@@ -317,6 +323,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                         RequestHelper.getRoutes(orders.get(i).orderID);
                     }
                 });
+                
                 if (mMap != null) {
                     mMap.setMyLocationEnabled(true);
 
@@ -414,177 +421,45 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                     noEther.setVisibility(View.VISIBLE);
             }
         });
-
+    /**
+     *
+     * Buttons on list
+     *
+    * **/
         btnOrders = (Button) first.findViewById(R.id.btnOrders);
         btnOrders.setTypeface(menuTypeface);
-        btnOrders.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d("myLogs", "orders btn click");
-                FragmentTransactionManager.getInstance().openFragment(
-                        FragmentPacket.ORDERS);
-            }
-        });
+        btnOrders.setOnClickListener(this);
 
         btnPrelim = (Button) first.findViewById(R.id.btnPrelim);
         btnPrelim.setTypeface(menuTypeface);
-        btnPrelim.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                CurrentOrdersFragment
-                        .displayOrders(CurrentOrdersFragment.STATE_PRE);
-                FragmentTransactionManager.getInstance().openFragment(
-                        CURRENTORDERS);
-            }
-        });
+        btnPrelim.setOnClickListener(this);
 
         myOwnOrder = (Button) first.findViewById(R.id.btn_do_my_order);
         myOwnOrder.setTypeface(menuTypeface);
-        myOwnOrder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        myOwnOrder.setOnClickListener(this);
 
-                if (ConnectionHelper.getInstance().isConnected()) {
-
-                    if (OrderManager.getInstance().getCountOfOrdersByState(
-                            Order.STATE_PERFORMING) == 0) {
-                        builder = new AlertDialog.Builder(ContextHelper
-                                .getInstance().getCurrentContext());
-                        // перейти в состояние свои пассажиры. выйти из
-                        // состояния свои пассажиры?
-                        builder.setMessage(!ServerData.getInstance().doOwn ? "Перейти в состояние \"Свои пассажиры?\""
-                                : "Выйти из состояния \"Свои пассажиры?\"");
-                        builder.setPositiveButton("Да",
-                                new DialogInterface.OnClickListener() {
-
-                                    @Override
-                                    public void onClick(DialogInterface dialog,
-                                                        int which) {
-                                        byte[] body = RequestBuilder
-                                                .createBodySetYourOrders(ServerData
-                                                        .getInstance()
-                                                        .getPeopleID());
-                                        byte[] data = RequestBuilder
-                                                .createSrvTransfereData(
-                                                        RequestBuilder.DEFAULT_CONNECTION_TYPE,
-                                                        ServerData
-                                                                .getInstance()
-                                                                .getSrvID(),
-                                                        RequestBuilder.DEFAULT_DESTINATION_ID,
-                                                        ServerData
-                                                                .getInstance()
-                                                                .getGuid(),
-                                                        true, body);
-                                        ConnectionHelper.getInstance().send(
-                                                data);
-                                    }
-                                });
-                        builder.setNegativeButton("Нет",
-                                new DialogInterface.OnClickListener() {
-
-                                    @Override
-                                    public void onClick(DialogInterface dialog,
-                                                        int which) {
-                                        dialog.dismiss();
-                                    }
-                                });
-                        dialog = builder.create();
-                        dialog.show();
-                    } else {
-                        AlertDHelper.showDialogOk("У вас есть текущие заказы!");
-                    }
-
-                } else {
-                    AlertDHelper.showDialogOk("Вы не подключены к серверу!");
-                }
-            }
-        });
 
         parkings = (Button) first.findViewById(R.id.parkingsButton);
         parkings.setTypeface(menuTypeface);
-        //Parkings button
-        parkings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentTransactionManager.getInstance().openFragment(
-                        FragmentPacket.PARKINGS);
 
-            }
-        });
+        //Parkings button
+        parkings.setOnClickListener(this);
 
         map = (Button) first.findViewById(R.id.btnmap);
         map.setTypeface(menuTypeface);
-        map.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                MapFragment.orderId = -1;
-                FragmentTransactionManager.getInstance().openFragment(
-                        FragmentPacket.MAP);
-            }
-        });
-
+        map.setOnClickListener(this);
 
         busy = (Button) second.findViewById(R.id.btn_busy);
         busy.setTypeface(menuTypeface);
-        busy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (ConnectionHelper.getInstance().isConnected()
-                        && !ServerData.getInstance().doOwn) {
-
-                    ServerData sData = ServerData.getInstance();
-
-                    if (sData.isFree) {
-
-                        System.out.println("send busy");
-
-                        byte[] body2 = RequestBuilder.createBodyPPSChangeState(
-                                "3", 0, lr.peopleID);
-                        byte[] data2 = RequestBuilder.createSrvTransfereData(
-                                RequestBuilder.DEFAULT_CONNECTION_TYPE,
-                                lr.srvID,
-                                RequestBuilder.DEFAULT_DESTINATION_ID, lr.GUID,
-                                true, body2);
-                        ConnectionHelper.getInstance().send(data2);
-                    } else {
-
-                        System.out.println("send free");
-
-                        byte[] body2 = RequestBuilder.createBodyPPSChangeState(
-                                "0", 0, lr.peopleID);
-                        byte[] data2 = RequestBuilder.createSrvTransfereData(
-                                RequestBuilder.DEFAULT_CONNECTION_TYPE,
-                                lr.srvID,
-                                RequestBuilder.DEFAULT_DESTINATION_ID, lr.GUID,
-                                true, body2);
-                        ConnectionHelper.getInstance().send(data2);
-                    }
-
-                } else {
-                    System.out.println("NO");
-                }
-            }
-        });
+        busy.setOnClickListener(this);
 
         btnOrder = (Button) second.findViewById(R.id.btn_order);
         btnOrders.setTypeface(menuTypeface);
-        btnOrder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentTransactionManager.getInstance().openFragment(
-                        FragmentPacket.ORDERS);
-            }
-        });
+        btnOrder.setOnClickListener(this);
 
         ethear = (Button) second.findViewById(R.id.ethear_button);
         ethear.setTypeface(menuTypeface);
-        ethear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentTransactionManager.getInstance().openFragment(
-                        FragmentPacket.ETHEAR);
-            }
-        });
+        ethear.setOnClickListener(this);
 
         balance = (Button) first.findViewById(R.id.balanceButton);
         balance.setTypeface(menuTypeface);
@@ -592,143 +467,19 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
 
         connection = (Button) first.findViewById(R.id.connection);
         connection.setTypeface(menuTypeface);
-
-
         //set connection to server on click button.
-        connection.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d(LOG_TAG, "601 нажата кнопка 'подключится'");
+        connection.setOnClickListener(this);
 
-
-                if (ConnectionHelper.getInstance().isConnected()) {
-                    /*
-					 * AlertDHelper.showDialogOk("Повторное подключение запрещено!"
-					 * ); return;
-					 */
-                    RunPingAndGeo.getInstance().stop();
-                    ContextHelper
-                            .getInstance()
-                            .getCurrentContext()
-                            .stopService(
-                                    new Intent(ContextHelper.getInstance()
-                                            .getCurrentContext(),
-                                            SocketService.class));
-                    try {
-                        Thread.sleep(500l);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-
-                if (!PingTask.isDataConnectionAvailable(ContextHelper
-                        .getInstance().getCurrentContext())) {
-                    AlertDHelper
-                            .showDialogOk("Доступ к интернету отсутствует. Проверьте настройки передачи данных");
-                    return;
-                }
-
-                SharedPreferences sharedPrefs = PreferenceManager
-                        .getDefaultSharedPreferences(ContextHelper
-                                .getInstance().getCurrentContext());
-
-                String nick = sharedPrefs.getString("prefNick", "");
-
-                String host = ServerData.getInstance().isMasterServer() ? sharedPrefs
-                        .getString("prefHost", "") : sharedPrefs.getString(
-                        "prefHostSlave", "").equals("") ? sharedPrefs
-                        .getString("prefHost", "") : sharedPrefs.getString(
-                        "prefHostSlave", "");
-
-                String p = ServerData.getInstance().isMasterServer() ? sharedPrefs
-                        .getString("prefPort", "") : sharedPrefs.getString(
-                        "prefPortSlave", "").equals("") ? sharedPrefs
-                        .getString("prefPort", "") : sharedPrefs.getString(
-                        "prefPortSlave", "");
-                // String slaveHost = sharedPrefs.getString("prefHostSlave",
-                // "");
-                // String slaveP = sharedPrefs.getString("prefPortSlave", "");
-
-                // String host = sharedPrefs.getString("prefHost",
-                // "194.0.150.90"); //сборка с тестовым сервером
-                // String host = sharedPrefs.getString("prefHost",
-                // "192.168.0.28"); //сборка с тестовым сервером во времена
-                // краха интернетов
-                // String host = sharedPrefs.getString("prefHost",
-                // "193.178.228.37"); //сборка Сумы
-
-                // String p = sharedPrefs.getString("prefPort", "15000");
-                // //сборка с тестовым сервером
-                // String p = sharedPrefs.getString("prefPort", "1111");
-                // //сборка Сумы
-
-                String login = sharedPrefs.getString("prefLogin", "");
-                String pass = sharedPrefs.getString("prefPass", "");
-                String message = "Введите данные подключения к серверу! ";
-                if ((nick.equals("")) || (host.equals("")) || (p.equals(""))
-                        || (login.equals("")) || (pass.equals(""))) {
-                    message = message.concat("(");
-                    if (nick.equals(""))
-                        message = message.concat("Позывной ");
-                    if (login.equals(""))
-                        message = message.concat("Логин ");
-                    if (pass.equals(""))
-                        message = message.concat("Пароль ");
-                    if (host.equals(""))
-                        message = message.concat("Сервер ");
-                    if (p.equals(""))
-                        message = message.concat("Порт ");
-                    message = message.concat(")");
-                    AlertDHelper.showDialogOk(message);
-                    Log.d(TAG, "Введите данные подключения к серверу");
-                    return;
-                }
-
-                int port = 0;
-                try {
-                    port = Integer.parseInt(p);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-
-                System.out.println("port " + port);
-                Log.w("PORT", String.valueOf(port));
-                Log.w("HOST", host);
-
-                connect(host, port, login, pass, nick);
-            }
-
-        });
         if (reCon) {
             connection.performClick();
             reCon = false;
         }
-        Button test = (Button) second.findViewById(R.id.test_test);
 
-        if (ServerData.getInstance().IS_TEST_BUILD) {
-
-            test.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-                    // String host = "194.48.212.10";
-                    String host_debug = "194.0.150.90";
-                    // int port = 2222;
-                    int port_debug = 1111;
-
-                    String host = "194.48.212.11";
-                    int port = 6000;
-
-                    // String host = "46.118.72.218";
-                    // int port = 1111;
-
-                    connect(host, port, "1", "1", "1");
-                }
-            });
-        } else {
-            test.setVisibility(View.GONE);
-
-        }
+        btnTest = (Button) second.findViewById(R.id.test_test);
+        if (ServerData.getInstance().IS_TEST_BUILD)
+            btnTest.setOnClickListener(this);
+        else
+            btnTest.setVisibility(View.GONE);
 
         // 2
 
@@ -736,118 +487,15 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
 
         closeConnection = (Button) first.findViewById(R.id.exit);
         closeConnection.setTypeface(menuTypeface);
-        closeConnection.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                AlertDialog.Builder builder = new AlertDialog.Builder(
-                        ContextHelper.getInstance().getCurrentContext());
-
-                builder.setMessage("Вы действительно хотите выйти?")
-                        .setTitle("Уведомление")
-                        .setPositiveButton("Да",
-                                new DialogInterface.OnClickListener() {
-
-                                    @Override
-                                    public void onClick(DialogInterface dialog,
-                                                        int which) {
-                                        if (ConnectionHelper.getInstance()
-                                                .isConnected()) {
-
-                                            try {
-                                                byte[] body2 = RequestBuilder
-                                                        .createPPCUnRegisterOnRelay(
-                                                                true, "8",
-                                                                lr.peopleID);
-                                                byte[] data2 = RequestBuilder
-                                                        .createSrvTransfereData(
-                                                                RequestBuilder.DEFAULT_CONNECTION_TYPE,
-                                                                lr.srvID,
-                                                                RequestBuilder.DEFAULT_DESTINATION_ID,
-                                                                lr.GUID, true,
-                                                                body2);
-                                                ConnectionHelper.getInstance()
-                                                        .send(data2);
-                                            } catch (Exception e) {
-                                            }
-                                        }
-                                        exit = true;
-                                        ContextHelper
-                                                .getInstance()
-                                                .getCurrentActivity()
-                                                .stopService(
-                                                        new Intent(
-                                                                ContextHelper
-                                                                        .getInstance()
-                                                                        .getCurrentActivity(),
-                                                                SocketService.class));
-                                        ContextHelper.getInstance()
-                                                .getCurrentActivity().finish();
-                                        System.exit(0);
-                                    }
-                                });
-
-                builder.setNegativeButton("Нет",
-                        new DialogInterface.OnClickListener() {
-
-                            @Override
-                            public void onClick(DialogInterface dialog,
-                                                int which) {
-                                dialog.dismiss();
-                            }
-                        });
-
-                AlertDialog dialog = builder.create();
-                dialog.setCancelable(false);
-                dialog.show();
-            }
-        });
+        closeConnection.setOnClickListener(this);
 
         btnPrefs = (Button) first.findViewById(R.id.btn_prefs);
         btnPrefs.setTypeface(menuTypeface);
-        btnPrefs.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                ContextHelper
-                        .getInstance()
-                        .getCurrentActivity()
-                        .startActivityForResult(
-                                new Intent(ContextHelper.getInstance()
-                                        .getCurrentContext(),
-                                        UserSettingActivity.class),
-                                RESULT_SETTINGS);
-            }
-        });
+        btnPrefs.setOnClickListener(this);
 
         btnTaxoMetr = (Button) first.findViewById(R.id.btn_taxometr);
         btnTaxoMetr.setTypeface(menuTypeface);
-        btnTaxoMetr.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                LocationManager locationManager;
-                locationManager = (LocationManager) ContextHelper.getInstance()
-                        .getCurrentActivity()
-                        .getSystemService(Context.LOCATION_SERVICE);
-                if (ConnectionHelper.getInstance().isConnected()) {
-                    if (locationManager
-                            .isProviderEnabled(LocationManager.GPS_PROVIDER))
-                        ContextHelper
-                                .getInstance()
-                                .getCurrentActivity()
-                                .startActivity(
-                                        new Intent(ContextHelper.getInstance()
-                                                .getCurrentContext(),
-                                                Main_taxometr.class));
-                    else
-                        AlertDHelper
-                                .showDialogOk("Использование Таксометра невозможно. Включите GPS.");
-                } else
-                    AlertDHelper
-                            .showDialogOk("Использование Таксометра невозможно. Необходимо войти на смену.");
-            }
-        });
+        btnTaxoMetr.setOnClickListener(this);
 
         orders_listView = (ListView) second.findViewById(R.id.etherList);
         noEther_second = (LinearLayout) second.findViewById(R.id.noEtherLayout);
@@ -858,7 +506,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView,
                                             View view, int i, long l) {
-                        Log.i("test", "Open description " + i + "");
+                        Log.i("btnTest", "Open description " + i + "");
                         EfirOrder.setOrderId(orders.get(i).orderID);
                         FragmentTransactionManager.getInstance().openFragment(
                                 FragmentPacket.ORDER);
@@ -868,23 +516,13 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
         final PaintDrawable p = (PaintDrawable) GraphUtils
                 .buttonStyle(connection);
 
-        // crash button
-        Button sendCrash = (Button) first.findViewById(R.id.sendCrash);
-        sendCrash.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                showConfirmToast(false, "Address");
-            }
-        });
-        // end crash button
-        sendCrash.setTypeface(menuTypeface);
-        // crash button
+        btnSendCrash = (Button) first.findViewById(R.id.sendCrash);
+        btnSendCrash.setOnClickListener(this);
+        btnSendCrash.setTypeface(menuTypeface);
 
         // set buttons style
 
-        sendCrash.setBackground((Drawable) p);
-
+        btnSendCrash.setBackground((Drawable) p);
         connection.setBackground((Drawable) p);
         btnOrders.setBackground((Drawable) p);
         myOwnOrder.setBackground((Drawable) p);
@@ -896,12 +534,355 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
         parkings.setBackground((Drawable) p);
         btnPrefs.setBackground((Drawable) p);
         closeConnection.setBackground((Drawable) p);
-        // end
 
-        sendCrash.setOnTouchListener(this);
+        btnSendCrash.setOnTouchListener(this);
 
         return myView;
     }
+
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.connection:
+                connectionClick();
+                break;
+            case R.id.btnOrders:
+                FragmentTransactionManager.getInstance().openFragment(
+                        FragmentPacket.ORDERS);
+                break;
+            case R.id.btn_do_my_order:
+                myOwnOrdersClick();
+                break;
+            case R.id.btnmap:
+                MapFragment.orderId = -1;
+                FragmentTransactionManager.getInstance().openFragment(
+                        FragmentPacket.MAP);
+                break;
+            case R.id.btnPrelim: 
+                 CurrentOrdersFragment
+                         .displayOrders(CurrentOrdersFragment.STATE_PRE);
+                        FragmentTransactionManager.getInstance()
+                                .openFragment(CURRENTORDERS);
+                break;
+            case  R.id.parkingsButton:
+                FragmentTransactionManager.getInstance().openFragment(
+                        FragmentPacket.PARKINGS);
+                break;
+            case R.id.btn_busy:
+                busyClick();
+                break;
+            case R.id.btn_order:
+                FragmentTransactionManager.getInstance().openFragment(
+                        FragmentPacket.ORDERS);
+                break;
+            case R.id.ethear_button:
+                FragmentTransactionManager.getInstance().openFragment(
+                        FragmentPacket.ETHEAR);
+                break;
+            case R.id.test_test:
+                testClick();
+                break;
+            case R.id.exit:
+                exitClick();
+                break;
+            case R.id.btn_prefs:
+                ContextHelper
+                        .getInstance()
+                        .getCurrentActivity()
+                        .startActivityForResult(
+                                new Intent(ContextHelper.getInstance()
+                                        .getCurrentContext(),
+                                        UserSettingActivity.class),
+                                RESULT_SETTINGS);
+                break;
+            case R.id.btn_taxometr:
+                taxometerClick();
+                break;
+            case R.id.sendCrash :
+                showConfirmToast(false, "Address");
+                break;
+
+
+            default:break;
+        }
+
+    }
+
+    private void taxometerClick() {
+        LocationManager locationManager;
+        locationManager = (LocationManager) ContextHelper.getInstance()
+                .getCurrentActivity()
+                .getSystemService(Context.LOCATION_SERVICE);
+
+        if (ConnectionHelper.getInstance().isConnected()) {
+            if (locationManager
+                    .isProviderEnabled(LocationManager.GPS_PROVIDER))
+                ContextHelper
+                        .getInstance()
+                        .getCurrentActivity()
+                        .startActivity(
+                                new Intent(ContextHelper.getInstance()
+                                        .getCurrentContext(),
+                                        Main_taxometr.class));
+            else
+                AlertDHelper
+                        .showDialogOk("Использование Таксометра невозможно. Включите GPS.");
+        } else
+            AlertDHelper
+                    .showDialogOk("Использование Таксометра невозможно. Необходимо войти на смену.");
+    }// end taxometerClick()
+
+
+    private void exitClick() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(
+                ContextHelper.getInstance().getCurrentContext());
+
+        builder.setMessage("Вы действительно хотите выйти?")
+                .setTitle("Уведомление")
+                .setPositiveButton("Да",
+                        new DialogInterface.OnClickListener() {
+
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                                if (ConnectionHelper.getInstance()
+                                        .isConnected()) {
+
+                                    try {
+                                        byte[] body2 = RequestBuilder
+                                                .createPPCUnRegisterOnRelay(
+                                                        true, "8",
+                                                        lr.peopleID);
+                                        byte[] data2 = RequestBuilder
+                                                .createSrvTransfereData(
+                                                        RequestBuilder.DEFAULT_CONNECTION_TYPE,
+                                                        lr.srvID,
+                                                        RequestBuilder.DEFAULT_DESTINATION_ID,
+                                                        lr.GUID, true,
+                                                        body2);
+                                        ConnectionHelper.getInstance()
+                                                .send(data2);
+                                    } catch (Exception e) {e.printStackTrace();}
+                                }
+                                exit = true;
+                                ContextHelper.getInstance()
+                                        .getCurrentActivity()
+                                        .stopService(new Intent(ContextHelper
+                                                                .getInstance()
+                                                                .getCurrentActivity(),
+                                                        SocketService.class));
+                                ContextHelper.getInstance()
+                                        .getCurrentActivity()
+                                        .finish();
+                                System.exit(0);
+                            }
+                        });
+
+        builder.setNegativeButton("Нет",
+                new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog,
+                                        int which) {
+                        dialog.dismiss();
+                    }
+                });
+
+        AlertDialog dialog = builder.create();
+        dialog.setCancelable(false);
+        dialog.show();
+    }// end exitClick()
+
+    private void testClick() {
+        // String host = "194.48.212.10";
+        String host_debug = "194.0.150.90";
+        // int port = 2222;
+        int port_debug = 1111;
+        String host = "194.48.212.11";
+        int port = 6000;
+        // String host = "46.118.72.218";
+        // int port = 1111;
+        connect(host, port, "1", "1", "1");
+    } //testClick()
+
+    private void connectionClick() {
+        Log.d(LOG_TAG, "601 нажата кнопка 'подключится'");
+        if (ConnectionHelper.getInstance().isConnected()) {
+                    /*
+					 * AlertDHelper.showDialogOk("Повторное подключение запрещено!"
+					 * ); return;
+					 */
+            RunPingAndGeo.getInstance().stop();
+            ContextHelper.getInstance().getCurrentContext()
+                    .stopService(new Intent(ContextHelper.getInstance()
+                                    .getCurrentContext(),SocketService.class));
+            try {
+                Thread.sleep(500l);
+            } catch (InterruptedException e) {e.printStackTrace();}
+        }
+
+        if (!PingTask.isDataConnectionAvailable(ContextHelper
+                .getInstance().getCurrentContext())) {
+            AlertDHelper
+                    .showDialogOk("Доступ к интернету отсутствует. Проверьте настройки передачи данных");
+            return;
+        }
+
+        SharedPreferences sharedPrefs = PreferenceManager
+                .getDefaultSharedPreferences(ContextHelper
+                        .getInstance().getCurrentContext());
+
+        String nick = sharedPrefs.getString("prefNick", "");
+
+        String host = ServerData.getInstance().isMasterServer() ? sharedPrefs
+                .getString("prefHost", "") : sharedPrefs.getString(
+                "prefHostSlave", "").equals("") ? sharedPrefs
+                .getString("prefHost", "") : sharedPrefs.getString(
+                "prefHostSlave", "");
+
+        String p = ServerData.getInstance().isMasterServer() ? sharedPrefs
+                .getString("prefPort", "") : sharedPrefs.getString(
+                "prefPortSlave", "").equals("") ? sharedPrefs
+                .getString("prefPort", "") : sharedPrefs.getString(
+                "prefPortSlave", "");
+        // String slaveHost = sharedPrefs.getString("prefHostSlave",
+        // "");
+        // String slaveP = sharedPrefs.getString("prefPortSlave", "");
+
+        // String host = sharedPrefs.getString("prefHost",
+        // "194.0.150.90"); //сборка с тестовым сервером
+        // String host = sharedPrefs.getString("prefHost",
+        // "192.168.0.28"); //сборка с тестовым сервером во времена
+        // краха интернетов
+        // String host = sharedPrefs.getString("prefHost",
+        // "193.178.228.37"); //сборка Сумы
+
+        // String p = sharedPrefs.getString("prefPort", "15000");
+        // //сборка с тестовым сервером
+        // String p = sharedPrefs.getString("prefPort", "1111");
+        // //сборка Сумы
+
+        String login = sharedPrefs.getString("prefLogin", "");
+        String pass = sharedPrefs.getString("prefPass", "");
+        String message = "Введите данные подключения к серверу! ";
+        if ((nick.equals("")) || (host.equals("")) || (p.equals(""))
+                || (login.equals("")) || (pass.equals(""))) {
+            message = message.concat("(");
+            if (nick.equals(""))
+                message = message.concat("Позывной ");
+            if (login.equals(""))
+                message = message.concat("Логин ");
+            if (pass.equals(""))
+                message = message.concat("Пароль ");
+            if (host.equals(""))
+                message = message.concat("Сервер ");
+            if (p.equals(""))
+                message = message.concat("Порт ");
+            message = message.concat(")");
+            AlertDHelper.showDialogOk(message);
+            Log.d(TAG, "Введите данные подключения к серверу");
+
+            return;
+        }
+
+        int port = 0;
+        try {port = Integer.parseInt(p);}
+        catch (Exception e) {e.printStackTrace();}
+
+        System.out.println("port " + port);
+        Log.w("PORT", String.valueOf(port));
+        Log.w("HOST", host);
+
+        connect(host, port, login, pass, nick);
+    }// end connectionClick()
+
+    private void busyClick() {
+        if (ConnectionHelper.getInstance().isConnected()
+                && !ServerData.getInstance().doOwn) {
+            ServerData sData = ServerData.getInstance();
+            if (sData.isFree) {
+                System.out.println("send busy");
+                byte[] body2 = RequestBuilder.createBodyPPSChangeState(
+                        "3", 0, lr.peopleID);
+                byte[] data2 = RequestBuilder.createSrvTransfereData(
+                        RequestBuilder.DEFAULT_CONNECTION_TYPE,
+                        lr.srvID,
+                        RequestBuilder.DEFAULT_DESTINATION_ID, lr.GUID,
+                        true, body2);
+                ConnectionHelper.getInstance().send(data2);
+            } else {
+                System.out.println("send free");
+
+                byte[] body2 = RequestBuilder.createBodyPPSChangeState(
+                        "0", 0, lr.peopleID);
+                byte[] data2 = RequestBuilder.createSrvTransfereData(
+                        RequestBuilder.DEFAULT_CONNECTION_TYPE,
+                        lr.srvID,
+                        RequestBuilder.DEFAULT_DESTINATION_ID, lr.GUID,
+                        true, body2);
+                ConnectionHelper.getInstance().send(data2);
+            }
+        } else {
+            System.out.println("NO");
+        }
+    }//end busyClick()
+
+    private void myOwnOrdersClick() {
+        if (ConnectionHelper.getInstance().isConnected()) {
+            if (OrderManager.getInstance()
+                    .getCountOfOrdersByState(Order.STATE_PERFORMING) == 0) {
+                builder = new AlertDialog.Builder(ContextHelper
+                        .getInstance().getCurrentContext());
+
+                // перейти в состояние свои пассажиры. выйти из
+                // состояния свои пассажиры?
+                builder.setMessage(!ServerData.getInstance().doOwn ? "Перейти в состояние \"Свои пассажиры?\""
+                        : "Выйти из состояния \"Свои пассажиры?\"");
+                builder.setPositiveButton("Да",
+                        new DialogInterface.OnClickListener() {
+
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                                byte[] body = RequestBuilder
+                                        .createBodySetYourOrders(ServerData
+                                                .getInstance()
+                                                .getPeopleID());
+                                byte[] data = RequestBuilder
+                                        .createSrvTransfereData(
+                                                RequestBuilder.DEFAULT_CONNECTION_TYPE,
+                                                ServerData
+                                                        .getInstance()
+                                                        .getSrvID(),
+                                                RequestBuilder.DEFAULT_DESTINATION_ID,
+                                                ServerData
+                                                        .getInstance()
+                                                        .getGuid(),
+                                                true, body);
+                                ConnectionHelper.getInstance().send(
+                                        data);
+                            }
+                        });
+                builder.setNegativeButton("Нет",
+                        new DialogInterface.OnClickListener() {
+
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                                dialog.dismiss();
+                            }
+                        });
+                dialog = builder.create();
+                dialog.show();
+            } else {
+                AlertDHelper.showDialogOk("У вас есть текущие заказы!");
+            }
+
+        } else {
+            AlertDHelper.showDialogOk("Вы не подключены к серверу!");
+        }
+    }// end myOwnOrdersClick()
 
     private void addListeners() {
         // !!!
@@ -1066,7 +1047,6 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                                                 StateObserver.NO_WORK);
                                     }
                                 });
-
                     }
                 });
         // !!!
@@ -1151,7 +1131,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
 
                         } else if (pack.getRelayAnswerType().equals(
                                 "UnRegistered")) {
-                            Log.d("SwipeFragment", "Unregistered on relay");
+                            Log.d(LOG_TAG, "Unregistered on relay");
                             play.play(R.raw.msg_stat_neg);
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
@@ -1473,7 +1453,8 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                 });
 
         //check ping response from server
-        MultiPacketListener.getInstance().addListener(Packet.PING_RESPONCE, new OnNetworkPacketListener() {
+        MultiPacketListener.getInstance().addListener(Packet.PING_RESPONCE,
+                new OnNetworkPacketListener() {
             @Override
             public void onNetworkPacket(Packet packet) {
                 Log.d("SERVER_PING_RESP", "ping is activ");
@@ -1487,7 +1468,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                 public void onNetworkPacket(Packet packet) {
                     final GetOrdersResponse pack = (GetOrdersResponse) packet;
 
-                    Log.i(LOG_TAG, "goted GET_ORDERS_RESPONCE " + pack.count()); // ok
+                    Log.i(LOG_TAG, "1490 goted GET_ORDERS_RESPONCE " + pack.count()); // ok
 
                     updateMyOrders(pack);
                     if (pack.count() > 0
@@ -1532,8 +1513,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                 public void onNetworkPacket(Packet packet) {
                     final DriverBlockedPack pack = (DriverBlockedPack) packet;
 
-                    Log.d(LOG_TAG,
-                            "goted DRIVER_BLOCKED_PACK " + pack.lockWith + " " + pack.lockTo); // ok
+                    Log.d(LOG_TAG,"goted DRIVER_BLOCKED_PACK " + pack.lockWith + " " + pack.lockTo); // ok
 
                     disconnect();
 
@@ -1567,7 +1547,8 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                     @Override
                     public void onNetworkPacket(Packet packet) {
                         final PPSChangeStateResponse pack = (PPSChangeStateResponse) packet;
-                        Log.d(TAG, "goted PPSCHANGE_STATE_RESPONCE orderid - "
+
+                        Log.d(LOG_TAG, "goted PPSCHANGE_STATE_RESPONCE orderid - "
                                 + pack.orderID + " state " + pack.state);
 
                         // ContextHelper.getInstance().runOnCurrentUIThread(new
@@ -1752,9 +1733,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                     @Override
                     public void onNetworkPacket(Packet packet) {
                         SrvMessageResponce pack = (SrvMessageResponce) packet;
-                        Log.i(TAG,
-                                "goted SRV_MESSAGE_RESPONCE "
-                                        + pack.getMessage());
+
+                        Log.d(LOG_TAG, "goted SRV_MESSAGE_RESPONCE "
+                                + pack.getMessage());
                     }
                 });
 
@@ -1961,7 +1942,6 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                                     }
                                 });
                     }
-
                 });
 
         MultiPacketListener.getInstance().addListener(Packet.ORDER_RESPONCE4,
@@ -1972,7 +1952,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
 
                         final DispOrder4 mOrder = pack.getOrder();
 
-                        Log.i("IMAP", "goted ORDER_RESPONCE4 " + mOrder.orderID
+                        Log.d(LOG_TAG, "goted ORDER_RESPONCE4 " + mOrder.orderID
                                 + " " + mOrder.orderType + " "
                                 + mOrder.streetName + " !!!! " + mOrder.fare);
 
@@ -2179,6 +2159,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                             play.play(R.raw.msg_new_ether_order);
                             // order add
                             orderManager.addOrder(ord);
+
                             // isEixist
                             boolean found = false;
                             for (DispOrder4 item : orders) {
@@ -2189,7 +2170,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                                     break;
                                 }
                             }
-                            Log.d("myLogs", "checkpoint1");
+                            Log.d(LOG_TAG, "checkpoint1");
                             if (!found) {
                                 orders.add(0, mOrder);
                             }
@@ -2202,8 +2183,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                                         Thread.sleep(SettingsFromXml
                                                 .getInstance()
                                                 .getThirdTimeSearch());
-                                        System.out
-                                                .println("upd ethear adapter");
+                                        Log.d(LOG_TAG, "upd ethear adapter");
                                         ContextHelper.getInstance()
                                                 .runOnCurrentUIThread(
                                                         new Runnable() {
@@ -2226,8 +2206,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                                                                         .getOrder(
                                                                                 mOrder.orderID)
                                                                         .getStatus() == Order.STATE_NEW) {
-                                                                    Log.d("myLogs",
-                                                                            "checkpoint1");
+                                                                    Log.d(LOG_TAG, "checkpoint1");
                                                                     orderManager
                                                                             .changeOrderState(
                                                                                     mOrder.orderID,
@@ -2254,11 +2233,8 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                                                                                     + ")");
 
                                                                 if (EfirOrder.orderId == mOrder.orderID) {
-                                                                    Log.d("myLogs",
-                                                                            "checkpoint2");
-
-                                                                    EfirOrder
-                                                                            .startTimer(0);
+                                                                    Log.d(LOG_TAG,"checkpoint2");
+                                                                    EfirOrder.startTimer(0);
                                                                 }
                                                             }
                                                         });
@@ -2268,7 +2244,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                                     }
                                 }
                             }).start();
-                            Log.d("myLogs", "checkpoint2");
+                            Log.d(LOG_TAG, "checkpoint2");
                             // notify
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
@@ -2294,7 +2270,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                                                         + ")");
                                         }
                                     });
-                            Log.d("myLogs", "checkpoint3");
+                            Log.d(LOG_TAG, "checkpoint3");
                         }
 
                     }
@@ -2408,7 +2384,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                     }
 
                 });
-    }
+    } // end addListeners()
 
     private void showConfirmToast(boolean isOrderYours, String address) {
 
@@ -2656,15 +2632,15 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
 
     @Override
     public void onResume() {
-        super.onResume(); // To change body of overridden methods use File |
-        // Settings | File Templates.
-        Log.d("Swipe", "SwipeFragment onResume");
-        // Toast.makeText(ContextHelper.getInstance().getCurrentContext(),
-        // connection+"", Toast.LENGTH_LONG).show();
-        Log.d("catchOnResume", "Swipe fragment");
+        super.onResume();
+
+        Log.d(LOG_TAG, "onResume()");
+
         exit = false;
-        balance.setText("Баланс: " + UIData.getInstance().getBalance()
-                + " грн.");
+        balance.setText(getResources().getString(R.string.str_balance)
+                + UIData.getInstance().getBalance()
+                + getResources().getString(R.string.str_UA_money));
+
         version.setText("v. " + UIData.getInstance().getVersion());
         // version2.setText("v. " + UIData.getInstance().getVersion());
         if (PreferenceManager.getDefaultSharedPreferences(
@@ -2690,7 +2666,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener {
                 // ContextHelper.getInstance().getCurrentActivity().startService(new
                 // Intent(ContextHelper.getInstance().getCurrentActivity(),SocketService.class));
             }
-            // test
+            // btnTest
             // connection.performClick();
         }
 

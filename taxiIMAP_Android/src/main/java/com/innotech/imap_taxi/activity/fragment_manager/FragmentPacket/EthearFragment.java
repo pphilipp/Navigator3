@@ -598,7 +598,7 @@ public class EthearFragment extends FragmentPacket {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, final int arg2,
                                     long arg3) {
-                Log.i("test", "Open description " + arg2 + "");
+                Log.i("btnTest", "Open description " + arg2 + "");
                 EfirOrder.setOrderId(orders.get(arg2).orderID);
                 FragmentTransactionManager.getInstance().openFragment(FragmentPacket.ORDER);
             }

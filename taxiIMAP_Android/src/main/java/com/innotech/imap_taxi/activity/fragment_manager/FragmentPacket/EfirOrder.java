@@ -354,10 +354,10 @@ public class EfirOrder extends FragmentPacket {
 					if (order.getAddress().size() > 1) {
 						routeType = 3;
 					}
-					//test to draw route
+					//btnTest to draw route
 					
 					rw.setRouteType(routeType);
-					//end test
+					//end btnTest
 					
 					
 					// set editional inf images

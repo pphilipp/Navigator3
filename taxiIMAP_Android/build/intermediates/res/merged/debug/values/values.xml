@@ -366,7 +366,7 @@
     <string name="class_no_class">БЕЗ КЛАССА</string>
     <string name="class_premium">ПРЕМИУМ</string>
     <string name="class_standard">СТАНДАРТ</string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">b6524c16-2ee4-4c7f-84a3-277d4a105868</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">572dc455-c70d-4442-9434-8582ea8c2dc1</string>
     <string name="comments">ПРИМЕЧАНИЕ</string>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
     <string name="common_android_wear_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update the Android Wear app.</string>

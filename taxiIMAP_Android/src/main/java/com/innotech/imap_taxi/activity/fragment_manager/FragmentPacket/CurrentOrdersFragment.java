@@ -217,7 +217,7 @@ public class CurrentOrdersFragment extends FragmentPacket {
 									public void onItemClick(
 											AdapterView<?> arg0, View arg1,
 											final int arg2, long arg3) {
-										Log.i("test", "Open description " +
+										Log.i("btnTest", "Open description " +
 												arg2 + "");
 										//
 
@@ -414,7 +414,7 @@ public class CurrentOrdersFragment extends FragmentPacket {
 				@Override
 				public void onItemClick(AdapterView<?> arg0, View arg1,
 										final int arg2, long arg3) {
-					Log.i("test", "Open description " + arg2 + "");
+					Log.i("btnTest", "Open description " + arg2 + "");
 
 					OrderDetails.dispOrderId(orders.get(arg2).getOrderID());
 					FragmentTransactionManager.getInstance().openFragment(
@@ -471,7 +471,7 @@ public class CurrentOrdersFragment extends FragmentPacket {
 				@Override
 				public void onItemClick(AdapterView<?> arg0, View arg1,
 										final int arg2, long arg3) {
-					Log.i("test", "Open description " + arg2 + "");
+					Log.i("btnTest", "Open description " + arg2 + "");
 
 					if (orders.get(arg2).getStatus() == Order.STATE_PERFORMING) {
 						OrderDetails.isArch = true;

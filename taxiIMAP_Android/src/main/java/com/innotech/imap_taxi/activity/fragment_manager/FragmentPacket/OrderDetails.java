@@ -341,7 +341,7 @@ public class OrderDetails extends FragmentPacket {
 
 		final Order ord = OrderManager.getInstance().getOrder(orderID);
 
-		// for test accept order without button
+		// for btnTest accept order without button
 		/*OrderManager.getInstance().getOrder(orderID).accepted = true;
 		OrderManager.getInstance().getOrder(orderID).arrived = false;
 		btnArrived.setEnabled(true);
@@ -1331,10 +1331,10 @@ public class OrderDetails extends FragmentPacket {
 				if (order.getAddress().size() > 1) {
 					routeType = 3;
 				}
-				//test to draw route
+				//btnTest to draw route
 				
 				rw.setRouteType(routeType);
-				//end test
+				//end btnTest
 			}
 		});
 	}
@@ -1568,7 +1568,7 @@ public class OrderDetails extends FragmentPacket {
 					btnConnDrivCl.setEnabled(false);
 				}
 
-				// Log.d("timer", "test - " + s + " s iss - " + s*1000 + " ms");
+				// Log.d("timer", "btnTest - " + s + " s iss - " + s*1000 + " ms");
 				ct3 = new CountDownTimer(s, 1000) {
 
 					public void onTick(long millisUntilFinished) {
@@ -1610,7 +1610,7 @@ public class OrderDetails extends FragmentPacket {
 									(dateNow));
 						}
 
-						// Log.d("timer", "test - " + s + " s iss - " + s*1000 +
+						// Log.d("timer", "btnTest - " + s + " s iss - " + s*1000 +
 						// " ms");
 						ct3 = new CountDownTimer(1000000, 1000) {
 

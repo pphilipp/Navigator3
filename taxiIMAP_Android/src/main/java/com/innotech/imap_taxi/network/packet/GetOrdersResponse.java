@@ -10,15 +10,16 @@ import com.innotech.imap_taxi.network.Utils;
 
 public class GetOrdersResponse extends Packet {
     public static final String LOG_TAG = GetOrdersResponse.class.getSimpleName();
-    private List<DispOrder4> orders;
+
+    private List<DispOrder4> mOrders;
     
     public GetOrdersResponse(byte[] data) {
         super(GET_ORDERS_RESPONCE);
-        orders = new ArrayList<DispOrder4>();
+        mOrders = new ArrayList<DispOrder4>();
         
         parse(data);
 
-        Log.d(LOG_TAG,  "orders.size() " + orders.size());
+        Log.d(LOG_TAG, "mOrders.size() " + mOrders.size());
     }
     
     protected void parse(byte[] data) {
@@ -53,7 +54,7 @@ public class GetOrdersResponse extends Packet {
             tmp.parse(data, offset);
             offset += dataSize;
 
-            orders.add(tmp.getOrder());
+            mOrders.add(tmp.getOrder());
         }
         
         buffer4 = null;
@@ -62,18 +63,18 @@ public class GetOrdersResponse extends Packet {
     
     public int count()
     {
-        return orders.size();
+        return mOrders.size();
     }
 
     public DispOrder4 getOrder(int index)
     {
-        return orders.get(index);
+        return mOrders.get(index);
     }
 
     @Override
     public String toString() {
         return "GetOrdersResponse{" +
-                "orders=" + orders.toString() +
+                "mOrders=" + mOrders.toString() +
                 '}';
     }
 }

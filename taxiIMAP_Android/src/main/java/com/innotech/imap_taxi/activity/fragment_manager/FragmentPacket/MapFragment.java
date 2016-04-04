@@ -198,7 +198,7 @@ public class MapFragment extends FragmentPacket {
 
 		if (mMap != null && ServerData.getInstance().gpsOrNetProv) {
 
-			//Log.e("test", "map loc upd");
+			//Log.e("btnTest", "map loc upd");
 
 			new Thread(new Runnable() {
 
