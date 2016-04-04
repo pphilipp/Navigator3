@@ -7,19 +7,27 @@ import java.util.Observer;
  * Created by Ura on 18.09.2014.
  */
 public class StateObserver extends Observable {
-	private boolean gps, network, server, showYourOrders, showParkings = false;
-	public final static int DRIVER_FREE = 0, DRIVER_BUSY = 1,
-			DRIVER_NO_CONNECT = 2, DRIVER_LOST_CONNECTION = 3;
-	public final static boolean WORK = true, NO_WORK = false;
-	private int driverState = 2, parkingPosition = 0;
+	public final static int DRIVER_FREE = 0;
+	public final static int DRIVER_BUSY = 1;
+	public final static int DRIVER_NO_CONNECT = 2;
+	public final static int DRIVER_LOST_CONNECTION = 3;
+	public final static boolean WORK = true;
+	public final static boolean NO_WORK = false;
+	private int driverState = 2;
+	private int parkingPosition = 0;
+	private boolean gps = false;
+	private boolean network = false;
+	private boolean server = false;
+	private boolean showYourOrders = false;
+	private boolean showParkings = false;
 	private String parkings = "Стоянки";
 	static private StateObserver instance;
 
 	public static StateObserver getInstance() {
-
 		if (instance == null) {
 			instance = new StateObserver();
 		}
+
 		return instance;
 	}
 

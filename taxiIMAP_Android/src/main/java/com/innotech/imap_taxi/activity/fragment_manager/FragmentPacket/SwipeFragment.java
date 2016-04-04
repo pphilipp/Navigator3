@@ -102,7 +102,7 @@ import java.util.List;
 
 public class SwipeFragment extends FragmentPacket implements OnTouchListener, OnClickListener {
     public static final String  LOG_TAG = SwipeFragment.class.getSimpleName();
-    private final String TAG = "IMAP";
+
     private static final int RESULT_SETTINGS = 1;
     public static boolean reCon = false;
     private PlaySound play;
@@ -123,38 +123,38 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     Button zoomOut;
     Button btnTest;
     Button btnSendCrash;
-    private ToggleButton hide;
+    ToggleButton hide;
     private TextView balance;
     private TextView version;
     private String alertText;
     private boolean exit;
     private boolean cansel_progress_dialog;
-    private View myView;
+    View myView;
     static public boolean open = false;
     View first, second, vMap = null;
     AlertDialog.Builder builder;
     AlertDialog dialog;
     private GoogleMap mMap;
-    LatLng myLoc;
     MarkerOptions myLoMmarker;
     boolean updateMyLoc;
     ArrayList<LatLng> lg;
-    float lat, lon;
     ListView mapEther;
     LinearLayout noEther, noEther_second;
     public OrdersAdapterDisp4 mAdapter;
-    Boolean etherIsVisible;
     VerticalSeekBar zoomBar;
     List<DispOrder4> orders;
-    AlertDialog alertDialog;
     SharedPreferences sharedPrefs;
-    ServerData sData;
     OrderManager orderManager;
     int i;
     private boolean isOrderYours = false;
-    private Button back, refresh;
     private ListView orders_listView;
     protected boolean xmlOk = false;
+    private Button back, refresh;
+    ServerData sData;
+    Boolean etherIsVisible;
+    AlertDialog alertDialog;
+    float lat, lon;
+    LatLng myLoc;
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
@@ -168,9 +168,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     }
 
     private static class ViewHolder {
-
         TextView text;
     }
+
     public SwipeFragment() {
         super(SWIPE);
     }
@@ -323,7 +323,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                         RequestHelper.getRoutes(orders.get(i).orderID);
                     }
                 });
-                
+
                 if (mMap != null) {
                     mMap.setMyLocationEnabled(true);
 
@@ -781,7 +781,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                 message = message.concat("Порт ");
             message = message.concat(")");
             AlertDHelper.showDialogOk(message);
-            Log.d(TAG, "Введите данные подключения к серверу");
+            Log.d(LOG_TAG, "Введите данные подключения к серверу");
 
             return;
         }
@@ -892,12 +892,12 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                     public void onNetworkPacket(Packet packet) {
                         lr = (LoginResponse) packet;
                         NavigatorMenuActivity.setLr(lr);
-                        Log.d(TAG, "lr=" + lr.answer + " - " + lr.toString());
-                        Log.d("status", "'" + lr.answer + "'");
-                        Log.d("LOGIN_RESPONCE answer=", lr.answer);
+                        Log.d(LOG_TAG, "lr=" + lr.answer + " - " + lr.toString());
+                        Log.d(LOG_TAG, "status '" + lr.answer + "'");
+                        Log.d(LOG_TAG, "LOGIN_RESPONCE answer=" + lr.answer);
 
                         if (lr.answer.equals(LoginResponse.ANSWER_OK)) {
-                            Log.d("SwipeFragment", "login");
+                            Log.d(LOG_TAG, "login");
 
                             ServerData sData = ServerData.getInstance();
                             sData.setGuid(lr.GUID);
@@ -1000,7 +1000,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                         } else if (lr.answer.equals("error2")) {
 
                         } else {
-                            Log.d(TAG, "Error login");
+                            Log.d(LOG_TAG, "Error login");
                         }
                         if (!lr.answer.equals(LoginResponse.ANSWER_OK)) {
                             // ConnectionHelper.getInstance().stop();
@@ -1016,7 +1016,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                     @Override
                     public void onNetworkError(final int errorCode,
                                                final String errorMessage) {
-                        Log.d(TAG, "onNetworkError[code=" + errorCode
+                        Log.d(LOG_TAG, "onNetworkError[code=" + errorCode
                                 + ", message=" + errorMessage + "]");
                         // Log.w(TAG, "onNetworkError[code=" + errorCode +
                         // ", message=" + errorMessage + "]");
@@ -1271,10 +1271,10 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                     @Override
                     public void onNetworkPacket(Packet packet) {
                         SettingXmlResponse pack = (SettingXmlResponse) packet;
-                        Log.i(TAG,
+                        Log.i(LOG_TAG,
                                 "goted SETTINGS_XML_RESPONCE "
                                         + pack.getSettings()); // ok
-                        Log.w(TAG,
+                        Log.w(LOG_TAG,
                                 "goted SETTINGS_XML_RESPONCE "
                                         + pack.getSettings()); // ok
                         if (pack.getSettings() == null) {
@@ -2314,6 +2314,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                 break;
                             }
                         }
+
                         List<Order> ord = OrderManager.getInstance()
                                 .getOrdersByState(Order.STATE_PERFORMING);
                         for (Order or : ord) {
@@ -2376,13 +2377,10 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                                 busy2.setEnabled(false);
                                             }
                                         }
-
                                     });
                         }
-
                         // Генерируем событие изменения состояния
                     }
-
                 });
     } // end addListeners()
 
@@ -2523,7 +2521,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                         }
                     } catch (InterruptedException e) {
                         // TODO Auto-generated catch block
-                        Log.d(TAG, "InterruptedException " + e.getMessage());
+                        Log.d(LOG_TAG, "InterruptedException " + e.getMessage());
                         e.printStackTrace();
                     }
                 }
@@ -2535,7 +2533,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                 public void run() {
                                     // ConnectionHelper.getInstance().stop();
                                     disconnect();
-                                    Log.d(TAG,
+                                    Log.d(LOG_TAG,
                                             "не удаётся подключиться к серверу");
                                     AlertDHelper
                                             .showDialogOk("Не удается подключиться к серверу.");
@@ -2549,29 +2547,12 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
             }
         }).start();
 
-        // ConnectionHelper.getInstance().start(host, port, new
-        // OnConnectionEstablishedListener() {
-        // @Override
-        // public void onConnectionEstablished() {
-        // ConnectionHelper.getInstance().setDisconnected(false);
-        //
-        // ConnectionHelper.getInstance().send(RequestBuilder.createLogin(255,
-        // login, pass, true));
-        // ServerData.getInstance().setLogin(login);
-        // ServerData.getInstance().setNick(nick);
-        //
-        // //PingHelper.getInstance().start();
-        //
-        // LogHelper.w(android.os.Build.MANUFACTURER + " " +
-        // android.os.Build.MODEL + " connected");
-        // }
-        // });
         ConnectionHelper.getInstance().setDisconnected(false);
         ServerData.getInstance().setLogin(login);
         ServerData.getInstance().setPass(pass);
         ServerData.getInstance().setNick(nick);
 
-        Log.d(LOG_TAG, "2589 стартуем сервис");
+        Log.d(LOG_TAG, "2574 стартуем сервис");
 
         getActivity().startService(new Intent(getActivity(), SocketService.class)
                 .putExtra("host", host).putExtra("port", port));
@@ -2581,14 +2562,14 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
             @Override
             public void run() {
 
-                Log.d(LOG_TAG, "2599 отправляем логин");
+                Log.d(LOG_TAG, "2584 отправляем логин");
 
                 // тут происходит коннект на сервак и отправка логина и пароля.
                 ServerData.getInstance().setShowAlertRegistr(true);
                 ConnectionHelper.getInstance().send(RequestBuilder
                         .createLogin(255, login, pass, true));
 
-                Log.d(LOG_TAG, "2606" + "\n" + "login " + login + "\n" +"pass " + pass);
+                Log.d(LOG_TAG, "2591" + "\n" + "login " + login + "\n" +"pass " + pass);
 
             }
         }, 1300l);

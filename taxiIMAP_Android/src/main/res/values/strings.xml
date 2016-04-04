@@ -56,8 +56,6 @@
     <string name="let_me_out">Сняться со стоянки</string>
     <string name="order_is_yours">Заказ Ваш</string>
     <string name="order_is_not_yours">Заказ не Ваш</string>
-
-    //SwipeFragment
     <string name="str_balance">Баланс: </string>
     <string name="str_UA_money"> грн.</string>
 </resources>
