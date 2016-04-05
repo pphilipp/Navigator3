@@ -70,7 +70,7 @@ public class CurrentOrdersFragment extends FragmentPacket {
 
 	static SharedPreferences sharedPref;
 
-	private final String TAG = "orders";
+	private final String TAG = "mOrders";
 
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
@@ -104,7 +104,7 @@ public class CurrentOrdersFragment extends FragmentPacket {
 
 		orders = new ArrayList<Order>();
 
-		Log.d(LOG_TAG, "102 orders size -----> " + orders.size());
+		Log.d(LOG_TAG, "102 mOrders size -----> " + orders.size());
 
 		mAdapter = new OrdersAdapter(orders, ContextHelper.getInstance()
 				.getCurrentContext());
@@ -112,7 +112,7 @@ public class CurrentOrdersFragment extends FragmentPacket {
 		listView_orders = (ListView) myView.findViewById(R.id.listView_orders);
 		listView_orders.setAdapter(mAdapter);
 
-		Log.d(LOG_TAG, "113 set adapter with orders. orders.size() -----> " + orders.size());
+		Log.d(LOG_TAG, "113 set adapter with mOrders. mOrders.size() -----> " + orders.size());
 
 		back = (Button) myView.findViewById(R.id.back);
 		back.setOnClickListener(new View.OnClickListener() {
@@ -145,7 +145,7 @@ public class CurrentOrdersFragment extends FragmentPacket {
 					// });
 					RequestHelper.getOrders();
 
-					Log.d(LOG_TAG, "145 update orders via RequestHelper.getOrders()" + orders.size());
+					Log.d(LOG_TAG, "145 update mOrders via RequestHelper.getOrders()" + orders.size());
 
 					displayOrders(0);
 
@@ -221,7 +221,7 @@ public class CurrentOrdersFragment extends FragmentPacket {
 												arg2 + "");
 										//
 
-										// OrderDetails.dispOrderId(orders.get(arg2).getOrderID());
+										// OrderDetails.dispOrderId(mOrders.get(arg2).getOrderID());
 										// FragmentTransactionManager.getInstance().openFragment(FragmentPacket.ORDER_DETAILS);
 
 										AlertDialog.Builder builder = new AlertDialog.Builder(
@@ -273,8 +273,8 @@ public class CurrentOrdersFragment extends FragmentPacket {
 																		.getInstance()
 																		.send(data);
 
-																// orders.get(arg2).addNickToPrePeopList(ServerData.getInstance().getNick());
-																// OrderManager.getInstance().signToPreOrder(orders.get(arg2).getOrderID());
+																// mOrders.get(arg2).addNickToPrePeopList(ServerData.getInstance().getNick());
+																// OrderManager.getInstance().signToPreOrder(mOrders.get(arg2).getOrderID());
 
 																// временно
 																update();
@@ -408,7 +408,7 @@ public class CurrentOrdersFragment extends FragmentPacket {
 			isUpdate = true;
 			orders = OrderManager.getInstance().getOrdersByState(
 					Order.STATE_PERFORMED);
-			Log.d("orders", "order.size (performed) = " + orders.size());
+			Log.d("mOrders", "order.size (performed) = " + orders.size());
 			listView_orders.setOnItemClickListener(new OnItemClickListener() {
 
 				@Override
@@ -431,7 +431,7 @@ public class CurrentOrdersFragment extends FragmentPacket {
 			isUpdate = false;
 			orders = OrderManager.getInstance().getOrdersByState(
 					Order.STATE_PERFORMING);
-			Log.d("orders", "order.size (performing) = " + orders.size());
+			Log.d("mOrders", "order.size (performing) = " + orders.size());
 			System.out.println("COUNT* ________ "
 					+ OrderManager.getInstance().getCountOfOrdersByState(
 							Order.STATE_PERFORMING));
@@ -500,7 +500,7 @@ public class CurrentOrdersFragment extends FragmentPacket {
 			public void run() {
 				mAdapter.updateMyList(orders);
 
-				Log.d(LOG_TAG, "503 ContextHelper  mAdapter.updateMyList(orders) orders.size()-> " + orders.size());
+				Log.d(LOG_TAG, "503 ContextHelper  mAdapter.updateMyList(mOrders) mOrders.size()-> " + orders.size());
 
 			}
 		});

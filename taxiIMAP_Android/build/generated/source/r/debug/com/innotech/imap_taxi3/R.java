@@ -3870,17 +3870,19 @@ containing a value of this type.
         public static final int store_picture_title=0x7f070072;
         public static final int str_UA_money=0x7f070073;
         public static final int str_balance=0x7f070074;
-        public static final int taxometer=0x7f070075;
-        public static final int title_activity_main_taxometr=0x7f070076;
-        public static final int title_activity_order_details=0x7f070077;
-        public static final int title_activity_swipe=0x7f070078;
-        public static final int title_activity_taxometr_load_=0x7f070079;
-        public static final int title_section1=0x7f07007a;
-        public static final int title_section2=0x7f07007b;
-        public static final int title_section3=0x7f07007c;
+        public static final int str_use_taxometer_is_not_possible=0x7f070075;
+        public static final int str_use_taxometer_need_to_enter=0x7f070076;
+        public static final int taxometer=0x7f070077;
+        public static final int title_activity_main_taxometr=0x7f070078;
+        public static final int title_activity_order_details=0x7f070079;
+        public static final int title_activity_swipe=0x7f07007a;
+        public static final int title_activity_taxometr_load_=0x7f07007b;
+        public static final int title_section1=0x7f07007c;
+        public static final int title_section2=0x7f07007d;
+        public static final int title_section3=0x7f07007e;
         public static final int wallet_buy_button_place_holder=0x7f070033;
-        public static final int wifi=0x7f07007d;
-        public static final int yes=0x7f07007e;
+        public static final int wifi=0x7f07007f;
+        public static final int yes=0x7f070080;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f090076;

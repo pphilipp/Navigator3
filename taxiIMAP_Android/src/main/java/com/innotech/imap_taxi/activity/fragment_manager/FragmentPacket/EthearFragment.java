@@ -171,7 +171,7 @@ public class EthearFragment extends FragmentPacket {
         
         etherOrders = new ArrayList<Order>();
         etherOrders = OrderManager.getInstance().getEfirOrders();
-        Log.d("myLogs", "ether orders = " + etherOrders.size());
+        Log.d("myLogs", "ether mOrders = " + etherOrders.size());
 
         orders_listView = (ListView) myView.findViewById(R.id.listview_orders);
         orders_listView.setAdapter(mAdapter);

@@ -366,7 +366,7 @@
     <string name="class_no_class">БЕЗ КЛАССА</string>
     <string name="class_premium">ПРЕМИУМ</string>
     <string name="class_standard">СТАНДАРТ</string>
-    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">d6c4a482-5174-4079-8c5b-4890ab377a79</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">276215bb-4c06-41fb-a21b-efb72494ea0f</string>
     <string name="comments">ПРИМЕЧАНИЕ</string>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
     <string name="common_android_wear_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update the Android Wear app.</string>
@@ -446,6 +446,9 @@
     <string name="store_picture_title">Save image</string>
     <string name="str_UA_money"> грн.</string>
     <string name="str_balance">Баланс: </string>
+    <string name="str_use_taxometer_is_not_possible">
+        Использование Таксометра невозможно. Включите GPS.</string>
+    <string name="str_use_taxometer_need_to_enter">Использование Таксометра невозможно. Необходимо войти на смену.</string>
     <string name="taxometer">ТАКСОМЕТР</string>
     <string name="title_activity_main_taxometr">Main_taxometr</string>
     <string name="title_activity_order_details">OrderDetails</string>

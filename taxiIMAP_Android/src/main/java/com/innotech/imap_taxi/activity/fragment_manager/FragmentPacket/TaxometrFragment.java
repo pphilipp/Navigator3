@@ -148,7 +148,7 @@ public class TaxometrFragment extends FragmentPacket {
                             taxometrManager.allDistance += location.distanceTo(lastLocation);
                         }
                         setDistanceInView();
-                        //((TextView)myView.findViewById(R.id.textView_distance)).setText(allDistance+"");
+                        //((TextView)view.findViewById(R.id.textView_distance)).setText(allDistance+"");
                     }
                     if (location.hasSpeed()) {
                         setSpeed(location.getSpeed() * 3.6f);

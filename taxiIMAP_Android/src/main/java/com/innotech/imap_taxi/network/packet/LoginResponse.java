@@ -5,17 +5,9 @@ import com.innotech.imap_taxi.network.Utils;
 
 import java.util.Arrays;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Kvest
- * Date: 15.09.13
- * Time: 16:27
- * To change this template use File | Settings | File Templates.
- */
 public class LoginResponse extends Packet {
     public static final String ANSWER_OK = "AllIsInOrder";
     public static final String ANSWER_NORIGHTS = "NoRights";
-
     public int srvID;
     public int peopleID;
     public String answer;

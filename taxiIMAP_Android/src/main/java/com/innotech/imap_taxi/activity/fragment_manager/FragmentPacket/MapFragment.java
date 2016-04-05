@@ -74,7 +74,7 @@ public class MapFragment extends FragmentPacket {
 
 
 			btnMe = (Button) myView.findViewById(R.id.btn_show_me);
-//			btnBack = (Button) myView.findViewById(R.id.btn_back);
+//			btnBack = (Button) view.findViewById(R.id.btn_back);
             zoomIn = (ImageButton) myView.findViewById(R.id.btn_zoom_in);
             zoomOut = (ImageButton) myView.findViewById(R.id.btn_zoom_out);
 

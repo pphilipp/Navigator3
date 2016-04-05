@@ -104,8 +104,6 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     public static final String  LOG_TAG = SwipeFragment.class.getSimpleName();
     private static final int RESULT_SETTINGS = 1;
     public static boolean reCon = false;
-    private PlaySound play;
-    private LoginResponse lr;
     public static Button connection;
     static public Button ethear;
     static public Button myOwnOrder;
@@ -123,16 +121,21 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     Button btnTest;
     Button btnSendCrash;
     ToggleButton toggleBtnHide;
-    private TextView tvBalance;
-    private TextView tvVersion;
+    TextView tvBalance;
+    TextView tvVersion;
+    TextView etherTxt;
     private String mAlertText;
     private boolean isExit;
-    private boolean isCanselProgressDialog;
-    View myView;
+    private boolean isCancelProgressDialog;
     static public boolean open = false;
+    View view;
     View first = null;
     View second = null;
     View  vMap = null;
+    private PlaySound play;
+
+    private LoginResponse loginResponse;
+
     AlertDialog.Builder builder;
     AlertDialog dialog;
     private GoogleMap mMap;
@@ -142,9 +145,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     ListView mapEther;
     LinearLayout llNoEther;
     LinearLayout llNoEtherSecond;
-    public OrdersAdapterDisp4 mAdapter;
+    OrdersAdapterDisp4 mAdapter;
     VerticalSeekBar zoomBar;
-    List<DispOrder4> orders;
+    List<DispOrder4> mOrders;
     SharedPreferences sharedPrefs;
     OrderManager orderManager;
     private boolean isOrderYours = false;
@@ -157,134 +160,44 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     AlertDialog alertDialog;
     float lat, lon;
     LatLng myLoc;
-
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
-        if (v instanceof Button) {
-            MediaPlayer mMediaPlayer = MediaPlayer.create(ContextHelper.getInstance().getCurrentContext(),
-                    R.raw.msg_stat_pos);
-            //TODO Fix: on android 5.1 mMediaPleyar random executed.
-//            mMediaPlayer.start();
-        }
-        return false;
-    }
-
-    private static class ViewHolder {
-        TextView text;
-    }
+    Context mContext;
 
     public SwipeFragment() {
         super(SWIPE);
     }
 
     @Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        Log.d(LOG_TAG, "onSaveInstanceState()");
-        setUserVisibleHint(true);
-    }
-
-    @Override
-    public void onPause() {
-        // TODO Auto-generated method stub
-        super.onPause();
-        Log.d(LOG_TAG, "onPause()");
-    }
-
-    @Override
-    public void onDestroy() {
-        // TODO Auto-generated method stub
-        super.onDestroy();
-        Log.d(LOG_TAG, "onDestroy()");
-    }
-
-    @Override
-    public void onViewStateRestored(Bundle savedInstanceState) {
-        super.onViewStateRestored(savedInstanceState);
-
-        Log.d(LOG_TAG, "onViewStateRestored()");
-
-        if (PreferenceManager.getDefaultSharedPreferences(
-                ContextHelper.getInstance().getCurrentContext()).getBoolean(
-                "prefIsAutoSearch", false)) // autosearch 1 2
-            ethear.setText("ЭФИР("
-                    + String.valueOf(OrderManager.getInstance()
-                    .getCountOfOrdersByState(Order.STATE_NEW)
-                    + OrderManager.getInstance()
-                    .getCountOfOrdersByState(
-                            Order.STATE_KRYG_ADA)) + ")");
-        else
-            ethear.setText("ЭФИР("
-                    + OrderManager.getInstance().getCountOfEfirOrders() + ")");
-        if (StateObserver.getInstance().getDriverState() == StateObserver.DRIVER_BUSY) {
-            btnBusy.setEnabled(false);
-        } else {
-            btnBusy.setEnabled(true);
-        }
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        Log.d(LOG_TAG, "onStart()");
-
-        if (mMap != null) {
-            mMap.animateCamera(
-                    CameraUpdateFactory.newLatLngZoom(new LatLng(48.6, 32), 6),
-                    100, null);
-        }
-    }
-
-    public void switchListView(OrdersAdapterDisp4 mAdapter) {
-        if (mapEther != null && llNoEther != null && lvOrders != null
-                && llNoEtherSecond != null) {
-            if (mAdapter.getCount() > 0) {
-                mapEther.setVisibility(View.VISIBLE);
-                llNoEther.setVisibility(View.GONE);
-                lvOrders.setVisibility(View.VISIBLE);
-                llNoEtherSecond.setVisibility(View.GONE);
-            } else {
-                mapEther.setVisibility(View.GONE);
-                llNoEther.setVisibility(View.VISIBLE);
-                lvOrders.setVisibility(View.GONE);
-                llNoEtherSecond.setVisibility(View.VISIBLE);
-            }
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        Log.d(LOG_TAG, "onCreateView");
-
-        myView = inflater.inflate(R.layout.activity_swipe, container, false);
-
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.d(LOG_TAG, "onCreate()" + "\n");
+        mContext = ContextHelper.getInstance().getCurrentContext();
         play = PlaySound.getInstance();
-        sharedPrefs = PreferenceManager
-                .getDefaultSharedPreferences(ContextHelper.getInstance()
-                        .getCurrentContext());
+        sharedPrefs = PreferenceManager.getDefaultSharedPreferences(mContext);
+    }
 
-        orders = new ArrayList<DispOrder4>();
-        mAdapter = new OrdersAdapterDisp4(orders, ContextHelper.getInstance()
-                .getCurrentContext());
+    @Override
+    public View onCreateView(LayoutInflater inflater,
+                             ViewGroup container,Bundle savedInstanceState) {
+        Log.d(LOG_TAG, "onCreateView()");
 
+        view = inflater.inflate(R.layout.activity_swipe, container, false);
+
+        mOrders = new ArrayList<DispOrder4>();
+        mAdapter = new OrdersAdapterDisp4(mOrders, mContext);
+
+       /**
+        * Not clear what's happened on this @try block.
+        *
         try {
             PackageInfo pInfo;
             pInfo = ContextHelper
                     .getInstance()
                     .getCurrentContext()
                     .getPackageManager()
-                    .getPackageInfo(
-                            ContextHelper.getInstance().getCurrentContext()
-                                    .getPackageName(), 0);
+                    .getPackageInfo(mContext.getPackageName(), 0);
             UIData.getInstance().setVersion(pInfo.versionName);
-            // LogHelper.w_gps("ver " + pInfo.versionName);
-            Log.d("ver ", pInfo.versionName);
-        } catch (NameNotFoundException e1) {
-            e1.printStackTrace();
-        }
-
-        // UIData.getInstance().setBalance("0.0");
+        } catch (NameNotFoundException e) {e.printStackTrace();}
+        */
 
         addListeners();
 
@@ -294,7 +207,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
         first = inflater.inflate(R.layout.main_menu_chapter_one_new, null);
         second = inflater.inflate(R.layout.main_menu_chapter_two_new, null);
 
-        TextView etherTxt = (TextView) second.findViewById(R.id.noEther);
+        etherTxt = (TextView) second.findViewById(R.id.noEther);
         Typeface t = Typeface.createFromAsset(ContextHelper.getInstance()
                 .getCurrentContext().getAssets(), "fonts/BebasNeueRegular.ttf");
         etherTxt.setTypeface(t);
@@ -323,7 +236,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                     public void onItemClick(AdapterView<?> adapterView,
                                             View view, int i, long l) {
                         mMap.clear();
-                        RequestHelper.getRoutes(orders.get(i).orderID);
+                        RequestHelper.getRoutes(mOrders.get(i).orderID);
                     }
                 });
 
@@ -354,11 +267,11 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
         pages.add(second);
         pages.add(vMap);
         SamplePagerAdapter pagerAdapter = new SamplePagerAdapter(pages);
-        ViewPager viewPager = (ViewPager) myView.findViewById(R.id.pager);
+        ViewPager viewPager = (ViewPager) view.findViewById(R.id.pager);
         viewPager.setOffscreenPageLimit(3);
         viewPager.setAdapter(pagerAdapter);
 
-        PageIndicator mIndicator = (CirclePageIndicator) myView
+        PageIndicator mIndicator = (CirclePageIndicator) view
                 .findViewById(R.id.indicator);
         mIndicator.setViewPager(viewPager);
 
@@ -424,11 +337,11 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                     llNoEther.setVisibility(View.VISIBLE);
             }
         });
-    /**
-     *
-     * Buttons on list
-     *
-    * **/
+        /**
+         *
+         * Buttons on menu list fragment
+         *
+         * **/
         btnOrders = (Button) first.findViewById(R.id.btnOrders);
         btnOrders.setTypeface(menuTypeface);
         btnOrders.setOnClickListener(this);
@@ -504,17 +417,18 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
         llNoEtherSecond = (LinearLayout) second.findViewById(R.id.noEtherLayout);
         lvOrders.setAdapter(mAdapter);
         switchListView(mAdapter);
-        lvOrders
-                .setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> adapterView,
-                                            View view, int i, long l) {
-                        Log.i("btnTest", "Open description " + i + "");
-                        EfirOrder.setOrderId(orders.get(i).orderID);
-                        FragmentTransactionManager.getInstance().openFragment(
-                                FragmentPacket.ORDER);
-                    }
-                });
+        lvOrders.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView,
+                                    View view, int i, long l) {
+
+                Log.i(LOG_TAG, "Open description " + i + "\n");
+
+                EfirOrder.setOrderId(mOrders.get(i).orderID);
+                FragmentTransactionManager.getInstance().openFragment(
+                        FragmentPacket.ORDER);
+            }
+        });
 
         final PaintDrawable p = (PaintDrawable) GraphUtils
                 .buttonStyle(connection);
@@ -540,7 +454,74 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
 
         btnSendCrash.setOnTouchListener(this);
 
-        return myView;
+        return view;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        Log.d(LOG_TAG, "onStart()");
+
+        if (mMap != null) {
+            mMap.animateCamera(
+                    CameraUpdateFactory.newLatLngZoom(new LatLng(48.6, 32), 6),
+                    100, null);
+        }
+    }
+
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        if (v instanceof Button) {
+            MediaPlayer mMediaPlayer = MediaPlayer.create(ContextHelper.getInstance().getCurrentContext(),
+                    R.raw.msg_stat_pos);
+            //TODO Fix: on android 5.1 mMediaPleyar random executed.
+//            mMediaPlayer.start();
+        }
+        return false;
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.d(LOG_TAG, "onSaveInstanceState()");
+        setUserVisibleHint(true);
+    }
+
+    @Override
+    public void onViewStateRestored(Bundle savedInstanceState) {
+        super.onViewStateRestored(savedInstanceState);
+
+        Log.d(LOG_TAG, "onViewStateRestored()");
+
+        if (PreferenceManager.getDefaultSharedPreferences(
+                ContextHelper.getInstance().getCurrentContext()).getBoolean(
+                "prefIsAutoSearch", false)) // autosearch 1 2
+            ethear.setText("ЭФИР("
+                    + String.valueOf(OrderManager.getInstance()
+                    .getCountOfOrdersByState(Order.STATE_NEW)
+                    + OrderManager.getInstance()
+                    .getCountOfOrdersByState(
+                            Order.STATE_KRYG_ADA)) + ")");
+        else
+            ethear.setText("ЭФИР("
+                    + OrderManager.getInstance().getCountOfEfirOrders() + ")");
+        if (StateObserver.getInstance().getDriverState() == StateObserver.DRIVER_BUSY) {
+            btnBusy.setEnabled(false);
+        } else {
+            btnBusy.setEnabled(true);
+        }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        Log.d(LOG_TAG, "onPause()");
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(LOG_TAG, "onDestroy()");
     }
 
     @Override
@@ -561,7 +542,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                 FragmentTransactionManager.getInstance().openFragment(
                         FragmentPacket.MAP);
                 break;
-            case R.id.btnPrelim: 
+            case R.id.btnPrelim:
                  CurrentOrdersFragment
                          .displayOrders(CurrentOrdersFragment.STATE_PRE);
                         FragmentTransactionManager.getInstance()
@@ -599,7 +580,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                 RESULT_SETTINGS);
                 break;
             case R.id.btn_taxometr:
-                taxometerClick();
+                taxometrClick();
                 break;
             case R.id.sendCrash :
                 showConfirmToast(false, "Address");
@@ -611,7 +592,24 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
 
     }
 
-    private void taxometerClick() {
+    public void switchListView(OrdersAdapterDisp4 mAdapter) {
+        if (mapEther != null && llNoEther != null && lvOrders != null
+                && llNoEtherSecond != null) {
+            if (mAdapter.getCount() > 0) {
+                mapEther.setVisibility(View.VISIBLE);
+                llNoEther.setVisibility(View.GONE);
+                lvOrders.setVisibility(View.VISIBLE);
+                llNoEtherSecond.setVisibility(View.GONE);
+            } else {
+                mapEther.setVisibility(View.GONE);
+                llNoEther.setVisibility(View.VISIBLE);
+                lvOrders.setVisibility(View.GONE);
+                llNoEtherSecond.setVisibility(View.VISIBLE);
+            }
+        }
+    }
+
+    private void taxometrClick() {
         LocationManager locationManager;
         locationManager = (LocationManager) ContextHelper.getInstance()
                 .getCurrentActivity()
@@ -629,11 +627,11 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                         Main_taxometr.class));
             else
                 AlertDHelper
-                        .showDialogOk("Использование Таксометра невозможно. Включите GPS.");
+                        .showDialogOk(getResources().getString(R.string.str_use_taxometer_is_not_possible));
         } else
             AlertDHelper
-                    .showDialogOk("Использование Таксометра невозможно. Необходимо войти на смену.");
-    }// end taxometerClick()
+                    .showDialogOk(getResources().getString(R.string.str_use_taxometer_need_to_enter));
+    }// end taxometrClick()
 
     private void exitClick() {
         AlertDialog.Builder builder = new AlertDialog.Builder(
@@ -654,13 +652,13 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                         byte[] body2 = RequestBuilder
                                                 .createPPCUnRegisterOnRelay(
                                                         true, "8",
-                                                        lr.peopleID);
+                                                        loginResponse.peopleID);
                                         byte[] data2 = RequestBuilder
                                                 .createSrvTransfereData(
                                                         RequestBuilder.DEFAULT_CONNECTION_TYPE,
-                                                        lr.srvID,
+                                                        loginResponse.srvID,
                                                         RequestBuilder.DEFAULT_DESTINATION_ID,
-                                                        lr.GUID, true,
+                                                        loginResponse.GUID, true,
                                                         body2);
                                         ConnectionHelper.getInstance()
                                                 .send(data2);
@@ -805,22 +803,22 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
             if (sData.isFree) {
                 System.out.println("send btnBusy");
                 byte[] body2 = RequestBuilder.createBodyPPSChangeState(
-                        "3", 0, lr.peopleID);
+                        "3", 0, loginResponse.peopleID);
                 byte[] data2 = RequestBuilder.createSrvTransfereData(
                         RequestBuilder.DEFAULT_CONNECTION_TYPE,
-                        lr.srvID,
-                        RequestBuilder.DEFAULT_DESTINATION_ID, lr.GUID,
+                        loginResponse.srvID,
+                        RequestBuilder.DEFAULT_DESTINATION_ID, loginResponse.GUID,
                         true, body2);
                 ConnectionHelper.getInstance().send(data2);
             } else {
                 System.out.println("send free");
 
                 byte[] body2 = RequestBuilder.createBodyPPSChangeState(
-                        "0", 0, lr.peopleID);
+                        "0", 0, loginResponse.peopleID);
                 byte[] data2 = RequestBuilder.createSrvTransfereData(
                         RequestBuilder.DEFAULT_CONNECTION_TYPE,
-                        lr.srvID,
-                        RequestBuilder.DEFAULT_DESTINATION_ID, lr.GUID,
+                        loginResponse.srvID,
+                        RequestBuilder.DEFAULT_DESTINATION_ID, loginResponse.GUID,
                         true, body2);
                 ConnectionHelper.getInstance().send(data2);
             }
@@ -890,19 +888,20 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                 new OnNetworkPacketListener() {
                     @Override
                     public void onNetworkPacket(Packet packet) {
-                        lr = (LoginResponse) packet;
-                        NavigatorMenuActivity.setLr(lr);
-                        Log.d(LOG_TAG, "lr=" + lr.answer + " - " + lr.toString());
-                        Log.d(LOG_TAG, "status '" + lr.answer + "'");
-                        Log.d(LOG_TAG, "LOGIN_RESPONCE answer=" + lr.answer);
+                        loginResponse = (LoginResponse) packet;
+                        NavigatorMenuActivity.setLr(loginResponse);
 
-                        if (lr.answer.equals(LoginResponse.ANSWER_OK)) {
+                        Log.d(LOG_TAG, "loginResponse=" + loginResponse.answer + " - " + loginResponse.toString());
+                        Log.d(LOG_TAG, "status '" + loginResponse.answer + "'");
+                        Log.d(LOG_TAG, "LOGIN_RESPONCE answer=" + loginResponse.answer);
+
+                        if (loginResponse.answer.equals(LoginResponse.ANSWER_OK)) {
                             Log.d(LOG_TAG, "login");
 
                             ServerData sData = ServerData.getInstance();
-                            sData.setGuid(lr.GUID);
-                            sData.setPeopleID(lr.peopleID);
-                            sData.setSrvID(lr.srvID);
+                            sData.setGuid(loginResponse.GUID);
+                            sData.setPeopleID(loginResponse.peopleID);
+                            sData.setSrvID(loginResponse.srvID);
 
                             // FragmentTransactionManager.getInstance().back();
 
@@ -911,44 +910,44 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                             byte[] body = RequestBuilder
                                     .createBodyRegisterOnRelay(ServerData
                                                     .getInstance().getNick(), true,
-                                            lr.peopleID);
+                                            loginResponse.peopleID);
                             byte[] data = RequestBuilder
                                     .createSrvTransfereData(
                                             RequestBuilder.DEFAULT_CONNECTION_TYPE,
-                                            lr.srvID,
+                                            loginResponse.srvID,
                                             RequestBuilder.DEFAULT_DESTINATION_ID,
-                                            lr.GUID, true, body);
+                                            loginResponse.GUID, true, body);
                             ConnectionHelper.getInstance().send(data);
 
                             byte[] body2 = RequestBuilder
-                                    .createGetPPCSettingsXML(lr.peopleID);
+                                    .createGetPPCSettingsXML(loginResponse.peopleID);
                             byte[] data2 = RequestBuilder
                                     .createSrvTransfereData(
                                             RequestBuilder.DEFAULT_CONNECTION_TYPE,
-                                            lr.srvID,
+                                            loginResponse.srvID,
                                             RequestBuilder.DEFAULT_DESTINATION_ID,
-                                            lr.GUID, true, body2);
+                                            loginResponse.GUID, true, body2);
                             ConnectionHelper.getInstance().send(data2);
                             // !!!???
 
                             byte[] body4 = RequestBuilder
-                                    .createBodyGetTaxiParkings(lr.peopleID);
+                                    .createBodyGetTaxiParkings(loginResponse.peopleID);
                             byte[] data4 = RequestBuilder
                                     .createSrvTransfereData(
                                             RequestBuilder.DEFAULT_CONNECTION_TYPE,
-                                            lr.srvID,
+                                            loginResponse.srvID,
                                             RequestBuilder.DEFAULT_DESTINATION_ID,
-                                            lr.GUID, true, body4);
+                                            loginResponse.GUID, true, body4);
                             ConnectionHelper.getInstance().send(data4);
 
                             byte[] body5 = RequestBuilder
-                                    .createBodyGetDriverState(lr.peopleID);
+                                    .createBodyGetDriverState(loginResponse.peopleID);
                             byte[] data5 = RequestBuilder
                                     .createSrvTransfereData(
                                             RequestBuilder.DEFAULT_CONNECTION_TYPE,
-                                            lr.srvID,
+                                            loginResponse.srvID,
                                             RequestBuilder.DEFAULT_DESTINATION_ID,
-                                            lr.GUID, true, body5);
+                                            loginResponse.GUID, true, body5);
                             ConnectionHelper.getInstance().send(data5);
                             // Log.d("tag-tag-tag","sended_getDriverState " +
                             // sended);
@@ -986,7 +985,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                             }
                                         }
                                     });
-                        } else if (lr.answer.equals("NoRights")) {
+                        } else if (loginResponse.answer.equals("NoRights")) {
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
                                         @Override
@@ -997,12 +996,12 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                         }
                                     });
 
-                        } else if (lr.answer.equals("error2")) {
+                        } else if (loginResponse.answer.equals("error2")) {
 
                         } else {
                             Log.d(LOG_TAG, "Error login");
                         }
-                        if (!lr.answer.equals(LoginResponse.ANSWER_OK)) {
+                        if (!loginResponse.answer.equals(LoginResponse.ANSWER_OK)) {
                             // ConnectionHelper.getInstance().stop();
                             disconnect();
                             // ContextHelper.getInstance().getCurrentActivity().stopService(new
@@ -1059,7 +1058,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
 
                         Log.i(LOG_TAG, "goted " + pack.toString()); // ok
 
-                        isCanselProgressDialog = true;
+                        isCancelProgressDialog = true;
 
                         Log.d(LOG_TAG, "RELAY_RESPONSE = " + pack.getRelayAnswerType());
 
@@ -1773,21 +1772,21 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                     public void run() {
                                         int count = 0;
                                         int index = -1;
-                                        for (DispOrder4 dispord : orders) {
+                                        for (DispOrder4 dispord : mOrders) {
                                             if (dispord.orderID == pack.orderID) {
                                                 Log.w("ETHER ORDER ANSWER",
                                                         String.valueOf(pack.orderID));
                                                 index = count;
-                                                // orders.remove(dispord);
+                                                // mOrders.remove(dispord);
                                                 break;
                                             }
                                             count++;
                                         }
                                         if (index > -1)
-                                            orders.remove(index);
+                                            mOrders.remove(index);
 
                                         //mAdapter.notifyDataSetChanged();
-                                        mAdapter.updateMyList(orders);
+                                        mAdapter.updateMyList(mOrders);
                                         switchListView(mAdapter);
 
 										/*System.out.println("state "
@@ -1799,7 +1798,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                                 Order.STATE_MISSED);
 
                                         //mAdapter.notifyDataSetChanged();
-                                        mAdapter.updateMyList(orders);
+                                        mAdapter.updateMyList(mOrders);
                                         switchListView(mAdapter);
 
                                         if (sharedPrefs.getBoolean(
@@ -2013,16 +2012,16 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                         });
                             }
 
-                            for (DispOrder4 orde : orders) {
+                            for (DispOrder4 orde : mOrders) {
                                 if (orde.orderID == mOrder.orderID) {
-                                    orders.remove(orde);
+                                    mOrders.remove(orde);
                                     ContextHelper.getInstance()
                                             .runOnCurrentUIThread(
                                                     new Runnable() {
                                                         @Override
                                                         public void run() {
                                                             //mAdapter.notifyDataSetChanged();
-                                                            mAdapter.updateMyList(orders);
+                                                            mAdapter.updateMyList(mOrders);
                                                             switchListView(mAdapter);
                                                             if (sharedPrefs
                                                                     .getBoolean(
@@ -2075,10 +2074,10 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                 boolean found = false;
                                 int count = 0;
                                 int index = -1;
-                                for (DispOrder4 item : orders) {
+                                for (DispOrder4 item : mOrders) {
                                     if (item.orderID == mOrder.orderID) {
-                                        // orders.remove(item);
-                                        // orders.add(0, mOrder);
+                                        // mOrders.remove(item);
+                                        // mOrders.add(0, mOrder);
                                         index = count;
                                         found = true;
                                         break;
@@ -2086,18 +2085,18 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                     count++;
                                 }
                                 if (index > -1) {
-                                    orders.remove(index);
-                                    orders.add(0, mOrder);
+                                    mOrders.remove(index);
+                                    mOrders.add(0, mOrder);
                                 }
                                 if (!found) {
-                                    orders.add(0, mOrder);
+                                    mOrders.add(0, mOrder);
                                 }
                                 ContextHelper.getInstance()
                                         .runOnCurrentUIThread(new Runnable() {
                                             @Override
                                             public void run() {
                                                 //mAdapter.notifyDataSetChanged();
-                                                mAdapter.updateMyList(orders);
+                                                mAdapter.updateMyList(mOrders);
                                                 switchListView(mAdapter);
                                                 SwipeFragment.ethear.setText("ЭФИР("
                                                         + String.valueOf(orderManager
@@ -2156,10 +2155,10 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
 
                             // isEixist
                             boolean found = false;
-                            for (DispOrder4 item : orders) {
+                            for (DispOrder4 item : mOrders) {
                                 if (item.orderID == mOrder.orderID) {
-                                    orders.remove(item);
-                                    orders.add(0, mOrder);
+                                    mOrders.remove(item);
+                                    mOrders.add(0, mOrder);
                                     found = true;
                                     break;
                                 }
@@ -2168,7 +2167,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                             Log.d(LOG_TAG, "checkpoint1");
 
                             if (!found) {
-                                orders.add(0, mOrder);
+                                mOrders.add(0, mOrder);
                             }
 
                             new Thread(new Runnable() {
@@ -2191,9 +2190,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                                                         .cancelNotif(
                                                                                 mOrder.orderID,
                                                                                 "f3");
-                                                                orders.remove(mOrder);
+                                                                mOrders.remove(mOrder);
                                                                 //mAdapter.notifyDataSetChanged();
-                                                                mAdapter.updateMyList(orders);
+                                                                mAdapter.updateMyList(mOrders);
                                                                 switchListView(mAdapter);
 
                                                                 if (orderManager
@@ -2251,7 +2250,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                         @Override
                                         public void run() {
                                             //mAdapter.notifyDataSetChanged();
-                                            mAdapter.updateMyList(orders);
+                                            mAdapter.updateMyList(mOrders);
                                             switchListView(mAdapter);
                                             if (sharedPrefs.getBoolean(
                                                     "prefIsAutoSearch", false)) // autosearch
@@ -2292,7 +2291,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                     }
 
                     private void cancelOrder(int orderID) {
-                        for (DispOrder4 ord : orders) {
+                        for (DispOrder4 ord : mOrders) {
                             if (ord.orderID == orderID) {
                                 OrderManager.getInstance().changeOrderState(
                                         orderID, Order.STATE_CANCELLED);
@@ -2508,7 +2507,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
             public void run() {
                 boolean quit = false;
                 for (int i = 0; i < 100; i++) {
-                    if (isCanselProgressDialog) {
+                    if (isCancelProgressDialog) {
                         progress.dismiss();
                         return;
                     }
@@ -2765,5 +2764,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
             else
                 return 1;
         }
+    }
+
+    private static class ViewHolder {
+        TextView text;
     }
 }

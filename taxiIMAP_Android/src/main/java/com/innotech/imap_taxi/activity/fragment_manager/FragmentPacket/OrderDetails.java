@@ -195,16 +195,16 @@ public class OrderDetails extends FragmentPacket {
 		route = (LinearLayout) myView.findViewById(R.id.routeLL);
 
 		btnArrived = (Button) myView.findViewById(R.id.btn_arrived);
-		// btnArrived1 = (Button) myView.findViewById(R.id.btn_arrived1);
+		// btnArrived1 = (Button) view.findViewById(R.id.btn_arrived1);
 		btnDo = (Button) myView.findViewById(R.id.btn_do);
 		btnConnDrivCl = (Button) myView
 				.findViewById(R.id.btn_connectDriverClient);
 
-		// btnNoClient = (Button) myView.findViewById(R.id.btn_noClient);
-		// btnWellDone = (Button) myView.findViewById(R.id.btnWellDone);
+		// btnNoClient = (Button) view.findViewById(R.id.btn_noClient);
+		// btnWellDone = (Button) view.findViewById(R.id.btnWellDone);
 
 		btnDetails = (Button) myView.findViewById(R.id.btn_details);
-		// btnMap = (Button) myView.findViewById(R.id.btn_map);
+		// btnMap = (Button) view.findViewById(R.id.btn_map);
 		btnBack = (Button) myView.findViewById(R.id.btn_back);
 		btnCancel = (Button) myView.findViewById(R.id.btn_cancel_ord);
 		btnAccept = (Button) myView.findViewById(R.id.btn_accept_order);

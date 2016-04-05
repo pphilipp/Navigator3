@@ -1,16 +1,7 @@
 package com.innotech.imap_taxi.model;
 
-/**
- * Created with IntelliJ IDEA.
- * User: u27
- * Date: 9/24/13
- * Time: 4:45 PM
- * To change this template use File | Settings | File Templates.
- */
 public class UIData {
-
     private static UIData instance;
-
     private String balance;
     private String version;
 
@@ -21,8 +12,7 @@ public class UIData {
 
 
     public static UIData getInstance() {
-
-        if(instance==null) {
+        if(instance == null) {
             instance = new UIData();
         }
 

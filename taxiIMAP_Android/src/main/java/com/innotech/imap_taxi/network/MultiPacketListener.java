@@ -6,20 +6,18 @@ import com.innotech.imap_taxi.network.packet.Packet;
 import java.util.*;
 
 /**
- * Created with IntelliJ IDEA.
- * User: Kvest
- * Date: 30.03.13
- * Time: 20:02
- * To change this template use File | Settings | File Templates.
+ * @method getInstance have critical sections
+ * for initialisation/getting singleton instance.
  */
 
 public class MultiPacketListener implements OnNetworkPacketListener {
+    public static final String LOG_TAG = MultiPacketListener.class.getSimpleName();
     private static MultiPacketListener instance;
     private static final Object lock = new Object();
-    private Map<Integer, List<OnNetworkPacketListener>> listeners;
+    private Map<Integer, List<OnNetworkPacketListener>> mListeners;
 
     private MultiPacketListener() {
-        listeners = new HashMap<Integer, List<OnNetworkPacketListener>>();
+        mListeners = new HashMap<Integer, List<OnNetworkPacketListener>>();
     }
 
     public static MultiPacketListener getInstance() {
@@ -33,9 +31,9 @@ public class MultiPacketListener implements OnNetworkPacketListener {
 
     @Override
     public void onNetworkPacket(Packet packet) {
-        Log.w("PACKET", String.valueOf(packet.getId()));
+        Log.d(LOG_TAG, String.valueOf(packet.getId()));
 
-        List<OnNetworkPacketListener> callbacks = listeners.get(packet.getId());
+        List<OnNetworkPacketListener> callbacks = mListeners.get(packet.getId());
         if (callbacks != null) {
             Iterator<OnNetworkPacketListener> iterator = callbacks.iterator();
             while (iterator.hasNext()) {
@@ -46,35 +44,35 @@ public class MultiPacketListener implements OnNetworkPacketListener {
     }
 
     public void clear() {
-        listeners.clear();
+        mListeners.clear();
     }
 
     public void addListener(int packetId, OnNetworkPacketListener listener) {
-        if (listeners.containsKey(packetId)) {
-            List<OnNetworkPacketListener> callbacks = listeners.get(packetId);
+        if (mListeners.containsKey(packetId)) {
+            List<OnNetworkPacketListener> callbacks = mListeners.get(packetId);
             if (!callbacks.contains(listener)) {
                 callbacks.add(listener);
             }
         } else {
             List<OnNetworkPacketListener> callbacks = new LinkedList<OnNetworkPacketListener>();
             callbacks.add(listener);
-            listeners.put(packetId, callbacks);
+            mListeners.put(packetId, callbacks);
         }
     }
 
     public void removeListener(OnNetworkPacketListener listener) {
-        Set<Integer> keys = listeners.keySet();
+        Set<Integer> keys = mListeners.keySet();
         Iterator<Integer> iterator = keys.iterator();
         while (iterator.hasNext()) {
             Integer key = iterator.next();
-            if (listeners.get(key).remove(listener)){
-                Log.w("remove success", String.valueOf(key));
+            if (mListeners.get(key).remove(listener)){
+                Log.d(LOG_TAG, String.valueOf(key));
             }
         }
     }
 
     public void removeListeners(int packetId) {
-        List<OnNetworkPacketListener> callbacks = listeners.get(packetId);
+        List<OnNetworkPacketListener> callbacks = mListeners.get(packetId);
         if (callbacks != null) {
             callbacks.clear();
         }

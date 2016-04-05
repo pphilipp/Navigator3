@@ -88,7 +88,7 @@ public class GetAddressFragment extends FragmentPacket {
     //houses gridView
     private GridView housesList;
 
-    //cancel/create orders
+    //cancel/create mOrders
     private Button cancel;
     private Button create;
 

@@ -62,7 +62,6 @@ import com.innotech.imap_taxi.utile.DbArchHelper;
 import com.innotech.imap_taxi3.R;
 
 public class ArchivOrdersFragment extends FragmentPacket {
-
 	private static ListView listView_orders;
 	private static Button filter, delete, cleanArchive;
 	private static TextView orderAmountTxt;
@@ -82,7 +81,7 @@ public class ArchivOrdersFragment extends FragmentPacket {
 	private static long minVal;
 	private static long maxVal;
 
-	private final String TAG = "orders";
+	private final String TAG = "mOrders";
 
 	LinearLayout actionBar;
 	public static TextView dateFrom;
@@ -299,7 +298,7 @@ public class ArchivOrdersFragment extends FragmentPacket {
 
 		filter = (Button) myView.findViewById(R.id.btn_filter);
 		delete = (Button) myView.findViewById(R.id.btn_delete);
-		// filterOff = (Button) myView.findViewById(R.id.filter_off);
+		// filterOff = (Button) view.findViewById(R.id.filter_off);
 
 		cleanArchive = (Button) myView.findViewById(R.id.cleanArchive);
 		cleanArchive.setOnClickListener(new View.OnClickListener() {
@@ -332,7 +331,7 @@ public class ArchivOrdersFragment extends FragmentPacket {
 
 		incl = (CheckBox) myView.findViewById(R.id.chkb_incl);
 
-		// add listener for incoming packet of archiv orders
+		// add listener for incoming packet of archiv mOrders
 		MultiPacketListener.getInstance().addListener(
 				Packet.ARCHIV_ORDERS_RESPONSE, new OnNetworkPacketListener() {
 
@@ -382,12 +381,12 @@ public class ArchivOrdersFragment extends FragmentPacket {
 	}
 
 	/**
-	 * Gets archive orders from server between specified dates
+	 * Gets archive mOrders from server between specified dates
 	 * 
 	 * @param from
-	 *            - date from which archive orders will be taken from server
+	 *            - date from which archive mOrders will be taken from server
 	 * @param till
-	 *            - date till which archive orders will be taken from server
+	 *            - date till which archive mOrders will be taken from server
 	 */
 	private static void getArchivOrdersFromServerByDate(long from, long till) {
 

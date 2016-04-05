@@ -19,7 +19,7 @@ import com.innotech.imap_taxi3.R;
 
 public class OrdersFragment extends FragmentPacket {
 
-	private final String TAG = "orders";
+	private final String TAG = "mOrders";
 
 	View myView;
 

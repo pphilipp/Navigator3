@@ -291,7 +291,7 @@ public class ParkingsFragment extends FragmentPacket {
             }
         });
 
-		/*register = (Button) myView.findViewById(R.id.register_on_parking);
+		/*register = (Button) view.findViewById(R.id.register_on_parking);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

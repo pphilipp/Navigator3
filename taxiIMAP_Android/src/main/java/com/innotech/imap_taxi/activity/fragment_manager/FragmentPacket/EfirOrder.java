@@ -266,7 +266,7 @@ public class EfirOrder extends FragmentPacket {
 					Log.d("XML", "FirstTimeSearch = "
 							+ SettingsFromXml.getInstance()
 									.getFirstTimeSearch());
-					Log.d("XML", "Own orders = "
+					Log.d("XML", "Own mOrders = "
 							+ SettingsFromXml.getInstance().isShowYourOrders());
 					int millis = (SettingsFromXml.getInstance()
 							.getFirstTimeSearch() != 0) ? SettingsFromXml
@@ -734,16 +734,16 @@ public class EfirOrder extends FragmentPacket {
 		btn25.setBackground(p);
 		btn30.setBackground(p);
 		btnAccept = (Button) myView.findViewById(R.id.btn_accept);
-		// btnCancel = (Button) myView.findViewById(R.id.btn_cancel);
+		// btnCancel = (Button) view.findViewById(R.id.btn_cancel);
 		btnCancel = (LinearLayout) myView.findViewById(R.id.btn_cancel);
 		declineTxt = (TextView) myView.findViewById(R.id.declineTxt);
 		timerTxt = (TextView) myView.findViewById(R.id.timeTxt);
-		// btnDetails = (Button) myView.findViewById(R.id.btn_details);
+		// btnDetails = (Button) view.findViewById(R.id.btn_details);
 		imgSource = (ImageView) myView.findViewById(R.id.img_source);
 		commentsImage = (ImageView) myView.findViewById(R.id.commentImage);
 		// ExtraInfo btn (pencil)
 		extraInfoBtn = (ImageView) myView.findViewById(R.id.extraInfoBtn);
-		// date = (TextView) myView.findViewById(R.id.date);
+		// date = (TextView) view.findViewById(R.id.date);
 		time = (TextView) myView.findViewById(R.id.time);
 		region = (TextView) myView.findViewById(R.id.addressFrom);
 		distance = (TextView) myView.findViewById(R.id.distance);
