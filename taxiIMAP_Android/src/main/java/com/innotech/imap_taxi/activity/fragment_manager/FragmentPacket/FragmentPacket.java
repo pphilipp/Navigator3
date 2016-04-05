@@ -3,14 +3,9 @@ package com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket;
 import android.support.v4.app.Fragment;
 
 /**
- * Created with IntelliJ IDEA.
- * User: SV_LTD
- * Date: 9/21/13
- * Time: 12:53 PM
- * To change this template use File | Settings | File Templates.
+ * This class is holder for each app fragments.
  */
 public abstract class FragmentPacket extends Fragment {
-
     private int id;
     private int backFragment = 11;
     public static final int SWIPE = 0;
@@ -22,13 +17,10 @@ public abstract class FragmentPacket extends Fragment {
     public static final int ORDERS = 7;
     public static final int CURRENTORDERS = 8;
     public static final int ARCHIV = 9;
-    
-    
     public static final int TAXOMETR = 10;
     public static final int TAXOMETR_ClASSES_TARIF = 11;
     public static final int TAXOMETR_TARIFS = 12;
     public static final int TAXOMETR_ACCEPT_TARIF = 13;
-
     public static final int OWN_ORDER = 14;
     public static final int GET_ADDRESS = 15;
     public static final int PARKING_CARD_FRAGMENT = 16;

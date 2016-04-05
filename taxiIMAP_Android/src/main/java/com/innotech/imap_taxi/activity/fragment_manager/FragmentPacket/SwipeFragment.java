@@ -102,7 +102,6 @@ import java.util.List;
 
 public class SwipeFragment extends FragmentPacket implements OnTouchListener, OnClickListener {
     public static final String  LOG_TAG = SwipeFragment.class.getSimpleName();
-
     private static final int RESULT_SETTINGS = 1;
     public static boolean reCon = false;
     private PlaySound play;
@@ -111,27 +110,29 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     static public Button ethear;
     static public Button myOwnOrder;
     static public Button parkings;
-    Button busy;
+    Button btnBusy;
     Button btnOrder;
-    Button closeConnection;
+    Button btnCloseConnection;
     Button btnPrefs;
     Button btnTaxoMetr;
-    Button map;
+    Button btnMap;
     Button btnOrders;
-    Button zoomIn;
+    Button btnZoomIn;
     Button btnPrelim;
-    Button zoomOut;
+    Button btnZoomOut;
     Button btnTest;
     Button btnSendCrash;
-    ToggleButton hide;
-    private TextView balance;
-    private TextView version;
-    private String alertText;
-    private boolean exit;
-    private boolean cansel_progress_dialog;
+    ToggleButton toggleBtnHide;
+    private TextView tvBalance;
+    private TextView tvVersion;
+    private String mAlertText;
+    private boolean isExit;
+    private boolean isCanselProgressDialog;
     View myView;
     static public boolean open = false;
-    View first, second, vMap = null;
+    View first = null;
+    View second = null;
+    View  vMap = null;
     AlertDialog.Builder builder;
     AlertDialog dialog;
     private GoogleMap mMap;
@@ -139,16 +140,17 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     boolean updateMyLoc;
     ArrayList<LatLng> lg;
     ListView mapEther;
-    LinearLayout noEther, noEther_second;
+    LinearLayout llNoEther;
+    LinearLayout llNoEtherSecond;
     public OrdersAdapterDisp4 mAdapter;
     VerticalSeekBar zoomBar;
     List<DispOrder4> orders;
     SharedPreferences sharedPrefs;
     OrderManager orderManager;
-    int i;
     private boolean isOrderYours = false;
-    private ListView orders_listView;
+    private ListView lvOrders;
     protected boolean xmlOk = false;
+    int i;
     private Button back, refresh;
     ServerData sData;
     Boolean etherIsVisible;
@@ -161,8 +163,8 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
         if (v instanceof Button) {
             MediaPlayer mMediaPlayer = MediaPlayer.create(ContextHelper.getInstance().getCurrentContext(),
                     R.raw.msg_stat_pos);
-            mMediaPlayer.start();
-//            v.playSoundEffect(android.view.SoundEffectConstants.CLICK);
+            //TODO Fix: on android 5.1 mMediaPleyar random executed.
+//            mMediaPlayer.start();
         }
         return false;
     }
@@ -215,9 +217,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
             ethear.setText("ЭФИР("
                     + OrderManager.getInstance().getCountOfEfirOrders() + ")");
         if (StateObserver.getInstance().getDriverState() == StateObserver.DRIVER_BUSY) {
-            busy.setEnabled(false);
+            btnBusy.setEnabled(false);
         } else {
-            busy.setEnabled(true);
+            btnBusy.setEnabled(true);
         }
     }
 
@@ -234,18 +236,18 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     }
 
     public void switchListView(OrdersAdapterDisp4 mAdapter) {
-        if (mapEther != null && noEther != null && orders_listView != null
-                && noEther_second != null) {
+        if (mapEther != null && llNoEther != null && lvOrders != null
+                && llNoEtherSecond != null) {
             if (mAdapter.getCount() > 0) {
                 mapEther.setVisibility(View.VISIBLE);
-                noEther.setVisibility(View.GONE);
-                orders_listView.setVisibility(View.VISIBLE);
-                noEther_second.setVisibility(View.GONE);
+                llNoEther.setVisibility(View.GONE);
+                lvOrders.setVisibility(View.VISIBLE);
+                llNoEtherSecond.setVisibility(View.GONE);
             } else {
                 mapEther.setVisibility(View.GONE);
-                noEther.setVisibility(View.VISIBLE);
-                orders_listView.setVisibility(View.GONE);
-                noEther_second.setVisibility(View.VISIBLE);
+                llNoEther.setVisibility(View.VISIBLE);
+                lvOrders.setVisibility(View.GONE);
+                llNoEtherSecond.setVisibility(View.VISIBLE);
             }
         }
     }
@@ -254,6 +256,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Log.d(LOG_TAG, "onCreateView");
+
         myView = inflater.inflate(R.layout.activity_swipe, container, false);
 
         play = PlaySound.getInstance();
@@ -302,7 +305,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
             vMap = inflater.inflate(R.layout.map_with_ether_fragment, null);
             mapEther = (ListView) vMap.findViewById(R.id.mapEther);
             mapEther.setAdapter(mAdapter);
-            noEther = (LinearLayout) vMap.findViewById(R.id.noEtherLayout);
+            llNoEther = (LinearLayout) vMap.findViewById(R.id.noEtherLayout);
             TextView mapNoEtherTxt = (TextView) vMap.findViewById(R.id.noEther);
             Typeface tf = Typeface.createFromAsset(ContextHelper.getInstance()
                             .getCurrentContext().getAssets(),
@@ -388,9 +391,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
 
         }
 
-        zoomIn = (Button) vMap.findViewById(R.id.zoom_in);
-        zoomOut = (Button) vMap.findViewById(R.id.zoom_out);
-        zoomIn.setOnClickListener(new OnClickListener() {
+        btnZoomIn = (Button) vMap.findViewById(R.id.zoom_in);
+        btnZoomOut = (Button) vMap.findViewById(R.id.zoom_out);
+        btnZoomIn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (mMap != null) {
@@ -398,7 +401,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                 }
             }
         });
-        zoomOut.setOnClickListener(new OnClickListener() {
+        btnZoomOut.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (mMap != null) {
@@ -407,18 +410,18 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
             }
         });
 
-        hide = (ToggleButton) vMap.findViewById(R.id.hide_ether);
-        hide.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        toggleBtnHide = (ToggleButton) vMap.findViewById(R.id.hide_ether);
+        toggleBtnHide.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton,
                                          boolean b) {
                 if (b) {
                     mapEther.setVisibility(View.GONE);
-                    noEther.setVisibility(View.GONE);
+                    llNoEther.setVisibility(View.GONE);
                 } else if (mAdapter.getCount() > 0) {
                     mapEther.setVisibility(View.VISIBLE);
                 } else
-                    noEther.setVisibility(View.VISIBLE);
+                    llNoEther.setVisibility(View.VISIBLE);
             }
         });
     /**
@@ -445,13 +448,13 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
         //Parkings button
         parkings.setOnClickListener(this);
 
-        map = (Button) first.findViewById(R.id.btnmap);
-        map.setTypeface(menuTypeface);
-        map.setOnClickListener(this);
+        btnMap = (Button) first.findViewById(R.id.btnmap);
+        btnMap.setTypeface(menuTypeface);
+        btnMap.setOnClickListener(this);
 
-        busy = (Button) second.findViewById(R.id.btn_busy);
-        busy.setTypeface(menuTypeface);
-        busy.setOnClickListener(this);
+        btnBusy = (Button) second.findViewById(R.id.btn_busy);
+        btnBusy.setTypeface(menuTypeface);
+        btnBusy.setOnClickListener(this);
 
         btnOrder = (Button) second.findViewById(R.id.btn_order);
         btnOrders.setTypeface(menuTypeface);
@@ -461,9 +464,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
         ethear.setTypeface(menuTypeface);
         ethear.setOnClickListener(this);
 
-        balance = (Button) first.findViewById(R.id.balanceButton);
-        balance.setTypeface(menuTypeface);
-        version = (TextView) first.findViewById(R.id.version);
+        tvBalance = (Button) first.findViewById(R.id.balanceButton);
+        tvBalance.setTypeface(menuTypeface);
+        tvVersion = (TextView) first.findViewById(R.id.version);
 
         connection = (Button) first.findViewById(R.id.connection);
         connection.setTypeface(menuTypeface);
@@ -483,11 +486,11 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
 
         // 2
 
-        // version2 = (TextView) second.findViewById(R.id.version);
+        // version2 = (TextView) second.findViewById(R.id.tvVersion);
 
-        closeConnection = (Button) first.findViewById(R.id.exit);
-        closeConnection.setTypeface(menuTypeface);
-        closeConnection.setOnClickListener(this);
+        btnCloseConnection = (Button) first.findViewById(R.id.exit);
+        btnCloseConnection.setTypeface(menuTypeface);
+        btnCloseConnection.setOnClickListener(this);
 
         btnPrefs = (Button) first.findViewById(R.id.btn_prefs);
         btnPrefs.setTypeface(menuTypeface);
@@ -497,11 +500,11 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
         btnTaxoMetr.setTypeface(menuTypeface);
         btnTaxoMetr.setOnClickListener(this);
 
-        orders_listView = (ListView) second.findViewById(R.id.etherList);
-        noEther_second = (LinearLayout) second.findViewById(R.id.noEtherLayout);
-        orders_listView.setAdapter(mAdapter);
+        lvOrders = (ListView) second.findViewById(R.id.etherList);
+        llNoEtherSecond = (LinearLayout) second.findViewById(R.id.noEtherLayout);
+        lvOrders.setAdapter(mAdapter);
         switchListView(mAdapter);
-        orders_listView
+        lvOrders
                 .setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView,
@@ -526,20 +529,19 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
         connection.setBackground((Drawable) p);
         btnOrders.setBackground((Drawable) p);
         myOwnOrder.setBackground((Drawable) p);
-        map.setBackground((Drawable) p);
+        btnMap.setBackground((Drawable) p);
         ((Button) first.findViewById(R.id.balanceButton))
                 .setBackground((Drawable) p);
         btnPrelim.setBackground((Drawable) p);
         btnTaxoMetr.setBackground((Drawable) p);
         parkings.setBackground((Drawable) p);
         btnPrefs.setBackground((Drawable) p);
-        closeConnection.setBackground((Drawable) p);
+        btnCloseConnection.setBackground((Drawable) p);
 
         btnSendCrash.setOnTouchListener(this);
 
         return myView;
     }
-
 
     @Override
     public void onClick(View v) {
@@ -633,7 +635,6 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                     .showDialogOk("Использование Таксометра невозможно. Необходимо войти на смену.");
     }// end taxometerClick()
 
-
     private void exitClick() {
         AlertDialog.Builder builder = new AlertDialog.Builder(
                 ContextHelper.getInstance().getCurrentContext());
@@ -665,7 +666,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                                 .send(data2);
                                     } catch (Exception e) {e.printStackTrace();}
                                 }
-                                exit = true;
+                                isExit = true;
                                 ContextHelper.getInstance()
                                         .getCurrentActivity()
                                         .stopService(new Intent(ContextHelper
@@ -802,7 +803,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                 && !ServerData.getInstance().doOwn) {
             ServerData sData = ServerData.getInstance();
             if (sData.isFree) {
-                System.out.println("send busy");
+                System.out.println("send btnBusy");
                 byte[] body2 = RequestBuilder.createBodyPPSChangeState(
                         "3", 0, lr.peopleID);
                 byte[] data2 = RequestBuilder.createSrvTransfereData(
@@ -885,7 +886,6 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     }// end myOwnOrdersClick()
 
     private void addListeners() {
-        // !!!
         MultiPacketListener.getInstance().addListener(Packet.LOGIN_RESPONCE,
                 new OnNetworkPacketListener() {
                     @Override
@@ -1059,7 +1059,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
 
                         Log.i(LOG_TAG, "goted " + pack.toString()); // ok
 
-                        cansel_progress_dialog = true;
+                        isCanselProgressDialog = true;
 
                         Log.d(LOG_TAG, "RELAY_RESPONSE = " + pack.getRelayAnswerType());
 
@@ -1141,7 +1141,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                             OrderManager.getInstance()
                                                     .clearAllOrders();
 
-                                            if (!exit) {
+                                            if (!isExit) {
                                                 AlertDHelper
                                                         .showDialogOk("Вы сняты со смены");
                                             }
@@ -1149,7 +1149,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                             RunPingAndGeo.getInstance().stop();
 
                                             disconnect();
-                                            if (exit) {
+                                            if (isExit) {
                                                 ContextHelper.getInstance()
                                                         .getCurrentActivity()
                                                         .finish();
@@ -1293,7 +1293,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                         public void run() {
                                             // balanceRefresh.setOnClickListener(null);
                                             // balanceRefresh.setVisibility(View.GONE);
-                                            balance.setVisibility(View.GONE);
+                                            tvBalance.setVisibility(View.GONE);
 
                                         }
                                     });
@@ -1457,7 +1457,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                 new OnNetworkPacketListener() {
             @Override
             public void onNetworkPacket(Packet packet) {
-                Log.d("SERVER_PING_RESP", "ping is activ");
+                Log.d(LOG_TAG, "Test ping response.");
             }
         });
 
@@ -1485,19 +1485,19 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                             .getCountOfOrdersByState(
                                                     Order.STATE_PERFORMING);
                                     if (ordersAmount > 0) {
-                                        alertText = "У вас "
+                                        mAlertText = "У вас "
                                                 + ordersAmount;
                                         if (ordersAmount == 1) {
-                                            alertText += " текущий заказ.";
+                                            mAlertText += " текущий заказ.";
                                         } else if (ordersAmount > 1
                                                 && ordersAmount < 5) {
-                                            alertText += " текущих заказа.";
+                                            mAlertText += " текущих заказа.";
                                         } else {
-                                            alertText += " текущих заказов.";
+                                            mAlertText += " текущих заказов.";
                                         }
-                                        alertText += " Вы можете работать с ними через меню 'Заказ' -> 'Текущие'";
+                                        mAlertText += " Вы можете работать с ними через меню 'Заказ' -> 'Текущие'";
                                         AlertDHelper
-                                                .showDialogOk(alertText);
+                                                .showDialogOk(mAlertText);
                                     }
                                 }
                         });
@@ -1521,22 +1521,18 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                         new Runnable() {
                             @Override
                             public void run() {
-
-                                alertText = "Водитель заблокирован";
+                                mAlertText = "Водитель заблокирован";
 
                                 if (pack.isForever) {
-                                    alertText += " навсегда";
+                                    mAlertText += " навсегда";
                                 } else {
-                                    alertText += " по "
+                                    mAlertText += " по "
                                             + Utils.dateToTimeString(pack.lockTo)
                                             + " "
                                             + Utils.dateToDateString(pack.lockTo);
                                 }
-
-                                alertText += " по причине "
-                                        + pack.lockDescription + ".";
-
-                                AlertDHelper.showDialogOk(alertText);
+                                mAlertText += " по причине " + pack.lockDescription + ".";
+                                AlertDHelper.showDialogOk(mAlertText);
                             }
                     });
                 }
@@ -1751,7 +1747,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                         Runnable r = new Runnable() {
                             @Override
                             public void run() {
-                                balance.setText("Баланс: "
+                                tvBalance.setText("Баланс: "
                                         + getBalance.getSum() + " грн.");
                             }
                         };
@@ -1761,8 +1757,6 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                         // MultiPacketListener.getInstance().removeListeners(Packet.CSBALANCE_RESPONCE);
                     }
                 });
-        // ether
-        // listeners------------------------------------------------------------------------------------------------------
 
         MultiPacketListener.getInstance().addListener(
                 Packet.ETHEAR_ORDER_OVER_ANSWER, new OnNetworkPacketListener() {
@@ -1771,8 +1765,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                     public void onNetworkPacket(Packet packet) {
                         final SearchInEtherOrderOverResponse pack = (SearchInEtherOrderOverResponse) packet;
 
-                        Log.i("IMAP", "goted SearchInEtherOrderOverResponse "
-                                + pack.orderID);
+                        Log.i(LOG_TAG, "goted SearchInEtherOrderOverResponse " + pack.orderID);
 
                         ContextHelper.getInstance().runOnCurrentUIThread(
                                 new Runnable() {
@@ -1841,8 +1834,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                     public void onNetworkPacket(Packet packet) {
                         final TCPMessageResponce pack = (TCPMessageResponce) packet;
 
-                        Log.i("IMAP", "goted TCPMESSAGE_RESPONCE "
-                                + pack.orderID);
+                        Log.i(LOG_TAG, "goted TCPMESSAGE_RESPONCE " + pack.orderID);
                         ContextHelper.getInstance().runOnCurrentUIThread(
                                 new Runnable() {
                                     @Override
@@ -1885,7 +1877,6 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
 
                                             return;
                                         }
-
 
                                         List<Order> taken = OrderManager
                                                 .getInstance()
@@ -1977,6 +1968,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                             + " " + mOrder.house, "")) {
                                 return;
                             }
+
                             if (!mOrder.folder.equals(Order.FOLDER_NOT_DONE)
                                     && !mOrder.folder
                                     .equals(Order.FOLDER_TRASH)
@@ -2020,6 +2012,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                             }
                                         });
                             }
+
                             for (DispOrder4 orde : orders) {
                                 if (orde.orderID == mOrder.orderID) {
                                     orders.remove(orde);
@@ -2063,7 +2056,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                         .openFragment(
                                                 FragmentPacket.ORDER_DETAILS);
                             } else {
-                                System.out.println("!!!!!!!!! OK !!!!!!!!");
+                                Log.d(LOG_TAG, "!!!!!!!!! OK !!!!!!!!");
                             }
 
                         } else if (mOrder.orderType.equals("FindDriver1")
@@ -2143,6 +2136,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                             mOrder.orderID + "");
                                 }
                             }
+
                             // !!!add condition
                             if (FragmentTransactionManager.getInstance()
                                     .getId() != 4) {
@@ -2170,7 +2164,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                     break;
                                 }
                             }
+
                             Log.d(LOG_TAG, "checkpoint1");
+
                             if (!found) {
                                 orders.add(0, mOrder);
                             }
@@ -2183,7 +2179,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                         Thread.sleep(SettingsFromXml
                                                 .getInstance()
                                                 .getThirdTimeSearch());
+
                                         Log.d(LOG_TAG, "upd ethear adapter");
+
                                         ContextHelper.getInstance()
                                                 .runOnCurrentUIThread(
                                                         new Runnable() {
@@ -2244,7 +2242,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                                     }
                                 }
                             }).start();
+
                             Log.d(LOG_TAG, "checkpoint2");
+
                             // notify
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
@@ -2508,7 +2508,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
             public void run() {
                 boolean quit = false;
                 for (int i = 0; i < 100; i++) {
-                    if (cansel_progress_dialog) {
+                    if (isCanselProgressDialog) {
                         progress.dismiss();
                         return;
                     }
@@ -2617,12 +2617,12 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
 
         Log.d(LOG_TAG, "onResume()");
 
-        exit = false;
-        balance.setText(getResources().getString(R.string.str_balance)
+        isExit = false;
+        tvBalance.setText(getResources().getString(R.string.str_balance)
                 + UIData.getInstance().getBalance()
                 + getResources().getString(R.string.str_UA_money));
 
-        version.setText("v. " + UIData.getInstance().getVersion());
+        tvVersion.setText("v. " + UIData.getInstance().getVersion());
         // version2.setText("v. " + UIData.getInstance().getVersion());
         if (PreferenceManager.getDefaultSharedPreferences(
                 ContextHelper.getInstance().getCurrentActivity()).getBoolean(

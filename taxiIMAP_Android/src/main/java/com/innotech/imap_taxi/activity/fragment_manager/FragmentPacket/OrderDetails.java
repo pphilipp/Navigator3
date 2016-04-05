@@ -1002,7 +1002,7 @@ public class OrderDetails extends FragmentPacket {
 	}
 
 	private static void setUpButtonsState(Order currentOrder) {
-		//hide all buttons and then show only needed ones
+		//toggleBtnHide all buttons and then show only needed ones
 
 		Log.d(TAG, "OrderState = " + getOrderState(currentOrder));
 		switch (getOrderState(currentOrder)) {

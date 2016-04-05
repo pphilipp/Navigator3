@@ -1085,7 +1085,7 @@ public class OwnOrder extends FragmentPacket {
         }
 
         /**
-         * Set textView visible and hide progressBar
+         * Set textView visible and toggleBtnHide progressBar
          * @param s - String
          */
         @Override

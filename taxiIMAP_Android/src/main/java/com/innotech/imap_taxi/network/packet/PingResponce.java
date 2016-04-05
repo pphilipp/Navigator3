@@ -1,22 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package com.innotech.imap_taxi.network.packet;
 
-
-
-/**
- *
- * @author Kvest
- */
-public class PingResponce extends Packet
-{
-    public PingResponce(byte[] data)
-    {
+public class PingResponce extends Packet {
+    public PingResponce(byte[] data) {
         super(PING_RESPONCE);
-
         parse(data);
     }
 

@@ -150,7 +150,7 @@ public class GetAddressFragment extends FragmentPacket {
             }
         });
 
-        //on street been chosen, hide list of streets and set street name in input
+        //on street been chosen, toggleBtnHide list of streets and set street name in input
         streetListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
