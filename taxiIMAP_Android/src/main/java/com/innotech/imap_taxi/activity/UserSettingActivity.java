@@ -13,27 +13,36 @@ import com.innotech.imap_taxi.helpers.ContextHelper;
 import com.innotech.imap_taxi3.R;
 
 public class UserSettingActivity extends Activity  {
-
 	SharedPreferences sharedPrefs;
 	public static final String KEY_NICK = "prefNick";
 	public static final String KEY_LOGIN = "prefLogin";
 	public static final String KEY_PASS = "prefPass";
-	public static final String KEY_HOST = "prefHost"; 
+	public static final String KEY_HOST = "prefHost";
 	public static final String KEY_PORT = "prefPort";
     public static final String KEY_HOST_SLAVE = "prefHostSlave";
 	public static final String KEY_PORT_SLAVE = "prefPortSlave";
 	public static final String KEY_DISP_PHONE = "prefDispPhone";
 	public static final String KEY_TEXT_SIZE = "prefTextSize";
 	public static final String KEY_VOLUME = "prefVolume";
-
     public static final String KEY_AUTO_SIGN_IN = "prefIsAutoEnter";
     public static final String KEY_AUTO_SEARCH = "prefIsAutoSearch";
     public static final String KEY_AUTO_SEARCH1_NOTIF = "prefAutoSearch1";
     public static final String KEY_AUTO_SEARCH2_NOTIF = "prefAutoSearch2";
     public static final String KEY_ETHER_NOTIF = "prefAutoSearchEfir";
-
-    EditText nick,login,password,serverMaster, serverSlave, portMaster, portSlave, dispatcherPhone, fontSize;
-    CheckBox isAutoSignIn, isEtherCircle, isFirstCircleNotif, isSecondCirlceNotif, isEtherNotif;
+    EditText nick;
+    EditText login;
+    EditText password;
+    EditText serverMaster;
+    EditText serverSlave;
+    EditText portMaster;
+    EditText portSlave;
+    EditText dispatcherPhone;
+    EditText fontSize;
+    CheckBox isAutoSignIn;
+    CheckBox isEtherCircle;
+    CheckBox isFirstCircleNotif;
+    CheckBox isSecondCirlceNotif;
+    CheckBox isEtherNotif;
     SeekBar volume;
     TextView volumeLevel;
 	//private CheckBoxPreference mListPreference;
@@ -62,17 +71,13 @@ public class UserSettingActivity extends Activity  {
         portSlave = (EditText) findViewById(R.id.prefPortSlave);
         dispatcherPhone = (EditText) findViewById(R.id.prefDispPhone);
         fontSize = (EditText) findViewById(R.id.prefFontSize);
-
         isAutoSignIn = (CheckBox) findViewById(R.id.prefIsAutoSignIn);
         isEtherCircle = (CheckBox) findViewById(R.id.prefIsEtherCircle);
         isEtherNotif = (CheckBox) findViewById(R.id.prefIsEtherNotif);
         isFirstCircleNotif = (CheckBox) findViewById(R.id.prefIsFirstCircleNotif);
         isSecondCirlceNotif = (CheckBox) findViewById(R.id.prefIsSecondCircleNotif);
-
         volume = (SeekBar) findViewById(R.id.prefVolume);
-
         volumeLevel = (TextView) findViewById(R.id.prefVolumeLevel);
-
         nick.setText(sharedPrefs.getString(KEY_NICK,""));
         login.setText(sharedPrefs.getString(KEY_LOGIN,""));
         password.setText(sharedPrefs.getString(KEY_PASS,""));
@@ -82,11 +87,9 @@ public class UserSettingActivity extends Activity  {
         portSlave.setText(sharedPrefs.getString(KEY_PORT_SLAVE,""));
         dispatcherPhone.setText(sharedPrefs.getString(KEY_DISP_PHONE,""));
         fontSize.setText(sharedPrefs.getString(KEY_TEXT_SIZE, "10"));
-
         int vol = sharedPrefs.getInt(KEY_VOLUME, 50);
         volumeLevel.setText(vol + "%");
         volume.setProgress(vol);
-
         volume.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -113,10 +116,7 @@ public class UserSettingActivity extends Activity  {
 	}
 
 	@Override
-	protected void onResume() {
-		super.onResume();
-
-	}
+	protected void onResume() {super.onResume();}
 
 	@Override
 	protected void onStop() {

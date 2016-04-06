@@ -18,8 +18,6 @@
     <uses-permission android:name="android.permission.PREVENT_POWER_KEY" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-
-
     <supports-screens
         android:anyDensity="true"
         android:largeScreens="true"

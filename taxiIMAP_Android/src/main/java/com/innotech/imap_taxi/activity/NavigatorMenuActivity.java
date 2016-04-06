@@ -34,7 +34,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.crashlytics.android.Crashlytics;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.CurrentOrdersFragment;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.EfirOrder;
@@ -59,258 +58,111 @@ import com.innotech.imap_taxi.ping.MyLocationListener;
 import com.innotech.imap_taxi.ping.PingHelper;
 import com.innotech.imap_taxi.utile.PlaySound;
 import com.innotech.imap_taxi3.R;
-
 import java.util.Iterator;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import io.fabric.sdk.android.Fabric;
 
-public class NavigatorMenuActivity extends FragmentActivity implements Observer {
-
-	// private ImageView serverConnection;
-	static public Button parkings;
-	static public ImageButton myOwnOrder;
-	static public boolean gps;
-	static public boolean doOwn = false;
-	static public TextView activityTitle;
-	// static public RelativeLayout iconLayout;
-	static public LinearLayout iconLayout;
-	static public LinearLayout arhivLayout;
+public class NavigatorMenuActivity extends FragmentActivity implements Observer, View.OnClickListener {
+	public static final String LOG_TAG = NavigatorMenuActivity.class.getSimpleName();
+	public final static int GPS_REQUEST = 100;
+	public static boolean gps;
+	public static LinearLayout iconLayout;
+	public static LinearLayout arhivLayout;
+	public static TextView activityTitle;
 	Listener GPSlistener;
 	boolean reg = false;
 	LocationManager mlocManager;
-	boolean gpsProv, netProv; // fresh flags
 	SharedPreferences sharedPrefs;
 	AlertDialog.Builder builder;
 	AlertDialog dialog;
-	private int num_sat_connected, num_sat_all, i, y;
+	private int num_sat_connected;
+	private int y;
+	private int i;
+	Context mContext;
+	private static LoginResponse mLoginResponse;
+	LocationListener mlocListener;
+	LocationListener mlocListenerNetwork;
+	@Bind(R.id.bt_danger)ImageView danger;
+	@Bind(R.id.digitalClock) CustomDigitalClock digitalClock;
+	@Bind(R.id.gps_indication) ImageView gpsInd;
+	@Bind(R.id.internet_indication) ImageView networkInd;
+	@Bind(R.id.server_indication) ImageView serverInd;
+	@Bind(R.id.parkingImg) ImageView parkingInd;
+	@Bind(R.id.balanceIcon) ImageView balanceInd;
+	@Bind(R.id.driverState) ImageView stateDriverInd;
+	@Bind(R.id.parkingIco)RelativeLayout parkingIco;
+	@Bind(R.id.state_driver) TextView stateDriver;
+	@Bind(R.id.driverNo) TextView driverNo;
+	String tmDevice;
+	boolean isNight;
+
+	static public ImageButton myOwnOrder;
+	static public boolean doOwn = false;
+	private int num_sat_all;
+	boolean gpsProv; // fresh flags
+	// private ImageView serverConnection;
+	// static public RelativeLayout iconLayout;
+	static public Button parkings;
+	boolean netProv;
+	ImageView theme;
 	private PowerManager mgr;
 	private WakeLock wakeLock;
 	private BroadcastReceiver mReceiver;
 	// public static Activity act_navig;
 	private boolean isScreenOn = true;
 	private boolean onPause = false;
-	Context mContext;
-
-	private static LoginResponse lr;
-	
-
-	CustomDigitalClock digitalClock;
-	LocationListener mlocListener, mlocListenerNetwork;
-
-	ImageView gpsInd, networkInd, serverInd, parkingInd, balanceInd,
-			stateDriverInd, theme;
-	TextView stateDriver, driverNo;
-	RelativeLayout parkingIco;
-
-	public final static int GPS_REQUEST = 100;
 	int orderAmount;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main_for_fragment_new);
+		ButterKnife.bind(this);
 
-		//Fabric.with(this, new Crashlytics());
-
-		final TelephonyManager tm = (TelephonyManager) getBaseContext()
-				.getSystemService(Context.TELEPHONY_SERVICE);
-
-		String tmDevice;
-		tmDevice = "" + tm.getDeviceId();
-		
-		Log.d("myLogs", "deviceId = " + tmDevice);
-
+		Log.d(LOG_TAG, "onCreate()");
+		/**
+		 * @tmDevice - field gives system information for Crashlytics.
+		 * */
+		tmDevice = "" + ((TelephonyManager) getBaseContext()
+				.getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId();
 		Crashlytics.setUserIdentifier(tmDevice);
 
+		Log.d(LOG_TAG, "system information for Crashlytics. DeviceId = " + tmDevice);
 		mContext = this;
-		// Log.d("lifcycle", "OnCreate");
-
-		//LogHelper.printLog(ContextHelper.getInstance().getCurrentContext());
-		sharedPrefs = PreferenceManager
-				.getDefaultSharedPreferences(getApplicationContext());
-		if (sharedPrefs.getString(UserSettingActivity.KEY_TEXT_SIZE, "")
-				.equals("")) {
-			Editor ed = sharedPrefs.edit();
-			ed.putString(UserSettingActivity.KEY_TEXT_SIZE, "0");
-			ed.apply();
-		}
-		boolean isNight = sharedPrefs.getBoolean("prefIsNightTheme", false);
-
-		// final String action = Settings.ACTION_LOCATION_SOURCE_SETTINGS;
-		// final String message = "Do you want open GPS setting?";
-		//
-		// builder = new AlertDialog.Builder(NavigatorMenuActivity.this);
-		// builder.setMessage(message)
-		// .setPositiveButton("OK",
-		// new DialogInterface.OnClickListener() {
-		// public void onClick(DialogInterface d, int id) {
-		// startActivity(new Intent(action));
-		// d.dismiss();
-		// }
-		// })
-		// .setNegativeButton("Cancel",
-		// new DialogInterface.OnClickListener() {
-		// public void onClick(DialogInterface d, int id) {
-		// d.cancel();
-		// }
-		// });
-		// builder.create().show();
-		Log.wtf("MultiPacketListener", "clear");
+		initSharedPreference();
 		MultiPacketListener.getInstance().clear();
 
-		if (isNight) {
-			ServerData.getInstance().isNight = true;
-		} else {
-			ServerData.getInstance().isNight = false;
-		}
+		Log.d(LOG_TAG, "MultiPacketListener is clear");
+		initUiTheme();
 
-		if (ServerData.getInstance().isNight) {
-			setTheme(R.style.Theme_NoTitle_Black);
-		} else {
-			setTheme(R.style.Theme_NoTitle);
-		}
-
-		super.onCreate(savedInstanceState);
+		/**System information for Crashlytics.*/
 		Fabric.with(this, new Crashlytics());
-
-		Log.wtf("NavigationMenuActivity", "onCreate");
-		// Log.d("lifcycle", "OnCreate");
 		ContextHelper.getInstance().setCurrentContext(this);
-		setContentView(R.layout.main_for_fragment_new);
+		initTypefaceFontsElements();
+		keepTheScreenOn();
 
-		digitalClock = (CustomDigitalClock) findViewById(R.id.digitalClock);
-		Typeface t = Typeface.createFromAsset(getAssets(),
-				"fonts/TickingTimebombBB.ttf");
-		digitalClock.setTypeface(t);
-
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON,
-				WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-
-		networkInd = (ImageView) findViewById(R.id.internet_indication);
-		serverInd = (ImageView) findViewById(R.id.server_indication);
-		gpsInd = (ImageView) findViewById(R.id.gps_indication);
-		stateDriverInd = (ImageView) findViewById(R.id.driverState);
-		balanceInd = (ImageView) findViewById(R.id.balanceIcon);
-		parkingIco = (RelativeLayout) findViewById(R.id.parkingIco);
-		parkingIco = (RelativeLayout) findViewById(R.id.parkingIco);
-		parkingInd = (ImageView) findViewById(R.id.parkingImg);
-
-		stateDriver = (TextView) findViewById(R.id.state_driver);
-		driverNo = (TextView) findViewById(R.id.driverNo);
-		driverNo.setTypeface(Typeface.createFromAsset(getAssets(),
-				"fonts/digital-7.ttf"));
 		activityTitle = (TextView) findViewById(R.id.activityTitle);
-
-		// actionbar
-		// iconLayout = (RelativeLayout) findViewById(R.id.iconLayout);
 		iconLayout = (LinearLayout) findViewById(R.id.iconLayout);
 		arhivLayout = (LinearLayout) findViewById(R.id.archivLayout);
-		// actionbar
 
 		StateObserver.getInstance().addObserver(this);
 
-		stateDriverInd.setOnClickListener(driverClick);
-
-		gpsInd.setOnClickListener(gpsClick);
-
-		balanceInd.setOnClickListener(balanceClick);
-
-		ImageView danger = (ImageView) findViewById(R.id.bt_danger);
-		danger.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-
-				builder = new AlertDialog.Builder(NavigatorMenuActivity.this);
-
-				builder.setMessage("Синхронизировать сейчас?")
-						.setTitle("Уведомление")
-						.setPositiveButton("Да",
-								new DialogInterface.OnClickListener() {
-
-									@Override
-									public void onClick(DialogInterface d,
-											int which) {
-										AlertDialog dialog = builder.create();
-										dialog.setCancelable(false);
-										dialog.show();
-
-										if (ConnectionHelper.getInstance()
-												.isConnected()) {
-
-											RequestHelper.dangerWarning();
-
-											final ProgressDialog progress = new ProgressDialog(
-													NavigatorMenuActivity.this);
-											progress.setTitle("Уведомление");
-											progress.setMessage("Синхронизация");
-											progress.setCancelable(false);
-											progress.show();
-
-											new Thread(new Runnable() {
-
-												@Override
-												public void run() {
-
-													/*
-													 * ContextHelper.getInstance(
-													 * )
-													 * .runOnCurrentUIThread(new
-													 * Runnable() {
-													 * 
-													 * @Override public void
-													 * run() { } });
-													 */
-
-													try {
-														Thread.sleep(3000);
-														progress.dismiss();
-													} catch (InterruptedException e) {
-														// TODO Auto-generated
-														// catch block
-														e.printStackTrace();
-													}
-
-												}
-											}).start();
-										} else {
-											Toast.makeText(
-													ContextHelper
-															.getInstance()
-															.getCurrentContext(),
-													"Вы не подключены к серверу!",
-													Toast.LENGTH_LONG).show();
-										}
-
-										dialog.dismiss();
-									}
-								});
-
-				builder.setNegativeButton("Нет",
-						new DialogInterface.OnClickListener() {
-
-							@Override
-							public void onClick(DialogInterface dialog,
-									int which) {
-								dialog.dismiss();
-							}
-						});
-
-				AlertDialog dialog2 = builder.create();
-				dialog2.setCancelable(false);
-				dialog2.show();
-
-			}
-		});
+		stateDriverInd.setOnClickListener(this);
+		gpsInd.setOnClickListener(this);
+		balanceInd.setOnClickListener(this);
+		danger.setOnClickListener(this);
 
 		if (Settings.Secure.getString(getContentResolver(),
 				Settings.Secure.ALLOW_MOCK_LOCATION).equals("0")) {
-			Log.d("NavigationMenuAct", "ALLOW_MOCK_LOCATION 0");
+			Log.d(LOG_TAG, "ALLOW_MOCK_LOCATION 0");
 			getLocUpdates();
 		} else {
 			Log.d("NavigationMenuAct", "ALLOW_MOCK_LOCATION 1");
-			// LogHelper.w_gps("ALLOW_MOCK_LOCATION 1");
 			try {
 				AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
@@ -327,8 +179,7 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer 
 						});
 
 				if (ServerData.getInstance().IS_TEST_BUILD) {
-					Log.d("NavigationMenuAct", "test build");
-					// LogHelper.w_gps("test build");
+					Log.d(LOG_TAG, "test build");
 					builder.setNegativeButton("Нет", new OnClickListener() {
 
 						@Override
@@ -346,13 +197,6 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer 
 				e.printStackTrace();
 			}
 		}
-
-		// ConnectivityManager connectivityManager = (ConnectivityManager)
-		// getSystemService(Context.CONNECTIVITY_SERVICE);
-		// NetworkInfo activeNetworkInfo =
-		// connectivityManager.getActiveNetworkInfo();
-		// boolean connected = activeNetworkInfo != null &&
-		// activeNetworkInfo.isConnected();
 
 		// test
 		if (ConnectionHelper.getInstance().isConnected()) {
@@ -379,6 +223,45 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer 
 		}
 		Log.d("lifcycle", "OnCreate");
 	} //END onCreate
+
+	private void initSharedPreference() {
+		sharedPrefs = PreferenceManager
+				.getDefaultSharedPreferences(getApplicationContext());
+
+		if (sharedPrefs.getString(UserSettingActivity.KEY_TEXT_SIZE, "")
+				.equals("")) {
+			Editor ed = sharedPrefs.edit();
+			ed.putString(UserSettingActivity.KEY_TEXT_SIZE, "0");
+			ed.apply();
+		}
+	}
+
+	private void keepTheScreenOn() {
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON,
+				WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+	}
+
+	private void initTypefaceFontsElements() {
+		digitalClock.setTypeface(Typeface.createFromAsset(getAssets(),
+				"fonts/TickingTimebombBB.ttf"));
+		driverNo.setTypeface(Typeface.createFromAsset(getAssets(),
+				"fonts/digital-7.ttf"));
+	}
+
+	private void initUiTheme() {
+		isNight = sharedPrefs.getBoolean("prefIsNightTheme", false);
+
+		if (isNight)
+			ServerData.getInstance().isNight = true;
+		 else
+			ServerData.getInstance().isNight = false;
+
+		if (ServerData.getInstance().isNight)
+			setTheme(R.style.Theme_NoTitle_Black);
+		 else
+			setTheme(R.style.Theme_NoTitle);
+
+	}
 
 	private void getLocUpdates() {
 		mlocListener = new MyLocationListener();
@@ -626,15 +509,8 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer 
 	@Override
 	protected void onResume() {
 		super.onResume();
-		Log.d("catchOnResume", "fragId = menu");
-		Log.d("lifcycle", "onResume");
+		Log.d(LOG_TAG, "onResume");
 		ContextHelper.getInstance().setCurrentContext(mContext);
-		// LogHelper.w_gps("onResume");
-		Log.i("act", "onResume");
-
-		// wakeLock.acquire();
-		// PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
-		// isScreenOn = pm.isScreenOn();
 	}
 
 	protected void onNewIntent(Intent intent) {
@@ -646,7 +522,7 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer 
 	private void processExtraData() {
 		Intent myIntent = getIntent();
 		if (getIntent().getAction() != null) {
-			Log.e("TAG", "@@@ action - " + getIntent().getAction());
+			Log.e(LOG_TAG, "processExtraData() @@@ action - " + getIntent().getAction());
 			if (myIntent.getAction().equals("f1")
 					|| myIntent.getAction().equals("f2")) {
 				FragmentTransactionManager.getInstance().openFragment(
@@ -1082,14 +958,163 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer 
 		}
 	}
 
-	private View.OnClickListener driverClick = new View.OnClickListener() {
-
+	private View.OnClickListener noInternetClick = new View.OnClickListener() {
 		@Override
-		public void onClick(View v) {
+		public void onClick(View view) {
+			Toast.makeText(ContextHelper.getInstance().getCurrentContext(),
+					"Нет подключения к интернет", Toast.LENGTH_LONG).show();
+		}
+	};
 
-			List<Order> ord = OrderManager.getInstance().getOrdersByState(
-					Order.STATE_PERFORMING);
-			switch (StateObserver.getInstance().getDriverState()) {
+	private View.OnClickListener noConnectClick = new View.OnClickListener() {
+		@Override
+		public void onClick(View view) {
+			SwipeFragment.connection.performClick();
+		}
+	};
+
+	private View.OnClickListener connectClick = new View.OnClickListener() {
+		@Override
+		public void onClick(View view) {
+			Toast.makeText(ContextHelper.getInstance().getCurrentContext(),
+					"Вы подключены к серверу", Toast.LENGTH_LONG).show();
+		}
+	};
+
+	public static void setLoginResponse(LoginResponse login) {
+		mLoginResponse = login;
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+			case R.id.driverState: driverStateClick(); break;
+			case R.id.gps_indication: gpsIndicationClick(); break;
+			case R.id.balanceIcon: balanceIconClick(); break;
+			case R.id.bt_danger: dangerClick(); break;
+			default:break;
+		}
+	}
+
+	private void dangerClick() {
+		builder = new AlertDialog.Builder(NavigatorMenuActivity.this);
+		builder.setMessage("Синхронизировать сейчас?")
+				.setTitle("Уведомление")
+				.setPositiveButton("Да",
+						new DialogInterface.OnClickListener() {
+
+							@Override
+							public void onClick(DialogInterface d,
+												int which) {
+								AlertDialog dialog = builder.create();
+								dialog.setCancelable(false);
+								dialog.show();
+
+								if (ConnectionHelper.getInstance()
+										.isConnected()) {
+
+									RequestHelper.dangerWarning();
+
+									final ProgressDialog progress = new ProgressDialog(
+											NavigatorMenuActivity.this);
+									progress.setTitle("Уведомление");
+									progress.setMessage("Синхронизация");
+									progress.setCancelable(false);
+									progress.show();
+
+									new Thread(new Runnable() {
+
+										@Override
+										public void run() {
+
+													/*
+													 * ContextHelper.getInstance(
+													 * )
+													 * .runOnCurrentUIThread(new
+													 * Runnable() {
+													 *
+													 * @Override public void
+													 * run() { } });
+													 */
+
+											try {
+												Thread.sleep(3000);
+												progress.dismiss();
+											} catch (InterruptedException e) {
+												// TODO Auto-generated
+												// catch block
+												e.printStackTrace();
+											}
+
+										}
+									}).start();
+								} else {
+									Toast.makeText(
+											ContextHelper
+													.getInstance()
+													.getCurrentContext(),
+											"Вы не подключены к серверу!",
+											Toast.LENGTH_LONG).show();
+								}
+
+								dialog.dismiss();
+							}
+						});
+
+		builder.setNegativeButton("Нет",
+				new DialogInterface.OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface dialog,
+										int which) {
+						dialog.dismiss();
+					}
+				});
+
+		AlertDialog dialog2 = builder.create();
+		dialog2.setCancelable(false);
+		dialog2.show();
+	}
+
+	private void balanceIconClick() {
+		Toast.makeText(ContextHelper.getInstance().getCurrentContext(),
+				"Ваш баланс: " + UIData.getInstance().getBalance(),
+				Toast.LENGTH_LONG).show();
+	}
+
+	private void gpsIndicationClick() {
+		// TODO Auto-generated method stub
+		if (!mlocManager.isProviderEnabled(LocationManager.GPS_PROVIDER)
+				&& !mlocManager
+				.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+			AlertDialog.Builder builder = new AlertDialog.Builder(
+					ContextHelper.getInstance().getCurrentContext());
+			builder.setMessage(R.string.no_gps_connection)
+					.setPositiveButton(R.string.yes,
+							new DialogInterface.OnClickListener() {
+								public void onClick(DialogInterface dialog,
+													int id) {
+									startActivityForResult(
+											new Intent(
+													Settings.ACTION_LOCATION_SOURCE_SETTINGS),
+											GPS_REQUEST);
+								}
+							})
+					.setNegativeButton(R.string.no,
+							new DialogInterface.OnClickListener() {
+								public void onClick(DialogInterface dialog,
+													int id) {
+									// User cancelled the dialog
+								}
+							});
+			builder.create().show();
+		} else {}
+	}
+
+	private void driverStateClick() {
+		List<Order> ord = OrderManager.getInstance().getOrdersByState(
+				Order.STATE_PERFORMING);
+		switch (StateObserver.getInstance().getDriverState()) {
 			case StateObserver.DRIVER_FREE:
 				runOnUiThread(new Runnable() {
 					@Override
@@ -1097,9 +1122,9 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer 
 
 						//send busy message to server
 
-						byte[] body2 = RequestBuilder.createBodyPPSChangeState("3", 0, lr.peopleID);
-						byte[] data2 = RequestBuilder.createSrvTransfereData(RequestBuilder.DEFAULT_CONNECTION_TYPE, lr.srvID,
-								RequestBuilder.DEFAULT_DESTINATION_ID, lr.GUID, true, body2);
+						byte[] body2 = RequestBuilder.createBodyPPSChangeState("3", 0, mLoginResponse.peopleID);
+						byte[] data2 = RequestBuilder.createSrvTransfereData(RequestBuilder.DEFAULT_CONNECTION_TYPE, mLoginResponse.srvID,
+								RequestBuilder.DEFAULT_DESTINATION_ID, mLoginResponse.GUID, true, body2);
 						ConnectionHelper.getInstance().send(data2);
 
 						stateDriver.setText("ЗАНЯТ");
@@ -1119,6 +1144,7 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer 
 					}
 				});
 				break;
+
 			case StateObserver.DRIVER_BUSY:
 				if (OrderManager.getInstance().getCountOfOrdersByState(
 						Order.STATE_PERFORMING) < 1) {
@@ -1127,9 +1153,9 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer 
 						public void run() {
 
 							//send free message to server
-							byte[] body2 = RequestBuilder.createBodyPPSChangeState("0", 0, lr.peopleID);
-							byte[] data2 = RequestBuilder.createSrvTransfereData(RequestBuilder.DEFAULT_CONNECTION_TYPE, lr.srvID,
-									RequestBuilder.DEFAULT_DESTINATION_ID, lr.GUID, true, body2);
+							byte[] body2 = RequestBuilder.createBodyPPSChangeState("0", 0, mLoginResponse.peopleID);
+							byte[] data2 = RequestBuilder.createSrvTransfereData(RequestBuilder.DEFAULT_CONNECTION_TYPE, mLoginResponse.srvID,
+									RequestBuilder.DEFAULT_DESTINATION_ID, mLoginResponse.GUID, true, body2);
 							ConnectionHelper.getInstance().send(data2);
 
 							stateDriver.setText("СВОБОДЕН");
@@ -1159,100 +1185,6 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer 
 				}
 
 				break;
-			}
 		}
-	};
-
-	private View.OnClickListener gpsClick = new View.OnClickListener() {
-
-		@Override
-		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			if (!mlocManager.isProviderEnabled(LocationManager.GPS_PROVIDER)
-					&& !mlocManager
-							.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
-				AlertDialog.Builder builder = new AlertDialog.Builder(
-						ContextHelper.getInstance().getCurrentContext());
-				builder.setMessage(R.string.no_gps_connection)
-						.setPositiveButton(R.string.yes,
-								new DialogInterface.OnClickListener() {
-									public void onClick(DialogInterface dialog,
-											int id) {
-										startActivityForResult(
-												new Intent(
-														Settings.ACTION_LOCATION_SOURCE_SETTINGS),
-												GPS_REQUEST);
-									}
-								})
-						.setNegativeButton(R.string.no,
-								new DialogInterface.OnClickListener() {
-									public void onClick(DialogInterface dialog,
-											int id) {
-										// User cancelled the dialog
-									}
-								});
-				builder.create().show();
-			} else {
-			}
-		}
-	};
-
-	private View.OnClickListener balanceClick = new View.OnClickListener() {
-		@Override
-		public void onClick(View view) {
-			Toast.makeText(ContextHelper.getInstance().getCurrentContext(),
-					"Ваш баланс: " + UIData.getInstance().getBalance(),
-					Toast.LENGTH_LONG).show();
-		}
-	};
-
-	private View.OnClickListener noInternetClick = new View.OnClickListener() {
-		@Override
-		public void onClick(View view) {
-			Toast.makeText(ContextHelper.getInstance().getCurrentContext(),
-					"Нет подключения к интернет", Toast.LENGTH_LONG).show();
-		}
-	};
-
-	private View.OnClickListener noConnectClick = new View.OnClickListener() {
-		@Override
-		public void onClick(View view) {
-			SwipeFragment.connection.performClick();
-		}
-	};
-
-	private View.OnClickListener connectClick = new View.OnClickListener() {
-		@Override
-		public void onClick(View view) {
-			Toast.makeText(ContextHelper.getInstance().getCurrentContext(),
-					"Вы подключены к серверу", Toast.LENGTH_LONG).show();
-		}
-	};
-
-	public static void setLr(LoginResponse login) {
-		lr = login;
 	}
-	/*
-	 * @Override public boolean onCreateOptionsMenu(Menu menu) { menu.add(0, 0,
-	 * 0, "Обновить"); return super.onCreateOptionsMenu(menu); }
-	 * 
-	 * @Override public boolean onOptionsItemSelected(MenuItem item) { //
-	 * ContextHelper.getInstance().getCurrentActivity().finish(); /*if
-	 * (ConnectionHelper.getInstance().isConnected()){
-	 * ConnectionHelper.getInstance(). }
-	 */
-	/*
-	 * Intent intent = new
-	 * Intent(ContextHelper.getInstance().getCurrentContext(),
-	 * NavigatorMenuActivity.class);
-	 * ContextHelper.getInstance().getCurrentActivity
-	 * ().overridePendingTransition(0, 0);
-	 * intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); finish();
-	 * /*ContextHelper
-	 * .getInstance().getCurrentActivity().overridePendingTransition(0, 0);
-	 * 
-	 * ContextHelper.getInstance().getCurrentActivity().startActivity(intent);
-	 * 
-	 * return super.onOptionsItemSelected(item); }
-	 */
 }

@@ -75,7 +75,7 @@
           <device id="Nexus 4" />
           <device id="Nexus 10" />
         </devices>
-        <target>android-22</target>
+        <target>android-23</target>
       </config>
     </shared>
     <layouts>
@@ -101,81 +101,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9b034be-17bf-4e82-8de3-7a79a16e4d46" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/helpers/ContextHelper$1.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$1$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$2.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$3.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$4.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$5.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$6.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$7.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$8.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$9.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$ViewHolder.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/helpers/ContextHelper.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/helpers/ContextHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/CurrentOrdersFragment$2.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/CurrentOrdersFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/CurrentOrdersFragment$9.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/CurrentOrdersFragment$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/CurrentOrdersFragment.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/CurrentOrdersFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/EfirOrder$2.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/EfirOrder$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/EthearFragment.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/EthearFragment.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$1$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$1$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$31$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$31$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$32$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$32$2.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/network/packet/LoginResponse.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/network/packet/LoginResponse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/network/MultiPacketListener.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/network/MultiPacketListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$10.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$11.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$12.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$13.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$14.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$15.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$16.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$17.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$17.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$18.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$19.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$2.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$20.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$20.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$21.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$21.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$22.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$22.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$23.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$23.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$24.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$24.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$25.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$25.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$26.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$26.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$27.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$27.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$28.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$28.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$29.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$29.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$3.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$30.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$30.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$31.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$31.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$32.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$32.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/OrdersFragment.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/OrdersFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$string.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$style.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$styleable.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$xml.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$xml.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/Swipe$SectionsPagerAdapter.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/Swipe$SectionsPagerAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$33.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$33.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$34.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$34.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$35.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$35.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$36.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$36.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$4.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$5.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$6.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$7.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$8.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$9.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$10.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$11.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$11.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$12.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$13.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$14.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$15.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$16.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$17.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$18.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$19.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$19.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$2.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$20.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$20.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$21.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$21.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$22$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$22$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$22.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$22.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$23$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$23$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$23.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$23.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$24$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$24$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$24.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$24.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$25$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$25$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$25$2.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$25$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$25$3.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$25$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$25$4.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$25$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$25$5.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$25$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$25.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$25.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$26$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$26$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$26$2.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$26$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$26.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$26.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$27.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$27.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$28$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$28$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$28.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$28.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$29$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$29$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$29.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$29.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$3.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$30.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$30.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$31.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$31.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$4.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$5.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$6.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$7.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$8.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$9.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$ListViewComparator.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$ListViewComparator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$SamplePagerAdapter.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$SamplePagerAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$ViewHolder.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment$ViewHolder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/model/UIData.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/model/UIData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/UserSettingActivity$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/UserSettingActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/UserSettingActivity.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/UserSettingActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/debug_b007d741d141b0632b9704a28e80d182d7382461.jar" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/debug_b007d741d141b0632b9704a28e80d182d7382461.jar" />
@@ -185,30 +171,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/outputs/apk/taxiIMAP_Android-debug-unaligned.apk" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/outputs/apk/taxiIMAP_Android-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/outputs/apk/taxiIMAP_Android-debug.apk" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/outputs/apk/taxiIMAP_Android-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ArchivOrdersFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/helpers/ContextHelper.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/helpers/ContextHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/CurrentOrdersFragment.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/CurrentOrdersFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/EfirOrder.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/EfirOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/EthearFragment.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/EthearFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/FragmentPacket.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/FragmentPacket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/GetAddressFragment.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/GetAddressFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/packet/LoginResponse.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/packet/LoginResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/MapFragment.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/MapFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/MultiPacketListener.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/MultiPacketListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/OnNetworkPacketListener.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/OnNetworkPacketListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/OrderDetails.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/OrderDetails.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/OrdersFragment.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/OrdersFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ParkingsFragment.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/ParkingsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/generated/source/r/debug/com/innotech/imap_taxi3/R.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/generated/source/r/debug/com/innotech/imap_taxi3/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/symbols/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/NavigatorMenuActivity.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/NavigatorMenuActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/TaxometrFragment.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/TaxometrFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/model/UIData.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/model/UIData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/UserSettingActivity.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/UserSettingActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/assets/debug/crashlytics-build.properties" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/assets/debug/crashlytics-build.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/outputs/logs/manifest-merger-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -239,126 +209,129 @@
     <favorites_list name="Navigator3" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3291039">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="SwipeFragment.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7487437">
-                  <caret line="145" column="27" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#6570#6571#0" expanded="true" />
-                    <element signature="e#6598#6599#0" expanded="true" />
-                    <element signature="e#7894#7900#0" expanded="true" />
-                    <element signature="e#9288#9652#0" expanded="true" />
-                    <element signature="e#9651#9652#0" expanded="true" />
-                    <element signature="e#9987#10277#0" expanded="true" />
-                    <element signature="e#10276#10277#0" expanded="true" />
-                    <element signature="e#12184#12422#0" expanded="true" />
-                    <element signature="e#12421#12422#0" expanded="true" />
-                    <element signature="e#12463#12702#0" expanded="true" />
-                    <element signature="e#12701#12702#0" expanded="true" />
-                    <element signature="e#12830#13378#0" expanded="true" />
-                    <element signature="e#13377#13378#0" expanded="true" />
-                    <element signature="e#16278#16737#0" expanded="true" />
-                    <element signature="e#16736#16737#0" expanded="true" />
-                    <element signature="method#onStart#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#onTouch#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#onViewStateRestored#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#onPause#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#onDestroy#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#onClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#switchListView#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#taxometrClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#exitClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#testClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#connectionClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#busyClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#myOwnOrdersClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#showConfirmToast#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="e#124688#124785#0" expanded="true" />
-                    <element signature="e#124896#124997#0" expanded="true" />
-                    <element signature="method#updateMyOrders#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#connect#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#disconnect#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#isServiceRunning#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#onResume#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="e#133652#133698#0" expanded="true" />
-                    <element signature="e#133769#133816#0" expanded="true" />
-                    <element signature="class#SamplePagerAdapter#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#drawRouteIfExist#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#startTimerForNotification#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#compare#0;class#ListViewComparator#0;class#SwipeFragment#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="SwipeFragment.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="897" column="44" selection-start-line="897" selection-start-column="44" selection-end-line="897" selection-end-column="44" />
-                  <folding>
-                    <element signature="e#7894#7900#0" expanded="true" />
-                    <element signature="method#onStart#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#onTouch#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#onViewStateRestored#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#onPause#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#onDestroy#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#onClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#switchListView#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#taxometrClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#exitClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#testClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#connectionClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#busyClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#myOwnOrdersClick#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="e#35739#43478#0" expanded="true" />
-                    <element signature="e#43477#43478#0" expanded="true" />
-                    <element signature="method#showConfirmToast#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#updateMyOrders#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#connect#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#disconnect#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#isServiceRunning#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#onResume#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="class#SamplePagerAdapter#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#drawRouteIfExist#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#startTimerForNotification#0;class#SwipeFragment#0" expanded="false" />
-                    <element signature="method#compare#0;class#ListViewComparator#0;class#SwipeFragment#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MultiPacketListener.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/MultiPacketListener.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.40201005">
-                  <caret line="19" column="75" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LoginResponse.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/packet/LoginResponse.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="NavigatorMenuActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/NavigatorMenuActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.58542717">
+              <caret line="161" column="25" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
+              <folding>
+                <element signature="method#initSharedPreference#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#keepTheScreenOn#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#initTypefaceFontsElements#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#initUiTheme#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#getLocUpdates#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#onKeyDown#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#onResume#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#onNewIntent#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#processExtraData#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#onPause#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#onStop#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#onDestroy#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#onBackPressed#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#onSaveInstanceState#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#onRestoreInstanceState#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#update#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#onStart#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="e#29461#29462#0" expanded="true" />
+                <element signature="e#29490#29491#0" expanded="true" />
+                <element signature="e#30002#31481#0" expanded="true" />
+                <element signature="e#30630#31207#0" expanded="true" />
+                <element signature="e#31206#31207#0" expanded="true" />
+                <element signature="e#31480#31481#0" expanded="true" />
+                <element signature="e#31524#31688#0" expanded="true" />
+                <element signature="e#31687#31688#0" expanded="true" />
+                <element signature="e#32336#32362#0" expanded="true" />
+                <element signature="e#32388#32400#0" expanded="true" />
+                <element signature="e#32409#32679#0" expanded="true" />
+                <element signature="e#32678#32679#0" expanded="true" />
+                <element signature="e#32705#32716#0" expanded="true" />
+                <element signature="e#32725#32896#0" expanded="true" />
+                <element signature="e#32895#32896#0" expanded="true" />
+                <element signature="e#33953#34094#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FragmentTransactionManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentTransactionManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="190" column="24" selection-start-line="190" selection-start-column="24" selection-end-line="190" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SwipeFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="100" column="26" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="26" />
+              <folding>
+                <element signature="method#onStart#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#onTouch#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#onViewStateRestored#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#onPause#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#onDestroy#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#onClick#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#switchListView#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#taxometrClick#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#exitClick#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#testClick#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#connectionClick#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#busyClick#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#myOwnOrdersClick#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#showConfirmToast#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#updateMyOrders#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#connect#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#disconnect#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#isServiceRunning#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#onResume#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="class#SamplePagerAdapter#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#drawRouteIfExist#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#startTimerForNotification#0;class#SwipeFragment#0" expanded="false" />
+                <element signature="method#compare#0;class#ListViewComparator#0;class#SwipeFragment#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultiPacketListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/MultiPacketListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="75" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_for_fragment_new.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/res/layout/main_for_fragment_new.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.148148">
+              <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/packet/LoginResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -3095,9 +3068,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/taxiIMAP_Android/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/taxiIMAP_Android/src/main/res/drawable/shape_black_back.xml" />
-        <option value="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/NavigatorMenuActivity.java" />
         <option value="$PROJECT_DIR$/taxiIMAP_Android/src/main/res/layout/activity_swipe.xml" />
         <option value="$PROJECT_DIR$/taxiIMAP_Android/src/main/res/layout/main_for_fragment_new.xml" />
         <option value="$PROJECT_DIR$/taxiIMAP_Android/src/main/res/layout/order_comment_fragment.xml" />
@@ -3136,6 +3107,9 @@
         <option value="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/OnNetworkPacketListener.java" />
         <option value="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/MultiPacketListener.java" />
         <option value="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/packet/LoginResponse.java" />
+        <option value="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/UserSettingActivity.java" />
+        <option value="$PROJECT_DIR$/taxiIMAP_Android/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/NavigatorMenuActivity.java" />
       </list>
     </option>
   </component>
@@ -3154,9 +3128,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
-    <option name="y" value="-4" />
+    <option name="y" value="21" />
     <option name="width" value="1303" />
-    <option name="height" value="772" />
+    <option name="height" value="747" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -3182,6 +3156,70 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Navigator3" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Navigator3" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taxiIMAP_Android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Navigator3" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taxiIMAP_Android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Navigator3" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taxiIMAP_Android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Navigator3" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3322,189 +3360,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxiIMAP_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imap_taxi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="network" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxiIMAP_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imap_taxi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="network" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="postRequests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxiIMAP_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imap_taxi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="network" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="packet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxiIMAP_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imap_taxi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxiIMAP_Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imap_taxi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fragment_manager" />
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3528,70 +3384,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxiIMAP_Android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxiIMAP_Android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taxiIMAP_Android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Navigator3" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3796,7 +3588,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459854576748</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update: Some clean code style.">
+      <created>1459867903481</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1459867903481</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -3809,12 +3607,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="-4" width="1303" height="772" extended-state="6" />
+    <frame x="57" y="21" width="1303" height="747" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50158226" sideWeight="0.49405235" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28481013" sideWeight="0.49405235" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.66613925" sideWeight="0.50594765" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3822,14 +3620,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980174" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980174" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29024583" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20697859" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.65189874" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45094937" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -3838,8 +3636,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18953212" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980174" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24742268" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -3850,11 +3648,11 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40822786" sideWeight="0.49722442" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5648734" sideWeight="0.50277555" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14908803" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
@@ -3873,8 +3671,8 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2038065" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -3891,9 +3689,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update: Implemented onClickListener, rewrite method SwipeFragment-&gt;onCreateView." />
-    <MESSAGE value="Update: Some clean code style." />
     <MESSAGE value="Update: Some clean code style on SwpeFragment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Some clean code style on SwpeFragment." />
+    <MESSAGE value="Update: Some clean code style." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Some clean code style." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3902,104 +3700,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/res/layout/current_orders_new.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22107081">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/CurrentOrdersFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2673268">
-          <caret line="482" column="31" selection-start-line="482" selection-start-column="31" selection-end-line="482" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2323#2324#0" expanded="false" />
-            <element signature="e#2365#2366#0" expanded="false" />
-            <element signature="e#3161#3162#0" expanded="false" />
-            <element signature="e#3188#3189#0" expanded="false" />
-            <element signature="e#4041#4180#0" expanded="false" />
-            <element signature="e#4179#4180#0" expanded="false" />
-            <element signature="e#4379#5084#0" expanded="false" />
-            <element signature="e#5083#5084#0" expanded="false" />
-            <element signature="e#5207#5531#0" expanded="false" />
-            <element signature="e#5530#5531#0" expanded="false" />
-            <element signature="e#5632#5995#0" expanded="false" />
-            <element signature="e#5994#5995#0" expanded="false" />
-            <element signature="e#6079#11516#0" expanded="false" />
-            <element signature="e#7096#11501#0" expanded="false" />
-            <element signature="e#7850#9514#0" expanded="false" />
-            <element signature="e#9513#9514#0" expanded="false" />
-            <element signature="e#9589#11067#0" expanded="false" />
-            <element signature="e#11066#11067#0" expanded="false" />
-            <element signature="e#11139#11375#0" expanded="false" />
-            <element signature="e#11374#11375#0" expanded="false" />
-            <element signature="e#11500#11501#0" expanded="false" />
-            <element signature="e#11515#11516#0" expanded="false" />
-            <element signature="e#16152#16357#0" expanded="false" />
-            <element signature="e#16356#16357#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/datamodel/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
-          <folding>
-            <element signature="e#28264#28265#0" expanded="false" />
-            <element signature="e#28296#28297#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/WatchSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/packet/ServerErrorResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7920792">
-          <caret line="36" column="72" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23762377">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/datamodel/DispOrder3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/datamodel/DispOrder2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/datamodel/DispOrder4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23762377">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/BuilderStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29042906">
@@ -4061,9 +3761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4092,7 +3789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4118,14 +3814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/NavigatorMenuActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33146068">
-          <caret line="935" column="0" selection-start-line="935" selection-start-column="0" selection-end-line="935" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/packet/GetOrdersResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -4137,7 +3825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.105610564">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4163,7 +3850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23762377">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4186,7 +3872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0033003">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4194,6 +3879,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.105610564">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4201,7 +3887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49834985">
           <caret line="220" column="2" selection-start-line="220" selection-start-column="2" selection-end-line="220" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4209,9 +3894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="method#parse#0;class#PingResponce#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4258,27 +3940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/helpers/ContextHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4286,7 +3947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4294,7 +3954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21122113">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4302,7 +3961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6072607">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4314,12 +3972,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/UserSettingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22535211">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-22/android/util/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23762377">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Android/Sdk/platforms/android-22/android.jar!/android/util/Log.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49225473">
+          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+          <folding>
+            <element signature="e#1767#1768#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/helpers/LogHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.052805282">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/helpers/SendLogs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.105610564">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/helpers/ContextHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15841584">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.004695">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentTransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="190" column="24" selection-start-line="190" selection-start-column="24" selection-end-line="190" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/res/layout/main_for_fragment_new.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.148148">
+          <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/MultiPacketListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="75" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="897" column="44" selection-start-line="897" selection-start-column="44" selection-end-line="897" selection-end-column="44" />
+          <caret line="100" column="26" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="26" />
           <folding>
-            <element signature="e#7894#7900#0" expanded="true" />
             <element signature="method#onStart#0;class#SwipeFragment#0" expanded="false" />
             <element signature="method#onTouch#0;class#SwipeFragment#0" expanded="false" />
             <element signature="method#onViewStateRestored#0;class#SwipeFragment#0" expanded="false" />
@@ -4333,8 +4078,6 @@
             <element signature="method#connectionClick#0;class#SwipeFragment#0" expanded="false" />
             <element signature="method#busyClick#0;class#SwipeFragment#0" expanded="false" />
             <element signature="method#myOwnOrdersClick#0;class#SwipeFragment#0" expanded="false" />
-            <element signature="e#35739#43478#0" expanded="true" />
-            <element signature="e#43477#43478#0" expanded="true" />
             <element signature="method#showConfirmToast#0;class#SwipeFragment#0" expanded="false" />
             <element signature="method#updateMyOrders#0;class#SwipeFragment#0" expanded="false" />
             <element signature="method#connect#0;class#SwipeFragment#0" expanded="false" />
@@ -4349,11 +4092,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/network/MultiPacketListener.java">
+    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/res/layout/main_for_fragment.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40201005">
-          <caret line="19" column="75" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/NavigatorMenuActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58542717">
+          <caret line="161" column="25" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
+          <folding>
+            <element signature="method#initSharedPreference#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#keepTheScreenOn#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#initTypefaceFontsElements#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#initUiTheme#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#getLocUpdates#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#onNewIntent#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#processExtraData#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#onStop#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#onBackPressed#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#update#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#onStart#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="e#29461#29462#0" expanded="true" />
+            <element signature="e#29490#29491#0" expanded="true" />
+            <element signature="e#30002#31481#0" expanded="true" />
+            <element signature="e#30630#31207#0" expanded="true" />
+            <element signature="e#31206#31207#0" expanded="true" />
+            <element signature="e#31480#31481#0" expanded="true" />
+            <element signature="e#31524#31688#0" expanded="true" />
+            <element signature="e#31687#31688#0" expanded="true" />
+            <element signature="e#32336#32362#0" expanded="true" />
+            <element signature="e#32388#32400#0" expanded="true" />
+            <element signature="e#32409#32679#0" expanded="true" />
+            <element signature="e#32678#32679#0" expanded="true" />
+            <element signature="e#32705#32716#0" expanded="true" />
+            <element signature="e#32725#32896#0" expanded="true" />
+            <element signature="e#32895#32896#0" expanded="true" />
+            <element signature="e#33953#34094#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

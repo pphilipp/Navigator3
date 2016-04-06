@@ -8,8 +8,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
@@ -889,7 +887,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                     @Override
                     public void onNetworkPacket(Packet packet) {
                         loginResponse = (LoginResponse) packet;
-                        NavigatorMenuActivity.setLr(loginResponse);
+                        NavigatorMenuActivity.setLoginResponse(loginResponse);
 
                         Log.d(LOG_TAG, "loginResponse=" + loginResponse.answer + " - " + loginResponse.toString());
                         Log.d(LOG_TAG, "status '" + loginResponse.answer + "'");
