@@ -22,44 +22,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0608350-9d6b-4439-ba5f-37007ff6b1ef" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/Navigator3-library-unspecified_97e35f6def541ff27080310067b780ba5d932463.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-22.2.1_c3f447d7c29df3b4bfc998f852a0714910296eab.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.android.support-design-22.2.1_6618786f5a3c7d443f376302ea08775d7215d681.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.android.support-mediarouter-v7-22.2.0_a89923b6a83ed68a057d28d1bdcb0fe7b607da0b.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.android.support-support-v4-22.2.1_f53c02b56c2d9deb7ee6bce1755e59cb59d87f84.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.crashlytics.sdk.android-answers-1.3.6_417afe9032e9bc48803c560f352d24a9a6ed9b82.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.crashlytics.sdk.android-beta-1.1.4_7e3a1143addb71519e24cf25e4534856a2afb313.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.crashlytics.sdk.android-crashlytics-2.5.5_3f3329aa92f1bb446dd30688fbfd8f7bccf91592.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.crashlytics.sdk.android-crashlytics-core-2.3.8_6b7695632b69676c97767e9525502472bed8fa1e.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-8.3.0_00a26d948be5f0f0e7095216ff191a01a0e885f4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-8.3.0_4be45bda8a807d73ffd4c37d2d3bf31e8954a86f.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.3.0_4d0db471ab8551aa6c2f1633db0bfdce4b1b5fd1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appinvite-8.3.0_974398dcef1f9c911b5c8ede459982ae5209545d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-8.3.0_6bfc55d2d727d7d796eda97f3487eaea31dac7aa.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.3.0_7b05e6bcd01815ba2dd4d55742b075d91db17421.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.3.0_5a5943f7a2df37276d98889dd3011ca032ffb8c4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-8.3.0_49646ec37ee85fba632639cac6615b9b69979320.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-drive-8.3.0_56ce1f09f82bd85235b231bee23b28c7bf338800.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-fitness-8.3.0_b17005900d35f2fde8271e4157703d26f41ac1bb.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-games-8.3.0_1d0d223e7f360189816e43c3269d52cd14565553.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-8.3.0_d6877f57d4ffe0c9c89615c50b4fd2040a3f41a5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-8.3.0_3550663e529b2059a3ac0d7792c109eff0d59835.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-8.3.0_4450893d01d7f7a240df7690a091e13e28a86dc8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-8.3.0_e18393c2875c8d9d3ffc823013f26f39e02cd5d3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-measurement-8.3.0_136cb61fb9ccc2535b3f6090724f0b8f2ed46ea2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-nearby-8.3.0_d21f967222012f9078b24f3a482a719af573348c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-panorama-8.3.0_b7c1e1e9835788f30b5d02c02b6287a5d005d83d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-plus-8.3.0_8b962d294d18b3c063ab2ab21cdd6e32e033919c.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-safetynet-8.3.0_39aa6288dc853be7157dbcef5223869072974a46.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-vision-8.3.0_81d559f926eb8f45aea5f2790c66943f9a4aa522.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-8.3.0_98b867c6a729d6a264b9eeeb32cddfa955a344ab.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wearable-8.3.0_446472c5cc0783d4568e6bd5c19f8f0044509281.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/debug_b007d741d141b0632b9704a28e80d182d7382461.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/internal_impl-22.2.0_b74e7ad23bffb69b0074d10b50dc8c38788c4ecd.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/internal_impl-22.2.1_c159e944f51185fc861874ce846cda2e2c782e77.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/io.fabric.sdk.android-fabric-1.3.10_4fa6adcb63da5472e1368576c73ea91825ef076e.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$1.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$10.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$11.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$11.class" />
@@ -97,220 +59,23 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$8.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$9.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/NavigatorMenuActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$string.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$style.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$styleable.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$xml.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R$xml.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi3/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/core/StateObserver.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/core/StateObserver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/Swipe$SectionsPagerAdapter.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/Swipe$SectionsPagerAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment.class" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/classes/debug/com/innotech/imap_taxi/activity/fragment_manager/FragmentPacket/SwipeFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/exploded-aar/Navigator3/library/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/exploded-aar/Navigator3/library/unspecified/jars/classes.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/outputs/aar/library-debug.aar" afterPath="$PROJECT_DIR$/library/build/outputs/aar/library-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/outputs/aar/library-release.aar" afterPath="$PROJECT_DIR$/library/build/outputs/aar/library-release.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/library/build/intermediates/res/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/support-annotations-22.2.1_ffa2d3eaa7574651c541c95e493ef8365302870a.jar" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/pre-dexed/debug/support-annotations-22.2.1_ffa2d3eaa7574651c541c95e493ef8365302870a.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/outputs/apk/taxiIMAP_Android-debug-unaligned.apk" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/outputs/apk/taxiIMAP_Android-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/outputs/apk/taxiIMAP_Android-debug.apk" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/outputs/apk/taxiIMAP_Android-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/NavigatorMenuActivity.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/NavigatorMenuActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/generated/source/r/debug/com/innotech/imap_taxi3/R.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/generated/source/r/debug/com/innotech/imap_taxi3/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/core/StateObserver.java" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/core/StateObserver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/anim.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/anim.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/answers_1_3_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/answers_1_3_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/beta_1_1_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/beta_1_1_4.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/color-v11.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/color-v11.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/androidTest/debug/single/color.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/androidTest/debug/single/color.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/debug/single/color.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/debug/single/color.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/release/single/color.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/release/single/color.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/color.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/color.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/generated/fabric/res/debug/values/com_crashlytics_build_id.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/assets/debug/crashlytics-build.properties" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/assets/debug/crashlytics-build.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/crashlytics_2_5_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/crashlytics_2_5_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_22_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_22_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/androidTest/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/androidTest/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/release/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/release/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-ldpi-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-ldpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-ldrtl-hdpi-v17.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-ldrtl-hdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-ldrtl-mdpi-v17.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-ldrtl-mdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-ldrtl-xhdpi-v17.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-ldrtl-xhdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-ldrtl-xxhdpi-v17.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-ldrtl-xxhdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-ldrtl-xxxhdpi-v17.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-ldrtl-xxxhdpi-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/androidTest/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/androidTest/debug/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/release/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/release/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-nodpi-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-nodpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-tvdpi-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-tvdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/androidTest/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/androidTest/debug/single/drawable-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/release/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/release/single/drawable-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/androidTest/debug/single/drawable.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/androidTest/debug/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/debug/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/release/single/drawable.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/release/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout-land.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout-land.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout-large-land-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout-large-land-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout-large-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout-large-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout-small-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout-small-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout-sw600dp-v13.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout-sw600dp-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout-v17.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_22_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_22_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/menu.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/menu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/packageDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/packageReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_8_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_8_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_analytics_8_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_analytics_8_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_appindexing_8_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appindexing_8_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_auth_8_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_auth_8_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_drive_8_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_drive_8_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_games_8_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_games_8_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_nearby_8_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_nearby_8_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_safetynet_8_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_safetynet_8_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/raw.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/raw.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-af.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-af.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-am.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-am.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ar.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ar.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-az-rAZ.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-az-rAZ.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-bg.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-bg.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-bn-rBD.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-bn-rBD.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ca.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ca.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-cs.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-cs.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-da.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-da.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-de.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-de.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-el.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-el.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-en-rAU.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-en-rAU.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-en-rGB.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-en-rGB.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-en-rIN.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-en-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-es-rUS.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-es-rUS.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-es.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-es.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-et-rEE.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-et-rEE.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-eu-rES.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-eu-rES.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-fa.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-fa.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-fi.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-fi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-fr-rCA.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-fr-rCA.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-fr.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-fr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-gl-rES.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-gl-rES.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-gu-rIN.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-gu-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-h720dp-v13.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-h720dp-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-hdpi-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-hi.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-hi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-hr.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-hr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-hu.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-hu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-hy-rAM.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-hy-rAM.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-in.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-in.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-is-rIS.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-is-rIS.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-it.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-it.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-iw.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-iw.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ja.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ja.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ka-rGE.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ka-rGE.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-kk-rKZ.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-kk-rKZ.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-km-rKH.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-km-rKH.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-kn-rIN.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-kn-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ko.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ko.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ky-rKG.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ky-rKG.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-land.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-land.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-large-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-large-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-lo-rLA.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-lo-rLA.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-lt.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-lt.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-lv.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-lv.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-mk-rMK.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-mk-rMK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ml-rIN.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ml-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-mn-rMN.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-mn-rMN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-mr-rIN.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-mr-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ms-rMY.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ms-rMY.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-my-rMM.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-my-rMM.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-nb.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-nb.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ne-rNP.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ne-rNP.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-nl.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-nl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-pa-rIN.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-pa-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-pl.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-pl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-port.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-port.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-pt-rBR.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-pt-rBR.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-pt-rPT.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-pt-rPT.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-pt.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-pt.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ro.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ro.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ru.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ru.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-si-rLK.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-si-rLK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sk.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sk.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sl.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sq-rAL.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sq-rAL.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sr.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sv.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sv.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sw.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sw.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sw600dp-v13.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sw600dp-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sw720dp-land-v13.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-sw720dp-land-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ta-rIN.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ta-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-te-rIN.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-te-rIN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-th.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-th.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-tl.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-tl.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-tr.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-tr.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-uk.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-uk.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ur-rPK.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-ur-rPK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-uz-rUZ.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-uz-rUZ.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v11.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v11.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v12.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v12.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v13.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v14.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v14.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v17.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v17.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v18.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v18.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v21.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-v21.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-vi.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-vi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-w360dp-v13.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-w360dp-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-w480dp-v13.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-w480dp-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-w500dp-v13.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-w500dp-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-w600dp-v13.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-w600dp-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-w720dp-v13.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-w720dp-v13.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-xlarge-land-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-xlarge-land-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-xlarge-v4.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-xlarge-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-zh-rCN.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-zh-rCN.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-zh-rHK.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-zh-rHK.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-zh-rTW.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-zh-rTW.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-zu.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values-zu.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/androidTest/debug/multi/values.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/androidTest/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/build/intermediates/blame/res/release/multi/values.json" afterPath="$PROJECT_DIR$/library/build/intermediates/blame/res/release/multi/values.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/multi/values.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/xml.json" afterPath="$PROJECT_DIR$/taxiIMAP_Android/build/intermediates/blame/res/debug/single/xml.json" />
     </list>
     <ignored path="Navigator3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -334,19 +99,51 @@
       <file leaf-file-name="NavigatorMenuActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/NavigatorMenuActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8316582">
-              <caret line="327" column="0" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.3919598">
+              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding>
-                <element signature="method#onCreate#0;class#NavigatorMenuActivity#0" expanded="false" />
-                <element signature="e#7849#8030#0" expanded="true" />
-                <element signature="e#8029#8030#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#onStart#0;class#NavigatorMenuActivity#0" expanded="false" />
                 <element signature="method#onResume#0;class#NavigatorMenuActivity#0" expanded="false" />
                 <element signature="method#onPause#0;class#NavigatorMenuActivity#0" expanded="false" />
                 <element signature="method#onStop#0;class#NavigatorMenuActivity#0" expanded="false" />
                 <element signature="method#onDestroy#0;class#NavigatorMenuActivity#0" expanded="false" />
                 <element signature="method#onSaveInstanceState#0;class#NavigatorMenuActivity#0" expanded="false" />
-                <element signature="method#onRestoreInstanceState#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="method#checkStatusByObservable#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="e#10036#10155#0" expanded="true" />
+                <element signature="e#10154#10155#0" expanded="true" />
+                <element signature="e#10186#10308#0" expanded="true" />
+                <element signature="e#10307#10308#0" expanded="true" />
+                <element signature="e#10760#10940#0" expanded="true" />
+                <element signature="e#10939#10940#0" expanded="true" />
+                <element signature="e#11063#11244#0" expanded="true" />
+                <element signature="e#11243#11244#0" expanded="true" />
+                <element signature="e#11319#11495#0" expanded="true" />
+                <element signature="e#11494#11495#0" expanded="true" />
+                <element signature="e#11574#11684#0" expanded="true" />
+                <element signature="e#11683#11684#0" expanded="true" />
+                <element signature="e#11769#12039#0" expanded="true" />
+                <element signature="e#12038#12039#0" expanded="true" />
+                <element signature="e#12072#12244#0" expanded="true" />
+                <element signature="e#12243#12244#0" expanded="true" />
+                <element signature="e#12280#12387#0" expanded="true" />
+                <element signature="e#12386#12387#0" expanded="true" />
+                <element signature="e#12506#12794#0" expanded="true" />
+                <element signature="e#12589#12654#0" expanded="true" />
+                <element signature="e#12793#12794#0" expanded="true" />
+                <element signature="e#12856#13127#0" expanded="true" />
+                <element signature="e#12939#13004#0" expanded="true" />
+                <element signature="e#13126#13127#0" expanded="true" />
+                <element signature="e#13195#13412#0" expanded="true" />
+                <element signature="e#13278#13352#0" expanded="true" />
+                <element signature="e#13411#13412#0" expanded="true" />
+                <element signature="e#13486#13700#0" expanded="true" />
+                <element signature="e#13569#13642#0" expanded="true" />
+                <element signature="e#13699#13700#0" expanded="true" />
                 <element signature="method#checkIsFakeLocation#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="e#14307#14360#0" expanded="true" />
+                <element signature="e#14378#14422#0" expanded="true" />
+                <element signature="e#14449#14486#0" expanded="true" />
                 <element signature="method#initSharedPreference#0;class#NavigatorMenuActivity#0" expanded="false" />
                 <element signature="method#keepTheScreenOn#0;class#NavigatorMenuActivity#0" expanded="false" />
                 <element signature="method#initTypefaceFontsElements#0;class#NavigatorMenuActivity#0" expanded="false" />
@@ -357,13 +154,23 @@
                 <element signature="method#processExtraData#0;class#NavigatorMenuActivity#0" expanded="false" />
                 <element signature="method#onBackPressed#0;class#NavigatorMenuActivity#0" expanded="false" />
                 <element signature="method#update#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="e#27575#27640#0" expanded="true" />
+                <element signature="e#27921#27986#0" expanded="true" />
+                <element signature="e#28256#28330#0" expanded="true" />
+                <element signature="e#28543#28616#0" expanded="true" />
                 <element signature="method#onClick#0;class#NavigatorMenuActivity#0" expanded="false" />
-                <element signature="e#29062#29299#0" expanded="true" />
-                <element signature="e#29298#29299#0" expanded="true" />
+                <element signature="e#29382#29440#0" expanded="true" />
+                <element signature="e#29699#29936#0" expanded="true" />
+                <element signature="e#29847#29901#0" expanded="true" />
+                <element signature="e#29935#29936#0" expanded="true" />
                 <element signature="method#dangerClick#0;class#NavigatorMenuActivity#0" expanded="false" />
                 <element signature="method#balanceIconClick#0;class#NavigatorMenuActivity#0" expanded="false" />
                 <element signature="method#gpsIndicationClick#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="e#32571#32597#0" expanded="true" />
+                <element signature="e#32623#32635#0" expanded="true" />
+                <element signature="e#32918#32929#0" expanded="true" />
                 <element signature="method#driverStateClick#0;class#NavigatorMenuActivity#0" expanded="false" />
+                <element signature="e#34166#34307#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -373,24 +180,24 @@
         <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/core/StateObserver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
               <folding>
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#989#990#0" expanded="true" />
-                <element signature="e#1114#1115#0" expanded="true" />
-                <element signature="e#1135#1136#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
-                <element signature="e#1295#1296#0" expanded="true" />
-                <element signature="e#1433#1434#0" expanded="true" />
-                <element signature="e#1458#1459#0" expanded="true" />
-                <element signature="e#1612#1613#0" expanded="true" />
-                <element signature="e#1634#1635#0" expanded="true" />
-                <element signature="e#1785#1786#0" expanded="true" />
-                <element signature="e#1813#1814#0" expanded="true" />
-                <element signature="e#1987#1988#0" expanded="true" />
-                <element signature="e#2013#2014#0" expanded="true" />
-                <element signature="e#2179#2180#0" expanded="true" />
-                <element signature="e#2208#2209#0" expanded="true" />
+                <element signature="e#1009#1010#0" expanded="true" />
+                <element signature="e#1026#1027#0" expanded="true" />
+                <element signature="e#1151#1152#0" expanded="true" />
+                <element signature="e#1172#1173#0" expanded="true" />
+                <element signature="e#1312#1313#0" expanded="true" />
+                <element signature="e#1332#1333#0" expanded="true" />
+                <element signature="e#1470#1471#0" expanded="true" />
+                <element signature="e#1495#1496#0" expanded="true" />
+                <element signature="e#1649#1650#0" expanded="true" />
+                <element signature="e#1671#1672#0" expanded="true" />
+                <element signature="e#1822#1823#0" expanded="true" />
+                <element signature="e#1850#1851#0" expanded="true" />
+                <element signature="e#2024#2025#0" expanded="true" />
+                <element signature="e#2050#2051#0" expanded="true" />
+                <element signature="e#2216#2217#0" expanded="true" />
+                <element signature="e#2245#2246#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -3559,6 +3366,13 @@
       <option name="number" value="Default" />
       <updated>1459950802960</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update: NavigatorMenuActivity reorganisation code, add Butterknife annotations.">
+      <created>1460012407609</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1460012407609</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3571,6 +3385,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4636076" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3586,11 +3401,10 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24980174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14353688" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -3608,6 +3422,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update: NavigatorMenuActivity reorganisation code, add Butterknife annotations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: NavigatorMenuActivity reorganisation code, add Butterknife annotations." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
@@ -3617,8 +3435,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83476764">
-          <caret line="71" column="71" selection-start-line="71" selection-start-column="71" selection-end-line="71" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.78829604">
+          <caret line="68" column="71" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -3626,43 +3444,75 @@
     <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/core/StateObserver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
           <folding>
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1295#1296#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1612#1613#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
-            <element signature="e#1785#1786#0" expanded="true" />
-            <element signature="e#1813#1814#0" expanded="true" />
-            <element signature="e#1987#1988#0" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-            <element signature="e#2179#2180#0" expanded="true" />
-            <element signature="e#2208#2209#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1312#1313#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1470#1471#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
+            <element signature="e#1649#1650#0" expanded="true" />
+            <element signature="e#1671#1672#0" expanded="true" />
+            <element signature="e#1822#1823#0" expanded="true" />
+            <element signature="e#1850#1851#0" expanded="true" />
+            <element signature="e#2024#2025#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
+            <element signature="e#2216#2217#0" expanded="true" />
+            <element signature="e#2245#2246#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/taxiIMAP_Android/src/main/java/com/innotech/imap_taxi/activity/NavigatorMenuActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8316582">
-          <caret line="327" column="0" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.3919598">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
-            <element signature="method#onCreate#0;class#NavigatorMenuActivity#0" expanded="false" />
-            <element signature="e#7849#8030#0" expanded="true" />
-            <element signature="e#8029#8030#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#onStart#0;class#NavigatorMenuActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#NavigatorMenuActivity#0" expanded="false" />
             <element signature="method#onPause#0;class#NavigatorMenuActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#NavigatorMenuActivity#0" expanded="false" />
             <element signature="method#onDestroy#0;class#NavigatorMenuActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#NavigatorMenuActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="method#checkStatusByObservable#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="e#10036#10155#0" expanded="true" />
+            <element signature="e#10154#10155#0" expanded="true" />
+            <element signature="e#10186#10308#0" expanded="true" />
+            <element signature="e#10307#10308#0" expanded="true" />
+            <element signature="e#10760#10940#0" expanded="true" />
+            <element signature="e#10939#10940#0" expanded="true" />
+            <element signature="e#11063#11244#0" expanded="true" />
+            <element signature="e#11243#11244#0" expanded="true" />
+            <element signature="e#11319#11495#0" expanded="true" />
+            <element signature="e#11494#11495#0" expanded="true" />
+            <element signature="e#11574#11684#0" expanded="true" />
+            <element signature="e#11683#11684#0" expanded="true" />
+            <element signature="e#11769#12039#0" expanded="true" />
+            <element signature="e#12038#12039#0" expanded="true" />
+            <element signature="e#12072#12244#0" expanded="true" />
+            <element signature="e#12243#12244#0" expanded="true" />
+            <element signature="e#12280#12387#0" expanded="true" />
+            <element signature="e#12386#12387#0" expanded="true" />
+            <element signature="e#12506#12794#0" expanded="true" />
+            <element signature="e#12589#12654#0" expanded="true" />
+            <element signature="e#12793#12794#0" expanded="true" />
+            <element signature="e#12856#13127#0" expanded="true" />
+            <element signature="e#12939#13004#0" expanded="true" />
+            <element signature="e#13126#13127#0" expanded="true" />
+            <element signature="e#13195#13412#0" expanded="true" />
+            <element signature="e#13278#13352#0" expanded="true" />
+            <element signature="e#13411#13412#0" expanded="true" />
+            <element signature="e#13486#13700#0" expanded="true" />
+            <element signature="e#13569#13642#0" expanded="true" />
+            <element signature="e#13699#13700#0" expanded="true" />
             <element signature="method#checkIsFakeLocation#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="e#14307#14360#0" expanded="true" />
+            <element signature="e#14378#14422#0" expanded="true" />
+            <element signature="e#14449#14486#0" expanded="true" />
             <element signature="method#initSharedPreference#0;class#NavigatorMenuActivity#0" expanded="false" />
             <element signature="method#keepTheScreenOn#0;class#NavigatorMenuActivity#0" expanded="false" />
             <element signature="method#initTypefaceFontsElements#0;class#NavigatorMenuActivity#0" expanded="false" />
@@ -3673,13 +3523,23 @@
             <element signature="method#processExtraData#0;class#NavigatorMenuActivity#0" expanded="false" />
             <element signature="method#onBackPressed#0;class#NavigatorMenuActivity#0" expanded="false" />
             <element signature="method#update#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="e#27575#27640#0" expanded="true" />
+            <element signature="e#27921#27986#0" expanded="true" />
+            <element signature="e#28256#28330#0" expanded="true" />
+            <element signature="e#28543#28616#0" expanded="true" />
             <element signature="method#onClick#0;class#NavigatorMenuActivity#0" expanded="false" />
-            <element signature="e#29062#29299#0" expanded="true" />
-            <element signature="e#29298#29299#0" expanded="true" />
+            <element signature="e#29382#29440#0" expanded="true" />
+            <element signature="e#29699#29936#0" expanded="true" />
+            <element signature="e#29847#29901#0" expanded="true" />
+            <element signature="e#29935#29936#0" expanded="true" />
             <element signature="method#dangerClick#0;class#NavigatorMenuActivity#0" expanded="false" />
             <element signature="method#balanceIconClick#0;class#NavigatorMenuActivity#0" expanded="false" />
             <element signature="method#gpsIndicationClick#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="e#32571#32597#0" expanded="true" />
+            <element signature="e#32623#32635#0" expanded="true" />
+            <element signature="e#32918#32929#0" expanded="true" />
             <element signature="method#driverStateClick#0;class#NavigatorMenuActivity#0" expanded="false" />
+            <element signature="e#34166#34307#0" expanded="true" />
           </folding>
         </state>
       </provider>

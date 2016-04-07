@@ -100,7 +100,6 @@ public class NavigatorMenuActivity extends FragmentActivity
 	@Bind(R.id.parkingIco)RelativeLayout parkingIco;
 	@Bind(R.id.state_driver) TextView stateDriver;
 	@Bind(R.id.driverNo) TextView driverNo;
-	String tmDevice;
 
 	//not used fields
 	static public ImageButton myOwnOrder;
@@ -128,18 +127,20 @@ public class NavigatorMenuActivity extends FragmentActivity
 
 		Log.d(LOG_TAG, "onCreate()");
 		/**
-		 * @tmDevice - field gives system information for Crashlytics.
+		 * @field -	tmDevice	gives system information for Crashlytics.
 		 * */
-		tmDevice = "" + ((TelephonyManager) getBaseContext()
-				.getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId();
-		Crashlytics.setUserIdentifier(tmDevice);
+		Crashlytics.setUserIdentifier(((TelephonyManager) getBaseContext()
+				.getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId());
+		Log.d(LOG_TAG, "system information for Crashlytics. DeviceId = "
+				+ ((TelephonyManager) getBaseContext()
+				.getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId());
 
-		Log.d(LOG_TAG, "system information for Crashlytics. DeviceId = " + tmDevice);
 		mContext = this;
 		initSharedPreference();
-		MultiPacketListener.getInstance().clear();
 
+		MultiPacketListener.getInstance().clear();
 		Log.d(LOG_TAG, "MultiPacketListener is clear");
+
 		initUiTheme();
 
 		/**System information for Crashlytics.*/
@@ -187,150 +188,8 @@ public class NavigatorMenuActivity extends FragmentActivity
 		super.onStart();
 		Log.d(LOG_TAG, "onStart()");
 
-		if (StateObserver.getInstance().isGps()) {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					gpsInd.setImageResource(R.drawable.gps_working);
-				}
-			});
-		} else {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					gpsInd.setImageResource(R.drawable.no_gps_working);
-				}
-			});
-		}
-
-		// if(StateObserver.getInstance().isServer()){
-		// runOnUiThread(new Runnable() {
-		// @Override
-		// public void run() {
-		// serverInd.setImageResource(R.drawable.server_working);
-		// }
-		// });
-		// }else {
-		// runOnUiThread(new Runnable() {
-		// @Override
-		// public void run() {
-		// serverInd.setImageResource(R.drawable.no_server_working);
-		// }
-		// });
-		// }
-
-		if (!StateObserver.getInstance().isNetwork()) {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					networkInd.setImageResource(R.drawable.no_gprs_working);
-					networkInd.setOnClickListener(noInternetClick);
-				}
-			});
-		} else if (StateObserver.getInstance().isNetwork()
-				&& !StateObserver.getInstance().isServer()) {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					networkInd.setImageResource(R.drawable.no_server_working);
-					networkInd.setOnClickListener(noConnectClick);
-				}
-			});
-		} else if (StateObserver.getInstance().isServer()) {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					networkInd.setImageResource(R.drawable.server_working);
-					networkInd.setOnClickListener(connectClick);
-				}
-			});
-		}
-
-		if (StateObserver.getInstance().isShowParkings()) {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					parkingIco.setVisibility(View.VISIBLE);
-				}
-			});
-			if (StateObserver.getInstance().getParkingPosition() != 0) {
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						parkingInd.setImageResource(R.drawable.parking_no);
-						driverNo.setVisibility(View.VISIBLE);
-						driverNo.setText(String.valueOf(StateObserver
-								.getInstance().getParkingPosition()));
-					}
-				});
-			} else {
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						parkingInd.setImageResource(R.drawable.parkings_stand);
-						driverNo.setVisibility(View.GONE);
-					}
-				});
-			}
-		} else {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					parkingIco.setVisibility(View.GONE);
-				}
-			});
-		}
-
-		switch (StateObserver.getInstance().getDriverState()) {
-			case 0:
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						stateDriver.setText("СВОБОДЕН");
-						stateDriver.setTextColor(Color.parseColor("#009900"));
-						stateDriverInd.setImageResource(R.drawable.driver_green);
-					}
-				});
-
-				break;
-			case 1:
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						stateDriver.setText("ЗАНЯТ");
-						stateDriver.setTextColor(Color.RED);
-						stateDriverInd.setImageResource(R.drawable.driver_orange);
-					}
-				});
-
-				break;
-			case 2:
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						stateDriver.setText("НЕ ПОДКЛЮЧЁН");
-						stateDriver.setTextColor(Color.WHITE);
-					}
-				});
-
-				break;
-			case 3:
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						stateDriver.setText("ПОТЕРЯ СОЕДИНЕНИЯ");
-						stateDriver.setTextColor(Color.RED);
-					}
-				});
-
-				break;
-		}
-
-		if (UIData.getInstance().getBalance().charAt(0) != '-') {
-			balanceInd.setImageResource(R.drawable.balance_green);
-		} else {
-			balanceInd.setImageResource(R.drawable.balance_orange);
-		}
+		// define icon status.
+		checkStatusByObservable();
 	}
 
 	@Override
@@ -433,6 +292,150 @@ public class NavigatorMenuActivity extends FragmentActivity
 		MapFragment.orderId = savedInstanceState.getInt("orderFromMap");
 		EfirOrder.orderId = savedInstanceState.getInt("orderFromEther");
 	}
+
+	private void checkStatusByObservable() {
+		/**
+		 * @method	checkStatusByObservable define DriverStatus
+		 * by reacting to StateObserver state and change icon in UI.
+		 * * */
+
+		if (StateObserver.getInstance().isGps()) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					gpsInd.setImageResource(R.drawable.gps_working);
+				}
+			});
+		} else {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					gpsInd.setImageResource(R.drawable.no_gps_working);
+				}
+			});
+		}
+
+		// if(StateObserver.getInstance().isServer()){
+		// runOnUiThread(new Runnable() {
+		// @Override
+		// public void run() {
+		// serverInd.setImageResource(R.drawable.server_working);
+		// }
+		// });
+		// }else {
+		// runOnUiThread(new Runnable() {
+		// @Override
+		// public void run() {
+		// serverInd.setImageResource(R.drawable.no_server_working);
+		// }
+		// });
+		// }
+
+		if (!StateObserver.getInstance().isNetwork()) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					networkInd.setImageResource(R.drawable.no_gprs_working);
+					networkInd.setOnClickListener(noInternetClick);
+				}
+			});
+		} else if (StateObserver.getInstance().isNetwork()
+				&& !StateObserver.getInstance().isServer()) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					networkInd.setImageResource(R.drawable.no_server_working);
+					networkInd.setOnClickListener(noConnectClick);
+				}
+			});
+		} else if (StateObserver.getInstance().isServer()) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					networkInd.setImageResource(R.drawable.server_working);
+					networkInd.setOnClickListener(connectClick);
+				}
+			});
+		}
+
+		if (StateObserver.getInstance().isShowParkings()) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					parkingIco.setVisibility(View.VISIBLE);
+				}
+			});
+			if (StateObserver.getInstance().getParkingPosition() != 0) {
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						parkingInd.setImageResource(R.drawable.parking_no);
+						driverNo.setVisibility(View.VISIBLE);
+						driverNo.setText(String.valueOf(StateObserver
+								.getInstance().getParkingPosition()));
+					}
+				});
+			} else {
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						parkingInd.setImageResource(R.drawable.parkings_stand);
+						driverNo.setVisibility(View.GONE);
+					}
+				});
+			}
+		} else {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					parkingIco.setVisibility(View.GONE);
+				}
+			});
+		}
+
+		switch (StateObserver.getInstance().getDriverState()) {
+			case StateObserver.DRIVER_FREE:
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						stateDriver.setText(getResources().getString(R.string.str_observer_state_driver_free));
+						stateDriver.setTextColor(Color.parseColor("#009900"));
+						stateDriverInd.setImageResource(R.drawable.driver_green);
+					}
+				});break;
+			case StateObserver.DRIVER_BUSY:
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						stateDriver.setText(getResources().getString(R.string.str_observer_state_driver_busy));
+						stateDriver.setTextColor(Color.RED);
+						stateDriverInd.setImageResource(R.drawable.driver_orange);
+					}
+				});break;
+			case StateObserver.DRIVER_NO_CONNECT:
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						stateDriver.setText(getResources().getString(R.string.str_observer_state_driver_not_connected));
+						stateDriver.setTextColor(Color.WHITE);
+					}
+				});	break;
+			case StateObserver.DRIVER_LOST_CONNECTION:
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						stateDriver.setText(getResources().getString(R.string.str_observer_state_driver_disconnected));
+						stateDriver.setTextColor(Color.RED);
+					}
+				});break;
+		}
+
+		if (UIData.getInstance().getBalance().charAt(0) != '-') {
+			balanceInd.setImageResource(R.drawable.balance_green);
+		} else {
+			balanceInd.setImageResource(R.drawable.balance_orange);
+		}
+	} //end checkStatusByObservable()
 
 	private void checkIsFakeLocation() {
 		if (Settings.Secure.getString(getContentResolver(),

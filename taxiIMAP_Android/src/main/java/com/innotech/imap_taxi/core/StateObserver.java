@@ -12,7 +12,7 @@ public class StateObserver extends Observable {
 	public final static int DRIVER_LOST_CONNECTION = 3;
 	public final static boolean WORK = true;
 	public final static boolean NO_WORK = false;
-	private int driverState = 2;
+	private int driverState = 2; //doesn't connected.(default status)
 	private int parkingPosition = 0;
 	private boolean gps = false;
 	private boolean network = false;
