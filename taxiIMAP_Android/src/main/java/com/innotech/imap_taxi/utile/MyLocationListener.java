@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.SystemClock;
 
 public class MyLocationListener implements LocationListener {
-
     private boolean isGPSFix;
     private long mLastLocationMillis;
 

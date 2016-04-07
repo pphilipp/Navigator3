@@ -20,46 +20,47 @@ import com.innotech.imap_taxi.helpers.LogHelper;
 import com.innotech.imap_taxi3.R;
 
 public class SocketService extends Service {
-
+    public static final String LOG_TAG = SocketService.class.getSimpleName();
     static String host;
     static String port;
-    static Context ctx;
+    static Context mContext;
     static OnConnectionEstablishedListener connectionEstablishedListener;
 
-    public static void setConnectionEstablishedListener(OnConnectionEstablishedListener connectionEstablishedListen) {
+    public static void setConnectionEstablishedListener(
+            OnConnectionEstablishedListener connectionEstablishedListen) {
         connectionEstablishedListener = connectionEstablishedListen;
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
+        Log.d(LOG_TAG, "onCreate()");
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        Log.d(LOG_TAG, "onStartCommand()");
         try {
-            SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(ContextHelper.getInstance().getCurrentContext());
+            SharedPreferences sharedPrefs = PreferenceManager
+                    .getDefaultSharedPreferences(ContextHelper
+                            .getInstance().getCurrentContext());
 
             host = ServerData.getInstance().isMasterServer()
                     ? sharedPrefs.getString("prefHost", "")
                     : sharedPrefs.getString("prefHostSlave", "").equals("")
                     ? sharedPrefs.getString("prefHost", "")
                     : sharedPrefs.getString("prefHostSlave", "");
-
             port = ServerData.getInstance().isMasterServer()
                     ? sharedPrefs.getString("prefPort", "")
                     : sharedPrefs.getString("prefPortSlave", "").equals("")
                     ? sharedPrefs.getString("prefPort", "")
                     : sharedPrefs.getString("prefPortSlave", "");
-            ctx = getApplicationContext();
-
-            Log.d("onStartCommand ", host + " " + port);
+            mContext = getApplicationContext();
+            Log.d(LOG_TAG, "host" + host +"\n" + "port " + port);
         } catch (Exception e) {
             e.printStackTrace();
             Log.getStackTraceString(e);
-//            Log.d("SocketServiceException", e.getMessage());
         }
-        Log.d("tag-tag-tag", "onStartCommand_NotifServ");
         startService();
         super.onStartCommand(intent, flags, startId);
         return START_STICKY;
@@ -77,8 +78,7 @@ public class SocketService extends Service {
     }
 
     private void startService() {
-
-        Log.d("SS", "перед иконкой");
+        Log.d(LOG_TAG, "startService()");
         Notification note = new Notification(R.drawable.ic_launcher,
                 "ImapNavigator",
                 System.currentTimeMillis());
@@ -99,7 +99,7 @@ public class SocketService extends Service {
 
         //try {
 
-        Log.d("SS", "перед открытием коннекта");
+        Log.d(LOG_TAG, "перед открытием коннекта");
         openConnection();
         /*} catch (InterruptedException e) {
             e.printStackTrace();
@@ -109,29 +109,25 @@ public class SocketService extends Service {
     private void stop() {
         stopForeground(true);
         WatchSocket.disconnect();
-        Log.e("tag-tag-tag", "service stoped");
+        Log.e(LOG_TAG, "service stop()");
     }
 
     // данный метод открыает соединение
     @SuppressLint("NewApi")
-    public void openConnection()// throws InterruptedException
-    {
-        Log.d("tag-tag-tag", "openConnection_NotifServ");
+    public void openConnection() {// throws InterruptedException
+        Log.d(LOG_TAG, "openConnection_NotifServ");
         try {
-
             LogHelper.w_connection("перед экзекьютом");
             // WatchData - это класс, с помощью которого мы передадим параметры в
             // создаваемый поток
-            // создаем новый поток для сокет-соединенияW
+            // создаем новый поток для сокет-соединения
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
                 new WatchSocket().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, 0);
             else
                 new WatchSocket().execute();
         } catch (Exception e) {
-            // TODO Auto-generated catch block
-            Log.w("беда", e.getMessage());
-
             e.printStackTrace();
+            Log.d(LOG_TAG, "беда" + e.getMessage());
         }
     }
 

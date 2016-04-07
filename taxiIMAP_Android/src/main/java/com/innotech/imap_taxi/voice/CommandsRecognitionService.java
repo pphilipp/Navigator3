@@ -13,19 +13,16 @@ import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.util.Log;
 
-/*
+/**
  * Service converts speech to text and compares result with list of commands (ArrayList<String[]>)
  * returns index of matched list of commands via receiver
  * */
 public class CommandsRecognitionService extends Service {
-
-	public static final String TAG = "IMAP_Speech";
-
+	public static final String LOG_TAG = CommandsRecognitionService.class.getCanonicalName();
 	protected SpeechRecognizer mSpeechRecognizer;
 	protected Intent mSpeechRecognizerIntent;
 	ArrayList<String[]> commands = null;
 	private static final String COMMANDS_KEY = "commands";
-	
 
 	@Override
 	public IBinder onBind(Intent intent) {
@@ -35,8 +32,7 @@ public class CommandsRecognitionService extends Service {
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
-
-		Log.d(TAG, "Starting service");
+		Log.d(LOG_TAG, "Starting service");
 		mSpeechRecognizer = SpeechRecognizer.createSpeechRecognizer(this);
 		mSpeechRecognizer.setRecognitionListener(new VoiceListener());
 
@@ -54,10 +50,10 @@ public class CommandsRecognitionService extends Service {
 			commands = null;
 			commands = (ArrayList<String[]>) intent.getExtras().getSerializable(COMMANDS_KEY);
 			if (commands == null || commands.size() == 0) {
-					Log.d(TAG, "There`re no commands to perform");
+					Log.d(LOG_TAG, "There`re no commands to perform");
 					stopSelf();
 				}
-			Log.d(TAG, "There`re " + commands.size() + " sets of commands");
+			Log.d(LOG_TAG, "There`re " + commands.size() + " sets of commands");
 		} else
 			stopSelf();
 
@@ -66,7 +62,7 @@ public class CommandsRecognitionService extends Service {
 
 	@Override
 	public void onDestroy() {
-		Log.d(TAG, "Destroying service");
+		Log.d(LOG_TAG, "Destroying service");
 		mSpeechRecognizer.destroy();
 		super.onDestroy();
 	}
@@ -76,48 +72,41 @@ public class CommandsRecognitionService extends Service {
 		@Override
 		public void onBeginningOfSpeech() {
 			// TODO Auto-generated method stub
-
 		}
 
 		@Override
 		public void onBufferReceived(byte[] buffer) {
 			// TODO Auto-generated method stub
-
 		}
 
 		@Override
 		public void onEndOfSpeech() {
 			// TODO Auto-generated method stub
-
 		}
 
 		@Override
 		public void onError(int error) {
 			// TODO Auto-generated method stub
-
 		}
 
 		@Override
 		public void onEvent(int eventType, Bundle params) {
 			// TODO Auto-generated method stub
-
 		}
 
 		@Override
 		public void onPartialResults(Bundle partialResults) {
 			// TODO Auto-generated method stub
-
 		}
 
 		@Override
 		public void onReadyForSpeech(Bundle params) {
 			// TODO Auto-generated method stub
-
 		}
 
 		@Override
 		public void onResults(Bundle results) {
-			Log.d(TAG, "onResult");
+			Log.d(LOG_TAG, "onResult");
 			if (results != null) {
 				ArrayList<String> phraseList = results
 						.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
@@ -130,23 +119,17 @@ public class CommandsRecognitionService extends Service {
 					sendBroadcast(result);
 
 				} else {
-					Log.d(TAG, "Didn`t recognize speech");
+					Log.d(LOG_TAG, "Didn`t recognize speech");
 				}
 			} else {
-				Log.d(TAG, "No results");
+				Log.d(LOG_TAG, "No results");
 			}
 			stopSelf();
-
 		}
 
 		@Override
 		public void onRmsChanged(float rmsdB) {
 			// TODO Auto-generated method stub
-
 		}
 	}
-
-	
-	
-
 }

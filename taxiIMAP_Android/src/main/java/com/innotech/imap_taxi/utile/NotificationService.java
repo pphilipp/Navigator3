@@ -20,7 +20,6 @@ import java.util.Calendar;
 import java.util.List;
 
 public class NotificationService extends Service {
-
 	private static NotificationManager nm;
 	static List<String> notificationList = new ArrayList<String>();
 
@@ -34,10 +33,14 @@ public class NotificationService extends Service {
 
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		try {
-			sendNotif(intent.getStringExtra("notif_text"), intent.getStringExtra("notif_text_details"), intent.getStringExtra("notif_orderid"));
+			sendNotif(intent.getStringExtra("notif_text"),
+					intent.getStringExtra("notif_text_details"),
+					intent.getStringExtra("notif_orderid"));
+
 			return super.onStartCommand(intent, flags, startId);
 		} catch (Exception e) {
 			e.printStackTrace();
+
 			return START_STICKY_COMPATIBILITY;
 		}
 	}

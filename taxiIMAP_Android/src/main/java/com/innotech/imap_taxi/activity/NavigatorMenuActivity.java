@@ -138,7 +138,7 @@ public class NavigatorMenuActivity extends FragmentActivity
 		initSharedPreference();
 
 		MultiPacketListener.getInstance().clear();
-		Log.d(LOG_TAG, "MultiPacketListener is clear");
+		Log.d(LOG_TAG, "MultiPacketListener is cleared");
 
 		initUiTheme();
 
@@ -754,7 +754,7 @@ public class NavigatorMenuActivity extends FragmentActivity
 	private void processExtraData() {
 		Intent myIntent = getIntent();
 		if (getIntent().getAction() != null) {
-			Log.e(LOG_TAG, "processExtraData() @@@ action - " + getIntent().getAction());
+			Log.d(LOG_TAG, "processExtraData() @@@ action - " + getIntent().getAction());
 			if (myIntent.getAction().equals("f1")
 					|| myIntent.getAction().equals("f2")) {
 				FragmentTransactionManager.getInstance().openFragment(

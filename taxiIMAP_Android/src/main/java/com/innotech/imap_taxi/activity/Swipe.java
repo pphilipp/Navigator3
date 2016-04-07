@@ -11,9 +11,10 @@ import android.support.v4.view.ViewPager;
 
 import android.util.Log;
 import com.innotech.imap_taxi3.R;
-
+/**
+ * @class Swipe - is NOT used.
+ * */
 public class Swipe extends FragmentActivity {
-
     static SectionsPagerAdapter mSectionsPagerAdapter;
     ViewPager mViewPager;
 

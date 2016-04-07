@@ -10,8 +10,8 @@ public class LoginResponse extends Packet {
     public static final String ANSWER_NORIGHTS = "NoRights";
     public int srvID;
     public int peopleID;
-    public String answer;
     public byte[] GUID;
+    public String answer;
 
     public LoginResponse(byte[] data) {
         super(LOGIN_RESPONCE);

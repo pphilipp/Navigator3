@@ -96,12 +96,16 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-//import com.innotech.imap_taxi.activity.Main_taxometr;
-
-public class SwipeFragment extends FragmentPacket implements OnTouchListener, OnClickListener {
+public class SwipeFragment extends FragmentPacket
+        implements OnTouchListener, OnClickListener {
     public static final String  LOG_TAG = SwipeFragment.class.getSimpleName();
     private static final int RESULT_SETTINGS = 1;
     public static boolean reCon = false;
+    private boolean isExit;
+    private boolean isCancelProgressDialog;
+    protected boolean xmlOk = false;
+    static public boolean open = false;
+    private boolean isOrderYours = false;
     public static Button connection;
     static public Button ethear;
     static public Button myOwnOrder;
@@ -123,17 +127,12 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     TextView tvVersion;
     TextView etherTxt;
     private String mAlertText;
-    private boolean isExit;
-    private boolean isCancelProgressDialog;
-    static public boolean open = false;
     View view;
     View first = null;
     View second = null;
     View  vMap = null;
     private PlaySound play;
-
     private LoginResponse loginResponse;
-
     AlertDialog.Builder builder;
     AlertDialog dialog;
     private GoogleMap mMap;
@@ -148,9 +147,8 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     List<DispOrder4> mOrders;
     SharedPreferences sharedPrefs;
     OrderManager orderManager;
-    private boolean isOrderYours = false;
     private ListView lvOrders;
-    protected boolean xmlOk = false;
+    Context mContext;
     int i;
     private Button back, refresh;
     ServerData sData;
@@ -158,7 +156,6 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     AlertDialog alertDialog;
     float lat, lon;
     LatLng myLoc;
-    Context mContext;
 
     public SwipeFragment() {
         super(SWIPE);
@@ -468,6 +465,60 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+
+        Log.d(LOG_TAG, "onResume()");
+
+        isExit = false;
+        tvBalance.setText(getResources().getString(R.string.str_balance)
+                + UIData.getInstance().getBalance()
+                + getResources().getString(R.string.str_UA_money));
+
+        tvVersion.setText("v. " + UIData.getInstance().getVersion());
+        // version2.setText("v. " + UIData.getInstance().getVersion());
+        if (PreferenceManager.getDefaultSharedPreferences(
+                ContextHelper.getInstance().getCurrentActivity()).getBoolean(
+                "prefIsAutoEnter", false)) {
+            if (isServiceRunning()) {
+                if (!ConnectionHelper.getInstance().isConnected()) {
+                    // ConnectionHelper.getInstance().send(RequestBuilder.createPing());
+                    ContextHelper
+                            .getInstance()
+                            .getCurrentActivity()
+                            .stopService(
+                                    new Intent(ContextHelper.getInstance()
+                                            .getCurrentActivity(),
+                                            SocketService.class));
+                    //
+                    connection.performClick();
+                    // ContextHelper.getInstance().getCurrentActivity().startService(new
+                    // Intent(ContextHelper.getInstance().getCurrentActivity(),SocketService.class));
+                }
+            } else {
+                connection.performClick();
+                // ContextHelper.getInstance().getCurrentActivity().startService(new
+                // Intent(ContextHelper.getInstance().getCurrentActivity(),SocketService.class));
+            }
+            // btnTest
+            // connection.performClick();
+        }
+
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        Log.d(LOG_TAG, "onPause()");
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(LOG_TAG, "onDestroy()");
+    }
+
+    @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (v instanceof Button) {
             MediaPlayer mMediaPlayer = MediaPlayer.create(ContextHelper.getInstance().getCurrentContext(),
@@ -508,18 +559,6 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
         } else {
             btnBusy.setEnabled(true);
         }
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        Log.d(LOG_TAG, "onPause()");
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        Log.d(LOG_TAG, "onDestroy()");
     }
 
     @Override
@@ -635,9 +674,9 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
         AlertDialog.Builder builder = new AlertDialog.Builder(
                 ContextHelper.getInstance().getCurrentContext());
 
-        builder.setMessage("Вы действительно хотите выйти?")
-                .setTitle("Уведомление")
-                .setPositiveButton("Да",
+        builder.setMessage(getResources().getString(R.string.str_do_you_want_to_exit))
+                .setTitle(getResources().getString(R.string.str_notif))
+                .setPositiveButton(getResources().getString(R.string.yes),
                         new DialogInterface.OnClickListener() {
 
                             @Override
@@ -676,7 +715,7 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
                             }
                         });
 
-        builder.setNegativeButton("Нет",
+        builder.setNegativeButton(getResources().getString(R.string.no),
                 new DialogInterface.OnClickListener() {
 
                     @Override
@@ -2606,48 +2645,6 @@ public class SwipeFragment extends FragmentPacket implements OnTouchListener, On
             }
         }
         return false;
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-
-        Log.d(LOG_TAG, "onResume()");
-
-        isExit = false;
-        tvBalance.setText(getResources().getString(R.string.str_balance)
-                + UIData.getInstance().getBalance()
-                + getResources().getString(R.string.str_UA_money));
-
-        tvVersion.setText("v. " + UIData.getInstance().getVersion());
-        // version2.setText("v. " + UIData.getInstance().getVersion());
-        if (PreferenceManager.getDefaultSharedPreferences(
-                ContextHelper.getInstance().getCurrentActivity()).getBoolean(
-                "prefIsAutoEnter", false)) {
-            if (isServiceRunning()) {
-                if (!ConnectionHelper.getInstance().isConnected()) {
-                    // ConnectionHelper.getInstance().send(RequestBuilder.createPing());
-                    ContextHelper
-                            .getInstance()
-                            .getCurrentActivity()
-                            .stopService(
-                                    new Intent(ContextHelper.getInstance()
-                                            .getCurrentActivity(),
-                                            SocketService.class));
-                    //
-                    connection.performClick();
-                    // ContextHelper.getInstance().getCurrentActivity().startService(new
-                    // Intent(ContextHelper.getInstance().getCurrentActivity(),SocketService.class));
-                }
-            } else {
-                connection.performClick();
-                // ContextHelper.getInstance().getCurrentActivity().startService(new
-                // Intent(ContextHelper.getInstance().getCurrentActivity(),SocketService.class));
-            }
-            // btnTest
-            // connection.performClick();
-        }
-
     }
 
     public class SamplePagerAdapter extends PagerAdapter {

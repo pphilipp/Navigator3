@@ -7,13 +7,12 @@ import android.content.DialogInterface.OnClickListener;
 import com.innotech.imap_taxi.helpers.ContextHelper;
 
 public class AlertDHelper {
-
 	static AlertDialog.Builder builder;
 	static AlertDialog dialog;
 
 	public static void showDialogOk(String message) {
 		try{
-			if (dialog==null){
+			if (dialog == null){
 				builder = new AlertDialog.Builder(ContextHelper.getInstance().getCurrentActivity());
 				builder.setMessage(message)
 				.setTitle("Уведомление")

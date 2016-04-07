@@ -6,8 +6,8 @@ import com.innotech.imap_taxi.network.packet.Packet;
 import java.util.*;
 
 /**
- * @method getInstance have critical sections
- * for initialisation/getting singleton instance.
+ * @method getInstance - have critical sections
+ * for initialisation/getting singleton instance of MultiPacketListener.
  */
 
 public class MultiPacketListener implements OnNetworkPacketListener {
