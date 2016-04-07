@@ -4,28 +4,60 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/raw/msg_warn.wav"
     },
     {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/msg_warn.wav",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/raw/msg_warn.wav"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/snd_msg.wav",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/raw/snd_msg.wav"
+    },
+    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/msg_stat_neg.wav",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/raw/msg_stat_neg.wav"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/msg_pos_change.wav",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/raw/msg_pos_change.wav"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/snd_msg.wav",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/raw/snd_msg.wav"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/msg_new_ether_order.wav",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/raw/msg_new_ether_order.wav"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/msg_new_ether_order.wav",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/raw/msg_new_ether_order.wav"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/msg_stat_pos.wav",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/raw/msg_stat_pos.wav"
     },
     {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/msg_new_ether_order.wav",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/raw/msg_new_ether_order.wav"
+    },
+    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/msg_pos_change.wav",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/raw/msg_pos_change.wav"
     },
     {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/msg_stat_neg.wav",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/raw/msg_stat_neg.wav"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/msg_stat_pos.wav",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/raw/msg_stat_pos.wav"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/msg_park_ord_change.wav",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/raw/msg_park_ord_change.wav"
+    },
+    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/gtm_analytics",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.3.0/res/raw/gtm_analytics"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/gtm_analytics",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.3.0/res/raw/gtm_analytics"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/raw/msg_park_ord_change.wav",

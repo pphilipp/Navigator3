@@ -61,5 +61,13 @@
     <string name="str_use_taxometer_is_not_possible">
         Использование Таксометра невозможно. Включите GPS.</string>
     <string name="str_use_taxometer_need_to_enter">Использование Таксометра невозможно. Необходимо войти на смену.</string>
-
+    <string name="str_mock_locations">
+        "Похоже что в настройках включен параметр 'фиктивное местоположение' (mock locations). Для работы приложения выключите его!</string>
+    <string name="str_notif">Уведомление</string>
+    <string name="str_observer_state_driver_free">СВОБОДЕН</string>
+    <string name="str_observer_state_driver_busy">ЗАНЯТ</string>
+    <string name="str_observer_state_driver_not_connected">НЕ ПОДКЛЮЧЁН</string>
+    <string name="str_observer_state_driver_disconnected">ПОТЕРЯ СОЕДИНЕНИЯ</string>
+    <string name="str_no_internet_massage">Нет подключения к интернет</string>
+    <string name="str_connect_massage">Вы подключены к серверу</string>
 </resources>

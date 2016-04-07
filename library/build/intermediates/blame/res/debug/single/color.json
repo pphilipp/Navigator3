@@ -1,10 +1,18 @@
 [
     {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/library/build/intermediates/res/merged/debug/color/vpi__dark_theme.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/library/src/main/res/color/vpi__dark_theme.xml"
+    },
+    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/library/build/intermediates/res/merged/debug/color/vpi__light_theme.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/library/src/main/res/color/vpi__light_theme.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/library/build/intermediates/res/merged/debug/color/vpi__dark_theme.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/library/src/main/res/color/vpi__dark_theme.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/library/build/intermediates/res/merged/debug/color/vpi__light_theme.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/library/src/main/res/color/vpi__light_theme.xml"
     }
 ]

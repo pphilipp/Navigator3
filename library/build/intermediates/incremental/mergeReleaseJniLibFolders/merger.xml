@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/library/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/library/src/release/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/philipp/AndroidStudioProjects/innotech/Navigator3/library/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/home/philipp/AndroidStudioProjects/innotech/Navigator3/library/src/release/jniLibs"/></dataSet></merger>

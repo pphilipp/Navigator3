@@ -67,24 +67,26 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import io.fabric.sdk.android.Fabric;
 
-public class NavigatorMenuActivity extends FragmentActivity implements Observer, View.OnClickListener {
+public class NavigatorMenuActivity extends FragmentActivity
+		implements Observer, View.OnClickListener {
 	public static final String LOG_TAG = NavigatorMenuActivity.class.getSimpleName();
-	public final static int GPS_REQUEST = 100;
+	public static final int GPS_REQUEST = 100;
 	public static boolean gps;
 	public static LinearLayout iconLayout;
 	public static LinearLayout arhivLayout;
 	public static TextView activityTitle;
-	Listener GPSlistener;
+	private static LoginResponse mLoginResponse;
+	boolean isNight;
 	boolean reg = false;
-	LocationManager mlocManager;
-	SharedPreferences sharedPrefs;
-	AlertDialog.Builder builder;
-	AlertDialog dialog;
 	private int num_sat_connected;
 	private int y;
 	private int i;
+	AlertDialog dialog;
+	Listener GPSlistener;
+	LocationManager mlocManager;
+	SharedPreferences sharedPrefs;
+	AlertDialog.Builder builder;
 	Context mContext;
-	private static LoginResponse mLoginResponse;
 	LocationListener mlocListener;
 	LocationListener mlocListenerNetwork;
 	@Bind(R.id.bt_danger)ImageView danger;
@@ -99,8 +101,8 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 	@Bind(R.id.state_driver) TextView stateDriver;
 	@Bind(R.id.driverNo) TextView driverNo;
 	String tmDevice;
-	boolean isNight;
 
+	//not used fields
 	static public ImageButton myOwnOrder;
 	static public boolean doOwn = false;
 	private int num_sat_all;
@@ -157,23 +159,298 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 		balanceInd.setOnClickListener(this);
 		danger.setOnClickListener(this);
 
+		checkIsFakeLocation();
+
+
+		// test
+		if (ConnectionHelper.getInstance().isConnected()) {
+			StateObserver.getInstance().setNetwork(StateObserver.WORK);
+		}
+
+		PingHelper.getInstance().start();
+
+		if (savedInstanceState == null) {
+			FragmentTransactionManager.getInstance()
+					.initializationFragmentTransaction(this);
+		} else {
+			/*
+			 * FragmentTransactionManager.getInstance().openFragment(
+			 * savedInstanceState.getInt("fragID")); Log.d("lifcycle",
+			 * "fragID = " + FragmentTransactionManager.getInstance().getId());
+			 */
+		}
+		Log.d(LOG_TAG, "END -> OnCreate()");
+	} //END onCreate
+
+	@Override
+	protected void onStart() {
+		super.onStart();
+		Log.d(LOG_TAG, "onStart()");
+
+		if (StateObserver.getInstance().isGps()) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					gpsInd.setImageResource(R.drawable.gps_working);
+				}
+			});
+		} else {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					gpsInd.setImageResource(R.drawable.no_gps_working);
+				}
+			});
+		}
+
+		// if(StateObserver.getInstance().isServer()){
+		// runOnUiThread(new Runnable() {
+		// @Override
+		// public void run() {
+		// serverInd.setImageResource(R.drawable.server_working);
+		// }
+		// });
+		// }else {
+		// runOnUiThread(new Runnable() {
+		// @Override
+		// public void run() {
+		// serverInd.setImageResource(R.drawable.no_server_working);
+		// }
+		// });
+		// }
+
+		if (!StateObserver.getInstance().isNetwork()) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					networkInd.setImageResource(R.drawable.no_gprs_working);
+					networkInd.setOnClickListener(noInternetClick);
+				}
+			});
+		} else if (StateObserver.getInstance().isNetwork()
+				&& !StateObserver.getInstance().isServer()) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					networkInd.setImageResource(R.drawable.no_server_working);
+					networkInd.setOnClickListener(noConnectClick);
+				}
+			});
+		} else if (StateObserver.getInstance().isServer()) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					networkInd.setImageResource(R.drawable.server_working);
+					networkInd.setOnClickListener(connectClick);
+				}
+			});
+		}
+
+		if (StateObserver.getInstance().isShowParkings()) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					parkingIco.setVisibility(View.VISIBLE);
+				}
+			});
+			if (StateObserver.getInstance().getParkingPosition() != 0) {
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						parkingInd.setImageResource(R.drawable.parking_no);
+						driverNo.setVisibility(View.VISIBLE);
+						driverNo.setText(String.valueOf(StateObserver
+								.getInstance().getParkingPosition()));
+					}
+				});
+			} else {
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						parkingInd.setImageResource(R.drawable.parkings_stand);
+						driverNo.setVisibility(View.GONE);
+					}
+				});
+			}
+		} else {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					parkingIco.setVisibility(View.GONE);
+				}
+			});
+		}
+
+		switch (StateObserver.getInstance().getDriverState()) {
+			case 0:
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						stateDriver.setText("СВОБОДЕН");
+						stateDriver.setTextColor(Color.parseColor("#009900"));
+						stateDriverInd.setImageResource(R.drawable.driver_green);
+					}
+				});
+
+				break;
+			case 1:
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						stateDriver.setText("ЗАНЯТ");
+						stateDriver.setTextColor(Color.RED);
+						stateDriverInd.setImageResource(R.drawable.driver_orange);
+					}
+				});
+
+				break;
+			case 2:
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						stateDriver.setText("НЕ ПОДКЛЮЧЁН");
+						stateDriver.setTextColor(Color.WHITE);
+					}
+				});
+
+				break;
+			case 3:
+				runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						stateDriver.setText("ПОТЕРЯ СОЕДИНЕНИЯ");
+						stateDriver.setTextColor(Color.RED);
+					}
+				});
+
+				break;
+		}
+
+		if (UIData.getInstance().getBalance().charAt(0) != '-') {
+			balanceInd.setImageResource(R.drawable.balance_green);
+		} else {
+			balanceInd.setImageResource(R.drawable.balance_orange);
+		}
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		Log.d(LOG_TAG, "onResume()");
+		ContextHelper.getInstance().setCurrentContext(mContext);
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		Log.d("lifcycle", "OnPause");
+		if (dialog != null) {
+			dialog.cancel();
+			// dialog.get
+		}
+		/*
+		 * Editor ed= ContextHelper.getInstance().getSharedPreferences().edit();
+		 * ed.putBoolean("onpause", true); ed.commit();
+		 */
+		// LogHelper.w_gps("onPause");
+		if (reg) {
+			mlocManager.removeGpsStatusListener(GPSlistener);
+			reg = false;
+		}
+		Log.i("act", "onPause");
+		MyImapApp.getInstance().paused();
+		// wakeLock.release();
+		// PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
+		// if (!pm.isScreenOn() && isScreenOn) {
+		// isScreenOn = false;
+		// moveTaskToBack(false);
+		/*
+		 * IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_ON); //
+		 * filter.addAction(Intent.ACTION_SCREEN_OFF);
+		 * filter.addAction(Intent.ACTION_USER_PRESENT); //
+		 * filter.addAction(Intent.ac); mReceiver = new ScreenReceiver();
+		 * registerReceiver(mReceiver, filter);
+		 */
+		// }
+		// FragmentTransactionManager.getInstance().setReba(false);
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+		// MyImapApp.getInstance().paused();
+		if (reg) {
+			mlocManager.removeGpsStatusListener(GPSlistener);
+			reg = false;
+		}
+
+		// LogHelper.w_gps("onStop");
+		Log.i("act", "onStop");
+		Log.i("act", "isFinishing() = " + String.valueOf(isFinishing()));
+		/*
+		 * FragmentTransactionManager.getInstance().remove(
+		 * NavigatorMenuActivity.this);
+		 */
+		/*
+		 * if(isFinishing()) { ConnectionHelper.getInstance().stop();
+		 * MultiPacketListener.getInstance().clear();
+		 * PingHelper.getInstance().stop(); //wakeLock.release(); }
+		 */
+	}
+
+	@Override
+	protected void onDestroy() {
+		// TODO порешать с остановкой сервиса
+		// stopService(new
+		// Intent(ContextHelper.getInstance().getCurrentContext(),
+		// SocketService.class));
+		super.onDestroy();
+		if (mlocManager != null) {
+			mlocManager.removeUpdates(mlocListener);
+			mlocManager.removeUpdates(mlocListenerNetwork);
+		}
+		FragmentTransactionManager.getInstance().remove(
+				NavigatorMenuActivity.this);
+		Log.wtf("NavigationMenuActivity", "onDestroy");
+
+	}
+
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+		Log.d(LOG_TAG, "onSaveInstanceState()");
+		outState.putInt("orderForMap", MapFragment.orderId);
+		outState.putInt("orderFromEther", EfirOrder.orderId);
+		outState.putInt("fragID", FragmentTransactionManager.getInstance()
+				.getId());
+
+	}
+
+	@Override
+	protected void onRestoreInstanceState(Bundle savedInstanceState) {
+		super.onRestoreInstanceState(savedInstanceState);
+		Log.d(LOG_TAG, "onRestoreInstanceState");
+		MapFragment.orderId = savedInstanceState.getInt("orderFromMap");
+		EfirOrder.orderId = savedInstanceState.getInt("orderFromEther");
+	}
+
+	private void checkIsFakeLocation() {
 		if (Settings.Secure.getString(getContentResolver(),
 				Settings.Secure.ALLOW_MOCK_LOCATION).equals("0")) {
 			Log.d(LOG_TAG, "ALLOW_MOCK_LOCATION 0");
 			getLocUpdates();
 		} else {
-			Log.d("NavigationMenuAct", "ALLOW_MOCK_LOCATION 1");
+			Log.d(LOG_TAG, "ALLOW_MOCK_LOCATION 1");
 			try {
 				AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-				builder.setMessage(
-						"Похоже что в настройках включен параметр 'фиктивное местоположение' (mock locations). Для работы приложения выключите его!")
-						.setTitle("Уведомление")
-						.setPositiveButton("OK", new OnClickListener() {
+				builder.setMessage(getResources().getString(R.string.str_mock_locations))
+						.setTitle(getResources().getString(R.string.str_notif))
+						.setPositiveButton(getResources().getString(R.string.ok), new OnClickListener() {
 
 							@Override
 							public void onClick(DialogInterface dialog,
-									int which) {
+												int which) {
 								finish();
 							}
 						});
@@ -197,32 +474,7 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 				e.printStackTrace();
 			}
 		}
-
-		// test
-		if (ConnectionHelper.getInstance().isConnected()) {
-			// if (connected) {
-			StateObserver.getInstance().setNetwork(StateObserver.WORK);
-			// ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
-			// @Override
-			// public void run() {
-			// ((ImageView)ContextHelper.getInstance().getCurrentActivity().findViewById(R.id.internet_indication)).setImageResource(R.drawable.gprs_working);
-			//
-			// }
-			// });
-		}
-		PingHelper.getInstance().start();
-		if (savedInstanceState == null) {
-			FragmentTransactionManager.getInstance()
-					.initializationFragmentTransaction(this);
-		} else {
-			/*
-			 * FragmentTransactionManager.getInstance().openFragment(
-			 * savedInstanceState.getInt("fragID")); Log.d("lifcycle",
-			 * "fragID = " + FragmentTransactionManager.getInstance().getId());
-			 */
-		}
-		Log.d("lifcycle", "OnCreate");
-	} //END onCreate
+	}//end checkIsFakeLocation()
 
 	private void initSharedPreference() {
 		sharedPrefs = PreferenceManager
@@ -260,7 +512,6 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 			setTheme(R.style.Theme_NoTitle_Black);
 		 else
 			setTheme(R.style.Theme_NoTitle);
-
 	}
 
 	private void getLocUpdates() {
@@ -278,7 +529,7 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 			mlocManager
 					.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
 							0, 0, mlocListenerNetwork);
-		Log.d("NavigationMenuAct", "getLocUpdates");
+		Log.d(LOG_TAG, "getLocUpdates");
 		mlocManager.addGpsStatusListener(new Listener() {
 			@Override
 			public void onGpsStatusChanged(int event) {
@@ -300,10 +551,9 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 						}
 						i++;
 					}
-					Log.w("num of satelites - " + y + "/" + i, Thread
-							.currentThread().getName());
-					Log.d("NavigationMenuAct", "num of satelites - " + y + "/"
-							+ i);
+					Log.d(LOG_TAG, "num of satelites - " + y + "/" + i
+							+ Thread.currentThread().getName());
+					Log.d(LOG_TAG, "num of satelites - " + y + "/" + i);
 					num_sat_connected = y;
 					num_sat_all = i;
 					if (num_sat_connected == 0 && gps) {
@@ -506,13 +756,6 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 		return super.onKeyDown(keyCode, event);
 	}
 
-	@Override
-	protected void onResume() {
-		super.onResume();
-		Log.d(LOG_TAG, "onResume");
-		ContextHelper.getInstance().setCurrentContext(mContext);
-	}
-
 	protected void onNewIntent(Intent intent) {
 		super.onNewIntent(intent);
 		setIntent(intent);
@@ -546,81 +789,6 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 	}
 
 	@Override
-	protected void onPause() {
-		super.onPause();
-		Log.d("lifcycle", "OnPause");
-		if (dialog != null) {
-			dialog.cancel();
-			// dialog.get
-		}
-		/*
-		 * Editor ed= ContextHelper.getInstance().getSharedPreferences().edit();
-		 * ed.putBoolean("onpause", true); ed.commit();
-		 */
-		// LogHelper.w_gps("onPause");
-		if (reg) {
-			mlocManager.removeGpsStatusListener(GPSlistener);
-			reg = false;
-		}
-		Log.i("act", "onPause");
-		MyImapApp.getInstance().paused();
-		// wakeLock.release();
-		// PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
-		// if (!pm.isScreenOn() && isScreenOn) {
-		// isScreenOn = false;
-		// moveTaskToBack(false);
-		/*
-		 * IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_ON); //
-		 * filter.addAction(Intent.ACTION_SCREEN_OFF);
-		 * filter.addAction(Intent.ACTION_USER_PRESENT); //
-		 * filter.addAction(Intent.ac); mReceiver = new ScreenReceiver();
-		 * registerReceiver(mReceiver, filter);
-		 */
-		// }
-		// FragmentTransactionManager.getInstance().setReba(false);
-	}
-
-	@Override
-	protected void onStop() {
-		super.onStop();
-		// MyImapApp.getInstance().paused();
-		if (reg) {
-			mlocManager.removeGpsStatusListener(GPSlistener);
-			reg = false;
-		}
-
-		// LogHelper.w_gps("onStop");
-		Log.i("act", "onStop");
-		Log.i("act", "isFinishing() = " + String.valueOf(isFinishing()));
-		/*
-		 * FragmentTransactionManager.getInstance().remove(
-		 * NavigatorMenuActivity.this);
-		 */
-		/*
-		 * if(isFinishing()) { ConnectionHelper.getInstance().stop();
-		 * MultiPacketListener.getInstance().clear();
-		 * PingHelper.getInstance().stop(); //wakeLock.release(); }
-		 */
-	}
-
-	@Override
-	protected void onDestroy() {
-		// TODO порешать с остановкой сервиса
-		// stopService(new
-		// Intent(ContextHelper.getInstance().getCurrentContext(),
-		// SocketService.class));
-		super.onDestroy();
-		if (mlocManager != null) {
-			mlocManager.removeUpdates(mlocListener);
-			mlocManager.removeUpdates(mlocListenerNetwork);
-		}
-		FragmentTransactionManager.getInstance().remove(
-				NavigatorMenuActivity.this);
-		Log.wtf("NavigationMenuActivity", "onDestroy");
-
-	}
-
-	@Override
 	public void onBackPressed() {
 		if (FragmentTransactionManager.getInstance().getId() == FragmentPacket.ORDERS) {
 			FragmentTransactionManager.getInstance().openFragment(
@@ -631,36 +799,9 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 	}
 
 	@Override
-	protected void onSaveInstanceState(Bundle outState) {
-		Log.d("lifcycle", "onSaveInstanceState");
-
-		outState.putInt("orderForMap", MapFragment.orderId);
-		outState.putInt("orderFromEther", EfirOrder.orderId);
-		outState.putInt("fragID", FragmentTransactionManager.getInstance()
-				.getId());
-		Log.w("NavigationMenuActivity", "onSaveInstanceState");
-
-		/*
-		 * FragmentTransactionManager.getInstance().remove(
-		 * NavigatorMenuActivity.this);
-		 */
-		super.onSaveInstanceState(outState);
-
-	}
-
-	@Override
-	protected void onRestoreInstanceState(Bundle savedInstanceState) {
-		super.onRestoreInstanceState(savedInstanceState);
-		MapFragment.orderId = savedInstanceState.getInt("orderFromMap");
-		EfirOrder.orderId = savedInstanceState.getInt("orderFromEther");
-
-		Log.wtf("NavigationMenuActivity", "onRestoreInstanceState");
-	}
-
-	@Override
 	public void update(Observable observable, Object o) {
-		// TODO observer reaction
-		StateObserver stateObserver = StateObserver.getInstance();
+		// This method is listen StateObserver object
+		// and change on UI buttons images.
 		if (StateObserver.getInstance().isGps()) {
 			runOnUiThread(new Runnable() {
 				@Override
@@ -676,22 +817,6 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 				}
 			});
 		}
-
-		// if(StateObserver.getInstance().isServer()){
-		// runOnUiThread(new Runnable() {
-		// @Override
-		// public void run() {
-		// serverInd.setImageResource(R.drawable.server_working);
-		// }
-		// });
-		// }else {
-		// runOnUiThread(new Runnable() {
-		// @Override
-		// public void run() {
-		// serverInd.setImageResource(R.drawable.no_server_working);
-		// }
-		// });
-		// }
 
 		if (!StateObserver.getInstance().isNetwork()) {
 			runOnUiThread(new Runnable() {
@@ -757,49 +882,49 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 		}
 
 		switch (StateObserver.getInstance().getDriverState()) {
-		case 0:
+		case StateObserver.DRIVER_FREE:
 			runOnUiThread(new Runnable() {
 				@Override
 				public void run() {
-					stateDriver.setText("СВОБОДЕН");
+					stateDriver.setText(getResources().getString(R.string.str_observer_state_driver_free));
 					stateDriver.setTextColor(Color.parseColor("#009900"));
 					stateDriverInd.setImageResource(R.drawable.driver_green);
 				}
 			});
 
 			break;
-		case 1:
+		case StateObserver.DRIVER_BUSY:
 			runOnUiThread(new Runnable() {
 				@Override
 				public void run() {
-					stateDriver.setText("ЗАНЯТ");
+					stateDriver.setText(getResources().getString(R.string.str_observer_state_driver_busy));
 					stateDriver.setTextColor(Color.RED);
 					stateDriverInd.setImageResource(R.drawable.driver_orange);
 				}
 			});
 
 			break;
-		case 2:
+		case StateObserver.DRIVER_NO_CONNECT:
 			runOnUiThread(new Runnable() {
 				@Override
 				public void run() {
-					stateDriver.setText("НЕ ПОДКЛЮЧЁН");
+					stateDriver.setText(getResources().getString(R.string.str_observer_state_driver_not_connected));
 					stateDriver.setTextColor(Color.WHITE);
 				}
 			});
 
 			break;
-		case 3:
+		case StateObserver.DRIVER_LOST_CONNECTION:
 			runOnUiThread(new Runnable() {
 				@Override
 				public void run() {
-					stateDriver.setText("ПОТЕРЯ СОЕДИНЕНИЯ");
+					stateDriver.setText(getResources().getString(R.string.str_observer_state_driver_disconnected));
 					stateDriver.setTextColor(Color.RED);
 				}
 			});
-
 			break;
 		}
+
 		if (UIData.getInstance().getBalance().charAt(0) != '-') {
 			balanceInd.setImageResource(R.drawable.balance_green);
 		} else {
@@ -808,153 +933,13 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 	}
 
 	@Override
-	protected void onStart() {
-		super.onStart();
-		Log.d("lifcycle", "OnStart");
-		Log.wtf("NavigationMenuActivity", "onStart");
-
-		if (StateObserver.getInstance().isGps()) {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					gpsInd.setImageResource(R.drawable.gps_working);
-				}
-			});
-		} else {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					gpsInd.setImageResource(R.drawable.no_gps_working);
-				}
-			});
-		}
-
-		// if(StateObserver.getInstance().isServer()){
-		// runOnUiThread(new Runnable() {
-		// @Override
-		// public void run() {
-		// serverInd.setImageResource(R.drawable.server_working);
-		// }
-		// });
-		// }else {
-		// runOnUiThread(new Runnable() {
-		// @Override
-		// public void run() {
-		// serverInd.setImageResource(R.drawable.no_server_working);
-		// }
-		// });
-		// }
-
-		if (!StateObserver.getInstance().isNetwork()) {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					networkInd.setImageResource(R.drawable.no_gprs_working);
-					networkInd.setOnClickListener(noInternetClick);
-				}
-			});
-		} else if (StateObserver.getInstance().isNetwork()
-				&& !StateObserver.getInstance().isServer()) {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					networkInd.setImageResource(R.drawable.no_server_working);
-					networkInd.setOnClickListener(noConnectClick);
-				}
-			});
-		} else if (StateObserver.getInstance().isServer()) {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					networkInd.setImageResource(R.drawable.server_working);
-					networkInd.setOnClickListener(connectClick);
-				}
-			});
-		}
-
-		if (StateObserver.getInstance().isShowParkings()) {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					parkingIco.setVisibility(View.VISIBLE);
-				}
-			});
-			if (StateObserver.getInstance().getParkingPosition() != 0) {
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						parkingInd.setImageResource(R.drawable.parking_no);
-						driverNo.setVisibility(View.VISIBLE);
-						driverNo.setText(String.valueOf(StateObserver
-								.getInstance().getParkingPosition()));
-					}
-				});
-			} else {
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						parkingInd.setImageResource(R.drawable.parkings_stand);
-						driverNo.setVisibility(View.GONE);
-					}
-				});
-			}
-		} else {
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					parkingIco.setVisibility(View.GONE);
-				}
-			});
-		}
-
-		switch (StateObserver.getInstance().getDriverState()) {
-		case 0:
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					stateDriver.setText("СВОБОДЕН");
-					stateDriver.setTextColor(Color.parseColor("#009900"));
-					stateDriverInd.setImageResource(R.drawable.driver_green);
-				}
-			});
-
-			break;
-		case 1:
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					stateDriver.setText("ЗАНЯТ");
-					stateDriver.setTextColor(Color.RED);
-					stateDriverInd.setImageResource(R.drawable.driver_orange);
-				}
-			});
-
-			break;
-		case 2:
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					stateDriver.setText("НЕ ПОДКЛЮЧЁН");
-					stateDriver.setTextColor(Color.WHITE);
-				}
-			});
-
-			break;
-		case 3:
-			runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					stateDriver.setText("ПОТЕРЯ СОЕДИНЕНИЯ");
-					stateDriver.setTextColor(Color.RED);
-				}
-			});
-
-			break;
-		}
-		if (UIData.getInstance().getBalance().charAt(0) != '-') {
-			balanceInd.setImageResource(R.drawable.balance_green);
-		} else {
-			balanceInd.setImageResource(R.drawable.balance_orange);
+	public void onClick(View v) {
+		switch (v.getId()) {
+			case R.id.driverState: driverStateClick(); break;
+			case R.id.gps_indication: gpsIndicationClick(); break;
+			case R.id.balanceIcon: balanceIconClick(); break;
+			case R.id.bt_danger: dangerClick(); break;
+			default:break;
 		}
 	}
 
@@ -962,7 +947,7 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 		@Override
 		public void onClick(View view) {
 			Toast.makeText(ContextHelper.getInstance().getCurrentContext(),
-					"Нет подключения к интернет", Toast.LENGTH_LONG).show();
+					getResources().getString(R.string.str_no_internet_massage), Toast.LENGTH_LONG).show();
 		}
 	};
 
@@ -977,23 +962,12 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 		@Override
 		public void onClick(View view) {
 			Toast.makeText(ContextHelper.getInstance().getCurrentContext(),
-					"Вы подключены к серверу", Toast.LENGTH_LONG).show();
+					getResources().getString(R.string.str_connect_massage), Toast.LENGTH_LONG).show();
 		}
 	};
 
 	public static void setLoginResponse(LoginResponse login) {
 		mLoginResponse = login;
-	}
-
-	@Override
-	public void onClick(View v) {
-		switch (v.getId()) {
-			case R.id.driverState: driverStateClick(); break;
-			case R.id.gps_indication: gpsIndicationClick(); break;
-			case R.id.balanceIcon: balanceIconClick(); break;
-			case R.id.bt_danger: dangerClick(); break;
-			default:break;
-		}
 	}
 
 	private void dangerClick() {
@@ -1092,12 +1066,10 @@ public class NavigatorMenuActivity extends FragmentActivity implements Observer,
 			builder.setMessage(R.string.no_gps_connection)
 					.setPositiveButton(R.string.yes,
 							new DialogInterface.OnClickListener() {
-								public void onClick(DialogInterface dialog,
-													int id) {
-									startActivityForResult(
-											new Intent(
-													Settings.ACTION_LOCATION_SOURCE_SETTINGS),
-											GPS_REQUEST);
+								public void onClick(DialogInterface dialog, int id) {
+									startActivityForResult(new Intent(Settings
+													.ACTION_LOCATION_SOURCE_SETTINGS),
+														GPS_REQUEST);
 								}
 							})
 					.setNegativeButton(R.string.no,

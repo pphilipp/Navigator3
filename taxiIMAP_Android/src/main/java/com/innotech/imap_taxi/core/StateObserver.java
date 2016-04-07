@@ -2,10 +2,9 @@ package com.innotech.imap_taxi.core;
 
 import java.util.Observable;
 import java.util.Observer;
-
 /**
- * Created by Ura on 18.09.2014.
- */
+ * @class StateObserver is object that provide for listeners status.
+ * */
 public class StateObserver extends Observable {
 	public final static int DRIVER_FREE = 0;
 	public final static int DRIVER_BUSY = 1;
