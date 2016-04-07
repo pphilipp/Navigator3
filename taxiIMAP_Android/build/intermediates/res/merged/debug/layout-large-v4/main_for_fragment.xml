@@ -91,7 +91,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/frgmCont"
+        android:id="@+id/fragment_holder"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:gravity="center"

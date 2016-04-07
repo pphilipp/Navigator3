@@ -10,6 +10,7 @@ import com.innotech.imap_taxi.activity.NavigatorMenuActivity;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.ArchivOrdersFragment;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.CurrentOrdersFragment;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.EfirOrder;
+import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.EthearFragment;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.FragmentPacket;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.GetAddressFragment;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.MapFragment;
@@ -25,25 +26,21 @@ import com.innotech.imap_taxi3.R;
 import java.util.ArrayList;
 
 /**
- * Created with IntelliJ IDEA. User: u27 Date: 9/20/13 Time: 4:40 PM To change
- * this template use File | Settings | File Templates.
+ *@class FragmentTransactionManager	- object that manage all of fragments.
  */
 public class FragmentTransactionManager {
-
+	public static final String LOG_TAG = FragmentTransactionManager.class.getSimpleName();
 	private static FragmentTransactionManager instance;
-
 	public FragmentTransaction fragmentTransaction;
 	private FragmentActivity fragmentActivity;
-
 	public ArrayList<FragmentPacket> stack;
 	private int id;
 
 	private FragmentTransactionManager() {
-
 		stack = new ArrayList<FragmentPacket>();
 		stack.add(new SwipeFragment());
-		// stack.add(new MenuFragmentPartTwo());
-		// stack.add(new EthearFragment());
+//		 stack.add(new MenuFragmentPartTwo());
+//		 stack.add(new EthearFragment());
 		stack.add(new ParkingsFragment());
 		stack.add(new EfirOrder());
 		stack.add(new OrderDetails());
@@ -57,22 +54,22 @@ public class FragmentTransactionManager {
 	}
 
 	public static FragmentTransactionManager getInstance() {
-
 		if (instance == null) {
 			instance = new FragmentTransactionManager();
 		}
+
 		return instance;
 	}
 
-	public void initializationFragmentTransaction(FragmentActivity activity) {
+	public void initFragmentTransaction(FragmentActivity activity) {
 		this.fragmentActivity = activity;
-
 		fragmentTransaction = fragmentActivity.getSupportFragmentManager()
 				.beginTransaction();
 		for (Fragment f : stack) {
-			fragmentTransaction.add(R.id.frgmCont, f);
+			fragmentTransaction.add(R.id.fragment_holder, f);
 			fragmentTransaction.hide(f);
 		}
+
 		id = id != 0 ? id : stack.get(0).getIdFragment();
 		for (FragmentPacket fr : stack) {
 			if (fr.getIdFragment() == id) {
@@ -132,24 +129,22 @@ public class FragmentTransactionManager {
 				}
 			});
 		}
+
 		for (FragmentPacket f : stack) {
 			if (f.getIdFragment() == id) {
-				if (this.id != id) {
+				if (this.id != id)
 					f.setBackFragment(this.id);
-				}
 				for (FragmentPacket fr : stack) {
 					if (fr.getIdFragment() == id) {
 						fragmentTransaction.show(fr);
 						fr.onResume();
-					} else {
+					} else
 						fragmentTransaction.hide(fr);
-					}
 				}
 				this.id = id;
 				break;
 			}
 		}
-
 		commit();
 	}
 

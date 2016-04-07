@@ -116,8 +116,6 @@ public class OrdersAdapter extends BaseAdapter {
 						.findViewById(R.id.imageNoCash);
 				myHolder.imageEd = (ImageView) convertView
 						.findViewById(R.id.imageEd);
-
-
 			}
 
 			myHolder.cost = (TextView) convertView.findViewById(R.id.costTxt);
@@ -125,7 +123,6 @@ public class OrdersAdapter extends BaseAdapter {
 					.findViewById(R.id.colorLayout);
 			myHolder.orderItem = (LinearLayout) convertView
 					.findViewById(R.id.order_item);
-
 
 			convertView.setTag(myHolder);
 		} else {
@@ -152,7 +149,6 @@ public class OrdersAdapter extends BaseAdapter {
 				|| !orders.get(position).getAddressFact().equals("0") || !orders
 				.get(position).getAddressFact().equals("")) ? orders.get(
 				position).getAddressFact() : "";
-
 		 String addressFrom = street + " " + adressFact;
 
 		if (orders.get(position).getAddress().size() > 0) {
@@ -212,15 +208,14 @@ public class OrdersAdapter extends BaseAdapter {
 			// smth`s wrong with route points
 
 			Boolean joker = (orders.get(position).agentName != null && !orders
-					.get(position).agentName.equals("")) ? true : false;
+					.get(position).agentName.equals(""));
 			Boolean noCash = orders.get(position).isNonCashPay();
 			Boolean webOrder = (!orders.get(position).getSourceWhence()
 					.equals("Phone")
 					&& !orders.get(position).getSourceWhence().equals("Skype") && !orders
-					.get(position).getSourceWhence().equals("Mail")) ? true
-					: false;
+					.get(position).getSourceWhence().equals("Mail"));
 			Boolean edditional = (orders.get(position).getFeatures() != null && orders
-					.get(position).getFeatures().size() > 0) ? true : false;
+					.get(position).getFeatures().size() > 0);
 
 			// set extra info images
 			if (joker)
@@ -240,6 +235,7 @@ public class OrdersAdapter extends BaseAdapter {
 			else
 				myHolder.imageEd.setVisibility(View.GONE);
 		}
+
 		myHolder.cost.setTypeface(t);
 		myHolder.distance.setText((orders.get(position).getDistanceToOrderPlace()).toString());
 		myHolder.time.setText(time);
@@ -254,8 +250,6 @@ public class OrdersAdapter extends BaseAdapter {
 			rw.setRouteType(routeType);
 			//end test
 		}
-
-
 		// end new design
 
 		return convertView;

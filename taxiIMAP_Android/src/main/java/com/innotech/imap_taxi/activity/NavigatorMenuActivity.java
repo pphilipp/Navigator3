@@ -147,33 +147,27 @@ public class NavigatorMenuActivity extends FragmentActivity
 		ContextHelper.getInstance().setCurrentContext(this);
 		initTypefaceFontsElements();
 		keepTheScreenOn();
-
 		activityTitle = (TextView) findViewById(R.id.activityTitle);
 		iconLayout = (LinearLayout) findViewById(R.id.iconLayout);
 		arhivLayout = (LinearLayout) findViewById(R.id.archivLayout);
 
 		//define this class like Observer.
 		StateObserver.getInstance().addObserver(this);
-
 		stateDriverInd.setOnClickListener(this);
 		gpsInd.setOnClickListener(this);
 		balanceInd.setOnClickListener(this);
 		danger.setOnClickListener(this);
-
 		checkIsFakeLocation();
 
-
-		// test
+		// test connections
 		if (ConnectionHelper.getInstance().isConnected()) {
 			StateObserver.getInstance().setNetwork(StateObserver.WORK);
 		}
 
 		PingHelper.getInstance().start();
 
-		if (savedInstanceState == null) {
-			FragmentTransactionManager.getInstance()
-					.initializationFragmentTransaction(this);
-		} else {}
+		if (savedInstanceState == null)
+			FragmentTransactionManager.getInstance().initFragmentTransaction(this);
 		Log.d(LOG_TAG, "OnCreate() <- END");
 	} //END onCreate
 

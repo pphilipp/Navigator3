@@ -42,6 +42,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.innotech.imap_taxi.activity.NavigatorMenuActivity;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentTransactionManager;
@@ -318,12 +319,13 @@ public class ArchivOrdersFragment extends FragmentPacket {
 			}
 		});
 
-		back = (Button) myView.findViewById(R.id.back);
+		back = (Button) myView.findViewById(R.id.btn_back);
 		back.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
 				FragmentTransactionManager.getInstance().openFragment(
 						FragmentPacket.ORDERS);
+				Toast.makeText(getActivity(), "woow", Toast.LENGTH_SHORT).show();
 			}
 		});
 

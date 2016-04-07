@@ -14,7 +14,6 @@ import com.innotech.imap_taxi.network.ConnectionHelper;
 import com.innotech.imap_taxi.utile.MyLocation;
 
 public class PingTask extends TimerTask {
-
 	private MyLocation location;
 
 	private Runnable switchGprsIndicator = new Runnable() {

@@ -3,14 +3,12 @@ package com.innotech.imap_taxi.ping;
 import java.util.Timer;
 
 public class PingHelper {
-
 	private static PingHelper instance;
 	private Timer timer;
 	private PingTask task;
 	private long period;
 
 	public static PingHelper getInstance() {
-
 		if (instance == null) {
 			instance = new PingHelper();
 		}
@@ -20,7 +18,6 @@ public class PingHelper {
 
 	private PingHelper() {
 		super();
-
 	//	timer = new Timer();
 	//	task = new PingTask();
 		period = 30 * 1000;

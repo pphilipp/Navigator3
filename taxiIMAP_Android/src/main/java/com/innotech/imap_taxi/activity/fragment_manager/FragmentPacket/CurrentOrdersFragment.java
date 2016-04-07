@@ -39,7 +39,9 @@ import com.innotech.imap_taxi.network.packet.RefusePreliminaryOrdeResponce;
 import com.innotech.imap_taxi.network.packet.SignPrelimOrdeResponce;
 import com.innotech.imap_taxi.utile.AlertDHelper;
 import com.innotech.imap_taxi3.R;
-
+/**
+ * @class CurrentOrdersFragment - ListFragment with current orders.
+ * */
 public class CurrentOrdersFragment extends FragmentPacket {
 	public static final String LOG_TAG = CurrentOrdersFragment.class.getSimpleName();
 	public final static int STATE_PERFORMING = 0;
@@ -49,28 +51,20 @@ public class CurrentOrdersFragment extends FragmentPacket {
 	public static boolean isUpdate = false;
 	private static ListView listView_orders;
 	private static int state;
-
-	public static void setState(int state) {
-		CurrentOrdersFragment.state = state;
-	}
-
 	private Button back;
-
 	private String parkingName, position, all;
-
 	ServerData serv;
 	AlertDialog dialog;
-
 	private static List<Order> orders;
 	private static List<String> arch_list;
 	private static List<String> arch_desc;
 	static OrdersAdapter mAdapter;
-
 	public int currentViewState;
-
 	static SharedPreferences sharedPref;
 
-	private final String TAG = "mOrders";
+	public static void setState(int state) {
+		CurrentOrdersFragment.state = state;
+	}
 
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
