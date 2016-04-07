@@ -62,7 +62,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import io.fabric.sdk.android.Fabric;
@@ -153,6 +152,7 @@ public class NavigatorMenuActivity extends FragmentActivity
 		iconLayout = (LinearLayout) findViewById(R.id.iconLayout);
 		arhivLayout = (LinearLayout) findViewById(R.id.archivLayout);
 
+		//define this class like Observer.
 		StateObserver.getInstance().addObserver(this);
 
 		stateDriverInd.setOnClickListener(this);
@@ -173,14 +173,8 @@ public class NavigatorMenuActivity extends FragmentActivity
 		if (savedInstanceState == null) {
 			FragmentTransactionManager.getInstance()
 					.initializationFragmentTransaction(this);
-		} else {
-			/*
-			 * FragmentTransactionManager.getInstance().openFragment(
-			 * savedInstanceState.getInt("fragID")); Log.d("lifcycle",
-			 * "fragID = " + FragmentTransactionManager.getInstance().getId());
-			 */
-		}
-		Log.d(LOG_TAG, "END -> OnCreate()");
+		} else {}
+		Log.d(LOG_TAG, "OnCreate() <- END");
 	} //END onCreate
 
 	@Override
@@ -202,7 +196,7 @@ public class NavigatorMenuActivity extends FragmentActivity
 	@Override
 	protected void onPause() {
 		super.onPause();
-		Log.d("lifcycle", "OnPause");
+		Log.d(LOG_TAG, "OnPause()");
 		if (dialog != null) {
 			dialog.cancel();
 			// dialog.get
@@ -237,15 +231,13 @@ public class NavigatorMenuActivity extends FragmentActivity
 	@Override
 	protected void onStop() {
 		super.onStop();
+		Log.d(LOG_TAG, "onStop()");
 		// MyImapApp.getInstance().paused();
 		if (reg) {
 			mlocManager.removeGpsStatusListener(GPSlistener);
 			reg = false;
 		}
-
-		// LogHelper.w_gps("onStop");
-		Log.i("act", "onStop");
-		Log.i("act", "isFinishing() = " + String.valueOf(isFinishing()));
+		Log.d(LOG_TAG, "onStop() -> isFinishing() = " + String.valueOf(isFinishing()));
 		/*
 		 * FragmentTransactionManager.getInstance().remove(
 		 * NavigatorMenuActivity.this);
@@ -259,19 +251,19 @@ public class NavigatorMenuActivity extends FragmentActivity
 
 	@Override
 	protected void onDestroy() {
+		super.onDestroy();
+		Log.d(LOG_TAG, "onDestroy()");
 		// TODO порешать с остановкой сервиса
 		// stopService(new
 		// Intent(ContextHelper.getInstance().getCurrentContext(),
 		// SocketService.class));
-		super.onDestroy();
 		if (mlocManager != null) {
 			mlocManager.removeUpdates(mlocListener);
 			mlocManager.removeUpdates(mlocListenerNetwork);
 		}
-		FragmentTransactionManager.getInstance().remove(
-				NavigatorMenuActivity.this);
-		Log.wtf("NavigationMenuActivity", "onDestroy");
 
+		FragmentTransactionManager.getInstance()
+				.remove(NavigatorMenuActivity.this);
 	}
 
 	@Override
