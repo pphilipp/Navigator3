@@ -8,6 +8,7 @@ import com.innotech.imap_taxi.network.packet.*;
 class PacketParser {
 	Packet result;
 	SrvTransferDataResponse tmp;
+
 	public Packet parsePacket(byte[] data) {
 		int id = selectID(data);
 		tmp = null;
@@ -17,8 +18,7 @@ class PacketParser {
 				data = tmp.body;
 				id = selectID(data); 
 			}
-		} 
-
+		}
  
 		switch (id) {
 		case Packet.SERVER_ERROR_RESPONCE : result = new ServerErrorResponse(data); break;
@@ -68,8 +68,7 @@ class PacketParser {
 		return result;
 	}
 
-	private int selectID(byte[] data)
-	{
+	private int selectID(byte[] data) {
 		//Определяем что за пакет
 		byte[] buffer4 = new byte[4];
 		int offset = 0;
@@ -82,136 +81,119 @@ class PacketParser {
 
 		Log.i("KVEST_TAG","[" + val + "]");
 		Log.d("ClToSrv", "incoming packet = " + val);
-		if (val.equals("IMAP.Net.SrvTransfereError"))
-		{
+		if (val.equals("IMAP.Net.SrvTransfereError")) {
 			return Packet.SERVER_ERROR_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.SrvLoginAnswer"))
-		{
+		else if (val.equals("IMAP.Net.SrvLoginAnswer")) {
 			return Packet.LOGIN_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.SrvPingAnswer"))
-		{
+		else if (val.equals("IMAP.Net.SrvPingAnswer")) {
 			return Packet.PING_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.SrvMessage"))
-		{
+		else if (val.equals("IMAP.Net.SrvMessage")) {
 			return Packet.SRV_MESSAGE_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.SrvTransfereData"))
-		{
+		else if (val.equals("IMAP.Net.SrvTransfereData")) {
 			return Packet.SRV_TRANSFER_DATA_RESPONCE;
-		}else if (val.equals("IMAP.Net.DispOrder4"))
-		{
+		}
+		else if (val.equals("IMAP.Net.DispOrder4")) {
 			return Packet.ORDER_RESPONCE4;
 		}
-		else if (val.equals("IMAP.Net.RegisterOnTaxiParking_answer"))
-		{
+		else if (val.equals("IMAP.Net.RegisterOnTaxiParking_answer")) {
 			return Packet.REGISTER_ON_TAXI_PARKING_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.RelayCommunication"))
-		{
+		else if (val.equals("IMAP.Net.RelayCommunication")) {
 			return Packet.RELAY_COMMUNICATION_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.DispOrder"))
-		{
+		else if (val.equals("IMAP.Net.DispOrder")) {
 			return Packet.ORDER_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.DispOrder2"))
-		{
+		else if (val.equals("IMAP.Net.DispOrder2")) {
 			return Packet.ORDER_RESPONCE2;
 		}
-		else if (val.equals("IMAP.Net.DispOrder3"))
-		{
+		else if (val.equals("IMAP.Net.DispOrder3")) {
 			return Packet.ORDER_RESPONCE3;
 		}
-		else if (val.equals("IMAP.Net.TCPMessage"))
-		{
+		else if (val.equals("IMAP.Net.TCPMessage")) {
 			return Packet.TCPMESSAGE_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.RequestConfirmation"))
-		{
+		else if (val.equals("IMAP.Net.RequestConfirmation")) {
 			return Packet.REQUEST_CONFIRMATION_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.GetTaxiParkingStatistic_answer"))
-		{
+		else if (val.equals("IMAP.Net.GetTaxiParkingStatistic_answer")) {
 			return Packet.TAXI_PARKING_STATISTIC_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.GetTaxiParkingsLastChangeDate_answer"))
-		{
+		else if (val.equals("IMAP.Net.GetTaxiParkingsLastChangeDate_answer")) {
 			return Packet.TAXI_PARKING_LAST_CHANGE_DATE_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.GetWorkReport_answer"))
-		{
+		else if (val.equals("IMAP.Net.GetWorkReport_answer")) {
 			return Packet.WORK_REPORT_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.GetTaxiParkings_answer"))
-		{
+		else if (val.equals("IMAP.Net.GetTaxiParkings_answer")) {
 			return Packet.TAXI_PARKINGS_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.GetTaxiParkings_answer2"))
-		{
+		else if (val.equals("IMAP.Net.GetTaxiParkings_answer2")) {
 			return Packet.TAXI_PARKINGS_RESPONCE2;
 		}
-		else if (val.equals("IMAP.Net.UnRegisterOnTaxiParking_answer"))
-		{
+		else if (val.equals("IMAP.Net.UnRegisterOnTaxiParking_answer")) {
 			return Packet.UNREGISTER_ON_TAXI_PARKING_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.GetDriverParkingPosition_answer"))
-		{
+		else if (val.equals("IMAP.Net.GetDriverParkingPosition_answer")) {
 			return Packet.DRIVER_PARKING_POSITION_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.PPCSettings"))
-		{
+		else if (val.equals("IMAP.Net.PPCSettings")) {
 			return Packet.PPCSETTINGS_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.CallSignChanged"))
-		{
+		else if (val.equals("IMAP.Net.CallSignChanged")) {
 			return Packet.CALL_SIGNCHANGED_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.GetOrders_answer") || val.equals("IMAP.Net.InnerNamespace.GetOrders_answer"))
-		{
+		else if (val.equals("IMAP.Net.GetOrders_answer")
+				|| val.equals("IMAP.Net.InnerNamespace.GetOrders_answer")) {
 			return Packet.GET_ORDERS_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.ExequteQuerryCommand_answer"))
-		{
+		else if (val.equals("IMAP.Net.ExequteQuerryCommand_answer")) {
 			return Packet.SQL_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.DriverBalanceChange"))
-		{
+		else if (val.equals("IMAP.Net.DriverBalanceChange")) {
 			return Packet.DRIVER_BALANCE_CHANGED_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.GetPreliminaryOrders_answer"))
-		{
+		else if (val.equals("IMAP.Net.GetPreliminaryOrders_answer")) {
 			return Packet.PREORDERS_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.GetCSBalanceAnswer"))
-		{
+		else if (val.equals("IMAP.Net.GetCSBalanceAnswer")) {
 			return Packet.CSBALANCE_RESPONCE;
 		}
-		else if (val.equals("IMAP.Net.DriverMessage"))
-		{
+		else if (val.equals("IMAP.Net.DriverMessage")) {
 			return Packet.DRIVER_MESSAGE_RESPONCE;
 		}
 		else if (val.equals("IMAP.Net.PPSChangeState")) {
 			return Packet.PPSCHANGE_STATE_RESPONCE;
-		} else if (val.equals("IMAP.Net.SettingXml")) {
+		}
+		else if (val.equals("IMAP.Net.SettingXml")) {
 			return Packet.SETTINGS_XML_RESPONCE;
-		} else if (val.equals("IMAP.Net.PingStateAnswer")) {
+		}
+		else if (val.equals("IMAP.Net.PingStateAnswer")) {
 			return Packet.PING_STATE_ANSWER;
-		} else if (val.equals("IMAP.Net.SetYourOrders_Answer")) {
+		}
+		else if (val.equals("IMAP.Net.SetYourOrders_Answer")) {
 			return Packet.SET_YOUR_ORDERS_ANSWER;
-		} else if (val.equals("IMAP.Net.SearchInEtherOrderOver")) {
+		}
+		else if (val.equals("IMAP.Net.SearchInEtherOrderOver")) {
 			return Packet.ETHEAR_ORDER_OVER_ANSWER;
-		} else if (val.equals("IMAP.Net.RefusePreliminaryOrder_answer")) {
+		}
+		else if (val.equals("IMAP.Net.RefusePreliminaryOrder_answer")) {
 			return Packet.REFUSE_PRELIMINARY_ORDER_ANSWER;
-		} else if (val.equals("IMAP.Net.GetRoutesAnswer")) {
+		}
+		else if (val.equals("IMAP.Net.GetRoutesAnswer")) {
 			return Packet.GET_ROUTES_ANSWER;
-		} else if (val.equals("IMAP.Net.SignPrelimOrder_answer")) {
+		}
+		else if (val.equals("IMAP.Net.SignPrelimOrder_answer")) {
 			return Packet.SIGN_PRELIM_ORDER_ANSWER;
-		}else if (val.equals("IMAP.Net.DriverBlockedPack")) {
+		}
+		else if (val.equals("IMAP.Net.DriverBlockedPack")) {
 			return Packet.DRIVER_BLOCKED_PACK;
-		}else if (val.equals("IMAP.Net.GetTaximeterRatesAnswer")){
+		}
+		else if (val.equals("IMAP.Net.GetTaximeterRatesAnswer")) {
 			return Packet.TAXIMETER_RATES;
 		}
 		//archivOreders

@@ -28,107 +28,23 @@ import com.innotech.imap_taxi.utile.MyApplication;
 public class WatchSocket extends AsyncTask<Integer, Integer, Integer> {
     public static final String LOG_TAG = WatchSocket.class.getSimpleName();
     public static boolean disconnected;
-    static PacketParser parser;
-    //	private OnConnectionEstablishedListener connectionEstablishedListener;
-    static InputStream fromServer;
-    static OutputStream toServer;
     static boolean z;//флаг основного цыкла
     static boolean disc;
-    private static OnNetworkPacketListener packetListener;
     private static OnNetworkErrorListener errorListener;
+    private static OnNetworkPacketListener packetListener;
     private static Socket socket;
+    static OutputStream toServer;
+    static InputStream fromServer;
+    static PacketParser parser;
     private byte[] packetSize;
-
-    public static boolean isConnected() {return (socket != null && socket.isConnected()/* && z*/);}
-
-    public static boolean isDisconnected() {
-        return disconnected;
-    }
-
-    public synchronized static boolean send(final byte[] data) {//Метод отправки данных по сети
-        Log.d(LOG_TAG, "send_WATCHSOCKET");
-
-        try {
-            if (toServer != null) {//Если исходяший поток созданн,то отправляем данные
-                toServer.write(data);
-                toServer.flush();
-
-                Log.d(LOG_TAG,StringUtils.bytesToStr(data));
-                Log.d(LOG_TAG, "outcoming = " + StringUtils.bytesToStr(data));
-
-                ConnectionHelper.getInstance().setWorking(true);
-
-                return true;
-            } else {return false;} //Если не создан - возвращаем false
-
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-            ConnectionHelper.getInstance().setWorking(false);
-            return false;
-        }
-    }
-
-
-    static void disconnect()//Метод разрыва соединения
-    {
-        z = false;
-        disc = true;
-        new WatchSocket().cancel(false);
-        try {
-            if (socket != null) {
-                socket.shutdownInput();
-                socket.shutdownOutput();
-
-                socket.close();
-            }
-            socket = null;
-        } catch (Exception e) {
-        }
-
-        try {
-            if (toServer != null) {
-                toServer.close();
-            }
-            toServer = null;
-        } catch (Exception e) {
-        }
-        try {
-            if (fromServer != null) {
-                fromServer.close();
-            }
-            fromServer = null;
-        } catch (Exception e) {
-        }
-        Log.i("NET", "disconnected");
-        disconnected = true;
-
-    }
-
-    static void notifyPacketListener(Packet packet) {
-        if (packet != null && packetListener != null) {
-            packetListener.onNetworkPacket(packet);
-        }
-    }
-
-    static void notifyConnectionErrorListener(int errorCode, String errorMessage) {
-        if (errorListener != null) {
-            errorListener.onNetworkError(errorCode, errorMessage);
-        }
-    }
-
-    private static void reconnect() {
-        RunPingAndGeo.getInstance().tryReConnect();
-
-    }
+    //	private OnConnectionEstablishedListener connectionEstablishedListener;
 
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
-
-        LogHelper.w_connection("onPreExecute");
         //connectionEstablishedListener = null;
         packetListener = MultiPacketListener.getInstance();
-        Log.d("tag-tag-tag", "onPreExecute_WATCHSOCKET");
+        Log.d(LOG_TAG, "onPreExecute_WATCHSOCKET");
         socket = null;
         fromServer = null;
         toServer = null;
@@ -137,9 +53,6 @@ public class WatchSocket extends AsyncTask<Integer, Integer, Integer> {
 
         //Get parser
         parser = new PacketParser();
-
-        LogHelper.w_connection("onPreExecute_2");
-
     }
 
     @Override
@@ -160,7 +73,7 @@ public class WatchSocket extends AsyncTask<Integer, Integer, Integer> {
                 {
                     Log.d(LOG_TAG,
                             "WatchSocket_socket==null || toServer==null || fromServer==null = "
-                            + (socket == null || toServer == null || fromServer == null));
+                                    + (socket == null || toServer == null || fromServer == null));
 
                     if (socket == null || toServer == null || fromServer == null) {
                         SharedPreferences sharedPrefs = PreferenceManager
@@ -179,18 +92,16 @@ public class WatchSocket extends AsyncTask<Integer, Integer, Integer> {
                                 ? sharedPrefs.getString("prefPort", "")
                                 : sharedPrefs.getString("prefPortSlave", "");
                         try {
-                            serverAddr = InetAddress.getByName(host);                            //свежие правки
+                            serverAddr = InetAddress.getByName(host);          //свежие правки
                             serverPort = Integer.parseInt(port);
+                            Log.d(LOG_TAG, "port " + port);
                         } catch (NullPointerException e) {
 
                             e.printStackTrace();
                             serverAddr = null;
                             serverPort = -1;
-                            Log.d("WatchSocketException", e.getMessage());
+                            Log.d(LOG_TAG,"WatchSocketException" + e.getMessage());
                         }
-
-
-
 
 //                        serverAddr = InetAddress.getByName(SocketService.host);
 
@@ -198,18 +109,20 @@ public class WatchSocket extends AsyncTask<Integer, Integer, Integer> {
 
                         //tyt oshibka
                         socket = new Socket(serverAddr, serverPort);             //свежие правки
-                        Log.d("socket = ", String.valueOf(socket.getInetAddress()));
+                        Log.d(LOG_TAG, "socket = " + String.valueOf(socket.getInetAddress()));
 
                         packetListener = MultiPacketListener.getInstance();
                         toServer = new BufferedOutputStream(socket.getOutputStream());
                         fromServer = new BufferedInputStream(socket.getInputStream());
 
-                        Log.d("address = " , serverAddr + " " + socket.getInetAddress());
-                        Log.d("myIp = " , socket.getLocalSocketAddress().toString());
+                        Log.d(LOG_TAG, "address = " + serverAddr + " " + socket.getInetAddress());
+                        Log.d(LOG_TAG, "myIp = " + socket.getLocalSocketAddress().toString());
                         // открываем сокет-соединение
 
-                        Log.d(LOG_TAG, ("Swipe.act_swipe " + ((ContextHelper.getInstance().getCurrentActivity() != null) + "")));
-                        Log.d(LOG_TAG, ("NotificatiServConnListner " + (SocketService.connectionEstablishedListener != null) + ""));
+                        Log.d(LOG_TAG, ("Swipe.act_swipe "
+                                + ((ContextHelper.getInstance().getCurrentActivity() != null) + "")));
+                        Log.d(LOG_TAG, ("NotificatiServConnListner "
+                                + (SocketService.connectionEstablishedListener != null) + ""));
 
                         if (SocketService.connectionEstablishedListener != null) {
                             SocketService.connectionEstablishedListener.onConnectionEstablished();
@@ -221,13 +134,13 @@ public class WatchSocket extends AsyncTask<Integer, Integer, Integer> {
                     }
                     z = true;
                     disconnected = false;
-                    Log.d("tag-tag-tag", "before  while (z)");
+                    Log.d(LOG_TAG, "before  while (z)");
                     while (z) {
                         if (isCancelled()) {
                             return 1;
                         }
                         try {
-                            Log.d("tag-tag-tag", "reading");
+                            Log.d(LOG_TAG, "reading");
                             //Читаем длинну пакета
                             if (fromServer.read(packetSize) == -1) {
                                 if (z) {
@@ -235,12 +148,12 @@ public class WatchSocket extends AsyncTask<Integer, Integer, Integer> {
                                     reconnect();
                                     //	notifyConnectionErrorListener(OnNetworkErrorListener.CONNECTION_LOST_ERROR, "Error reading packet size");
                                 }
-                                Log.d("tag-tag-tag", "break");
+                                Log.d(LOG_TAG, "break");
                                 //break;
                             }
                             //Пропускаем версию протокода(4 байта)
                             for (int i = 0; i < 4; ++i) {
-                                Log.d("tag-tag-tag", "fromServer.read() = " + fromServer.read());
+                                Log.d(LOG_TAG, "fromServer.read() = " + fromServer.read());
                             }
 
                             //Определяем размер
@@ -251,31 +164,34 @@ public class WatchSocket extends AsyncTask<Integer, Integer, Integer> {
                             int read = fromServer.read(buff, 0, size);
 
                             int reread = read;
+
                             while (read < size && reread != -1) {
                                 reread = fromServer.read(buff, read, size - read);
                                 read += reread;
                             }
-                            Log.d("tag-tag-tag", "read == size =   " + ((read == size) + ""));
+                            Log.d(LOG_TAG, "read == size =   " + ((read == size) + ""));
+
                             if (read == size) {
                                 //Парсим пакет
                                 Packet packet = parser.parsePacket(buff);
-                                Log.d("tag-tag-tag", "parser.parsePacket");
+                                Log.d(LOG_TAG, "parser.parsePacket");
                                 //Отдаем на обработку
                                 notifyPacketListener(packet);
-                                Log.d("tag-tag-tag", "notifyPacketListener");
+                                Log.d(LOG_TAG, "notifyPacketListener");
                             } else {
                                 if (z) {
                                     disconnect();
                                     notifyConnectionErrorListener(OnNetworkErrorListener.WRONG_PACKET_SIZE, "Read wrong packet size");
                                 }
+
                                 break;
                             }
                         } catch (Resources.NotFoundException e){
                             e.printStackTrace();
-                            Log.d("tag-tag-tag catch", e.getMessage());
+                            Log.d(LOG_TAG, e.getMessage());
                         } catch (Exception exception) {
                             exception.printStackTrace();
-                            Log.d("tag-tag-tag catch", exception.getMessage());
+                            Log.d(LOG_TAG, exception.getMessage());
                             z = false;
 
 							/*	exception.printStackTrace();
@@ -293,12 +209,91 @@ public class WatchSocket extends AsyncTask<Integer, Integer, Integer> {
             //	return -1;
         } catch (Exception e) {
             e.printStackTrace();
-
             Log.getStackTraceString(e);
             Log.d(LOG_TAG, "doInBackground_catch_MyImapApp.isVisible() = " + MyImapApp.getInstance().isVisible());
 
             return -1;
         }
+    } // end doInBackground()
+
+    public synchronized static boolean send(final byte[] data) {//Метод отправки данных по сети
+        Log.d(LOG_TAG, "send()_WATCHSOCKET");
+
+        try {
+            if (toServer != null) {//Если исходяший поток созданн,то отправляем данные
+                toServer.write(data);
+                toServer.flush();
+
+                Log.d(LOG_TAG, StringUtils.bytesToStr(data));
+                Log.d(LOG_TAG, "outcoming = " + StringUtils.bytesToStr(data));
+
+                ConnectionHelper.getInstance().setWorking(true);
+
+                return true;
+            } else {return false;} //Если не создан - возвращаем false
+
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+            ConnectionHelper.getInstance().setWorking(false);
+            return false;
+        }
+    }
+
+    public static boolean isConnected() {
+        return (socket != null && socket.isConnected()/* && z*/);
+    }
+
+    public static boolean isDisconnected() {
+        return disconnected;
+    }
+
+    //Метод разрыва соединения
+    static void disconnect() {
+        z = false;
+        disc = true;
+        new WatchSocket().cancel(false);
+        try {
+            if (socket != null) {
+                socket.shutdownInput();
+                socket.shutdownOutput();
+
+                socket.close();
+            }
+            socket = null;
+        } catch (Exception e) {e.printStackTrace();}
+
+        try {
+            if (toServer != null) {
+                toServer.close();
+            }
+            toServer = null;
+        } catch (Exception e) {
+        }
+        try {
+            if (fromServer != null) {
+                fromServer.close();
+            }
+            fromServer = null;
+        } catch (Exception e) {}
+        Log.i("NET", "disconnected");
+        disconnected = true;
+
+    }
+
+    static void notifyPacketListener(Packet packet) {
+        if (packet != null && packetListener != null) {
+            packetListener.onNetworkPacket(packet);
+        }
+    }
+
+    static void notifyConnectionErrorListener(int errorCode, String errorMessage) {
+        if (errorListener != null) {
+            errorListener.onNetworkError(errorCode, errorMessage);
+        }
+    }
+
+    private static void reconnect() {
+        RunPingAndGeo.getInstance().tryReConnect();
     }
 
 

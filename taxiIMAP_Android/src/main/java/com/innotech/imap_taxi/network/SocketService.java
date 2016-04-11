@@ -66,39 +66,22 @@ public class SocketService extends Service {
         return START_STICKY;
     }
 
-    @Override
-    public IBinder onBind(Intent intent) {
-        return new LocalBinder();
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        stop();
-    }
-
     private void startService() {
         Log.d(LOG_TAG, "startService()");
         Notification note = new Notification(R.drawable.ic_launcher,
-                "ImapNavigator",
-                System.currentTimeMillis());
+                "ImapNavigator", System.currentTimeMillis());
         Intent intent = new Intent(this, NavigatorMenuActivity.class);
         //	intent.setAction("");
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
-                Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
         PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
 
-        note.setLatestEventInfo(this, "ImapNavigator",
-                "ImapNavigator",
-                pi);
+        note.setLatestEventInfo(this, "ImapNavigator", "ImapNavigator", pi);
         note.flags |= Notification.FLAG_NO_CLEAR;
 
-        Log.d("SS", "перед добавлением в бэкграунд");
+        Log.d(LOG_TAG, "перед добавлением в бэкграунд");
         startForeground(133217, note);
-
         //try {
-
         Log.d(LOG_TAG, "перед открытием коннекта");
         openConnection();
         /*} catch (InterruptedException e) {
@@ -106,18 +89,12 @@ public class SocketService extends Service {
 		}*/
     }
 
-    private void stop() {
-        stopForeground(true);
-        WatchSocket.disconnect();
-        Log.e(LOG_TAG, "service stop()");
-    }
-
     // данный метод открыает соединение
     @SuppressLint("NewApi")
     public void openConnection() {// throws InterruptedException
         Log.d(LOG_TAG, "openConnection_NotifServ");
         try {
-            LogHelper.w_connection("перед экзекьютом");
+            Log.d(LOG_TAG, "перед экзекьютом");
             // WatchData - это класс, с помощью которого мы передадим параметры в
             // создаваемый поток
             // создаем новый поток для сокет-соединения
@@ -129,6 +106,23 @@ public class SocketService extends Service {
             e.printStackTrace();
             Log.d(LOG_TAG, "беда" + e.getMessage());
         }
+    }
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        return new LocalBinder();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        stop();
+    }
+
+    private void stop() {
+        stopForeground(true);
+        WatchSocket.disconnect();
+        Log.e(LOG_TAG, "service stop()");
     }
 
     public class LocalBinder extends Binder {

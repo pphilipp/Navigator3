@@ -99,7 +99,7 @@ public class ConnectionHelper{// implements Runnable {
         this.errorListener = errorListener;
     }
 
-    private void disconnect() {//Метод разрыва соединения
+    private void disconnect() { //Метод разрыва соединения
     	WatchSocket.disconnect();
        /* try {
             if (socket != null) {
@@ -220,7 +220,6 @@ public class ConnectionHelper{// implements Runnable {
     }
 */
     public synchronized boolean send(byte[] data){//Метод отправки данных по сети
-
     	return WatchSocket.send(data);
        /* try {
         	

@@ -10,7 +10,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
 import android.graphics.drawable.PaintDrawable;
 import android.location.LocationManager;
 import android.media.MediaPlayer;
@@ -142,9 +141,9 @@ public class SwipeFragment extends FragmentPacket
     ListView mapEther;
     LinearLayout llNoEther;
     LinearLayout llNoEtherSecond;
-    OrdersAdapterDisp4 mAdapter;
     VerticalSeekBar zoomBar;
     List<DispOrder4> mOrders;
+    OrdersAdapterDisp4 mAdapter;
     SharedPreferences sharedPrefs;
     OrderManager orderManager;
     private ListView lvOrders;
@@ -174,7 +173,6 @@ public class SwipeFragment extends FragmentPacket
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container,Bundle savedInstanceState) {
         Log.d(LOG_TAG, "onCreateView()");
-
         view = inflater.inflate(R.layout.activity_swipe, container, false);
 
         mOrders = new ArrayList<DispOrder4>();
@@ -194,110 +192,29 @@ public class SwipeFragment extends FragmentPacket
         } catch (NameNotFoundException e) {e.printStackTrace();}
         */
 
-        addListeners();
+        addPacketListeners();
 
-        // via view
+        // create list views for pages ViewPAger.
         List<View> pages = new ArrayList<View>();
-
         first = inflater.inflate(R.layout.main_menu_chapter_one_new, null);
         second = inflater.inflate(R.layout.main_menu_chapter_two_new, null);
-
         etherTxt = (TextView) second.findViewById(R.id.noEther);
-        Typeface t = Typeface.createFromAsset(ContextHelper.getInstance()
-                .getCurrentContext().getAssets(), "fonts/BebasNeueRegular.ttf");
-        etherTxt.setTypeface(t);
-
-        if (vMap != null) {
-            ((ViewGroup) vMap.getParent()).removeAllViews();
-        } else {
-            vMap = inflater.inflate(R.layout.map_with_ether_fragment, null);
-            mapEther = (ListView) vMap.findViewById(R.id.mapEther);
-            mapEther.setAdapter(mAdapter);
-            llNoEther = (LinearLayout) vMap.findViewById(R.id.noEtherLayout);
-            TextView mapNoEtherTxt = (TextView) vMap.findViewById(R.id.noEther);
-            Typeface tf = Typeface.createFromAsset(ContextHelper.getInstance()
-                            .getCurrentContext().getAssets(),
-                    "fonts/BebasNeueRegular.ttf");
-            mapNoEtherTxt.setTypeface(tf);
-            switchListView(mAdapter);
-
-            if (mMap == null) {
-                // !!!!
-                mMap = ((SupportMapFragment) getChildFragmentManager()
-                        .findFragmentById(R.id.mapWithEther)).getMap();
-
-                mapEther.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> adapterView,
-                                            View view, int i, long l) {
-                        mMap.clear();
-                        RequestHelper.getRoutes(mOrders.get(i).orderID);
-                    }
-                });
-
-                if (mMap != null) {
-                    mMap.setMyLocationEnabled(true);
-
-                    // mMap.moveCamera(CameraUpdateFactory.newLatLng(new
-                    // LatLng(48.6, 32)));
-
-                    mMap.getUiSettings().setZoomControlsEnabled(false);
-
-                    mMap.setOnCameraChangeListener(new GoogleMap.OnCameraChangeListener() {
-                        @Override
-                        public void onCameraChange(CameraPosition cameraPosition) {
-                            zoomBar.setProgressAndThumb((int) cameraPosition.zoom);
-                        }
-                    });
-
-                    myLoMmarker = new MarkerOptions()
-                            .position(new LatLng(0, 0)).title("Это я");
-                    myLoMmarker.visible(false);
-                    mMap.addMarker(myLoMmarker);
-                }
-            }
-        }
-
+        etherTxt.setTypeface(Typeface.createFromAsset(ContextHelper.getInstance()
+                .getCurrentContext().getAssets(), "fonts/BebasNeueRegular.ttf"));
+        initMapView(inflater);
         pages.add(first);
         pages.add(second);
         pages.add(vMap);
+
         SamplePagerAdapter pagerAdapter = new SamplePagerAdapter(pages);
         ViewPager viewPager = (ViewPager) view.findViewById(R.id.pager);
         viewPager.setOffscreenPageLimit(3);
         viewPager.setAdapter(pagerAdapter);
-
-        PageIndicator mIndicator = (CirclePageIndicator) view
-                .findViewById(R.id.indicator);
+        PageIndicator mIndicator = (CirclePageIndicator)
+                view.findViewById(R.id.indicator);
         mIndicator.setViewPager(viewPager);
-
         viewPager.setCurrentItem(1);
-        Typeface menuTypeface = Typeface.createFromAsset(ContextHelper
-                        .getInstance().getCurrentContext().getAssets(),
-                "fonts/BebasNeueRegular.ttf");
-
         zoomBar = (VerticalSeekBar) vMap.findViewById(R.id.zoom_bar);
-
-        if (mMap != null) {
-            zoomBar.setMaximum((int) mMap.getMaxZoomLevel());
-            zoomBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-                @Override
-                public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                    mMap.animateCamera(CameraUpdateFactory.zoomTo(i));
-                }
-
-                @Override
-                public void onStartTrackingTouch(SeekBar seekBar) {
-
-                }
-
-                @Override
-                public void onStopTrackingTouch(SeekBar seekBar) {
-
-                }
-            });
-            zoomBar.setProgressAndThumb((int) mMap.getCameraPosition().zoom);
-
-        }
 
         btnZoomIn = (Button) vMap.findViewById(R.id.zoom_in);
         btnZoomOut = (Button) vMap.findViewById(R.id.zoom_out);
@@ -309,6 +226,7 @@ public class SwipeFragment extends FragmentPacket
                 }
             }
         });
+
         btnZoomOut.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -321,8 +239,7 @@ public class SwipeFragment extends FragmentPacket
         toggleBtnHide = (ToggleButton) vMap.findViewById(R.id.hide_ether);
         toggleBtnHide.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton,
-                                         boolean b) {
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b) {
                     mapEther.setVisibility(View.GONE);
                     llNoEther.setVisibility(View.GONE);
@@ -337,6 +254,9 @@ public class SwipeFragment extends FragmentPacket
          * Buttons on menu list fragment
          *
          * **/
+        Typeface menuTypeface = Typeface.createFromAsset(ContextHelper
+                        .getInstance().getCurrentContext().getAssets(),
+                "fonts/BebasNeueRegular.ttf");
         btnOrders = (Button) first.findViewById(R.id.btnOrders);
         btnOrders.setTypeface(menuTypeface);
         btnOrders.setOnClickListener(this);
@@ -425,31 +345,103 @@ public class SwipeFragment extends FragmentPacket
             }
         });
 
-        final PaintDrawable p = (PaintDrawable) GraphUtils
-                .buttonStyle(connection);
+        final PaintDrawable p = (PaintDrawable) GraphUtils.buttonStyle(connection);
 
         btnSendCrash = (Button) first.findViewById(R.id.sendCrash);
         btnSendCrash.setOnClickListener(this);
         btnSendCrash.setTypeface(menuTypeface);
 
         // set buttons style
-
-        btnSendCrash.setBackground((Drawable) p);
-        connection.setBackground((Drawable) p);
-        btnOrders.setBackground((Drawable) p);
-        myOwnOrder.setBackground((Drawable) p);
-        btnMap.setBackground((Drawable) p);
-        ((Button) first.findViewById(R.id.balanceButton))
-                .setBackground((Drawable) p);
-        btnPrelim.setBackground((Drawable) p);
-        btnTaxoMetr.setBackground((Drawable) p);
-        parkings.setBackground((Drawable) p);
-        btnPrefs.setBackground((Drawable) p);
-        btnCloseConnection.setBackground((Drawable) p);
-
+        btnSendCrash.setBackground(p);
+        connection.setBackground(p);
+        btnOrders.setBackground(p);
+        myOwnOrder.setBackground(p);
+        btnMap.setBackground(p);
+        (first.findViewById(R.id.balanceButton))
+                .setBackground(p);
+        btnPrelim.setBackground(p);
+        btnTaxoMetr.setBackground(p);
+        parkings.setBackground(p);
+        btnPrefs.setBackground(p);
+        btnCloseConnection.setBackground(p);
         btnSendCrash.setOnTouchListener(this);
 
         return view;
+    } //end onCreateView()
+
+    private void initMapView(LayoutInflater inflater) {
+        if (vMap != null) {
+            ((ViewGroup) vMap.getParent()).removeAllViews();
+        } else {
+            vMap = inflater.inflate(R.layout.map_with_ether_fragment, null);
+            mapEther = (ListView) vMap.findViewById(R.id.mapEther);
+            mapEther.setAdapter(mAdapter);
+            llNoEther = (LinearLayout) vMap.findViewById(R.id.noEtherLayout);
+            TextView mapNoEtherTxt = (TextView) vMap.findViewById(R.id.noEther);
+            Typeface tf = Typeface.createFromAsset(ContextHelper.getInstance()
+                            .getCurrentContext().getAssets(),
+                    "fonts/BebasNeueRegular.ttf");
+            mapNoEtherTxt.setTypeface(tf);
+            switchListView(mAdapter);
+
+            if (mMap == null) {
+                // !!!!
+                mMap = ((SupportMapFragment) getChildFragmentManager()
+                        .findFragmentById(R.id.mapWithEther)).getMap();
+
+                mapEther.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> adapterView,
+                                            View view, int i, long l) {
+                        mMap.clear();
+                        RequestHelper.getRoutes(mOrders.get(i).orderID);
+                    }
+                });
+
+                if (mMap != null) {
+                    mMap.setMyLocationEnabled(true);
+
+                    // mMap.moveCamera(CameraUpdateFactory.newLatLng(new
+                    // LatLng(48.6, 32)));
+
+                    mMap.getUiSettings().setZoomControlsEnabled(false);
+
+                    mMap.setOnCameraChangeListener(new GoogleMap.OnCameraChangeListener() {
+                        @Override
+                        public void onCameraChange(CameraPosition cameraPosition) {
+                            zoomBar.setProgressAndThumb((int) cameraPosition.zoom);
+                        }
+                    });
+
+                    myLoMmarker = new MarkerOptions()
+                            .position(new LatLng(0, 0)).title("Это я");
+                    myLoMmarker.visible(false);
+                    mMap.addMarker(myLoMmarker);
+                }
+            }
+        }
+
+        // zooming reaction
+        if (mMap != null) {
+            zoomBar.setMaximum((int) mMap.getMaxZoomLevel());
+            zoomBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                    mMap.animateCamera(CameraUpdateFactory.zoomTo(i));
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+
+                }
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+
+                }
+            });
+            zoomBar.setProgressAndThumb((int) mMap.getCameraPosition().zoom);
+        }
     }
 
     @Override
@@ -920,7 +912,7 @@ public class SwipeFragment extends FragmentPacket
         }
     }// end myOwnOrdersClick()
 
-    private void addListeners() {
+    private void addPacketListeners() {
         MultiPacketListener.getInstance().addListener(Packet.LOGIN_RESPONCE,
                 new OnNetworkPacketListener() {
                     @Override
@@ -2418,7 +2410,7 @@ public class SwipeFragment extends FragmentPacket
                         // Генерируем событие изменения состояния
                     }
                 });
-    } // end addListeners()
+    } // end addPacketListeners()
 
     private void showConfirmToast(boolean isOrderYours, String address) {
 

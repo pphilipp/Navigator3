@@ -121,13 +121,10 @@ public class NavigatorMenuActivity extends FragmentActivity
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		Log.d(LOG_TAG, "onCreate()");
 		setContentView(R.layout.main_for_fragment_new);
 		ButterKnife.bind(this);
 
-		Log.d(LOG_TAG, "onCreate()");
-		/**
-		 * @field -	tmDevice	gives system information for Crashlytics.
-		 * */
 		Crashlytics.setUserIdentifier(((TelephonyManager) getBaseContext()
 				.getSystemService(Context.TELEPHONY_SERVICE)).getDeviceId());
 		Log.d(LOG_TAG, "system information for Crashlytics. DeviceId = "
@@ -142,7 +139,7 @@ public class NavigatorMenuActivity extends FragmentActivity
 
 		initUiTheme();
 
-		/**System information for Crashlytics.*/
+		/** System information for Crashlytics.*/
 		Fabric.with(this, new Crashlytics());
 		ContextHelper.getInstance().setCurrentContext(this);
 		initTypefaceFontsElements();

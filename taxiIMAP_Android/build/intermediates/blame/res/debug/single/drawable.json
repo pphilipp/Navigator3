@@ -32,12 +32,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/navback.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route_unknown_line.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_unknown_line.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_prelim_orders.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_prelim_orders.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route_unknown_line.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_unknown_line.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_mono_dark.xml",
@@ -73,7 +73,7 @@
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_dark.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_plus_signin_btn_text_dark.xml"
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_dark.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dark_back3.9.png",
@@ -108,12 +108,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/input_back.9.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/up_9.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/up_9.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_6.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_6.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/up_9.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/up_9.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/no_server_working.png",
@@ -148,16 +148,16 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/tel_2.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/street_item_background.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/street_item_background.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_car.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_car.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_cab_background_top_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_car.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_car.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/street_item_background.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/street_item_background.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/night_time.png",
@@ -224,12 +224,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/dot_to_is.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dark_back4.9.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/dark_back4.9.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/web2.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/web2.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dark_back4.9.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/dark_back4.9.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_settings_dark.xml",
@@ -276,12 +276,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_5.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/gear_white.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/gear_white.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/gear_white.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/gear_white.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/main_textview_boards.png",
@@ -304,20 +304,20 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_3_points_lines.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route_3_points.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_3_points.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/price_background_taxometr.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/price_background_taxometr.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_google_signin_btn_icon_dark.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route_3_points.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_3_points.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/additional_active.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/additional_active.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
@@ -328,12 +328,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_play_dark.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/fab_background.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/drawable/fab_background.xml"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dark_back3.9.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/dark_back3.9.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/fab_background.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/drawable/fab_background.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/class_dialog_btn_background.xml",
@@ -344,12 +344,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_button_back.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dot_from.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/dot_from.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_home.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_home.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dot_from.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/dot_from.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_play_dark.xml",
@@ -357,7 +357,7 @@
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_plus_signin_btn_icon_dark.xml"
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_icon_dark.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_pause_light.xml",
@@ -392,24 +392,24 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/cancel_btn_background.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/create_btn_background.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/create_btn_background.xml"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/day_time.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/day_time.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/adress_from.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/adress_from.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/create_btn_background.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/create_btn_background.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_8.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_8.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_2.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_2.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_8.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_8.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/adress_from.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/adress_from.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
@@ -428,12 +428,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_preference.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/checkbox_background.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/checkbox_background.xml"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/pencil.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/pencil.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/checkbox_background.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/checkbox_background.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/up_0.png",
@@ -456,24 +456,24 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_pause_dark.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/seek_progress.9.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/seek_progress.9.png"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/background_ether.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/background_ether.xml"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_list_selector_holo_dark.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route_2_points.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_2_points.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/web2.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/web2.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route_2_points.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_2_points.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/background_ether.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/background_ether.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/seek_progress.9.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/seek_progress.9.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_button_back.xml",
@@ -484,16 +484,16 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_media_route_connecting_mono_light.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dark_back.9.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/dark_back.9.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/timer.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/timer.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_settings_dark.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_settings_dark.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/timer.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/timer.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dark_back.9.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/dark_back.9.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route.xml",
@@ -512,44 +512,44 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_unknown.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/arrow.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/arrow.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/light_gradient_button.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/light_gradient_button.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_ch.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_ch.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/light_gradient_button.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/light_gradient_button.xml"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dot_to_is.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/dot_to_is.png"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/up_1.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/up_1.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/arrow.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/arrow.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/main_taxometr_background.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/main_taxometr_background.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_menu_selector.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_menu_selector.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/up_1.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/up_1.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dot_to_is.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/dot_to_is.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/no_server_working.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/no_server_working.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_list_selector_holo_light.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_menu_selector.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_menu_selector.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_menu_active.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_menu_active.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/action_bar_search.png",
@@ -564,76 +564,76 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_6.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/action_bar_search.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/action_bar_search.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/action_bar_search.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/action_bar_search.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_settings_light.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_settings_light.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_btn_borderless_material.xml"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/up_3.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/up_3.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_btn_borderless_material.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_3.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_3.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/own_png.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/own_png.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/navigation_dots_left.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/navigation_dots_left.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/background_for_tiles.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/background_for_tiles.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/navigation_dots_left.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/navigation_dots_left.png"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/price_background_taxometr.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/price_background_taxometr.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/own_png.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/own_png.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/transparent_button_text.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/transparent_button_text.xml"
     },
     {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/price_background_taxometr.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/price_background_taxometr.png"
+    },
+    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/seek_progress.9.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/seek_progress.9.png"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/top_back.9.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/top_back.9.png"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_2.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_2.png"
     },
     {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/top_back.9.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/top_back.9.png"
+    },
+    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_call_disp.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_call_disp.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_ch.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_ch.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_car.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_car.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_ch.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_ch.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/top_separator.9.png",
@@ -644,12 +644,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/cash_white.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/cash_white.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/web_order.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/web_order.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/cash_white.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/cash_white.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_5.png",
@@ -664,36 +664,36 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/search_dialog_btn_background.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/button_blue.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/button_blue.png"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/main_taxometr_background.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/main_taxometr_background.png"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_google_signin_btn_text_dark.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_light.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_media_route_mono_light.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_marker.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_marker.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_light.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_media_route_mono_light.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/main_taxometr_background.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/main_taxometr_background.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/button_blue.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/button_blue.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/shape_black_back.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/shape_black_back.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/create_btn_background.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/create_btn_background.xml"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/up_7.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/up_7.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/create_btn_background.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/create_btn_background.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/img_ether.xml",
@@ -736,36 +736,36 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/gray_line.9.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/gray_line.9.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/skype2.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/skype2.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/server_working.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/server_working.png"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/action_bar_view.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/action_bar_view.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/gray_line.9.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/gray_line.9.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_dark.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_media_route_mono_dark.xml"
     },
     {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/action_bar_view.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/action_bar_view.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/server_working.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/server_working.png"
+    },
+    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/up_3.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/up_3.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_cab_background_internal_bg.xml"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/gprs_working.png",
@@ -776,24 +776,24 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_media_route_connecting_mono_dark.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_9.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_9.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/up_6.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/up_6.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_9.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_9.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/large_clock.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/large_clock.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/black_button.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/black_button.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/black_button.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/black_button.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/cast_ic_notification_connecting.xml",
@@ -820,32 +820,32 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/pencil_attention.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/shield.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/shield.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/button_black.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/button_black.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/shield.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/shield.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/navigation_dots_centre.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/navigation_dots_centre.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_0.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_0.png"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route_2_points_line.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_2_points_line.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/button_back_pressed.9.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/button_back_pressed.9.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/comment_active.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/comment_active.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/button_back_pressed.9.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/button_back_pressed.9.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route_2_points_line.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_2_points_line.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_0.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_0.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/price_in_order_list.xml",
@@ -864,20 +864,20 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/point_white.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/point_white.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/server_working.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/server_working.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/class_dialog_btn_background.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/class_dialog_btn_background.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/point_white.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/point_white.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/class_dialog_btn_background.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/class_dialog_btn_background.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
@@ -948,28 +948,28 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_9.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/pencil_attention.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/pencil_attention.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/no_gps_working.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/no_gps_working.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/pencil_attention.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/pencil_attention.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_map.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_map.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/comment_not_active.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/comment_not_active.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/zoom_out.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/zoom_out.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/checkbox_background.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/checkbox_background.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/zoom_out.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/zoom_out.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/comment_not_active.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/comment_not_active.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/top_separator.9.png",
@@ -1028,28 +1028,28 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/up_0.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_dispatcher.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_dispatcher.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_plus_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_dark.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_media_route_mono_dark.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_dispatcher.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_dispatcher.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mail2.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/mail2.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/background_texture.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/background_texture.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_call_disp.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_call_disp.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/background_texture.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/background_texture.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mail2.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/mail2.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_dark.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_media_route_mono_dark.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/button_blue.png",
@@ -1073,23 +1073,23 @@
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_google_signin_btn_icon_dark.xml"
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/additional_active.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/additional_active.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_google_signin_btn_icon_light.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/route.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/search_dialog_btn_background.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/search_dialog_btn_background.xml"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/route.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/up_9.png",
@@ -1100,52 +1100,52 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_prelim_orders.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_btn_once_again.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_btn_once_again.xml"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_btn_borderless_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_plus_signin_btn_icon_light.xml"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_4.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_4.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_btn_once_again.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_btn_once_again.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/up_8.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/up_8.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/search_btn.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/search_btn.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_4.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_4.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_icon_light.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/divider90.9.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/divider90.9.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_exit.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_exit.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/search_btn.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/search_btn.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/separator.9.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/separator.9.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_exit.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_exit.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_play_light.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_play_light.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_balance.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_balance.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/separator.9.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/separator.9.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/custom_edittext.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/custom_edittext.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_balance.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_balance.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_menu_active.xml",
@@ -1172,12 +1172,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/dark_back2.9.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/custom_edittext.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/custom_edittext.xml"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_dark.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/custom_edittext.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/custom_edittext.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dark_back2.9.png",
@@ -1192,12 +1192,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/button_back_blue.9.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/transparent_button.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/transparent_button.xml"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/separator.9.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/separator.9.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/transparent_button.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/transparent_button.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/skype2.png",
@@ -1228,12 +1228,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/bordyurnyyy.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/from_to_2_points.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/from_to_2_points.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_play_light.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_play_light.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/from_to_2_points.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/from_to_2_points.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
@@ -1296,12 +1296,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_7.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/separator2.9.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/separator2.9.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/additional_not_active.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/additional_not_active.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/separator2.9.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/separator2.9.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/web_order.png",
@@ -1320,12 +1320,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/date_separator.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_play.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_play.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/button_back_pressed.9.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/button_back_pressed.9.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_play.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_play.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_menu_selector.xml",
@@ -1341,7 +1341,7 @@
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_google_signin_btn_text_light.xml"
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_hide_ether.xml",
@@ -1388,12 +1388,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/main_textview_boards.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/login.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/login.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/login.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/login.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
@@ -1412,12 +1412,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/header_style.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/no_cash.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/no_cash.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/zoom_in.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/zoom_in.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/no_cash.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/no_cash.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/up_7.png",
@@ -1429,59 +1429,59 @@
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/main_gradient_back.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/main_gradient_back.xml"
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/divider90.9.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/divider90.9.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/drawable/common_plus_signin_btn_text_light.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/main_gradient_back.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/main_gradient_back.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/showme.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/showme.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_light.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dot_to_unknown.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/dot_to_unknown.png"
     },
     {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/showme.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/showme.png"
+    },
+    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/input_back.9.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/input_back.9.png"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dot_from.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/dot_from.png"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_taxometr.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_taxometr.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/and2.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/and2.png"
     },
     {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/btn_taxometr.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/btn_taxometr.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dot_from.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/dot_from.png"
+    },
+    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/tel_2.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/tel_2.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/seek_bar_thumb.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/seek_bar_thumb.xml"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/action_bar_view.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/action_bar_view.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/gray_line.9.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/gray_line.9.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/action_bar_view.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/action_bar_view.png"
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/seek_bar_thumb.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/seek_bar_thumb.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/snackbar_background.xml",
@@ -1492,12 +1492,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_clock.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/fab_background.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/drawable/fab_background.xml"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/down_4.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/down_4.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/fab_background.xml",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/drawable/fab_background.xml"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/dark_back4.9.png",
@@ -1524,12 +1524,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_marker.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_marker.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_mono_light.xml",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/drawable/mr_ic_media_route_connecting_mono_light.xml"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/menu_marker.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/drawable/menu_marker.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
@@ -1548,12 +1548,12 @@
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_unknown_line.png"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route_unknown.png",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_unknown.png"
-    },
-    {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/mail2.png",
         "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/mail2.png"
+    },
+    {
+        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/route_unknown.png",
+        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/drawable/route_unknown.png"
     },
     {
         "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable/no_gprs_working.png",

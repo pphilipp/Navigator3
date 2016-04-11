@@ -16,21 +16,38 @@ repositories {
     mavenCentral()
     maven { url 'https://maven.fabric.io/public' }
 }
-
 android {
+    signingConfigs {
+        relis {
+            keyAlias 'imap android'
+            keyPassword 'imApp_123'
+            storeFile file('/home/philipp/app_keys/imap_pub_key.keystore')
+            storePassword 'imApp_111'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
     compileSdkVersion 22
     buildToolsVersion '23.0.2'
-
     defaultConfig {
         applicationId "com.innotech.imap_taxi3"
         minSdkVersion 16
         targetSdkVersion 19
+        versionCode 55
+        versionName "3.1.0.66"
     }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.relis
         }
     }
 }
@@ -42,7 +59,7 @@ dependencies {
         transitive = true;
     }
     compile 'com.android.support:support-v4:22.2.1'
-    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
     compile 'com.android.support:design:22.2.1'
     compile 'com.jakewharton:butterknife:7.0.1'
 }
