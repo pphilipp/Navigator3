@@ -8,27 +8,19 @@ package com.innotech.imap_taxi.network.packet;
 import com.innotech.imap_taxi.network.StringUtils;
 import com.innotech.imap_taxi.network.Utils;
 
-/**
- *
- * @author Kvest
- */
-public class RelayCommunicationResponce extends Packet
-{
+public class RelayCommunicationResponce extends Packet {
     public static final String REGISTER_TYPE = "Register";
     public static final String UNREGISTER_TYPE = "UnRegister";
-    
     public static final String AT_INVALID_CALLSIGN = "InvalidCallSign";
     public static final String AT_OUT_OF_SEASON = "OutOfSeason";
     public static final String AT_DRIVER_IS_BLOCKED = "DriverIsBlocked";
-    
     private String relayCommunicationType;
     private String relayAnswerType;
     private int relayID;
     private long openRelayDate;
     private int fromDriver;
     
-    public RelayCommunicationResponce(byte[] data)
-    {
+    public RelayCommunicationResponce(byte[] data) {
         super(RELAY_COMMUNICATION_RESPONCE);
         relayCommunicationType = "";
         relayAnswerType = "";
@@ -39,8 +31,7 @@ public class RelayCommunicationResponce extends Packet
         parse(data);
     }
 
-    protected void parse(byte[] data)
-    {
+    protected void parse(byte[] data) {
         int offset = 0;
 
         //Пропускаем название пакета
@@ -91,8 +82,7 @@ public class RelayCommunicationResponce extends Packet
         return relayCommunicationType;
     }
 
-    public String getRelayAnswerType()
-    {
+    public String getRelayAnswerType() {
         return relayAnswerType;
     }
 

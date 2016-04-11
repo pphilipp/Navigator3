@@ -236,6 +236,28 @@ public class SwipeFragment extends FragmentPacket
             }
         });
 
+        // zooming reaction
+        if (mMap != null) {
+            zoomBar.setMaximum((int) mMap.getMaxZoomLevel());
+            zoomBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                    mMap.animateCamera(CameraUpdateFactory.zoomTo(i));
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+
+                }
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+
+                }
+            });
+            zoomBar.setProgressAndThumb((int) mMap.getCameraPosition().zoom);
+        }
+
         toggleBtnHide = (ToggleButton) vMap.findViewById(R.id.hide_ether);
         toggleBtnHide.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -421,27 +443,7 @@ public class SwipeFragment extends FragmentPacket
             }
         }
 
-        // zooming reaction
-        if (mMap != null) {
-            zoomBar.setMaximum((int) mMap.getMaxZoomLevel());
-            zoomBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-                @Override
-                public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                    mMap.animateCamera(CameraUpdateFactory.zoomTo(i));
-                }
 
-                @Override
-                public void onStartTrackingTouch(SeekBar seekBar) {
-
-                }
-
-                @Override
-                public void onStopTrackingTouch(SeekBar seekBar) {
-
-                }
-            });
-            zoomBar.setProgressAndThumb((int) mMap.getCameraPosition().zoom);
-        }
     }
 
     @Override
@@ -913,7 +915,8 @@ public class SwipeFragment extends FragmentPacket
     }// end myOwnOrdersClick()
 
     private void addPacketListeners() {
-        MultiPacketListener.getInstance().addListener(Packet.LOGIN_RESPONCE,
+        MultiPacketListener.getInstance().addListener(
+                Packet.LOGIN_RESPONCE,
                 new OnNetworkPacketListener() {
                     @Override
                     public void onNetworkPacket(Packet packet) {
@@ -936,13 +939,10 @@ public class SwipeFragment extends FragmentPacket
 
                             Log.d(LOG_TAG, "ANSWER_OK createRegister");
 
-                            byte[] body = RequestBuilder
-                                    .createBodyRegisterOnRelay(ServerData
-                                                    .getInstance().getNick(), true,
-                                            loginResponse.peopleID);
+                            byte[] body = RequestBuilder.createBodyRegisterOnRelay(ServerData
+                                                .getInstance().getNick(), true, loginResponse.peopleID);
                             byte[] data = RequestBuilder
-                                    .createSrvTransfereData(
-                                            RequestBuilder.DEFAULT_CONNECTION_TYPE,
+                                    .createSrvTransfereData(RequestBuilder.DEFAULT_CONNECTION_TYPE,
                                             loginResponse.srvID,
                                             RequestBuilder.DEFAULT_DESTINATION_ID,
                                             loginResponse.GUID, true, body);
@@ -978,26 +978,25 @@ public class SwipeFragment extends FragmentPacket
                                             RequestBuilder.DEFAULT_DESTINATION_ID,
                                             loginResponse.GUID, true, body5);
                             ConnectionHelper.getInstance().send(data5);
-                            // Log.d("tag-tag-tag","sended_getDriverState " +
-                            // sended);
-
-                            // createBodyCarOnAddressRequest вызывается когда
-                            // водитель посылает запрос "Выводить пассажиров"
-                            // createBodyPPSOrderCancelRequest Запрос от
-                            // водителя на отмену заказа
-                            // createBodyOrderCancel Отмена заказа
-                            // createBodyPickingUpCharge Подача оплачена
-                            // createMoveBackInQueue Пакет Уступить очередь
-                            // createDriverWaiting Уведомление диспетчеру о том,
-                            // что водитель ожидает минут
-                            //
-                            // createSignPreliminaryOrder
-                            // createDriverDelay Уведомление диспетчеру о том,
-                            // что водитель опаздывает на Delay минут
-                            // createPassengerOut если ожидание пассажира уже
-                            // более 10 минут, дисп он звонит пассажиру.
-                            // PPCUnRegisterOnRelay Снятие со смены
-
+                            /**
+                             *  @createBodyCarOnAddressRequest - вызывается когда
+                             *  водитель посылает запрос "Выводить пассажиров"
+                             *  @createBodyPPSOrderCancelRequest -  Запрос от
+                             *  водителя на отмену заказа
+                             *  @createBodyOrderCancel О - тмена заказа
+                             *  @createBodyPickingUpCharge - Подача оплачена
+                             *  @createMoveBackInQueue - Пакет Уступить очередь
+                             *  @createDriverWaiting - Уведомление диспетчеру о том,
+                             *  что водитель ожидает минут
+                             *
+                             *  @createSignPreliminaryOrder -
+                             *  @createDriverDelay - Уведомление диспетчеру о том,
+                             *  что водитель опаздывает на Delay минут
+                             *  @createPassengerOut - если ожидание пассажира уже
+                             *  более 10 минут, дисп он звонит пассажиру.
+                             *  @PPCUnRegisterOnRelay - Снятие со смены
+                             *
+                             * */
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
                                         @Override
@@ -1020,7 +1019,8 @@ public class SwipeFragment extends FragmentPacket
                                         @Override
                                         public void run() {
                                             AlertDHelper
-                                                    .showDialogOk("Нет прав. Проверьте, правильно ли введёны данные в полях Логин, Позывный, Пароль");
+                                                    .showDialogOk(
+                                                "Нет прав. Проверьте, правильно ли введёны данные в полях Логин, Позывный, Пароль");
                                             // ConnectionHelper.getInstance().stop();
                                         }
                                     });
@@ -1046,8 +1046,6 @@ public class SwipeFragment extends FragmentPacket
                                                final String errorMessage) {
                         Log.d(LOG_TAG, "onNetworkError[code=" + errorCode
                                 + ", message=" + errorMessage + "]");
-                        // Log.w(TAG, "onNetworkError[code=" + errorCode +
-                        // ", message=" + errorMessage + "]");
 
                         ContextHelper.getInstance().runOnCurrentUIThread(
                                 new Runnable() {
@@ -1084,18 +1082,14 @@ public class SwipeFragment extends FragmentPacket
                     @Override
                     public void onNetworkPacket(Packet packet) {
                         RelayCommunicationResponce pack = (RelayCommunicationResponce) packet;
-
-                        Log.i(LOG_TAG, "goted " + pack.toString()); // ok
-
+                        Log.d(LOG_TAG, "RELAY_COMMUNICATION_RESPONCE goted " + pack.toString()); // ok
                         isCancelProgressDialog = true;
-
-                        Log.d(LOG_TAG, "RELAY_RESPONSE = " + pack.getRelayAnswerType());
+                        Log.d(LOG_TAG, "RELAY_COMMUNICATION_RESPONCE = " + pack.getRelayAnswerType());
 
                         if (pack.getRelayAnswerType().equals("Registered")) {
                             // added a line
                             sharedPrefs.edit().putInt("currentRelayID", pack.getRelayID());
-
-                            Log.d(LOG_TAG, "1089 Registered on relay");
+                            Log.d(LOG_TAG, "RELAY_COMMUNICATION_RESPONCE Registered on relay");
 
                             if (ServerData.getInstance().isShowAlertRegistr())
                                 play.play(R.raw.msg_stat_pos);
@@ -1157,25 +1151,17 @@ public class SwipeFragment extends FragmentPacket
                                         }
                                     });
 
-                        } else if (pack.getRelayAnswerType().equals(
-                                "UnRegistered")) {
-                            Log.d(LOG_TAG, "Unregistered on relay");
+                        } else if (pack.getRelayAnswerType().equals("UnRegistered")) {
+                            Log.d(LOG_TAG, "RELAY_COMMUNICATION_RESPONCE Unregistered on relay");
                             play.play(R.raw.msg_stat_neg);
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
                                         @Override
                                         public void run() {
-
-                                            OrderManager.getInstance()
-                                                    .clearAllOrders();
-
-                                            if (!isExit) {
-                                                AlertDHelper
-                                                        .showDialogOk("Вы сняты со смены");
-                                            }
-
+                                            OrderManager.getInstance().clearAllOrders();
+                                            if (!isExit)
+                                                AlertDHelper.showDialogOk("Вы сняты со смены");
                                             RunPingAndGeo.getInstance().stop();
-
                                             disconnect();
                                             if (isExit) {
                                                 ContextHelper.getInstance()
@@ -1183,10 +1169,8 @@ public class SwipeFragment extends FragmentPacket
                                                         .finish();
                                             }
                                         }
-
                                     });
-                        } else if (pack.getRelayAnswerType().equals(
-                                "CannotRegister")) {
+                        } else if (pack.getRelayAnswerType().equals("CannotRegister")) {
                             play.play(R.raw.msg_stat_neg);
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
@@ -1197,8 +1181,7 @@ public class SwipeFragment extends FragmentPacket
                                             disconnect();
                                         }
                                     });
-                        } else if (pack.getRelayAnswerType().equals(
-                                "PeopleNotFound")) {
+                        } else if (pack.getRelayAnswerType().equals("PeopleNotFound")) {
                             play.play(R.raw.msg_stat_neg);
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
@@ -1209,8 +1192,7 @@ public class SwipeFragment extends FragmentPacket
                                             disconnect();
                                         }
                                     });
-                        } else if (pack.getRelayAnswerType().equals(
-                                "InvalidCallSign")) {
+                        } else if (pack.getRelayAnswerType().equals("InvalidCallSign")) {
                             play.play(R.raw.msg_stat_neg);
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
@@ -1221,8 +1203,7 @@ public class SwipeFragment extends FragmentPacket
                                             disconnect();
                                         }
                                     });
-                        } else if (pack.getRelayAnswerType().equals(
-                                "DriverIsBlocked")) {
+                        } else if (pack.getRelayAnswerType().equals("DriverIsBlocked")) {
                             play.play(R.raw.msg_stat_neg);
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
@@ -1233,8 +1214,7 @@ public class SwipeFragment extends FragmentPacket
                                             disconnect();
                                         }
                                     });
-                        } else if (pack.getRelayAnswerType().equals(
-                                "CallSignAlreadyUsed")) {
+                        } else if (pack.getRelayAnswerType().equals("CallSignAlreadyUsed")) {
                             play.play(R.raw.msg_stat_neg);
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
@@ -1245,8 +1225,7 @@ public class SwipeFragment extends FragmentPacket
                                             disconnect();
                                         }
                                     });
-                        } else if (pack.getRelayAnswerType().equals(
-                                "NegativeBalance")) {
+                        } else if (pack.getRelayAnswerType().equals("NegativeBalance")) {
                             play.play(R.raw.msg_stat_neg);
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
@@ -1257,8 +1236,7 @@ public class SwipeFragment extends FragmentPacket
                                             disconnect();
                                         }
                                     });
-                        } else if (pack.getRelayAnswerType().equals(
-                                "DataBaseError")) {
+                        } else if (pack.getRelayAnswerType().equals("DataBaseError")) {
                             play.play(R.raw.msg_stat_neg);
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
@@ -1269,8 +1247,7 @@ public class SwipeFragment extends FragmentPacket
                                             disconnect();
                                         }
                                     });
-                        } else if (pack.getRelayAnswerType().equals(
-                                "SubscriptionIsNotActive")) {
+                        } else if (pack.getRelayAnswerType().equals("SubscriptionIsNotActive")) {
                             play.play(R.raw.msg_stat_neg);
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
@@ -1295,26 +1272,22 @@ public class SwipeFragment extends FragmentPacket
         // });
 
         MultiPacketListener.getInstance().addListener(
-                Packet.SETTINGS_XML_RESPONCE, new OnNetworkPacketListener() {
+                Packet.SETTINGS_XML_RESPONCE,
+                new OnNetworkPacketListener() {
                     @Override
                     public void onNetworkPacket(Packet packet) {
                         SettingXmlResponse pack = (SettingXmlResponse) packet;
-                        Log.i(LOG_TAG,
-                                "goted SETTINGS_XML_RESPONCE "
-                                        + pack.getSettings()); // ok
-                        Log.w(LOG_TAG,
-                                "goted SETTINGS_XML_RESPONCE "
-                                        + pack.getSettings()); // ok
+                        Log.d(LOG_TAG, "SETTINGS_XML_RESPONCE goted SETTINGS_XML_RESPONCE "
+                                + pack.getSettings()); // ok
                         if (pack.getSettings() == null) {
-                            Log.d("XML", "Settings error");
+                            Log.d(LOG_TAG, "SETTINGS_XML_RESPONCE Settings error");
                             xmlOk = true;
-                        } else
-                            Log.d("XML", "Settings ok");
+                        } else Log.d(LOG_TAG, "SETTINGS_XML_RESPONCE Settings ok");
+
                         SettingsFromXml.getInstance().setSettingsFromXml(
                                 pack.getSettings());
 
                         if (!SettingsFromXml.getInstance().isBalanceDrivers()) {
-
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
                                         @Override
@@ -1325,13 +1298,14 @@ public class SwipeFragment extends FragmentPacket
 
                                         }
                                     });
-
                         }
-                        Log.d("myLogs", "Own_orders = "
-                                + SettingsFromXml.getInstance()
-                                .isShowYourOrders());
+
+                        Log.d(LOG_TAG,
+                                "SETTINGS_XML_RESPONCE Own_orders = "
+                                        + SettingsFromXml.getInstance().isShowYourOrders());
+
                         if (!SettingsFromXml.getInstance().isShowYourOrders()) {
-                            Log.d("myLogs", "Own_orders = false");
+                            Log.d(LOG_TAG, "SETTINGS_XML_RESPONCE Own_orders = false");
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
                                         @Override
@@ -1342,9 +1316,8 @@ public class SwipeFragment extends FragmentPacket
                                                     .setShowYourOrders(false);
                                         }
                                     });
-
                         } else {
-                            Log.d("myLogs", "Own_orders = true");
+                            Log.d(LOG_TAG, "SETTINGS_XML_RESPONCE Own_orders = true");
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
                                         @Override
@@ -1355,10 +1328,9 @@ public class SwipeFragment extends FragmentPacket
                                                     .setShowYourOrders(true);
                                         }
                                     });
-
                         }
-                        if (!SettingsFromXml.getInstance().isUseParkings()) {
 
+                        if (!SettingsFromXml.getInstance().isUseParkings()) {
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
                                         @Override
@@ -1378,7 +1350,6 @@ public class SwipeFragment extends FragmentPacket
                                             // first.findViewById(R.id.parkingsImage).setVisibility(View.VISIBLE);
                                             StateObserver.getInstance()
                                                     .setShowParkings(true);
-
                                         }
                                     });
                         }
@@ -1390,15 +1361,11 @@ public class SwipeFragment extends FragmentPacket
                     @Override
                     public void onNetworkPacket(Packet packet) {
                         SetYourOrdersAnswer pack = (SetYourOrdersAnswer) packet;
-
-                        Log.d(LOG_TAG, "goted SET_YOUR_ORDERS_ANSWER " + pack.driverState); // ok
-
+                        Log.d(LOG_TAG, "SET_YOUR_ORDERS_ANSWER goted" + pack.driverState); // ok
                         play.play(R.raw.msg_warn);
 
                         if (pack.driverState.equals("Other")) {
-
                             ServerData.getInstance().doOwn = true;
-
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
                                         @Override
@@ -1429,18 +1396,14 @@ public class SwipeFragment extends FragmentPacket
                                         }
                                     });
                         } else if (pack.driverState.equals("Free")) {
-
                             ServerData.getInstance().doOwn = false;
-
                             ContextHelper.getInstance().runOnCurrentUIThread(
                                     new Runnable() {
                                         @Override
                                         public void run() {
                                             myOwnOrder.setText("Cвой заказ");
-                                            myOwnOrder
-                                                    .setTextColor(getResources()
-                                                            .getColor(
-                                                                    android.R.color.white));
+                                            myOwnOrder.setTextColor(getResources()
+                                                    .getColor(android.R.color.white));
                                             // TextView state_driver =
                                             // (TextView)
                                             // ContextHelper.getInstance().getCurrentActivity().findViewById(R.id.state_driver);
@@ -1481,23 +1444,23 @@ public class SwipeFragment extends FragmentPacket
                 });
 
         //check ping response from server
-        MultiPacketListener.getInstance().addListener(Packet.PING_RESPONCE,
+        MultiPacketListener.getInstance().addListener(
+                Packet.PING_RESPONCE,
                 new OnNetworkPacketListener() {
             @Override
             public void onNetworkPacket(Packet packet) {
-                Log.d(LOG_TAG, "Test ping response.");
+                Log.d(LOG_TAG, "PING_RESPONCE Test ping response.");
             }
         });
 
         // вычитываем и обновляем запросы после подключения
         MultiPacketListener.getInstance().addListener(
-            Packet.GET_ORDERS_RESPONCE, new OnNetworkPacketListener() {
+            Packet.GET_ORDERS_RESPONCE,
+                new OnNetworkPacketListener() {
                 @Override
                 public void onNetworkPacket(Packet packet) {
                     final GetOrdersResponse pack = (GetOrdersResponse) packet;
-
-                    Log.i(LOG_TAG, "1490 goted GET_ORDERS_RESPONCE " + pack.count()); // ok
-
+                    Log.i(LOG_TAG, "GET_ORDERS_RESPONCE goted" + pack.count()); // ok
                     updateMyOrders(pack);
                     if (pack.count() > 0
                             && FragmentTransactionManager.getInstance()
@@ -2413,11 +2376,9 @@ public class SwipeFragment extends FragmentPacket
     } // end addPacketListeners()
 
     private void showConfirmToast(boolean isOrderYours, String address) {
-
         Context context = ContextHelper.getInstance().getCurrentContext();
         // Create layout inflator object to inflate toast.xml file
         LayoutInflater inflater = ContextHelper.getInstance().getCurrentActivity().getLayoutInflater();
-
         // Call toast.xml file for toast layout
         View toastRoot = inflater.inflate(R.layout.custom_layout, null);
 
@@ -2445,7 +2406,6 @@ public class SwipeFragment extends FragmentPacket
     }
 
     protected void updateMyOrders(GetOrdersResponse pack) {
-
         for (int i = 0; i < pack.count(); i++) {
             Order order = new Order(pack.getOrder(i));
 

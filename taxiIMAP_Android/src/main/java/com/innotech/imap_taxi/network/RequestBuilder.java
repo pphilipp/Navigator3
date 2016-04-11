@@ -134,11 +134,28 @@ public class RequestBuilder {
 		}
 	}
 
-	public static byte[] createSrvTransfereData(String connectionType, int srvID, int destinationID, byte[] guid, boolean log, byte[] body) {
-		return createSrvTransfereData(connectionType, srvID, destinationID, guid, log, body, -1);
+	public static byte[] createSrvTransfereData(String connectionType,
+												int srvID,
+												int destinationID,
+												byte[] guid,
+												boolean log,
+												byte[] body) {
+		return createSrvTransfereData(connectionType,
+				srvID,
+				destinationID,
+				guid,
+				log,
+				body,
+				-1);
 	}
 
-	public static byte[] createSrvTransfereData(String connectionType, int srvID, int destinationID, byte[] guid, boolean log, byte[] body, int packetNumber) {
+	public static byte[] createSrvTransfereData(String connectionType,
+												int srvID,
+												int destinationID,
+												byte[] guid,
+												boolean log,
+												byte[] body,
+												int packetNumber) {
 		BuilderStream stream = null;
 		try {
 			stream = new BuilderStream("IMAP.Net.SrvTransfereData", true);
