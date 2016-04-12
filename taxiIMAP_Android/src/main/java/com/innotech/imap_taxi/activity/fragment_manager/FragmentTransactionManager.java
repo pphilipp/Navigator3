@@ -110,13 +110,12 @@ public class FragmentTransactionManager {
 	public void openFragment(final int id) {
 		fragmentTransaction = fragmentActivity.getSupportFragmentManager()
 				.beginTransaction();
-		if (NavigatorMenuActivity.iconLayout != null
-				&& NavigatorMenuActivity.iconLayout != null) {
+		if (NavigatorMenuActivity.iconLayout != null) {
 			ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
 				
 				@Override
 				public void run() {
-					if (id == 9) {
+					if (id == FragmentPacket.ARCHIV) {
 						NavigatorMenuActivity.arhivLayout.setVisibility(View.VISIBLE);
 						NavigatorMenuActivity.iconLayout.setVisibility(View.GONE);
 					} else {
@@ -124,8 +123,8 @@ public class FragmentTransactionManager {
 						NavigatorMenuActivity.iconLayout.setVisibility(View.VISIBLE);
 					}
 					NavigatorMenuActivity.iconLayout
-					.setVisibility((id == 4 || id == 9) ? View.GONE
-							: View.VISIBLE);
+					.setVisibility((id == FragmentPacket.ORDER || id == FragmentPacket.ARCHIV)
+							? View.GONE : View.VISIBLE);
 				}
 			});
 		}

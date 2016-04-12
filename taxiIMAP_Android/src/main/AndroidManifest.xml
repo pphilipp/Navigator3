@@ -63,7 +63,7 @@
         </activity>
 
         <activity
-            android:name="com.innotech.imap_taxi.activity.Main_taxometr"
+            android:name="com.innotech.imap_taxi.activity.MainTaxometr"
             android:label="@string/title_activity_main_taxometr" >
         </activity>
 

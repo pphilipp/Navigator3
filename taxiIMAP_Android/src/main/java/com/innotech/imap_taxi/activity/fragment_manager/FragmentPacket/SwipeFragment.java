@@ -45,7 +45,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
-import com.innotech.imap_taxi.activity.Main_taxometr;
+import com.innotech.imap_taxi.activity.MainTaxometr;
 import com.innotech.imap_taxi.activity.NavigatorMenuActivity;
 import com.innotech.imap_taxi.activity.UserSettingActivity;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentTransactionManager;
@@ -117,8 +117,8 @@ public class SwipeFragment extends FragmentPacket
     Button btnTaxoMetr;
     Button btnMap;
     Button btnOrders;
-    Button btnZoomIn;
     Button btnPrelim;
+    Button btnZoomIn;
     Button btnZoomOut;
     Button btnTest;
     Button btnSendCrash;
@@ -586,23 +586,26 @@ public class SwipeFragment extends FragmentPacket
                 break;
             case R.id.btn_busy:
                 busyClick();
+            break;
+            case R.id.btn_taxometr:
+                taxometrClick();
                 break;
             case R.id.btn_order:
-                FragmentTransactionManager.getInstance().openFragment(
+            FragmentTransactionManager.getInstance().openFragment(
                         FragmentPacket.ORDERS);
-                break;
+            break;
             case R.id.ethear_button:
-                FragmentTransactionManager.getInstance().openFragment(
+            FragmentTransactionManager.getInstance().openFragment(
                         FragmentPacket.ETHEAR);
-                break;
+            break;
             case R.id.test_test:
-                testClick();
-                break;
+            testClick();
+            break;
             case R.id.exit:
-                exitClick();
-                break;
+            exitClick();
+            break;
             case R.id.btn_prefs:
-                ContextHelper
+            ContextHelper
                         .getInstance()
                         .getCurrentActivity()
                         .startActivityForResult(
@@ -610,10 +613,7 @@ public class SwipeFragment extends FragmentPacket
                                         .getCurrentContext(),
                                         UserSettingActivity.class),
                                 RESULT_SETTINGS);
-                break;
-            case R.id.btn_taxometr:
-                taxometrClick();
-                break;
+            break;
             case R.id.sendCrash :
 //                showConfirmToast(false, "Address");
                 // test screen orientation.
@@ -658,7 +658,7 @@ public class SwipeFragment extends FragmentPacket
                         .startActivity(
                                 new Intent(ContextHelper.getInstance()
                                         .getCurrentContext(),
-                                        Main_taxometr.class));
+                                        MainTaxometr.class));
             else
                 AlertDHelper
                         .showDialogOk(getResources().getString(R.string.str_use_taxometer_is_not_possible));
