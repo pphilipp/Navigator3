@@ -615,15 +615,10 @@ public class SwipeFragment extends FragmentPacket
                                 RESULT_SETTINGS);
             break;
             case R.id.sendCrash :
-//                showConfirmToast(false, "Address");
-                // test screen orientation.
-                Toast.makeText(getActivity(), getScreenOrientation(), Toast.LENGTH_SHORT).show();
+                showConfirmToast(false, "Address ");
                 break;
-
-
             default:break;
         }
-
     }
 
     public void switchListView(OrdersAdapterDisp4 mAdapter) {
@@ -1861,7 +1856,7 @@ public class SwipeFragment extends FragmentPacket
                                             }
 
                                             String address = "";
-                                            if (orderManager.getOrder(pack.orderID) != null && orderManager.getOrder(pack.orderID) != null) {
+                                            if (orderManager.getOrder(pack.orderID) != null) {
                                                 address = orderManager.getOrder(pack.orderID).getStreet();
                                                 address += " " + orderManager.getOrder(pack.orderID).getAddressFact();
                                             }
@@ -2649,15 +2644,6 @@ public class SwipeFragment extends FragmentPacket
         public void startUpdate(View arg0) {
 
         }
-    }
-
-    private String getScreenOrientation(){
-        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
-            return "Портретная ориентация";
-        else if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
-            return "Альбомная ориентация";
-        else
-            return "";
     }
 
     public void drawRouteIfExist(ArrayList<LatLng> l) {

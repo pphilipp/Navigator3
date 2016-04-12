@@ -15,14 +15,17 @@ import com.innotech.imap_taxi3.R;
 
 public class TarifAccept extends FragmentPacket{
     public static Tarif tar = null;
+
 	public TarifAccept() {
 		super(TAXOMETR_ACCEPT_TARIF);
 	}
+
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 		setUserVisibleHint(true);
 	}
+
 	static View myView;
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -34,10 +37,11 @@ public class TarifAccept extends FragmentPacket{
         }
 		return myView;
 	}
+
 	public static void openTarif(String j){
 		try {
 			tar = new Tarif(j);
-			((TextView)myView.findViewById(R.id.tarif_name)).setText("ТАРИФ «"+tar.tariffname +"»");
+			((TextView)myView.findViewById(R.id.tarif_name)).setText("ТАРИФ «" + tar.tariffname +"»");
 			((TextView)myView.findViewById(R.id.tarif_pos)).setText(tar.pricetoseat+"");
 			((TextView)myView.findViewById(R.id.tarif_km)).setText(tar.priceperkilometr+"");
 			((TextView)myView.findViewById(R.id.tarif_wait)).setText(tar.priceforwait+"");

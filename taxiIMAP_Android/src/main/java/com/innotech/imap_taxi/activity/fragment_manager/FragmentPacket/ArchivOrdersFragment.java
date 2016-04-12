@@ -67,7 +67,7 @@ public class ArchivOrdersFragment extends FragmentPacket {
 	private static Button filter, delete, cleanArchive;
 	private static TextView orderAmountTxt;
 	private static TextView totalTxt;
-	private Button back;
+	Button back;
 	static private Spinner datesSpinner;
 	private static CheckBox incl;
 
@@ -105,9 +105,8 @@ public class ArchivOrdersFragment extends FragmentPacket {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		View myView = inflater.inflate(R.layout.current_orders_2_new,
-				container, false);
+							 Bundle savedInstanceState) {
+		View myView = inflater.inflate(R.layout.current_orders_2_new, container, false);
 
 		// start tune actionBar elements
 		actionBar = NavigatorMenuActivity.arhivLayout;
@@ -320,14 +319,15 @@ public class ArchivOrdersFragment extends FragmentPacket {
 		});
 
 		back = (Button) myView.findViewById(R.id.btn_back);
-		back.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				FragmentTransactionManager.getInstance().openFragment(
-						FragmentPacket.ORDERS);
-				Toast.makeText(getActivity(), "woow", Toast.LENGTH_SHORT).show();
-			}
-		});
+		if(back != null) {
+			back.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View view) {
+					FragmentTransactionManager.getInstance().openFragment(
+							FragmentPacket.ORDERS);
+				}
+			});
+		}
 
 		datesSpinner = (Spinner) myView.findViewById(R.id.spinner_date);
 

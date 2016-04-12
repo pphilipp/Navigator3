@@ -20,7 +20,6 @@ import android.support.v4.view.ViewPager;
 import android.text.Html;
 import android.text.InputType;
 import android.text.SpannableString;
-import android.text.style.ForegroundColorSpan;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
 import android.util.TypedValue;
@@ -38,7 +37,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.innotech.imap_taxi.activity.UserSettingActivity;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentTransactionManager;
 import com.innotech.imap_taxi.core.OrderManager;
@@ -61,7 +59,6 @@ import com.innotech.imap_taxi.utile.PlaySound;
 import com.innotech.imap_taxi3.R;
 import com.viewpagerindicator.CirclePageIndicator;
 import com.viewpagerindicator.PageIndicator;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -70,54 +67,67 @@ import java.util.TimeZone;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class OrderDetails extends FragmentPacket {
-
-	private static final String TAG = "Order_details";
+public class OrderDetails extends FragmentPacket implements View.OnClickListener{
+	private static final String TAG = OrderDetails.class.getSimpleName();
+	//possible states of order due to view and controls
+	private static final int INCOMING = 1;
+	private static final int ACCEPTED = 2;
+	private static final int ARRIVED = 3;
+	private static final int PERFORMING = 4;
+	private static final int DONE = 5;
+	private static final int UNDEFINED = -1;
 	private static AlertDialog dialog;
 	private static TextView region;
 	private static TextView distance;
 	private static TextView edditionalTxt;
 	protected static String comments;
 	private static ImageView extraInfoBtn;
-	private static ImageView imageJoker, imageWebOrder, imageNoCash, imageEd;
-	// private static RelativeLayout edditionalInfoLayout;
-	private static TextView extraTxt;
+	private static ImageView imageJoker;
+	private static ImageView imageWebOrder;
+	private static ImageView imageNoCash;
+	private static ImageView imageEd;
 	private static TextView arriveTimerTxt;
 	private static LinearLayout colorLayout;
 	private static Timer timerStopWatch;
-
 	private static long orderTime;
 	private static ImageView commentsImage;
 	private static TextView autoClassTxt;
-
-	private static RelativeLayout tenMinLayout, minLayout, tenSecLayout,
-			secLayout;
+	private static RelativeLayout tenMinLayout;
+	private static RelativeLayout minLayout;
+	private static RelativeLayout tenSecLayout;
+	private static RelativeLayout secLayout;
 	private static LinearLayout flipClock;
-	
 	private static int curTenMin;
 	private static int curMin;
 	private static int curTenSec;
 	private static int curSec;
-
-	private static ViewPager mPager;
-
-	// private static Button btnArrived1;
-
-	public OrderDetails() {
-		super(ORDER_DETAILS);
-	}
-
 	private static int oldOrderId = -1;
-	private static TextView txtDetails, adressFrom1, adressFrom2, adressTo,
-			date, time, price;
-	public static Button btnArrived, btnDo, btnMap, btnConnDrivCl, btnDetails,
-			btnBack, btnCancel, btnAccept/* , btnNoClient, btnWellDone */;
+	private static ViewPager mPager;
+	private static TextView txtDetails;
+	private static TextView adressFrom1;
+	private static TextView adressFrom2;
+	private static TextView adressTo;
+	private static TextView price;
+	private static TextView time;
+	private static TextView date;
+	public static Button btnArrived;
+	public static Button btnDo;
+	public static Button btnMap;
+	public static Button btnConnDrivCl;
+	public static Button btnDetails;
+	public static Button btnBack;
+	public static Button btnCancel;
+	public static Button btnAccept;
+	public static Button btnNoClient;
+	public static Button btnWellDone;
 	private static LinearLayout route, routeInfoLayout;
 	private static RouteView rw;
 	public static boolean isArch;
 	private static CountDownTimer ct3;
+
 	private static OnClickListener doListener, doneListener, arrivedListener,
 			noClientListener, cancelListner, acceptListner;
+
 	private static long s;
 	private static int orderID = -1;
 	private static Order archOrder = null;
@@ -126,6 +136,13 @@ public class OrderDetails extends FragmentPacket {
 	private static View commentsView;
 	private static View featuresView;
 	private static PageIndicator mIndicator;
+	// private static Button btnArrived1;
+	// private static RelativeLayout edditionalInfoLayout;
+	private static TextView extraTxt;
+
+	public OrderDetails() {
+		super(ORDER_DETAILS);
+	}
 
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
@@ -148,66 +165,65 @@ public class OrderDetails extends FragmentPacket {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View myView = inflater.inflate(R.layout.activity_order_details_new1,
-				container, false);
+		View view = inflater.inflate(R.layout.fragment_order_details_new1, container, false);
 
 		// define Layouts for FlipClock
-		tenMinLayout = (RelativeLayout) myView.findViewById(R.id.tenMinLayout);
-		minLayout = (RelativeLayout) myView.findViewById(R.id.minLayout);
-		tenSecLayout = (RelativeLayout) myView.findViewById(R.id.tenSecLayout);
-		secLayout = (RelativeLayout) myView.findViewById(R.id.secLayout);
+		tenMinLayout = (RelativeLayout) view.findViewById(R.id.tenMinLayout);
+		minLayout = (RelativeLayout) view.findViewById(R.id.minLayout);
+		tenSecLayout = (RelativeLayout) view.findViewById(R.id.tenSecLayout);
+		secLayout = (RelativeLayout) view.findViewById(R.id.secLayout);
 
-		txtDetails = (TextView) myView.findViewById(R.id.txt_details);
-		autoClassTxt = (TextView) myView.findViewById(R.id.autoClassTxt);
-		colorLayout = (LinearLayout) myView.findViewById(R.id.colorLayout);
-		routeInfoLayout = (LinearLayout) myView
+		txtDetails = (TextView) view.findViewById(R.id.txt_details);
+		autoClassTxt = (TextView) view.findViewById(R.id.autoClassTxt);
+		colorLayout = (LinearLayout) view.findViewById(R.id.colorLayout);
+		routeInfoLayout = (LinearLayout) view
 				.findViewById(R.id.routeInfoLayout);
 		PaintDrawable p = (PaintDrawable) GraphUtils
 				.getEtherRouteGradient(routeInfoLayout);
 		routeInfoLayout.setBackground((Drawable) p);
 
-		region = (TextView) myView.findViewById(R.id.regionTxt);
-		distance = (TextView) myView.findViewById(R.id.distTxt);
-		edditionalTxt = (TextView) myView.findViewById(R.id.edditionalTxt);
-		extraInfoBtn = (ImageView) myView.findViewById(R.id.extraInfoBtn);
+		region = (TextView) view.findViewById(R.id.regionTxt);
+		distance = (TextView) view.findViewById(R.id.distTxt);
+		edditionalTxt = (TextView) view.findViewById(R.id.edditionalTxt);
+		extraInfoBtn = (ImageView) view.findViewById(R.id.extraInfoBtn);
 
-		arriveTimerTxt = (TextView) myView.findViewById(R.id.timerTxt);
-		flipClock = (LinearLayout) myView.findViewById(R.id.flipClockLayout);
+		arriveTimerTxt = (TextView) view.findViewById(R.id.timerTxt);
+		flipClock = (LinearLayout) view.findViewById(R.id.flipClockLayout);
 
-		imageJoker = (ImageView) myView.findViewById(R.id.imageJoker);
-		imageWebOrder = (ImageView) myView.findViewById(R.id.imageWeb);
-		imageNoCash = (ImageView) myView.findViewById(R.id.imageNoCash);
+		imageJoker = (ImageView) view.findViewById(R.id.imageJoker);
+		imageWebOrder = (ImageView) view.findViewById(R.id.imageWeb);
+		imageNoCash = (ImageView) view.findViewById(R.id.imageNoCash);
 
-		imageEd = (ImageView) myView.findViewById(R.id.imageEd);
-		commentsImage = (ImageView) myView.findViewById(R.id.commentImage);
+		imageEd = (ImageView) view.findViewById(R.id.imageEd);
+		commentsImage = (ImageView) view.findViewById(R.id.commentImage);
 
-		rw = (RouteView) myView
+		rw = (RouteView) view
 				.findViewById(R.id.routeCustom);
-		extraTxt = (TextView) myView.findViewById(R.id.extraTxt);
+		extraTxt = (TextView) view.findViewById(R.id.extraTxt);
 
-		adressFrom1 = (TextView) myView.findViewById(R.id.adrsFrom1);
-		adressFrom2 = (TextView) myView.findViewById(R.id.adrsFrom2);
-		adressTo = (TextView) myView.findViewById(R.id.adrsTo);
-		date = (TextView) myView.findViewById(R.id.date);
-		time = (TextView) myView.findViewById(R.id.time);
+		adressFrom1 = (TextView) view.findViewById(R.id.adrsFrom1);
+		adressFrom2 = (TextView) view.findViewById(R.id.adrsFrom2);
+		adressTo = (TextView) view.findViewById(R.id.adrsTo);
+		date = (TextView) view.findViewById(R.id.date);
+		time = (TextView) view.findViewById(R.id.time);
 		time.setText("");
-		price = (TextView) myView.findViewById(R.id.costTxt);
-		route = (LinearLayout) myView.findViewById(R.id.routeLL);
+		price = (TextView) view.findViewById(R.id.costTxt);
+		route = (LinearLayout) view.findViewById(R.id.routeLL);
 
-		btnArrived = (Button) myView.findViewById(R.id.btn_arrived);
+		btnArrived = (Button) view.findViewById(R.id.btn_arrived);
 		// btnArrived1 = (Button) view.findViewById(R.id.btn_arrived1);
-		btnDo = (Button) myView.findViewById(R.id.btn_do);
-		btnConnDrivCl = (Button) myView
+		btnDo = (Button) view.findViewById(R.id.btn_do);
+		btnConnDrivCl = (Button) view
 				.findViewById(R.id.btn_connectDriverClient);
 
 		// btnNoClient = (Button) view.findViewById(R.id.btn_noClient);
 		// btnWellDone = (Button) view.findViewById(R.id.btnWellDone);
 
-		btnDetails = (Button) myView.findViewById(R.id.btn_details);
+		btnDetails = (Button) view.findViewById(R.id.btn_details);
 		// btnMap = (Button) view.findViewById(R.id.btn_map);
-		btnBack = (Button) myView.findViewById(R.id.btn_back);
-		btnCancel = (Button) myView.findViewById(R.id.btn_cancel_ord);
-		btnAccept = (Button) myView.findViewById(R.id.btn_accept_order);
+		btnBack = (Button) view.findViewById(R.id.btn_back);
+		btnCancel = (Button) view.findViewById(R.id.btn_cancel_ord);
+		btnAccept = (Button) view.findViewById(R.id.btn_accept_order);
 
 		// config btns
 		btnConnDrivCl.setEnabled(false);
@@ -252,13 +268,13 @@ public class OrderDetails extends FragmentPacket {
 		btnCancel.setEnabled(true);
 		btnAccept.setEnabled(false);
 
-		mPager = (ViewPager) myView.findViewById(R.id.comment_container);
+		mPager = (ViewPager) view.findViewById(R.id.comment_container);
 		commentsView = inflater.inflate(R.layout.order_comment_fragment, null);
 		featuresView = inflater.inflate(R.layout.order_comment_fragment, null);
-		mIndicator = (CirclePageIndicator) myView
+		mIndicator = (CirclePageIndicator) view
 				.findViewById(R.id.indicator);
 
-		return myView;
+		return view;
 	}
 
 	@Override
@@ -291,7 +307,6 @@ public class OrderDetails extends FragmentPacket {
 	}
 
 	private static void sendDone(int orderID) {
-
 		OrderManager.getInstance().changeOrderState(orderID,
 				Order.STATE_PERFORMED);
 
@@ -320,8 +335,6 @@ public class OrderDetails extends FragmentPacket {
 	public static void setOrderId(final int orderID) {
 		OrderDetails.orderID = orderID;
 		isArchiveOrder = false;
-		
-		
 		
 		if (!SettingsFromXml.getInstance().isAllowDriverCancelOrder())
 			btnCancel.setVisibility(View.INVISIBLE);
@@ -408,33 +421,24 @@ public class OrderDetails extends FragmentPacket {
 		};
 
 		doneListener = new OnClickListener() {
-
 			AlertDialog.Builder builder;
-
 			@Override
 			public void onClick(View v) {
-
 				if (SettingsFromXml.getInstance().isDriverCanSendOrderCost()
 						&& isBeznalOrKilometrazh(orderID)) {
-
 					builder = new AlertDialog.Builder(ContextHelper
 							.getInstance().getCurrentActivity());
-
 					builder.setMessage("Укажите стоимость заказа").setTitle(
 							"Уведомление");
-
 					final EditText input = new EditText(ContextHelper
 							.getInstance().getCurrentContext());
 					input.setInputType(InputType.TYPE_CLASS_NUMBER
 							| InputType.TYPE_NUMBER_FLAG_DECIMAL
 							| InputType.TYPE_NUMBER_FLAG_SIGNED);
-
 					builder.setView(input);
 					builder.setPositiveButton("Отправить", null);
-
 					dialog = builder.create();
 					dialog.setCancelable(false);
-
 					dialog.setOnShowListener(new DialogInterface.OnShowListener() {
 
 						@Override
@@ -446,9 +450,7 @@ public class OrderDetails extends FragmentPacket {
 
 								@Override
 								public void onClick(View view) {
-
 									String value = input.getText() + "";
-
 									if (!value.equals("")
 											&& Float.parseFloat(value) > 0) {
 										float d = 0;
@@ -507,14 +509,11 @@ public class OrderDetails extends FragmentPacket {
 		};
 
 		doListener = new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
-
 				if (ct3 != null) {
 					ct3.cancel();
 				}
-
 				btnArrived.setEnabled(false);
 				btnArrived.setText("На месте");
 				btnArrived.setVisibility(View.GONE);
@@ -1085,14 +1084,6 @@ public class OrderDetails extends FragmentPacket {
 				btnAccept != null);
 	}
 
-	//possible states of order due to view and controls
-	private static final int INCOMING = 1;
-	private static final int ACCEPTED = 2;
-	private static final int ARRIVED = 3;
-	private static final int PERFORMING = 4;
-	private static final int DONE = 5;
-	private static final int UNDEFINED = -1;
-
 	private static int getOrderState(Order currentOrder) {
 		int orderState = UNDEFINED;
 		//check if order is DONE
@@ -1133,9 +1124,9 @@ public class OrderDetails extends FragmentPacket {
 
 		return result;
 	}
+
 	private static void fillViewsForOrder(final Order order) {
 		ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
-
 			@Override
 			public void run() {
 				autoClassTxt.setText(convertToVerticalView(order.autoClass));
@@ -1289,7 +1280,7 @@ public class OrderDetails extends FragmentPacket {
 					Log.d("myLogs",
 							"orderTimer = " + Utils.dateToTimeString(orderTime));
 					timerStopWatch = new Timer();
-					timerStopWatch.schedule(new OrderDetails.arriveTimer(), 0,
+					timerStopWatch.schedule(new ArriveTimer(), 0,
 							500);
 					date.setText(Utils.dateToDateString(OrderManager
 							.getInstance().getOrder(oldOrderId).getDate()));
@@ -1339,8 +1330,29 @@ public class OrderDetails extends FragmentPacket {
 		});
 	}
 
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+			case 0: break;
+			case 2: break;
+			case 3: break;
+			case 4: break;
+			case 5: break;
+			case 6: break;
+			case 7: break;
+			case 8: break;
+			case 9: break;
+			case 10: break;
+			case 12: break;
+			case 13: break;
+			case 14: break;
+			case 15: break;
+			default:break;
+		}
+	}
+
 	// arrive timer
-	private static class arriveTimer extends TimerTask {
+	private static class ArriveTimer extends TimerTask {
 
 		@Override
 		public void run() {
@@ -1394,7 +1406,6 @@ public class OrderDetails extends FragmentPacket {
 	}
 	
 	public static void flip(int changeNumber, final RelativeLayout myView) {
-		
 		Context mContext = ContextHelper.getInstance().getCurrentContext();
 		int upperBackId = R.id.up_back;
 		final ImageView up_back = (ImageView) myView.findViewById(upperBackId);
@@ -1665,9 +1676,7 @@ public class OrderDetails extends FragmentPacket {
 
 	protected static boolean isBeznalOrKilometrazh(int orderId) {
 		boolean res = false;
-
 		Order ord = OrderManager.getInstance().getOrder(orderId);
-
 		if (ord.isNonCashPay()) {
 			return true;
 		}
@@ -1681,7 +1690,6 @@ public class OrderDetails extends FragmentPacket {
 	}
 
 	private static void writeToArch(int orderID) {
-
 		Log.d("myLogs", "Going to write order in DB");
 		Order ord = OrderManager.getInstance().getOrder(orderID);
 		ContentValues cv = new ContentValues();
@@ -1752,7 +1760,6 @@ public class OrderDetails extends FragmentPacket {
 	}
 
 	private static void imFree() {
-
 		System.out.println("COUNT _________ COUNT _ "
 				+ OrderManager.getInstance().getCountOfOrdersByState(
 						Order.STATE_PERFORMING));
@@ -1844,7 +1851,6 @@ public class OrderDetails extends FragmentPacket {
 	}
 
 	private static void setDetails(final String fullDescOther) {
-
 		btnDetails.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -1893,8 +1899,7 @@ public class OrderDetails extends FragmentPacket {
 		}
 
 		@Override
-		public void finishUpdate(View arg0) {
-		}
+		public void finishUpdate(View arg0) {}
 
 		@Override
 		public void restoreState(Parcelable arg0, ClassLoader arg1) {
