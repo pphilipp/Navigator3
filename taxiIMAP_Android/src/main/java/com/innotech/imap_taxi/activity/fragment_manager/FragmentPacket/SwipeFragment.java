@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.PaintDrawable;
@@ -614,7 +615,9 @@ public class SwipeFragment extends FragmentPacket
                 taxometrClick();
                 break;
             case R.id.sendCrash :
-                showConfirmToast(false, "Address");
+//                showConfirmToast(false, "Address");
+                // test screen orientation.
+                Toast.makeText(getActivity(), getScreenOrientation(), Toast.LENGTH_SHORT).show();
                 break;
 
 
@@ -2646,6 +2649,15 @@ public class SwipeFragment extends FragmentPacket
         public void startUpdate(View arg0) {
 
         }
+    }
+
+    private String getScreenOrientation(){
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
+            return "Портретная ориентация";
+        else if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+            return "Альбомная ориентация";
+        else
+            return "";
     }
 
     public void drawRouteIfExist(ArrayList<LatLng> l) {

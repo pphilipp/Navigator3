@@ -50,8 +50,7 @@
             android:configChanges="keyboardHidden|screenSize|orientation"
             android:alwaysRetainTaskState="true"
             android:label="@string/app_name"
-            android:launchMode="singleTask"
-            android:screenOrientation="sensor" >
+            android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -60,13 +59,11 @@
 
         <activity
             android:name="com.innotech.imap_taxi.activity.UserSettingActivity"
-            android:screenOrientation="sensor"
             android:theme="@style/Theme.NoTitle" >
         </activity>
 
         <activity
             android:name="com.innotech.imap_taxi.activity.Main_taxometr"
-            android:screenOrientation="sensor"
             android:label="@string/title_activity_main_taxometr" >
         </activity>
 
