@@ -13,8 +13,6 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Parcelable;
 import android.preference.PreferenceManager;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.text.Html;
@@ -24,6 +22,7 @@ import android.text.style.RelativeSizeSpan;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -68,7 +67,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class OrderDetails extends FragmentPacket implements View.OnClickListener{
-	private static final String TAG = OrderDetails.class.getSimpleName();
+	private static final String LOG_TAG = OrderDetails.class.getSimpleName();
 	//possible states of order due to view and controls
 	private static final int INCOMING = 1;
 	private static final int ACCEPTED = 2;
@@ -132,7 +131,6 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 	private static int orderID = -1;
 	private static Order archOrder = null;
 	private static boolean isArchiveOrder;
-
 	private static View commentsView;
 	private static View featuresView;
 	private static PageIndicator mIndicator;
@@ -142,24 +140,6 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 	public OrderDetails() {
 		super(ORDER_DETAILS);
-	}
-
-	@Override
-	public void onSaveInstanceState(Bundle outState) {
-		super.onSaveInstanceState(outState);
-		setUserVisibleHint(true);
-	}
-
-	@Override
-	public void onViewStateRestored(Bundle savedInstanceState) {
-		super.onViewStateRestored(savedInstanceState);
-		if (isArchiveOrder && archOrder != null) {
-			dispArchOrder(archOrder);
-		} else if (OrderManager.getInstance().getOrder(orderID) != null) {
-			isArch = true;
-			setOrderId(OrderDetails.orderID);
-
-		}
 	}
 
 	@Override
@@ -278,64 +258,51 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 	}
 
 	@Override
+	public void onViewStateRestored(Bundle savedInstanceState) {
+		// tells the fragment that all of the saved state of its view hierarchy has been restored
+		super.onViewStateRestored(savedInstanceState);
+		if (isArchiveOrder && archOrder != null) {
+			dispArchOrder(archOrder);
+		} else if (OrderManager.getInstance().getOrder(orderID) != null) {
+			isArch = true;
+			setOrderId(OrderDetails.orderID);
+		}
+	}
+
+	@Override
 	public void onResume() {
 		super.onResume();
-
 		if (Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(
 				ContextHelper.getInstance().getCurrentContext()).getString(
 				UserSettingActivity.KEY_TEXT_SIZE, "")) != 0) {
-			txtDetails
-					.setTextSize(TypedValue.COMPLEX_UNIT_SP, Integer
-							.parseInt(PreferenceManager
-									.getDefaultSharedPreferences(
-											ContextHelper.getInstance()
-													.getCurrentContext())
-									.getString(
-											UserSettingActivity.KEY_TEXT_SIZE,
-											"")) + 14);
+			txtDetails.setTextSize(TypedValue.COMPLEX_UNIT_SP,
+					Integer.parseInt(PreferenceManager
+							.getDefaultSharedPreferences(
+									ContextHelper.getInstance()
+											.getCurrentContext())
+							.getString(UserSettingActivity.KEY_TEXT_SIZE, "")) + 14);
 		}
-
 	}
 
 	@Override
 	public void onStop() {
 		super.onStop();
-
 		if (ct3 != null) {
 			ct3.cancel();
 		}
 	}
 
-	private static void sendDone(int orderID) {
-		OrderManager.getInstance().changeOrderState(orderID,
-				Order.STATE_PERFORMED);
-
-		byte[] body = RequestBuilder.createBodyOrderAnswer(orderID, "13", "0",
-				ServerData.getInstance().getPeopleID());
-		byte[] data = RequestBuilder.createSrvTransfereData(
-				RequestBuilder.DEFAULT_CONNECTION_TYPE, ServerData
-						.getInstance().getSrvID(),
-				RequestBuilder.DEFAULT_DESTINATION_ID, ServerData.getInstance()
-						.getGuid(), true, body);
-		ConnectionHelper.getInstance().send(data);
-
-		btnDo.setEnabled(false);
-		btnDo.setOnClickListener(null);
-		btnAccept.setEnabled(false);
-		btnConnDrivCl.setEnabled(false);
-
-		// btnBack.setEnabled(false);
-
-		writeToArch(orderID);
-
-		FragmentTransactionManager.getInstance().openFragment(
-				FragmentPacket.SWIPE);
+	@Override
+	public void onSaveInstanceState(Bundle outState) {
+		super.onSaveInstanceState(outState);
+		Log.d(LOG_TAG, "onSaveInstanceState()");
+		setUserVisibleHint(true);
 	}
 
 	public static void setOrderId(final int orderID) {
 		OrderDetails.orderID = orderID;
 		isArchiveOrder = false;
-		
+
 		if (!SettingsFromXml.getInstance().isAllowDriverCancelOrder())
 			btnCancel.setVisibility(View.INVISIBLE);
 		else
@@ -396,12 +363,12 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 				long min = ((2 * 60 * 60000)
 						+ now
 						- OrderManager.getInstance().getOrder(orderID)
-								.getDate() - wate) / 60000;
+						.getDate() - wate) / 60000;
 
 				System.out.println(Utils.dateToString(now)
 						+ " + 2hr - "
 						+ Utils.dateToString(OrderManager.getInstance()
-								.getOrder(orderID).getDate()) + " = " + min
+						.getOrder(orderID).getDate()) + " = " + min
 						+ " min");
 
 				byte[] body = RequestBuilder.createPassengerOut(orderID, 0,
@@ -631,7 +598,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 				ConnectionHelper.getInstance().send(data);
 				OrderManager.getInstance().getOrder(orderID).accepted=true;
 				OrderManager.getInstance().getOrder(orderID).arrived=false;
-				Log.d(TAG, "Check status = " + OrderManager.getInstance().getOrder(orderID));
+				Log.d(LOG_TAG, "Check status = " + OrderManager.getInstance().getOrder(orderID));
 				ord.accepted = true;
 				ord.arrived = false;
 				setUpButtonsState(ord);
@@ -653,7 +620,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 		System.out.println("f - " + ord.getFolder());
 
-		Log.d(TAG, "Order info: state = " + ord.getStatus() + ", arrived = " + ord.arrived + ", accepted = " + ord.accepted);
+		Log.d(LOG_TAG, "Order info: state = " + ord.getStatus() + ", arrived = " + ord.arrived + ", accepted = " + ord.accepted);
 
 		if (ord.getStatus() == Order.STATE_KRYG_ADA) {
 			ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
@@ -674,88 +641,88 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 			});
 		} else if (ord.getStatus() == Order.STATE_PERFORMING) {
 			ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() { // свежие
-						// правки
-						@Override
-						public void run() {
+				// правки
+				@Override
+				public void run() {
 
-							if ((OrderManager.getInstance().getOrder(orderID).accepted
-									&& OrderManager.getInstance()
-											.getOrder(orderID).getFolder()
-											.equals("Направленный")
-									&& OrderManager.getInstance()
-											.getOrder(orderID).getOrderType()
-											.equals("SendedByDispatcher") && !OrderManager
-									.getInstance().getOrder(orderID).arrived)
-									|| OrderManager.getInstance()
-											.getOrder(orderID).getFolder()
-											.equals(Order.FOLDER_DOIN)
-									|| !OrderManager.getInstance()
-											.getOrder(orderID).getOrderType()
-											.equals("SendedByDispatcher")) {
+					if ((OrderManager.getInstance().getOrder(orderID).accepted
+							&& OrderManager.getInstance()
+							.getOrder(orderID).getFolder()
+							.equals("Направленный")
+							&& OrderManager.getInstance()
+							.getOrder(orderID).getOrderType()
+							.equals("SendedByDispatcher") && !OrderManager
+							.getInstance().getOrder(orderID).arrived)
+							|| OrderManager.getInstance()
+							.getOrder(orderID).getFolder()
+							.equals(Order.FOLDER_DOIN)
+							|| !OrderManager.getInstance()
+							.getOrder(orderID).getOrderType()
+							.equals("SendedByDispatcher")) {
 
-								Log.d(TAG, "condition1");
+						Log.d(LOG_TAG, "condition1");
 
-								ContextHelper.getInstance()
-										.runOnCurrentUIThread(new Runnable() {
-											@Override
-											public void run() {
+						ContextHelper.getInstance()
+								.runOnCurrentUIThread(new Runnable() {
+									@Override
+									public void run() {
 
-												route.setEnabled(true);
+										route.setEnabled(true);
 
-												btnArrived.setEnabled(true);
-												btnArrived
-														.setOnClickListener(arrivedListener);
-												btnArrived.setText("На месте");
+										btnArrived.setEnabled(true);
+										btnArrived
+												.setOnClickListener(arrivedListener);
+										btnArrived.setText("На месте");
 
-												btnDo.setEnabled(false);
-												btnDo.setText("Выполняю");
+										btnDo.setEnabled(false);
+										btnDo.setText("Выполняю");
 
-												btnConnDrivCl.setEnabled(true);
+										btnConnDrivCl.setEnabled(true);
 
-												btnCancel.setEnabled(true);
-												btnAccept.setEnabled(false);
+										btnCancel.setEnabled(true);
+										btnAccept.setEnabled(false);
 
-											}
-										});
-							} else if ((OrderManager.getInstance().getOrder(
-									orderID).accepted
-									&& OrderManager.getInstance()
-											.getOrder(orderID).getFolder()
-											.equals("Направленный")
-									&& OrderManager.getInstance()
-											.getOrder(orderID).getOrderType()
-											.equals("SendedByDispatcher") && OrderManager
-									.getInstance().getOrder(orderID).arrived)
-									|| OrderManager.getInstance()
-											.getOrder(orderID).getFolder()
-											.equals(Order.FOLDER_DOIN)
-									|| OrderManager.getInstance()
-											.getOrder(orderID).getFolder()
-											.equals("ReceiveDriver")// свежие
-																	// правки
-									|| !OrderManager.getInstance()
-											.getOrder(orderID).getOrderType()
-											.equals("SendedByDispatcher")) {
+									}
+								});
+					} else if ((OrderManager.getInstance().getOrder(
+							orderID).accepted
+							&& OrderManager.getInstance()
+							.getOrder(orderID).getFolder()
+							.equals("Направленный")
+							&& OrderManager.getInstance()
+							.getOrder(orderID).getOrderType()
+							.equals("SendedByDispatcher") && OrderManager
+							.getInstance().getOrder(orderID).arrived)
+							|| OrderManager.getInstance()
+							.getOrder(orderID).getFolder()
+							.equals(Order.FOLDER_DOIN)
+							|| OrderManager.getInstance()
+							.getOrder(orderID).getFolder()
+							.equals("ReceiveDriver")// свежие
+							// правки
+							|| !OrderManager.getInstance()
+							.getOrder(orderID).getOrderType()
+							.equals("SendedByDispatcher")) {
 
-								Log.d(TAG, "condition2");
-								// btnArrived.setEnabled(false);
-								btnArrived.setText("На месте");
+						Log.d(LOG_TAG, "condition2");
+						// btnArrived.setEnabled(false);
+						btnArrived.setText("На месте");
 
-								btnDo.setEnabled(true);
-								btnDo.setOnClickListener(doListener);
-								btnDo.setText("Выполняю");
-								btnCancel.setEnabled(true);
-								Log.d("STATE", "Order_ID = " + orderID);
-								displayTimer(orderID);
-							} else {
-								Log.d(TAG, "condition3");
+						btnDo.setEnabled(true);
+						btnDo.setOnClickListener(doListener);
+						btnDo.setText("Выполняю");
+						btnCancel.setEnabled(true);
+						Log.d("STATE", "Order_ID = " + orderID);
+						displayTimer(orderID);
+					} else {
+						Log.d(LOG_TAG, "condition3");
 
-								btnAccept.setEnabled(true);
-								btnArrived.setEnabled(false);
-								btnDo.setEnabled(false);
-							}
-						}
-					});
+						btnAccept.setEnabled(true);
+						btnArrived.setEnabled(false);
+						btnDo.setEnabled(false);
+					}
+				}
+			});
 		}
 
 		// начинается пздц
@@ -772,7 +739,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 								.showDialogOk("Заказ перенесен в папку выполняемые");
 					}
 
-					Log.d(TAG, "condition4");
+					Log.d(LOG_TAG, "condition4");
 
 
 					btnDo.setEnabled(true);
@@ -792,7 +759,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 			});
 		} else if (ord.getFolder().equals(Order.FOLDER_DONE)) {
 
-			Log.d(TAG, "condition5");
+			Log.d(LOG_TAG, "condition5");
 			OrderManager.getInstance().changeOrderState(orderID,
 					Order.STATE_PERFORMED);
 
@@ -818,7 +785,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 			});
 		} else if (ord.getFolder().equals(Order.FOLDER_NOT_DONE)) {
 
-			Log.d(TAG, "condition5");
+			Log.d(LOG_TAG, "condition5");
 			OrderManager.getInstance().changeOrderState(orderID,
 					Order.STATE_CANCELLED);
 
@@ -848,7 +815,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 		} else if ((ord.getFolder().equals(Order.FOLDER_TRASH))
 				|| (ord.getFolder().equals(Order.FOLDER_INBOX))) {
 
-			Log.d(TAG, "condition6");
+			Log.d(LOG_TAG, "condition6");
 
 			OrderManager.getInstance().changeOrderState(orderID,
 					Order.STATE_CANCELLED);
@@ -882,16 +849,16 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 		} else {
 			if (OrderManager.getInstance().getOrder(orderID).accepted
 					&& OrderManager.getInstance().getOrder(orderID).getFolder()
-							.equals("Направленный")
+					.equals("Направленный")
 					&& OrderManager.getInstance().getOrder(orderID)
-							.getOrderType().equals("SendedByDispatcher")
+					.getOrderType().equals("SendedByDispatcher")
 					&& !OrderManager.getInstance().getOrder(orderID).arrived
 					|| OrderManager.getInstance().getOrder(orderID).getFolder()
-							.equals(Order.FOLDER_DOIN)
+					.equals(Order.FOLDER_DOIN)
 					|| !OrderManager.getInstance().getOrder(orderID)
-							.getOrderType().equals("SendedByDispatcher")) {
+					.getOrderType().equals("SendedByDispatcher")) {
 
-				Log.d(TAG, "condition7");
+				Log.d(LOG_TAG, "condition7");
 				OrderManager.getInstance().changeOrderState(orderID,
 						Order.STATE_PERFORMING);
 
@@ -942,7 +909,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 			if ((oldOrderId != orderID) || (oldOrderId == -1)) {
 
-				Log.d(TAG, "condition8");
+				Log.d(LOG_TAG, "condition8");
 
 				// ContextHelper.getInstance().runOnCurrentUIThread(new
 				// Runnable() {
@@ -998,12 +965,210 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 			}
 		});
 
+	}// end flip()
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+			case 0: break;
+			case 2: break;
+			case 3: break;
+			case 4: break;
+			case 5: break;
+			case 6: break;
+			case 7: break;
+			case 8: break;
+			case 9: break;
+			case 10: break;
+			case 12: break;
+			case 13: break;
+			case 14: break;
+			case 15: break;
+			default:break;
+		}
+	}
+
+	public static void flip(int changeNumber, final RelativeLayout myView) {
+		Context mContext = ContextHelper.getInstance().getCurrentContext();
+		int upperBackId = R.id.up_back;
+		final ImageView up_back = (ImageView) myView.findViewById(upperBackId);
+		Drawable img = up_back.getDrawable();
+		final ImageView up = (ImageView) myView.findViewById(R.id.up);
+		up.setImageDrawable(img);
+		up.setVisibility(View.INVISIBLE);
+
+		final ImageView down = (ImageView) myView.findViewById(R.id.down);
+		// down.getLayoutParams().height = 0;
+		down.setVisibility(View.INVISIBLE);
+
+		int resId = mContext.getResources().getIdentifier("up_" + changeNumber,
+				"drawable", mContext.getPackageName());
+		Drawable image = mContext.getResources().getDrawable(resId);
+		up_back.setImageDrawable(image);
+
+		resId = mContext.getResources().getIdentifier("down_" + changeNumber,
+				"drawable", mContext.getPackageName());
+		image = mContext.getResources().getDrawable(resId);
+		down.setImageDrawable(image);
+
+		Animation anim = new ScaleAnimation(1f, 1f, // Start and end values for
+				// the X axis scaling
+				1f, 0f, // Start and end values for the Y axis scaling
+				Animation.RELATIVE_TO_SELF, 0f, // Pivot point of X scaling
+				Animation.RELATIVE_TO_SELF, 1f); // Pivot point of Y scaling
+		anim.setDuration(100);
+		anim.setAnimationListener(new AnimationListener() {
+
+			@Override
+			public void onAnimationStart(Animation animation) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void onAnimationRepeat(Animation animation) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void onAnimationEnd(Animation animation) {
+				Animation anim = new ScaleAnimation(1f, 1f, 0f, 1f,
+						Animation.RELATIVE_TO_SELF, 0f,
+						Animation.RELATIVE_TO_SELF, 0f);
+
+				anim.setDuration(200);
+				anim.setAnimationListener(new AnimationListener() {
+
+					@Override
+					public void onAnimationStart(Animation animation) {
+						// TODO Auto-generated method stub
+
+					}
+
+					@Override
+					public void onAnimationRepeat(Animation animation) {
+						// TODO Auto-generated method stub
+
+					}
+
+					@Override
+					public void onAnimationEnd(Animation animation) {
+						ImageView back_down = (ImageView) myView.findViewById(R.id.down_back);
+						back_down.setImageDrawable(down.getDrawable());
+					}
+				});
+				down.startAnimation(anim);
+
+			}
+		});
+		up.startAnimation(anim);
+
+	}
+
+	public static SpannableString getPriceFormat(String price) {
+		SpannableString ss = null;
+		String[] parts = null;
+		int length;
+		if (price.contains(".")) {
+			price = price.replace(".", ",");
+		}
+		if (price.contains(",")) {
+			parts = price.split(",");
+			if (parts[0] == null)
+				parts[0] = "00";
+			if (parts[1] == null)
+				parts[1] = "00";
+			length = parts[0].length();
+			price = parts[0] + "," + parts[1];
+		} else {
+			length = price.length();
+			price = price + ",00";
+		}
+		ss = new SpannableString(price);
+		ss.setSpan(new RelativeSizeSpan(0.6f), length + 1, price.length(), 0);
+		return ss;
+	}
+
+	public static void dispOrderId(int orderID2) {
+		oldOrderId = orderID2;
+		if (oldOrderId != -1) {
+			ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
+				@Override
+				public void run() {
+					btnDo.setEnabled(false);
+					// !!!
+					btnArrived.setEnabled(true);
+					btnConnDrivCl.setEnabled(false);
+					btnArrived.setText("На месте");
+					btnCancel.setEnabled(false);
+					btnAccept.setEnabled(false);
+					txtDetails.setText(Html.fromHtml(OrderManager.getInstance()
+							.getOrder(oldOrderId).getOrderFullDesc()));
+					setDetails(OrderManager.getInstance().getOrder(oldOrderId)
+							.getOrderFullDescOther());
+				}
+			});
+		}
+	}
+
+	public static void dispArchOrder(final Order order) {
+		if (order != null) {
+			isArchiveOrder = true;
+			archOrder = order;
+			time.setText("00:00");
+			time.setVisibility(View.INVISIBLE);
+			btnDo.setVisibility(View.GONE);
+			btnArrived.setVisibility(View.GONE);
+			btnConnDrivCl.setVisibility(View.GONE);
+
+			if (archOrder != null) {
+				fillViewsForOrder(archOrder);
+			} else {
+				Log.d("myLogs", "ArchDisplay problems");
+			}
+			btnBack.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View arg0) {
+					FragmentTransactionManager.getInstance().openFragment(
+							FragmentPacket.ARCHIV);
+				}
+			});
+
+		}
+	}
+
+
+	private static void sendDone(int orderID) {
+		OrderManager.getInstance().changeOrderState(orderID,
+				Order.STATE_PERFORMED);
+
+		byte[] body = RequestBuilder.createBodyOrderAnswer(orderID, "13", "0",
+				ServerData.getInstance().getPeopleID());
+		byte[] data = RequestBuilder.createSrvTransfereData(
+				RequestBuilder.DEFAULT_CONNECTION_TYPE, ServerData
+						.getInstance().getSrvID(),
+				RequestBuilder.DEFAULT_DESTINATION_ID, ServerData.getInstance()
+						.getGuid(), true, body);
+		ConnectionHelper.getInstance().send(data);
+
+		btnDo.setEnabled(false);
+		btnDo.setOnClickListener(null);
+		btnAccept.setEnabled(false);
+		btnConnDrivCl.setEnabled(false);
+
+		// btnBack.setEnabled(false);
+
+		writeToArch(orderID);
+
+		FragmentTransactionManager.getInstance().openFragment(
+				FragmentPacket.SWIPE);
 	}
 
 	private static void setUpButtonsState(Order currentOrder) {
 		//toggleBtnHide all buttons and then show only needed ones
-
-		Log.d(TAG, "OrderState = " + getOrderState(currentOrder));
+		Log.d(LOG_TAG, "OrderState = " + getOrderState(currentOrder));
 		switch (getOrderState(currentOrder)) {
 			case INCOMING:
 				hideAllButtons();
@@ -1210,7 +1375,6 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 					SamplePagerAdapter mFragmentAdapter = new SamplePagerAdapter(pages);
 					mPager.setOffscreenPageLimit(2);
 					mPager.setAdapter(mFragmentAdapter);
-
 					mIndicator.setViewPager(mPager);
 				}
 
@@ -1239,6 +1403,14 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 					@Override
 					public void onPageScrollStateChanged(int state) {
 
+					}
+				});
+
+				mPager.setOnTouchListener(new View.OnTouchListener() {
+					@Override
+					public boolean onTouch(View v, MotionEvent event) {
+						mPager.getParent().requestDisallowInterceptTouchEvent(true);
+						return false;
 					}
 				});
 
@@ -1309,7 +1481,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 					btnConnDrivCl.setEnabled((System.currentTimeMillis() - orderTime) > 0);
 
 				}
-				
+
 				int routeType = 0;
 				if (order.getAddress().size() < 1) {
 					routeType = 1;
@@ -1323,32 +1495,11 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 					routeType = 3;
 				}
 				//btnTest to draw route
-				
+
 				rw.setRouteType(routeType);
 				//end btnTest
 			}
 		});
-	}
-
-	@Override
-	public void onClick(View v) {
-		switch (v.getId()) {
-			case 0: break;
-			case 2: break;
-			case 3: break;
-			case 4: break;
-			case 5: break;
-			case 6: break;
-			case 7: break;
-			case 8: break;
-			case 9: break;
-			case 10: break;
-			case 12: break;
-			case 13: break;
-			case 14: break;
-			case 15: break;
-			default:break;
-		}
 	}
 
 	// arrive timer
@@ -1371,7 +1522,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 					arriveTimerTxt.setText(String.format("%d:%02d", minutes,
 							seconds));
-					
+
 					try {
 						final int tenMin = Math.round(minutes / 10);
 						if (tenMin != curTenMin) {
@@ -1404,90 +1555,13 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 		}
 
 	}
-	
-	public static void flip(int changeNumber, final RelativeLayout myView) {
-		Context mContext = ContextHelper.getInstance().getCurrentContext();
-		int upperBackId = R.id.up_back;
-		final ImageView up_back = (ImageView) myView.findViewById(upperBackId);
-		Drawable img = up_back.getDrawable();
-		final ImageView up = (ImageView) myView.findViewById(R.id.up);
-		up.setImageDrawable(img);
-		up.setVisibility(View.INVISIBLE);
 
-		final ImageView down = (ImageView) myView.findViewById(R.id.down);
-		// down.getLayoutParams().height = 0;
-		down.setVisibility(View.INVISIBLE);
 
-		int resId = mContext.getResources().getIdentifier("up_" + changeNumber,
-				"drawable", mContext.getPackageName());
-		Drawable image = mContext.getResources().getDrawable(resId);
-		up_back.setImageDrawable(image);
-
-		resId = mContext.getResources().getIdentifier("down_" + changeNumber,
-				"drawable", mContext.getPackageName());
-		image = mContext.getResources().getDrawable(resId);
-		down.setImageDrawable(image);
-
-		Animation anim = new ScaleAnimation(1f, 1f, // Start and end values for
-													// the X axis scaling
-				1f, 0f, // Start and end values for the Y axis scaling
-				Animation.RELATIVE_TO_SELF, 0f, // Pivot point of X scaling
-				Animation.RELATIVE_TO_SELF, 1f); // Pivot point of Y scaling
-		anim.setDuration(100);
-		anim.setAnimationListener(new AnimationListener() {
-
-			@Override
-			public void onAnimationStart(Animation animation) {
-				// TODO Auto-generated method stub
-
-			}
-
-			@Override
-			public void onAnimationRepeat(Animation animation) {
-				// TODO Auto-generated method stub
-
-			}
-
-			@Override
-			public void onAnimationEnd(Animation animation) {
-				Animation anim = new ScaleAnimation(1f, 1f, 0f, 1f,
-						Animation.RELATIVE_TO_SELF, 0f,
-						Animation.RELATIVE_TO_SELF, 0f);
-
-				anim.setDuration(200);
-				anim.setAnimationListener(new AnimationListener() {
-
-					@Override
-					public void onAnimationStart(Animation animation) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onAnimationRepeat(Animation animation) {
-						// TODO Auto-generated method stub
-
-					}
-
-					@Override
-					public void onAnimationEnd(Animation animation) {
-						ImageView back_down = (ImageView) myView.findViewById(R.id.down_back);
-						back_down.setImageDrawable(down.getDrawable());
-					}
-				});
-				down.startAnimation(anim);
-
-			}
-		});
-		up.startAnimation(anim);
-
-	}
 
 	private static void displayTimer(final int orderID) {
 		ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
 			@Override
 			public void run() {
-
 				if (ct3 != null) {
 					ct3.cancel();
 				}
@@ -1497,10 +1571,8 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 				if (order.getDate3() != 0) {
 					raznica = order.getDate3() - new Date().getTime();
 				} else {
-					Log.d("tag-tag-tag",
-							"TimeZone.getDefault().getOffset(new Date().getTime()) = "
-									+ TimeZone.getDefault().getOffset(
-											new Date().getTime()));
+					Log.d(LOG_TAG, "TimeZone.getDefault().getOffset(new Date().getTime()) = "
+									+ TimeZone.getDefault().getOffset(new Date().getTime()));
 					raznica = order.getDate()
 							- new Date().getTime()
 							- TimeZone.getDefault().getOffset(
@@ -1510,7 +1582,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 															// часа, для украины
 				}
 
-				Log.e("tag", "!!!! raznica " + raznica);
+				Log.d(LOG_TAG, "!!!! raznica " + raznica);
 
 				s = SettingsFromXml.getInstance().getClientWaitTime() * 60000
 						+ raznica;
@@ -1690,7 +1762,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 	}
 
 	private static void writeToArch(int orderID) {
-		Log.d("myLogs", "Going to write order in DB");
+		Log.d(LOG_TAG, " writeToArch() Going to write order in DB");
 		Order ord = OrderManager.getInstance().getOrder(orderID);
 		ContentValues cv = new ContentValues();
 
@@ -1730,39 +1802,16 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 			rowID = db.insert("order_arch", null, cv);
 		}
 
-		Log.d("DbTest", "row inserted, ID = " + rowID);
+		Log.d(LOG_TAG, " writeToArch() row inserted, ID = " + rowID);
 
 		dbHelper.close();
 	}
 
-	public static SpannableString getPriceFormat(String price) {
-		SpannableString ss = null;
-		String[] parts = null;
-		int length;
-		if (price.contains(".")) {
-			price = price.replace(".", ",");
-		}
-		if (price.contains(",")) {
-			parts = price.split(",");
-			if (parts[0] == null)
-				parts[0] = "00";
-			if (parts[1] == null)
-				parts[1] = "00";
-			length = parts[0].length();
-			price = parts[0] + "," + parts[1];
-		} else {
-			length = price.length();
-			price = price + ",00";
-		}
-		ss = new SpannableString(price);
-		ss.setSpan(new RelativeSizeSpan(0.6f), length + 1, price.length(), 0);
-		return ss;
-	}
+
 
 	private static void imFree() {
-		System.out.println("COUNT _________ COUNT _ "
-				+ OrderManager.getInstance().getCountOfOrdersByState(
-						Order.STATE_PERFORMING));
+		Log.d(LOG_TAG, "imFree() COUNT "
+				+ OrderManager.getInstance().getCountOfOrdersByState(Order.STATE_PERFORMING));
 
 		if (OrderManager.getInstance().getCountOfOrdersByState(
 				Order.STATE_PERFORMING) == 0) {
@@ -1801,55 +1850,6 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 		}
 	}
 
-	public static void dispOrderId(int orderID2) {
-		oldOrderId = orderID2;
-		if (oldOrderId != -1) {
-			ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
-				@Override
-				public void run() {
-					btnDo.setEnabled(false);
-					// !!!
-					btnArrived.setEnabled(true);
-					btnConnDrivCl.setEnabled(false);
-					btnArrived.setText("На месте");
-					btnCancel.setEnabled(false);
-					btnAccept.setEnabled(false);
-					txtDetails.setText(Html.fromHtml(OrderManager.getInstance()
-							.getOrder(oldOrderId).getOrderFullDesc()));
-					setDetails(OrderManager.getInstance().getOrder(oldOrderId)
-							.getOrderFullDescOther());
-				}
-			});
-		}
-	}
-
-	public static void dispArchOrder(final Order order) {
-		if (order != null) {
-			isArchiveOrder = true;
-			archOrder = order;
-			time.setText("00:00");
-			time.setVisibility(View.INVISIBLE);
-			btnDo.setVisibility(View.GONE);
-			btnArrived.setVisibility(View.GONE);
-			btnConnDrivCl.setVisibility(View.GONE);
-
-			if (archOrder != null) {
-				fillViewsForOrder(archOrder);
-			} else {
-				Log.d("myLogs", "ArchDisplay problems");
-			}
-			btnBack.setOnClickListener(new OnClickListener() {
-
-				@Override
-				public void onClick(View arg0) {
-					FragmentTransactionManager.getInstance().openFragment(
-							FragmentPacket.ARCHIV);
-				}
-			});
-
-		}
-	}
-
 	private static void setDetails(final String fullDescOther) {
 		btnDetails.setOnClickListener(new OnClickListener() {
 
@@ -1869,7 +1869,6 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 	}
 
 	public static class SamplePagerAdapter extends PagerAdapter {
-
 		List<View> pages = null;
 
 		public SamplePagerAdapter(List<View> pages) {
@@ -1884,11 +1883,6 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 		}
 
 		@Override
-		public void destroyItem(View collection, int position, Object view) {
-			// ((ViewPager) collection).removeView((View) view);
-		}
-
-		@Override
 		public int getCount() {
 			return pages.size();
 		}
@@ -1898,8 +1892,6 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 			return view.equals(object);
 		}
 
-		@Override
-		public void finishUpdate(View arg0) {}
 
 		@Override
 		public void restoreState(Parcelable arg0, ClassLoader arg1) {
@@ -1911,28 +1903,28 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 		}
 
 		@Override
-		public void startUpdate(View arg0) {
-
+		public void destroyItem(ViewGroup container, int position, Object object) {
+			((ViewPager) container).removeView((View) object);
 		}
 	}
 
-	public static class PlaceHolder extends Fragment {
-
-		public PlaceHolder() {
-		}
-
-		public static PlaceHolder newInstance(String commentType) {
-			PlaceHolder fragment = new PlaceHolder();
-			return fragment;
-		}
-
-		@Nullable
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-			View currentView = inflater.inflate(R.layout.order_comment_fragment, container, false);
-
-			return currentView;
-		}
-	}
+//	public static class PlaceHolder extends Fragment {
+//
+//		public PlaceHolder() {
+//		}
+//
+//		public static PlaceHolder newInstance(String commentType) {
+//			PlaceHolder fragment = new PlaceHolder();
+//			return fragment;
+//		}
+//
+//		@Nullable
+//		@Override
+//		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+//			View currentView = inflater.inflate(R.layout.order_comment_fragment, container, false);
+//
+//			return currentView;
+//		}
+//	}
 
 }

@@ -1860,7 +1860,8 @@ public class SwipeFragment extends FragmentPacket
                                                 address = orderManager.getOrder(pack.orderID).getStreet();
                                                 address += " " + orderManager.getOrder(pack.orderID).getAddressFact();
                                             }
-                                            if (orderManager.getOrder(pack.orderID) != null && orderManager.getOrder(pack.orderID).getStatus() == Order.STATE_NEW) {
+                                            if (orderManager.getOrder(pack.orderID) != null
+                                                    && orderManager.getOrder(pack.orderID).getStatus() == Order.STATE_NEW) {
                                                 showConfirmToast(isOrderYours, address);
                                             }
 

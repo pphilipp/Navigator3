@@ -7,7 +7,7 @@
     <dimen name="transparent_button_text_size_large">25sp</dimen>
     <dimen name="text_large">40sp</dimen>
     <dimen name="button_padding">15dp</dimen>
-    <dimen name="flip_image_width">15dp</dimen>
-    <dimen name="flip_image_height">15dp</dimen>
+    <dimen name="flip_image_width">20dp</dimen>
+    <dimen name="flip_image_height">20dp</dimen>
 
 </resources>

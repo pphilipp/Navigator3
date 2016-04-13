@@ -13,16 +13,16 @@
         android:layout_above="@id/buttonsLayout"
         android:layout_alignParentBottom="true" >
 
-        <!--<Button-->
-            <!--android:id="@+id/btn_connectDriverClient"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center_vertical"-->
-            <!--android:layout_margin="2dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:background="#286846"-->
-            <!--android:text="@string/callClient"-->
-            <!--android:textColor="#000000" />-->
+        <Button
+            android:id="@+id/btn_connectDriverClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="#286846"
+            android:text="@string/callClient"
+            android:textColor="#000000" />
 
         <Button
             android:id="@+id/btn_arrived"
@@ -35,16 +35,16 @@
             android:text="@string/arrived"
             android:textColor="#000000" />
 
-        <!--<Button-->
-            <!--android:id="@+id/btn_do"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center_vertical"-->
-            <!--android:layout_margin="2dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:background="#286846"-->
-            <!--android:text="@string/doing"-->
-            <!--android:textColor="#000000" />-->
+        <Button
+            android:id="@+id/btn_do"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="#286846"
+            android:text="@string/doing"
+            android:textColor="#000000" />
     </LinearLayout>
 
     <ScrollView
@@ -57,7 +57,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical" >
 
             <LinearLayout
@@ -75,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="2dp"
-                    android:layout_weight="140"
+                    android:layout_weight="150"
                     android:gravity="center_vertical" >
 
                     <RelativeLayout
@@ -262,10 +262,9 @@
                     android:layout_weight="160"
                     android:background="#801D1D1B"
                     android:gravity="center_vertical|center_horizontal"
-                    android:padding="2dp"
-                    android:text="Dist"
+                    tools:text="Dist"
                     android:textColor="@android:color/white"
-                    android:textSize="36sp" />
+                    android:textSize="38sp" />
 
             </LinearLayout>
 
@@ -305,7 +304,6 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="2dp"
                     android:layout_weight="0.4"
                     android:padding="2dp"
                     android:orientation="vertical" >
@@ -322,14 +320,17 @@
                     <com.innotech.imap_taxi.graph_utils.RouteView
                         android:id="@+id/routeCustom"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
                     </com.innotech.imap_taxi.graph_utils.RouteView>
+
                 </LinearLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:id="@+id/mainInfo"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="9.3"
                     android:orientation="vertical" >
 
@@ -354,9 +355,12 @@
                         android:paddingRight="2dp"
                         tools:text="Where to"
                         android:textColor="@color/greyText"
-                        android:textSize="24sp" />
+                        android:textSize="24sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
 
-                </LinearLayout>
+                </RelativeLayout>
 
             </LinearLayout>
 
@@ -395,16 +399,16 @@
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentTop="true"
                         android:padding="1dp"
-                        android:text="Editional"
+                        tools:text="Editional"
                         android:textColor="@color/greyText"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/extraTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="1dp"
-                        android:text="Editional"
+                        tools:text="Editional"
                         android:textColor="@color/greyText"
                         android:textSize="18dp"
                         android:visibility="gone" />
@@ -472,7 +476,9 @@
                                 android:text="Cost"
                                 android:textColor="@android:color/white"
                                 android:textSize="40sp" />
+
                         </LinearLayout>
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -503,9 +509,13 @@
                             android:layout_weight="1"
                             android:src="@drawable/no_cash" />
                     </LinearLayout>
+
                 </RelativeLayout>
+
             </LinearLayout>
+
         </LinearLayout>
+
     </ScrollView>
 
     <LinearLayout
@@ -514,10 +524,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:visibility="gone" >
-"
-
-
-
 
         <ScrollView
             android:id="@+id/scrollView"
@@ -602,6 +608,7 @@
                     <!-- android:text="Medium Text" -->
                     <!-- android:textAppearance="?android:attr/textAppearanceMedium" -->
                     <!-- android:textColor="@color/orangeEditText" /> -->
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -639,7 +646,9 @@
                         android:paddingLeft="5dp"
                         android:src="@drawable/cash_white" />
                 </LinearLayout>
+
             </RelativeLayout>
+
         </ScrollView>
 
         <ImageView
@@ -821,8 +830,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".3"
                     android:background="@drawable/transparent_button"
-                    android:text="Связь с 
- заказчиком"
+                    android:text="@string/call_to_employer"
                     android:textColor="@drawable/transparent_button_text"
                     android:textSize="@dimen/transparent_button_text_size" />
             </TableRow>
