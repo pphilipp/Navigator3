@@ -72,4 +72,11 @@
     <string name="str_connect_massage">Вы подключены к серверу</string>
     <string name="str_do_you_want_to_exit">Вы действительно хотите выйти?</string>
     <string name="call_to_employer">Связь с заказчиком</string>
+    <string name="str_zero_time">00:00</string>
+    <string name="str_on_here">На месте</string>
+    <string name="str_executing">Выполняю</string>
+    <string name="str_no_client">НЕТ КЛИЕНТА</string>
+    <string name="str_execute">Выполнил</string>
+    <!--<string name="str_folder_doing"></string>-->
+
 </resources>

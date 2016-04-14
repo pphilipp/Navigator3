@@ -12,17 +12,16 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 public class RouteView extends View {
-
-	Context mContext;
 	int routeType = 0;
+	int parentWidth;
+	int parentHeight;
+	Context mContext;
+	View parent;
 	RelativeLayout parentLayout;
 
 	public void setRouteType(int routeType) {
 		this.routeType = routeType;
 	}
-
-	View parent;
-	int parentWidth, parentHeight;
 
 	public void setParentWidth(int parentWidth) {
 		this.parentWidth = parentWidth;

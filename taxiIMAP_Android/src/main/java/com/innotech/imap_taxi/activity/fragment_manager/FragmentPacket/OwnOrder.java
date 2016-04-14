@@ -503,25 +503,25 @@ public class OwnOrder extends FragmentPacket {
         //check checkBoxes if features are used in order
         for (int featureCode : featuresList) {
             switch (featureCode) {
-                case Order.COND:
+                case Order.ADDITIONAL_SERVICES_CONDITIONER:
                     coolerCheckBox.setChecked(true);
                     break;
-                case Order.TAXOMETER:
+                case Order.ADDITIONAL_SERVICES_TAXIMETER:
                     taxometerCheckBox.setChecked(true);
                     break;
-                case Order.ANIMAL:
+                case Order.ADDITIONAL_SERVICES_ANIMAL:
                     petsCheckBox.setChecked(true);
                     break;
-                case Order.POS:
+                case Order.ADDITIONAL_SERVICES_POS_TERMINAL:
                     posCheckBox.setChecked(true);
                     break;
-                case Order.BAG:
+                case Order.ADDITIONAL_SERVICES_A_LOT_OF_BAG:
                     luggageCheckBox.setChecked(true);
                     break;
-                case Order.NOSMOKE:
+                case Order.ADDITIONAL_SERVICES_NO_SMOKE:
                     nosmokingCheckBox.setChecked(true);
                     break;
-                case Order.WIFI:
+                case Order.ADDITIONAL_SERVICES_WIFI:
                     wifiTxtCheckBox.setChecked(true);
                     break;
             }
@@ -537,25 +537,25 @@ public class OwnOrder extends FragmentPacket {
             public void onClick(View v) {
                 featuresList = new ArrayList<Integer>();
                 if (coolerCheckBox.isChecked()) {
-                    featuresList.add(Order.COND);
+                    featuresList.add(Order.ADDITIONAL_SERVICES_CONDITIONER);
                 }
                 if (taxometerCheckBox.isChecked()) {
-                    featuresList.add(Order.TAXOMETER);
+                    featuresList.add(Order.ADDITIONAL_SERVICES_TAXIMETER);
                 }
                 if (petsCheckBox.isChecked()) {
-                    featuresList.add(Order.ANIMAL);
+                    featuresList.add(Order.ADDITIONAL_SERVICES_ANIMAL);
                 }
                 if (posCheckBox.isChecked()) {
-                    featuresList.add(Order.POS);
+                    featuresList.add(Order.ADDITIONAL_SERVICES_POS_TERMINAL);
                 }
                 if (luggageCheckBox.isChecked()) {
-                    featuresList.add(Order.BAG);
+                    featuresList.add(Order.ADDITIONAL_SERVICES_A_LOT_OF_BAG);
                 }
                 if (nosmokingCheckBox.isChecked()) {
-                    featuresList.add(Order.NOSMOKE);
+                    featuresList.add(Order.ADDITIONAL_SERVICES_NO_SMOKE);
                 }
                 if (wifiTxtCheckBox.isChecked()) {
-                    featuresList.add(Order.WIFI);
+                    featuresList.add(Order.ADDITIONAL_SERVICES_WIFI);
                 }
                 //upDate current order with new features
                 currentOrder.setFeatures(getFeaturesList(featuresList));
@@ -830,38 +830,38 @@ public class OwnOrder extends FragmentPacket {
         final String NOSMOKING_SAMPLE = "Не курить";
 
         //create Map of features
-        featureLinks.put(Order.COND, COND_SAMPLE);
-        featureLinks.put(Order.TAXOMETER, TAXOMETER_SAMPLE);
-        featureLinks.put(Order.ANIMAL, PET_SAMPLE);
-        featureLinks.put(Order.BAG, BAG_SAMPLE);
-        featureLinks.put(Order.WIFI, WIFI_SAMPLE);
-        featureLinks.put(Order.POS, POS_SAMPLE);
-        featureLinks.put(Order.NOSMOKE, NOSMOKING_SAMPLE);
+        featureLinks.put(Order.ADDITIONAL_SERVICES_CONDITIONER, COND_SAMPLE);
+        featureLinks.put(Order.ADDITIONAL_SERVICES_TAXIMETER, TAXOMETER_SAMPLE);
+        featureLinks.put(Order.ADDITIONAL_SERVICES_ANIMAL, PET_SAMPLE);
+        featureLinks.put(Order.ADDITIONAL_SERVICES_A_LOT_OF_BAG, BAG_SAMPLE);
+        featureLinks.put(Order.ADDITIONAL_SERVICES_WIFI, WIFI_SAMPLE);
+        featureLinks.put(Order.ADDITIONAL_SERVICES_POS_TERMINAL, POS_SAMPLE);
+        featureLinks.put(Order.ADDITIONAL_SERVICES_NO_SMOKE, NOSMOKING_SAMPLE);
 
         //add features to list if they are in current order
         if (currentOrder != null && currentOrder.getFeatures() != null) {
             List<String> currentOrderFeatures = currentOrder.getFeatures();
 
             if (currentOrderFeatures.contains(COND_SAMPLE)) {
-                featuresList.add(Order.COND);
+                featuresList.add(Order.ADDITIONAL_SERVICES_CONDITIONER);
             }
             if (currentOrderFeatures.contains(TAXOMETER_SAMPLE)) {
-                featuresList.add(Order.TAXOMETER);
+                featuresList.add(Order.ADDITIONAL_SERVICES_TAXIMETER);
             }
             if (currentOrderFeatures.contains(PET_SAMPLE)) {
-                featuresList.add(Order.ANIMAL);
+                featuresList.add(Order.ADDITIONAL_SERVICES_ANIMAL);
             }
             if (currentOrderFeatures.contains(BAG_SAMPLE)) {
-                featuresList.add(Order.BAG);
+                featuresList.add(Order.ADDITIONAL_SERVICES_A_LOT_OF_BAG);
             }
             if (currentOrderFeatures.contains(WIFI_SAMPLE)) {
-                featuresList.add(Order.WIFI);
+                featuresList.add(Order.ADDITIONAL_SERVICES_WIFI);
             }
             if (currentOrderFeatures.contains(POS_SAMPLE)) {
-                featuresList.add(Order.POS);
+                featuresList.add(Order.ADDITIONAL_SERVICES_POS_TERMINAL);
             }
             if (currentOrderFeatures.contains(NOSMOKING_SAMPLE)) {
-                featuresList.add(Order.NOSMOKE);
+                featuresList.add(Order.ADDITIONAL_SERVICES_NO_SMOKE);
             }
         }
         return featuresList;

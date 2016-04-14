@@ -75,7 +75,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="2dp"
-                    android:layout_weight="150"
+                    android:layout_weight="180"
                     android:gravity="center_vertical" >
 
                     <RelativeLayout
@@ -233,6 +233,7 @@
                             android:scaleType="fitXY"
                             android:src="@drawable/down_0" />
                     </RelativeLayout>
+
                 </LinearLayout>
 
                 <TextView
@@ -249,11 +250,11 @@
                     android:id="@+id/regionTxt"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="340"
+                    android:layout_weight="300"
                     android:gravity="center"
                     android:text="Region"
                     android:textColor="#979695"
-                    android:textSize="22sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/distTxt"
@@ -322,8 +323,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp">
-                    </com.innotech.imap_taxi.graph_utils.RouteView>
+                        android:layout_marginBottom="10dp"/>
 
                 </LinearLayout>
 
@@ -947,8 +947,9 @@
                 android:id="@+id/txt_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
+                tools:text="New Text"
                 android:textColor="@android:color/white" />
+
         </LinearLayout>
     </LinearLayout>
 

@@ -75,40 +75,46 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 	private static final int PERFORMING = 4;
 	private static final int DONE = 5;
 	private static final int UNDEFINED = -1;
-	private static AlertDialog dialog;
-	private static TextView region;
-	private static TextView distance;
-	private static TextView edditionalTxt;
-	protected static String comments;
-	private static ImageView extraInfoBtn;
-	private static ImageView imageJoker;
-	private static ImageView imageWebOrder;
-	private static ImageView imageNoCash;
-	private static ImageView imageEd;
-	private static TextView arriveTimerTxt;
-	private static LinearLayout colorLayout;
-	private static Timer timerStopWatch;
-	private static long orderTime;
-	private static ImageView commentsImage;
-	private static TextView autoClassTxt;
-	private static RelativeLayout tenMinLayout;
-	private static RelativeLayout minLayout;
-	private static RelativeLayout tenSecLayout;
-	private static RelativeLayout secLayout;
-	private static LinearLayout flipClock;
 	private static int curTenMin;
 	private static int curMin;
 	private static int curTenSec;
 	private static int curSec;
 	private static int oldOrderId = -1;
+	private static int orderID = -1;
+	private static long orderTime;
+	private static long s;
+	public static boolean isArch;
+	private static boolean isArchiveOrder;
+	protected static String comments;
+	private static AlertDialog dialog;
+	private static Timer timerStopWatch;
+	private static TextView tvRegion;
+	private static TextView tvDistance;
+	private static TextView tvAdditionalTxt;
+	private static TextView tvArriveTimerTxt;
+	private static TextView tvAutoClassTxt;
+	private static TextView tvTxtDetails;
+	private static TextView tvAdressFrom1;
+	private static TextView tvAdressFrom2;
+	private static TextView tvAdressTo;
+	private static TextView tvPrice;
+	private static TextView tvTime;
+	private static TextView tvDate;
+	private static ImageView ivExtraInfoBtn;
+	private static ImageView ivImageJoker;
+	private static ImageView ivImageWebOrder;
+	private static ImageView ivImageNoCash;
+	private static ImageView ivImageEd;
+	private static ImageView ivCommentsImage;
+	private static RelativeLayout rlTenMinLayout;
+	private static RelativeLayout rlMinLayout;
+	private static RelativeLayout rlTenSecLayout;
+	private static RelativeLayout rlSecLayout;
+	private static LinearLayout llColorLayout;
+	private static LinearLayout llFlipClock;
+	private static LinearLayout llRoute;
+	private static LinearLayout llRouteInfoLayout;
 	private static ViewPager mPager;
-	private static TextView txtDetails;
-	private static TextView adressFrom1;
-	private static TextView adressFrom2;
-	private static TextView adressTo;
-	private static TextView price;
-	private static TextView time;
-	private static TextView date;
 	public static Button btnArrived;
 	public static Button btnDo;
 	public static Button btnMap;
@@ -119,20 +125,17 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 	public static Button btnAccept;
 	public static Button btnNoClient;
 	public static Button btnWellDone;
-	private static LinearLayout route, routeInfoLayout;
-	private static RouteView rw;
-	public static boolean isArch;
-	private static CountDownTimer ct3;
-
-	private static OnClickListener doListener, doneListener, arrivedListener,
-			noClientListener, cancelListner, acceptListner;
-
-	private static long s;
-	private static int orderID = -1;
-	private static Order archOrder = null;
-	private static boolean isArchiveOrder;
-	private static View commentsView;
-	private static View featuresView;
+	private static RouteView routeView;
+	private static CountDownTimer countDownTimer3;
+	private static OnClickListener doListener;
+	private static OnClickListener doneListener;
+	private static OnClickListener arrivedListener;
+	private static OnClickListener noClientListener;
+	private static OnClickListener cancelListner;
+	private static OnClickListener acceptListner;
+	private static Order mOrder = null;
+	private static View viewComments;
+	private static View viewFeatures;
 	private static PageIndicator mIndicator;
 	// private static Button btnArrived1;
 	// private static RelativeLayout edditionalInfoLayout;
@@ -148,53 +151,49 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 		View view = inflater.inflate(R.layout.fragment_order_details_new1, container, false);
 
 		// define Layouts for FlipClock
-		tenMinLayout = (RelativeLayout) view.findViewById(R.id.tenMinLayout);
-		minLayout = (RelativeLayout) view.findViewById(R.id.minLayout);
-		tenSecLayout = (RelativeLayout) view.findViewById(R.id.tenSecLayout);
-		secLayout = (RelativeLayout) view.findViewById(R.id.secLayout);
+		rlTenMinLayout = (RelativeLayout) view.findViewById(R.id.tenMinLayout);
+		rlMinLayout = (RelativeLayout) view.findViewById(R.id.minLayout);
+		rlTenSecLayout = (RelativeLayout) view.findViewById(R.id.tenSecLayout);
+		rlSecLayout = (RelativeLayout) view.findViewById(R.id.secLayout);
 
-		txtDetails = (TextView) view.findViewById(R.id.txt_details);
-		autoClassTxt = (TextView) view.findViewById(R.id.autoClassTxt);
-		colorLayout = (LinearLayout) view.findViewById(R.id.colorLayout);
-		routeInfoLayout = (LinearLayout) view
-				.findViewById(R.id.routeInfoLayout);
-		PaintDrawable p = (PaintDrawable) GraphUtils
-				.getEtherRouteGradient(routeInfoLayout);
-		routeInfoLayout.setBackground((Drawable) p);
+		tvTxtDetails = (TextView) view.findViewById(R.id.txt_details);
+		tvAutoClassTxt = (TextView) view.findViewById(R.id.autoClassTxt);
+		llColorLayout = (LinearLayout) view.findViewById(R.id.colorLayout);
+		llRouteInfoLayout = (LinearLayout) view.findViewById(R.id.routeInfoLayout);
+		PaintDrawable paintDrawable = (PaintDrawable) GraphUtils.getEtherRouteGradient(llRouteInfoLayout);
+		llRouteInfoLayout.setBackground(paintDrawable);
 
-		region = (TextView) view.findViewById(R.id.regionTxt);
-		distance = (TextView) view.findViewById(R.id.distTxt);
-		edditionalTxt = (TextView) view.findViewById(R.id.edditionalTxt);
-		extraInfoBtn = (ImageView) view.findViewById(R.id.extraInfoBtn);
+		tvRegion = (TextView) view.findViewById(R.id.regionTxt);
+		tvDistance = (TextView) view.findViewById(R.id.distTxt);
+		tvAdditionalTxt = (TextView) view.findViewById(R.id.edditionalTxt);
+		ivExtraInfoBtn = (ImageView) view.findViewById(R.id.extraInfoBtn);
 
-		arriveTimerTxt = (TextView) view.findViewById(R.id.timerTxt);
-		flipClock = (LinearLayout) view.findViewById(R.id.flipClockLayout);
+		tvArriveTimerTxt = (TextView) view.findViewById(R.id.timerTxt);
+		llFlipClock = (LinearLayout) view.findViewById(R.id.flipClockLayout);
 
-		imageJoker = (ImageView) view.findViewById(R.id.imageJoker);
-		imageWebOrder = (ImageView) view.findViewById(R.id.imageWeb);
-		imageNoCash = (ImageView) view.findViewById(R.id.imageNoCash);
+		ivImageJoker = (ImageView) view.findViewById(R.id.imageJoker);
+		ivImageWebOrder = (ImageView) view.findViewById(R.id.imageWeb);
+		ivImageNoCash = (ImageView) view.findViewById(R.id.imageNoCash);
 
-		imageEd = (ImageView) view.findViewById(R.id.imageEd);
-		commentsImage = (ImageView) view.findViewById(R.id.commentImage);
+		ivImageEd = (ImageView) view.findViewById(R.id.imageEd);
+		ivCommentsImage = (ImageView) view.findViewById(R.id.commentImage);
 
-		rw = (RouteView) view
-				.findViewById(R.id.routeCustom);
+		routeView = (RouteView) view.findViewById(R.id.routeCustom);
 		extraTxt = (TextView) view.findViewById(R.id.extraTxt);
 
-		adressFrom1 = (TextView) view.findViewById(R.id.adrsFrom1);
-		adressFrom2 = (TextView) view.findViewById(R.id.adrsFrom2);
-		adressTo = (TextView) view.findViewById(R.id.adrsTo);
-		date = (TextView) view.findViewById(R.id.date);
-		time = (TextView) view.findViewById(R.id.time);
-		time.setText("");
-		price = (TextView) view.findViewById(R.id.costTxt);
-		route = (LinearLayout) view.findViewById(R.id.routeLL);
+		tvAdressFrom1 = (TextView) view.findViewById(R.id.adrsFrom1);
+		tvAdressFrom2 = (TextView) view.findViewById(R.id.adrsFrom2);
+		tvAdressTo = (TextView) view.findViewById(R.id.adrsTo);
+		tvDate = (TextView) view.findViewById(R.id.date);
+		tvTime = (TextView) view.findViewById(R.id.time);
+		tvTime.setText("");
+		tvPrice = (TextView) view.findViewById(R.id.costTxt);
+		llRoute = (LinearLayout) view.findViewById(R.id.routeLL);
 
 		btnArrived = (Button) view.findViewById(R.id.btn_arrived);
 		// btnArrived1 = (Button) view.findViewById(R.id.btn_arrived1);
 		btnDo = (Button) view.findViewById(R.id.btn_do);
-		btnConnDrivCl = (Button) view
-				.findViewById(R.id.btn_connectDriverClient);
+		btnConnDrivCl = (Button) view.findViewById(R.id.btn_connectDriverClient);
 
 		// btnNoClient = (Button) view.findViewById(R.id.btn_noClient);
 		// btnWellDone = (Button) view.findViewById(R.id.btnWellDone);
@@ -218,23 +217,22 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 		Typeface t = Typeface.createFromAsset(ContextHelper.getInstance()
 				.getCurrentContext().getAssets(), "fonts/Roboto-Condensed.ttf");
 
-		adressFrom1.setTypeface(t);
-		adressTo.setTypeface(t);
-		region.setTypeface(t);
-		edditionalTxt.setTypeface(t);
+		tvAdressFrom1.setTypeface(t);
+		tvAdressTo.setTypeface(t);
+		tvRegion.setTypeface(t);
+		tvAdditionalTxt.setTypeface(t);
 
 		t = Typeface.createFromAsset(ContextHelper.getInstance()
 				.getCurrentContext().getAssets(), "fonts/BebasNeueRegular.ttf");
-		distance.setTypeface(t);
-		price.setTypeface(t);
+		tvDistance.setTypeface(t);
+		tvPrice.setTypeface(t);
 
-		t = Typeface
-				.createFromAsset(ContextHelper.getInstance()
+		t = Typeface.createFromAsset(ContextHelper.getInstance()
 						.getCurrentContext().getAssets(),
 						"fonts/TickingTimebombBB.ttf");
-		arriveTimerTxt.setTypeface(t);
+		tvArriveTimerTxt.setTypeface(t);
 
-		route.setOnClickListener(new OnClickListener() {
+		llRoute.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				MapFragment.orderId = -1;
@@ -243,26 +241,25 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 			}
 		});
 
-		route.setEnabled(true);
+		llRoute.setEnabled(true);
 		btnDetails.setEnabled(true);
 		btnCancel.setEnabled(true);
 		btnAccept.setEnabled(false);
 
 		mPager = (ViewPager) view.findViewById(R.id.comment_container);
-		commentsView = inflater.inflate(R.layout.order_comment_fragment, null);
-		featuresView = inflater.inflate(R.layout.order_comment_fragment, null);
-		mIndicator = (CirclePageIndicator) view
-				.findViewById(R.id.indicator);
+		viewComments = inflater.inflate(R.layout.order_comment_fragment, null);
+		viewFeatures = inflater.inflate(R.layout.order_comment_fragment, null);
+		mIndicator = (CirclePageIndicator) view.findViewById(R.id.indicator);
 
 		return view;
-	}
+	}// end onCreateView
 
 	@Override
 	public void onViewStateRestored(Bundle savedInstanceState) {
 		// tells the fragment that all of the saved state of its view hierarchy has been restored
 		super.onViewStateRestored(savedInstanceState);
-		if (isArchiveOrder && archOrder != null) {
-			dispArchOrder(archOrder);
+		if (isArchiveOrder && mOrder != null) {
+			dispArchOrder(mOrder);
 		} else if (OrderManager.getInstance().getOrder(orderID) != null) {
 			isArch = true;
 			setOrderId(OrderDetails.orderID);
@@ -275,7 +272,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 		if (Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(
 				ContextHelper.getInstance().getCurrentContext()).getString(
 				UserSettingActivity.KEY_TEXT_SIZE, "")) != 0) {
-			txtDetails.setTextSize(TypedValue.COMPLEX_UNIT_SP,
+			tvTxtDetails.setTextSize(TypedValue.COMPLEX_UNIT_SP,
 					Integer.parseInt(PreferenceManager
 							.getDefaultSharedPreferences(
 									ContextHelper.getInstance()
@@ -287,8 +284,8 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 	@Override
 	public void onStop() {
 		super.onStop();
-		if (ct3 != null) {
-			ct3.cancel();
+		if (countDownTimer3 != null) {
+			countDownTimer3.cancel();
 		}
 	}
 
@@ -327,7 +324,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 		btnArrived.setEnabled(true);
 		btnAccept.setEnabled(false);*/
 
-		route.setOnClickListener(new OnClickListener() {
+		llRoute.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				// ----
@@ -380,7 +377,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 								.getInstance().getGuid(), true, body);
 				ConnectionHelper.getInstance().send(data);
 
-				if (ct3 != null) {
+				if (countDownTimer3 != null) {
 					btnArrived.setEnabled(false);
 				}
 
@@ -478,8 +475,8 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 		doListener = new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				if (ct3 != null) {
-					ct3.cancel();
+				if (countDownTimer3 != null) {
+					countDownTimer3.cancel();
 				}
 				btnArrived.setEnabled(false);
 				btnArrived.setText("На месте");
@@ -607,8 +604,8 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 			}
 		};
 
-		if (ct3 != null) {
-			ct3.cancel();
+		if (countDownTimer3 != null) {
+			countDownTimer3.cancel();
 		}
 
 		btnAccept.setOnClickListener(acceptListner);
@@ -626,7 +623,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 			ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
 				@Override
 				public void run() {
-					route.setEnabled(false);
+					llRoute.setEnabled(false);
 
 					btnArrived.setText("На месте");
 					btnArrived.setEnabled(false);
@@ -655,7 +652,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 							.getInstance().getOrder(orderID).arrived)
 							|| OrderManager.getInstance()
 							.getOrder(orderID).getFolder()
-							.equals(Order.FOLDER_DOIN)
+							.equals(Order.FOLDER_DOING)
 							|| !OrderManager.getInstance()
 							.getOrder(orderID).getOrderType()
 							.equals("SendedByDispatcher")) {
@@ -667,7 +664,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 									@Override
 									public void run() {
 
-										route.setEnabled(true);
+										llRoute.setEnabled(true);
 
 										btnArrived.setEnabled(true);
 										btnArrived
@@ -695,7 +692,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 							.getInstance().getOrder(orderID).arrived)
 							|| OrderManager.getInstance()
 							.getOrder(orderID).getFolder()
-							.equals(Order.FOLDER_DOIN)
+							.equals(Order.FOLDER_DOING)
 							|| OrderManager.getInstance()
 							.getOrder(orderID).getFolder()
 							.equals("ReceiveDriver")// свежие
@@ -727,7 +724,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 		// начинается пздц
 
-		if (ord.getFolder().equals(Order.FOLDER_DOIN)) {
+		if (ord.getFolder().equals(Order.FOLDER_DOING)) {
 
 			OrderManager.getInstance().changeOrderState(orderID,
 					Order.STATE_PERFORMING);
@@ -771,8 +768,8 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 								.showDialogOk("Заказ перенесен в папку выполненные");
 					}
 
-					if (ct3 != null) {
-						ct3.cancel();
+					if (countDownTimer3 != null) {
+						countDownTimer3.cancel();
 					}
 
 					btnArrived.setEnabled(false);
@@ -833,8 +830,8 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 						PlaySound.getInstance().play(R.raw.msg_warn);
 					}
-					if (ct3 != null) {
-						ct3.cancel();
+					if (countDownTimer3 != null) {
+						countDownTimer3.cancel();
 					}
 					PlaySound.getInstance().play(R.raw.msg_warn);
 					btnArrived.setEnabled(false);
@@ -854,7 +851,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 					.getOrderType().equals("SendedByDispatcher")
 					&& !OrderManager.getInstance().getOrder(orderID).arrived
 					|| OrderManager.getInstance().getOrder(orderID).getFolder()
-					.equals(Order.FOLDER_DOIN)
+					.equals(Order.FOLDER_DOING)
 					|| !OrderManager.getInstance().getOrder(orderID)
 					.getOrderType().equals("SendedByDispatcher")) {
 
@@ -1103,7 +1100,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 					btnArrived.setText("На месте");
 					btnCancel.setEnabled(false);
 					btnAccept.setEnabled(false);
-					txtDetails.setText(Html.fromHtml(OrderManager.getInstance()
+					tvTxtDetails.setText(Html.fromHtml(OrderManager.getInstance()
 							.getOrder(oldOrderId).getOrderFullDesc()));
 					setDetails(OrderManager.getInstance().getOrder(oldOrderId)
 							.getOrderFullDescOther());
@@ -1113,19 +1110,20 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 	}
 
 	public static void dispArchOrder(final Order order) {
+		Log.d(LOG_TAG,"dispArchOrder()");
 		if (order != null) {
 			isArchiveOrder = true;
-			archOrder = order;
-			time.setText("00:00");
-			time.setVisibility(View.INVISIBLE);
+			mOrder = order;
+			tvTime.setText("00:00");
+			tvTime.setVisibility(View.INVISIBLE);
 			btnDo.setVisibility(View.GONE);
 			btnArrived.setVisibility(View.GONE);
 			btnConnDrivCl.setVisibility(View.GONE);
 
-			if (archOrder != null) {
-				fillViewsForOrder(archOrder);
+			if (mOrder != null) {
+				fillViewsForOrder(mOrder);
 			} else {
-				Log.d("myLogs", "ArchDisplay problems");
+				Log.d(LOG_TAG, "dispArchOrder() ArchDisplay problems");
 			}
 			btnBack.setOnClickListener(new OnClickListener() {
 
@@ -1138,7 +1136,6 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 		}
 	}
-
 
 	private static void sendDone(int orderID) {
 		OrderManager.getInstance().changeOrderState(orderID,
@@ -1168,7 +1165,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 	private static void setUpButtonsState(Order currentOrder) {
 		//toggleBtnHide all buttons and then show only needed ones
-		Log.d(LOG_TAG, "OrderState = " + getOrderState(currentOrder));
+		Log.d(LOG_TAG, "setUpButtonsState() = " + getOrderState(currentOrder));
 		switch (getOrderState(currentOrder)) {
 			case INCOMING:
 				hideAllButtons();
@@ -1180,7 +1177,8 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 				hideAllButtons();
 				//show arrived, connect with client
 				btnArrived.setVisibility(View.VISIBLE);
-				btnArrived.setText("На месте");
+				btnArrived.setText(ContextHelper.getInstance().getCurrentContext()
+						.getResources().getString(R.string.str_on_here));
 				btnArrived.setEnabled(true);
 				btnArrived.setOnClickListener(arrivedListener);
 				btnConnDrivCl.setVisibility(View.VISIBLE);
@@ -1189,17 +1187,20 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 				hideAllButtons();
 				//show do, no Client, connect with Client
 				btnDo.setVisibility(View.VISIBLE);
-				btnDo.setText("Выполняю");
+				btnDo.setText(ContextHelper.getInstance().getCurrentContext()
+						.getResources().getString(R.string.str_executing));
 				btnConnDrivCl.setVisibility(View.VISIBLE);
 				btnArrived.setVisibility(View.VISIBLE);
-				btnArrived.setText("НЕТ КЛИЕНТА");
+				btnArrived.setText(ContextHelper.getInstance().getCurrentContext()
+						.getResources().getString(R.string.str_no_client));
 				btnArrived.setOnClickListener(noClientListener);
 				break;
 			case PERFORMING:
 				hideAllButtons();
 				//show big red button DONE
 				btnDo.setVisibility(View.VISIBLE);
-				btnDo.setText("Выполнил");
+				btnDo.setText(ContextHelper.getInstance().getCurrentContext()
+						.getResources().getString(R.string.str_execute));
 				btnDo.setOnClickListener(doneListener);
 				break;
 			case DONE:
@@ -1256,7 +1257,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 			return DONE;
 		}
 		//check if order is currently performing
-		if (currentOrder.getFolder().equals(Order.FOLDER_DOIN)) {
+		if (currentOrder.getFolder().equals(Order.FOLDER_DOING)) {
 			return PERFORMING;
 		}
 		//check if ARRIVED
@@ -1291,37 +1292,40 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 	}
 
 	private static void fillViewsForOrder(final Order order) {
+		/**
+		 * This method is ...
+		 * */
 		ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
 			@Override
 			public void run() {
-				autoClassTxt.setText(convertToVerticalView(order.autoClass));
-				colorLayout.setBackgroundColor(order.colorClass);
-				String adressFact = (order.getAddressFact() != null
-						|| !order.getAddressFact().equals("0") || !order
-						.getAddressFact().equals("")) ? order.getAddressFact()
-						: "";
-				adressFrom1.setText(order.getStreet() + ", " + adressFact);
-				// adressFrom2.setText(OrderManager.getInstance().getOrder(oldOrderId).getAddress().get(0).from);
+				tvAutoClassTxt.setText(convertToVerticalView(order.autoClass));
+				llColorLayout.setBackgroundColor(order.colorClass);
+				String addressFact = (order.getAddressFact() != null
+						|| !order.getAddressFact().equals("0")
+						|| !order.getAddressFact().equals(""))
+						? order.getAddressFact() : "";
+				tvAdressFrom1.setText(order.getStreet() + ", " + addressFact);
+				// tvAdressFrom2.setText(OrderManager.getInstance().getOrder(oldOrderId).getAddress().get(0).from);
 				String addressTo = "No addressTo";
 				if (order.getAddress().size() > 0) {
 					addressTo = order.getAddress().get(
 							order.getAddress().size() - 1).to;
 				}
 
-				adressTo.setText(addressTo);
+				tvAdressTo.setText(addressTo);
 				String regionFromOrder = (order.getRegion() != null && !order
 						.getRegion().equals("")) ? order.getRegion()
 						: ContextHelper.getInstance().getCurrentContext()
 								.getString(R.string.noRegion);
-				region.setText(regionFromOrder);
+				tvRegion.setText(regionFromOrder);
 
-				// set price
+				// set tvPrice
 				float priceFloat = (order.getFare() == 0) ? 0 : order.getFare();
 				String price = String.format("%.2f", priceFloat);
-				OrderDetails.price.setText(getPriceFormat(price));
+				OrderDetails.tvPrice.setText(getPriceFormat(price));
 
-				// print distance
-				distance.setText(order.getDistanceToOrderPlace());
+				// print tvDistance
+				tvDistance.setText(order.getDistanceToOrderPlace());
 
 				// print additional and comments
 				String featureList = "";
@@ -1330,17 +1334,15 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 					for (String dop : order.getFeatures())
 						featureList += dop + "; ";
-					edditionalTxt.setText(featureList);
+					tvAdditionalTxt.setText(featureList);
 				} else {
-					edditionalTxt.setText(ContextHelper.getInstance()
+					tvAdditionalTxt.setText(ContextHelper.getInstance()
 							.getCurrentContext().getString(R.string.noFeature));
 				}
-				comments = (!order.getComments().equals("")) ? order
-						.getComments() : "nothing";
-				extraInfoBtn.setImageResource(R.drawable.pencil);
+				comments = (!order.getComments().equals("")) ? order.getComments() : "nothing";
+//				ivExtraInfoBtn.setImageResource(R.drawable.pencil);
 
 				// set additional info images
-
 				Boolean joker = (order.agentName != null && !order.agentName
 						.equals("")) ? true : false;
 				Boolean noCash = order.isNonCashPay();
@@ -1351,24 +1353,24 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 						.getFeatures().size() > 0) ? true : false;
 
 				// set extra info images
-				imageJoker.setVisibility(joker ? View.VISIBLE : View.GONE);
-				imageNoCash.setVisibility(noCash ? View.VISIBLE : View.GONE);
-				imageWebOrder
+				ivImageJoker.setVisibility(joker ? View.VISIBLE : View.GONE);
+				ivImageNoCash.setVisibility(noCash ? View.VISIBLE : View.GONE);
+				ivImageWebOrder
 						.setVisibility(webOrder ? View.VISIBLE : View.GONE);
-				// imageEd.setVisibility(edditional ? View.VISIBLE : View.GONE);
-				imageEd.setVisibility(View.VISIBLE);
+				// ivImageEd.setVisibility(edditional ? View.VISIBLE : View.GONE);
+				ivImageEd.setVisibility(View.VISIBLE);
 
 				//swipe for comments
-				edditionalTxt.setVisibility(View.GONE);
+				tvAdditionalTxt.setVisibility(View.GONE);
 
 				List<View> pages = new ArrayList<View>();
-				if (!comments.equals("nothing") && commentsView != null) {
-					((TextView) commentsView.findViewById(R.id.commentTxt)).setText(comments);
-					pages.add(commentsView);
+				if (!comments.equals("nothing") && viewComments != null) {
+					((TextView) viewComments.findViewById(R.id.commentTxt)).setText(comments);
+					pages.add(viewComments);
 				}
-				if (!featureList.equals("") && featuresView != null) {
-					((TextView) featuresView.findViewById(R.id.commentTxt)).setText(featureList);
-					pages.add(featuresView);
+				if (!featureList.equals("") && viewFeatures != null) {
+					((TextView) viewFeatures.findViewById(R.id.commentTxt)).setText(featureList);
+					pages.add(viewFeatures);
 				}
 
 				if (pages.size() > 0) {
@@ -1388,14 +1390,14 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 					public void onPageSelected(int position) {
 						switch (position) {
 							case 0:
-								commentsImage
+								ivCommentsImage
 										.setImageResource(R.drawable.comment_active);
-								imageEd.setImageResource(R.drawable.additional_not_active);
+								ivImageEd.setImageResource(R.drawable.additional_not_active);
 								break;
 							case 1:
-								commentsImage
+								ivCommentsImage
 										.setImageResource(R.drawable.comment_not_active);
-								imageEd.setImageResource(R.drawable.additional_active);
+								ivImageEd.setImageResource(R.drawable.additional_active);
 								break;
 						}
 					}
@@ -1416,7 +1418,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 				//end swipe block
 
-				extraInfoBtn.setOnClickListener(new View.OnClickListener() {
+				ivExtraInfoBtn.setOnClickListener(new View.OnClickListener() {
 
 					@Override
 					public void onClick(View v) {
@@ -1424,19 +1426,19 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 						/*if (extraTxt.getVisibility() == View.GONE) {
 							if (!comments.equals("nothing")) {
 								extraTxt.setText(comments);
-								edditionalTxt.setVisibility(View.GONE);
+								tvAdditionalTxt.setVisibility(View.GONE);
 								extraTxt.setVisibility(View.VISIBLE);
-								commentsImage
+								ivCommentsImage
 										.setImageResource(R.drawable.comment_active);
-								imageEd.setImageResource(R.drawable.additional_not_active);
+								ivImageEd.setImageResource(R.drawable.additional_not_active);
 							}
 
 						} else {
-							edditionalTxt.setVisibility(View.VISIBLE);
+							tvAdditionalTxt.setVisibility(View.VISIBLE);
 							extraTxt.setVisibility(View.GONE);
-							commentsImage
+							ivCommentsImage
 									.setImageResource(R.drawable.comment_not_active);
-							imageEd.setImageResource(R.drawable.additional_active);
+							ivImageEd.setImageResource(R.drawable.additional_active);
 
 						}*/
 						OwnOrder.setCurrentOrder(order);
@@ -1446,17 +1448,16 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 				});
 				if (!isArchiveOrder) {
 					// start timer
-					//arriveTimerTxt.setVisibility(View.VISIBLE);
-					flipClock.setVisibility(View.VISIBLE);
+					//tvArriveTimerTxt.setVisibility(View.VISIBLE);
+					llFlipClock.setVisibility(View.VISIBLE);
 					orderTime = order.getDate();
 					Log.d("myLogs",
 							"orderTimer = " + Utils.dateToTimeString(orderTime));
 					timerStopWatch = new Timer();
-					timerStopWatch.schedule(new ArriveTimer(), 0,
-							500);
-					date.setText(Utils.dateToDateString(OrderManager
+					timerStopWatch.schedule(new ArriveTimer(), 0, 500);
+					tvDate.setText(Utils.dateToDateString(OrderManager
 							.getInstance().getOrder(oldOrderId).getDate()));
-					arriveTimerTxt.setText(Utils.dateToTimeString(OrderManager
+					tvArriveTimerTxt.setText(Utils.dateToTimeString(OrderManager
 							.getInstance().getOrder(oldOrderId).getDate()));
 
 					setDetails(OrderManager.getInstance().getOrder(orderID)
@@ -1465,9 +1466,9 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 					btnConnDrivCl.setVisibility(View.VISIBLE);
 					btnDo.setVisibility(View.VISIBLE);
 				} else {
-					//arriveTimerTxt.setVisibility(View.INVISIBLE);
-					flipClock.setVisibility(View.INVISIBLE);
-					arriveTimerTxt.setText("00:00");
+					//tvArriveTimerTxt.setVisibility(View.INVISIBLE);
+					llFlipClock.setVisibility(View.INVISIBLE);
+					tvArriveTimerTxt.setText("00:00");
 					btnArrived.setVisibility(View.GONE);
 					btnConnDrivCl.setVisibility(View.GONE);
 					btnDo.setVisibility(View.GONE);
@@ -1496,7 +1497,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 				}
 				//btnTest to draw route
 
-				rw.setRouteType(routeType);
+				routeView.setRouteType(routeType);
 				//end btnTest
 			}
 		});
@@ -1520,29 +1521,29 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 					int minutes = seconds / 60;
 					seconds = seconds % 60;
 
-					arriveTimerTxt.setText(String.format("%d:%02d", minutes,
+					tvArriveTimerTxt.setText(String.format("%d:%02d", minutes,
 							seconds));
 
 					try {
 						final int tenMin = Math.round(minutes / 10);
 						if (tenMin != curTenMin) {
 							curTenMin = tenMin;
-							flip(tenMin, tenMinLayout);
+							flip(tenMin, rlTenMinLayout);
 							}
 						int min = minutes - tenMin * 10;
 						if (min != curMin) {
 							curMin = min;
-							flip(min, minLayout);
+							flip(min, rlMinLayout);
 						}
 						int tenSec = Math.round(seconds / 10);
 						if (tenSec != curTenSec) {
 							curTenSec = tenSec;
-							flip(tenSec, tenSecLayout);
+							flip(tenSec, rlTenSecLayout);
 						}
 						int secForFlip = seconds - tenSec * 10;
 						if (secForFlip != curSec) {
 							curSec = secForFlip;
-							flip(secForFlip, secLayout);
+							flip(secForFlip, rlSecLayout);
 						}
 					} catch (Exception e) {
 						Log.d("myLogs", "FlipClock error = " + e.getMessage());
@@ -1562,8 +1563,8 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 		ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
 			@Override
 			public void run() {
-				if (ct3 != null) {
-					ct3.cancel();
+				if (countDownTimer3 != null) {
+					countDownTimer3.cancel();
 				}
 
 				Order order = OrderManager.getInstance().getOrder(orderID);
@@ -1600,14 +1601,10 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 								(dateNow + s));
 					}
 
-					ct3 = new CountDownTimer(1000000, 1000) {
-
+					countDownTimer3 = new CountDownTimer(1000000, 1000) {
 						public void onTick(long millisUntilFinished) {
-
 							long ss;
-							Order ord = OrderManager.getInstance().getOrder(
-									orderID);
-
+							Order ord = OrderManager.getInstance().getOrder(orderID);
 							long dateNow = new Date().getTime();
 							// System.out.println("dnc - " + ord.dateNoClient +
 							// " now - " + dateNow);
@@ -1652,7 +1649,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 				}
 
 				// Log.d("timer", "btnTest - " + s + " s iss - " + s*1000 + " ms");
-				ct3 = new CountDownTimer(s, 1000) {
+				countDownTimer3 = new CountDownTimer(s, 1000) {
 
 					public void onTick(long millisUntilFinished) {
 
@@ -1683,8 +1680,8 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 						btnArrived.setText("НЕТ КЛИЕНТА");
 
 						// /////////////////
-						if (ct3 != null) {
-							ct3.cancel();
+						if (countDownTimer3 != null) {
+							countDownTimer3.cancel();
 						}
 
 						if (OrderManager.getInstance().getOrder(orderID).dateNoClient == 0) {
@@ -1695,7 +1692,7 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 						// Log.d("timer", "btnTest - " + s + " s iss - " + s*1000 +
 						// " ms");
-						ct3 = new CountDownTimer(1000000, 1000) {
+						countDownTimer3 = new CountDownTimer(1000000, 1000) {
 
 							public void onTick(long millisUntilFinished) {
 
@@ -1855,14 +1852,11 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 			@Override
 			public void onClick(View v) {
-
 				if (fullDescOther.equals("")) {
 					AlertDHelper.showDialogOk("Детали отсутствуют");
 				} else {
-					AlertDHelper.showDialogOk(fullDescOther.replaceAll("<br>",
-							"\n"));
+					AlertDHelper.showDialogOk(fullDescOther.replaceAll("<br>", "\n"));
 				}
-
 			}
 		});
 

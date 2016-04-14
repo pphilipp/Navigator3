@@ -20,9 +20,21 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Statuses of orders:
+ * @value STATE_NEW {1} - new order;
+ * @value STATE_PERFORMING {2} - order performing;
+ * @value STATE_PERFORMED {3} - order was performed;
+ * @value STATE_TAKEN {4} - order taken but not confirmed by dispatcher yet;
+ * @value STATE_MISSED {5} - order was missed;
+ * @value STATE_CANCELLED {6} - revoked was order;
+ *
+ * */
+
+// Данные для автоудаления заказа
 public class Order {
 	public static final byte ORDER_1 = 1;
-
+	public static final int STATE_PRELIM = 8;
 	public static final int STATE_NEW = 1;
 	public static final int STATE_PERFORMING = 2;
 	public static final int STATE_PERFORMED = 3;
@@ -30,29 +42,28 @@ public class Order {
 	public static final int STATE_MISSED = 5;
 	public static final int STATE_CANCELLED = 6;
 	public static final int STATE_KRYG_ADA = 7;
-	public static final int STATE_PRELIM = 8;
-	public static final String FOLDER_DOIN = "Исполняемый";
+	public static final String FOLDER_DOING = "Исполняемый";
 	public static final String FOLDER_DONE = "Выполненный";
 	public static final String FOLDER_NOT_DONE = "Невыполненный";
 	public static final String FOLDER_TRASH = "Корзина";
 	public static final String FOLDER_INBOX = "Входящий";
 	public static final String FOLDER_RECEIVED = "Принятый";
-	public static final int COND = 3;
-	public static final int POS = 15;
-	public static final int ANIMAL = 34;
-	public static final int WIFI = 33;
-	public static final int NOSMOKE = 35;
-	public static final int BAG = 11;
-	public static final int TAXOMETER = 111;
-	public boolean canFirstForAnyParking;
-	public boolean concessional;
-	public boolean arrived;
-	public long dateNoClient;
-	public boolean accepted;
-	public boolean isArchive;
+	public static final int ADDITIONAL_SERVICES_CONDITIONER = 3;
+	public static final int ADDITIONAL_SERVICES_POS_TERMINAL = 15;
+	public static final int ADDITIONAL_SERVICES_ANIMAL = 34;
+	public static final int ADDITIONAL_SERVICES_WIFI = 33;
+	public static final int ADDITIONAL_SERVICES_NO_SMOKE = 35;
+	public static final int ADDITIONAL_SERVICES_A_LOT_OF_BAG = 11;
+	public static final int ADDITIONAL_SERVICES_TAXIMETER = 111;
+	boolean mCanFirstForAnyParking;
+	boolean mConcessional;
+	boolean mArrived;
+	long dateNoClient;
+	boolean accepted;
+	boolean isArchive;
 	// Данные класса
 	protected int orderID;
-	protected byte clientType;// 0 - случайный,1- постоянный
+	protected byte clientType;// 0 - случайный, 1- постоянный
 	protected long date;// Дата подачи заказа
 	protected long date3; // время прибытия
 	protected float fare;// Цена поездки
@@ -68,14 +79,7 @@ public class Order {
 	protected String parade;
 	protected String building;
 	protected int status;
-	// Статус заказа,1 - новый,2 - выполняется,3 - выполненный,4 - заказ взят,но
-	// еще не подтвержден диспетчером,5 - пропущенный;6 - отмененный
-	// Данные для автоудаления заказа
 	protected long reciveTime; // Время получения заказа
-	public long getReciveTime() {
-		return reciveTime;
-	}
-
 	protected int N; // Номер типа заказа
 	protected boolean efirOrder;
 	protected String partnerPreffix;
@@ -89,29 +93,25 @@ public class Order {
 	protected boolean nonCashPay; // безнал
 	String shortDesc, fullDescLine;
 	float orderCostForDriver;
-	private boolean preliminary;
+	private boolean isPreliminary; //предварительный
 	private boolean fromServer;
 	private List<String> people_signed;
 	private String prelimDesc;
 	private String sourceWhence;
 	public String autoClass;
-
 	private float waitMinutes;
 	private float waitMinutesPay;
 	private String entrance;
 	private String addressFact;
 	private List<String> features;
-
-	public int colorClass;
+	public int colorClass;//color of type car class
 	public String agentName;
 	public int relayID;
 	public float distanceToPointOfDelivery;
 
-
 	public Order() {}
 
 	public Order(DispOrder4 order) {
-
 		this.orderID = order.orderID;
 		clientType = 0;
 		status = STATE_NEW;
@@ -141,12 +141,12 @@ public class Order {
 		shortDesc = order.orderShortDesc;
 		fullDescLine = order.orderFullDesc;
 		prelimDesc = order.orderPrelimFullDesc;
-		preliminary = order.preliminary;
+		isPreliminary = order.preliminary;
 		people_signed = new ArrayList<String>();
-		canFirstForAnyParking = order.canFirstForAnyParking;
+		mCanFirstForAnyParking = order.canFirstForAnyParking;
 		orderCostForDriver = order.orderCostForDriver;
 		sourceWhence = order.sourceWhence;
-		concessional = order.concessional;
+		mConcessional = order.concessional;
 		autoClass = order.autoClass;
 		waitMinutes = order.waitMinutes;
 		waitMinutesPay = order.waitMinutesPay;
@@ -160,6 +160,10 @@ public class Order {
 		relayID = order.relayID;
 		distanceToPointOfDelivery = order.distanceToPointOfDelivery;
 		//date3 = order.date;
+	}
+
+	public long getReciveTime() {
+		return reciveTime;
 	}
 
 	public String getClientName() {
@@ -475,11 +479,11 @@ public class Order {
 	}
 
 	public boolean isPreliminary() {
-		return preliminary;
+		return isPreliminary;
 	}
 
 	public void setPreliminary(boolean preliminary) {
-		this.preliminary = preliminary;
+		this.isPreliminary = preliminary;
 	}
 
 	public int getAutoTariffClassUID() {
@@ -693,7 +697,7 @@ public class Order {
 	}
 
 	public void setPressedArrived() {
-		arrived = true;
+		mArrived = true;
 	}
 
 	public boolean isNonCashPay() {
@@ -737,12 +741,12 @@ public class Order {
 			archive.put("shortDesc", shortDesc);
 			archive.put("fullDescLine", fullDescLine);
 			archive.put("prelimDesc", prelimDesc);
-			archive.put("preliminary", preliminary);
+			archive.put("preliminary", isPreliminary);
 			// archive.put("people_signed", people_signed);
-			archive.put("canFirstForAnyParking", canFirstForAnyParking);
+			archive.put("canFirstForAnyParking", mCanFirstForAnyParking);
 			archive.put("orderCostForDriver", orderCostForDriver);
 			archive.put("sourceWhence", sourceWhence);
-			archive.put("concessional", concessional);
+			archive.put("concessional", mConcessional);
 			archive.put("autoClass", autoClass);
 			archive.put("waitMinutes", waitMinutes);
 			archive.put("waitMinutesPay", waitMinutesPay);
@@ -852,24 +856,22 @@ public class Order {
 			shortDesc = archive.getString("shortDesc");
 			fullDescLine = archive.getString("fullDescLine");
 			prelimDesc = archive.getString("prelimDesc");
-			preliminary = archive.getBoolean("preliminary");
+			isPreliminary = archive.getBoolean("preliminary");
 			// people_signed = archive.get("people_signed");
-			canFirstForAnyParking = archive.getBoolean("canFirstForAnyParking");
-			orderCostForDriver = Float.parseFloat(archive
-					.getString("orderCostForDriver"));
+			mCanFirstForAnyParking = archive.getBoolean("canFirstForAnyParking");
+			orderCostForDriver = Float.parseFloat(archive.getString("orderCostForDriver"));
 			sourceWhence = archive.getString("sourceWhence");
-			concessional = archive.getBoolean("concessional");
+			mConcessional = archive.getBoolean("concessional");
 			autoClass = archive.getString("autoClass");
 			waitMinutes = Float.parseFloat(archive.getString("waitMinutes"));
-			waitMinutesPay = Float.parseFloat(archive
-					.getString("waitMinutesPay"));
+			waitMinutesPay = Float.parseFloat(archive.getString("waitMinutesPay"));
 			entrance = archive.getString("entrance");
 			addressFact = archive.getString("addressFact");
 			// !!!
 			Log.d("myLogs", "orderFromArchiv, agentName");
-			agentName = (archive.getString("agentName") != null && !archive
-					.getString("agentName").equals("NO_VALUE")) ? archive
-					.getString("agentName") : "";
+			agentName = (archive.getString("agentName") != null
+					&& !archive.getString("agentName").equals("NO_VALUE"))
+					? archive.getString("agentName") : "";
 			colorClass = archive.getInt("colorClass");
 
 			JSONArray featuresJSONArray = archive.getJSONArray("features");

@@ -8,7 +8,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.PaintDrawable;
@@ -1694,7 +1693,7 @@ public class SwipeFragment extends FragmentPacket
                                         .equals("Направленный")) {
                                     OrderManager.getInstance()
                                             .changeOrderFolder(pack.orderID,
-                                                    Order.FOLDER_DOIN);
+                                                    Order.FOLDER_DOING);
                                 }
                             } catch (Exception e) {
                                 e.printStackTrace();
@@ -2412,7 +2411,7 @@ public class SwipeFragment extends FragmentPacket
             if ((folder.equals("НаОформлении"))
                     || (folder.equals("Направленный"))
                     || (folder.equals("ReceiveDriver"))
-                    || (folder.equals(Order.FOLDER_DOIN))
+                    || (folder.equals(Order.FOLDER_DOING))
                     || (folder.equals(Order.FOLDER_RECEIVED))) {
 
                 ContextHelper.getInstance().runOnCurrentUIThread(
