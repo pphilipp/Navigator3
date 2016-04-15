@@ -55,12 +55,12 @@ public class Order {
 	public static final int ADDITIONAL_SERVICES_NO_SMOKE = 35;
 	public static final int ADDITIONAL_SERVICES_A_LOT_OF_BAG = 11;
 	public static final int ADDITIONAL_SERVICES_TAXIMETER = 111;
-	boolean mCanFirstForAnyParking;
-	boolean mConcessional;
-	boolean mArrived;
-	long dateNoClient;
-	boolean accepted;
-	boolean isArchive;
+	public  boolean mCanFirstForAnyParking;
+	public  boolean mConcessional;
+	public boolean arrived;
+	public  long dateNoClient;
+	public  boolean accepted;
+	public  boolean isArchive;
 	// Данные класса
 	protected int orderID;
 	protected byte clientType;// 0 - случайный, 1- постоянный
@@ -697,7 +697,7 @@ public class Order {
 	}
 
 	public void setPressedArrived() {
-		mArrived = true;
+		arrived = true;
 	}
 
 	public boolean isNonCashPay() {
