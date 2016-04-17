@@ -3,7 +3,10 @@ package com.innotech.imap_taxi.network;
 import android.util.Log;
 
 import com.innotech.imap_taxi.network.packet.*;
-
+/**
+ * @class PacketParser -
+ *
+ * */
 
 class PacketParser {
 	Packet result;
@@ -55,6 +58,8 @@ class PacketParser {
 		case Packet.TAXIMETER_RATES: result = new GetTaximeterRates(data); break;
 		//archivOrders
 		case Packet.ARCHIV_ORDERS_RESPONSE: result = new DispOrderResponse4(data);  break;
+
+		case Packet.DISTANCE_FROM_STAS: result = new FromStas4(data);  break;
 		
 		default : result = null;
 		}
@@ -200,6 +205,10 @@ class PacketParser {
 		else if (val.equals("IMAP.Net.InnerNamespace.GetDoneOrdersAnswer")) {
 			Log.d("archivTest", "archivResponse123");
 			return Packet.ARCHIV_ORDERS_RESPONSE;
+		}
+		else if(val.equals("IMAP.Net.From.Stas")) {
+			Log.d("archivTest", "archivResponse123");
+			return Packet.DISTANCE_FROM_STAS;
 		}
 
 		return Packet.UNKNOWN_RESPONCE;
