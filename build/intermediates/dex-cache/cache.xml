@@ -1,2 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.6\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9af3b9b8114e685291aa00e6572b0a9131244956">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\com.crashlytics.sdk.android-answers-1.3.6_44e201cecc490e11f487961a3cd2726e8d84cb6e.jar" />
+    </item>
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.5.5\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="611605b6b640c1558f9bdea41de8ff837ab68ca8">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\com.crashlytics.sdk.android-crashlytics-2.5.5_1ff686ece36ade9d3d92d4950fa855dc977d30eb.jar" />
+    </item>
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.4.0_8ec79414edb0df9b73f5afd216920364e9eb0b3f.jar" />
+    </item>
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\com.android.support-design-22.2.1_2fea57cba0c6351cb0c05002ccc05c1a3a4d052c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ura\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\butterknife-7.0.1_99b54625782f1e82316587a19fc201f15df18505.jar" />
+    </item>
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.8\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c9ef45dcbd082cd63aac09a5e2cd443adb5df837">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\com.crashlytics.sdk.android-crashlytics-core-2.3.8_72bc84db01970cf04f02102b661f990f9eaff7c8.jar" />
+    </item>
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-22.2.1_4542f72999d0423186cc63c0c6cbd4f6c4b67aa3.jar" />
+    </item>
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\Navigator3\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="403e5a2630723af82f2c93bfb303ae142574eede">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\Navigator3-library-unspecified_bbd31f08a040a5dee1f8b62d0fe6856d93d86b92.jar" />
+    </item>
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.1.4\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ad5bb101ced4d3939225c9b57e5a3d81547c1fbb">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\com.crashlytics.sdk.android-beta-1.1.4_8b8f7a3747849e88c959016076437f6f1b66f25c.jar" />
+    </item>
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.0_d5c9fd24bf195438b1b3585f761534485c820044.jar" />
+    </item>
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\internal_impl-23.0.0_3c35a33ac6fc0f09999b277a9b72c91fa9e31637.jar" />
+    </item>
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_b6f0a3f82700d573cdf0b9ec71772fc9ad555814.jar" />
+    </item>
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-8.4.0_e38461e29bfbbeb6def87587d816bacb48635023.jar" />
+    </item>
+    <item
+        jar="D:\androidSDK\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\support-annotations-23.0.0_58dabf1f7085b4acf29ef3c40037c801017d09ec.jar" />
+    </item>
+    <item
+        jar="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a5db9a2dd46d84285ef737f65030b74b6e8ee2a4">
+        <dex dex="D:\innotech\Workspace\Navigator3\taxiIMAP_Android\build\intermediates\pre-dexed\debug\io.fabric.sdk.android-fabric-1.3.10_9c212bdbf126032475735557f7432fe6302127fc.jar" />
+    </item>
+
+</items>

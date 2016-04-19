@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/values-fi/values-fi.xml",
+        "outputFile": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\values-fi\\values-fi.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 208
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 308
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 409
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 495
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 600
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 718
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 825
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 928
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 1025
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 1131
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 1230
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 1334
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1453
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 1716
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1850
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 2035
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 2168
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 2297
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -353,7 +353,7 @@
                     "endOffset": 2506
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -372,7 +372,7 @@
                     "endOffset": 2715
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -391,7 +391,7 @@
                     "endOffset": 2843
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -410,7 +410,7 @@
                     "endOffset": 3014
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -429,7 +429,7 @@
                     "endOffset": 3140
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -448,7 +448,7 @@
                     "endOffset": 3302
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -467,7 +467,7 @@
                     "endOffset": 3420
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -486,7 +486,7 @@
                     "endOffset": 3556
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -505,7 +505,7 @@
                     "endOffset": 3716
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -524,7 +524,7 @@
                     "endOffset": 3847
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -543,7 +543,7 @@
                     "endOffset": 4025
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -562,7 +562,7 @@
                     "endOffset": 4159
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -581,7 +581,7 @@
                     "endOffset": 4412
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values-fi\\common_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -600,7 +600,7 @@
                     "endOffset": 4641
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -619,7 +619,7 @@
                     "endOffset": 4765
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -638,7 +638,7 @@
                     "endOffset": 4873
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -657,7 +657,7 @@
                     "endOffset": 5053
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -676,7 +676,7 @@
                     "endOffset": 5181
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -695,7 +695,7 @@
                     "endOffset": 5388
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -714,7 +714,7 @@
                     "endOffset": 5524
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -733,7 +733,7 @@
                     "endOffset": 5693
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -752,7 +752,7 @@
                     "endOffset": 5788
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -771,7 +771,7 @@
                     "endOffset": 5888
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -790,7 +790,7 @@
                     "endOffset": 6001
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -803,7 +803,7 @@
         ]
     },
     {
-        "outputFile": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/values-fi/values-fi.xml",
+        "outputFile": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\values-fi\\values-fi.xml",
         "map": [
             {
                 "to": {
@@ -814,7 +814,7 @@
                     "endOffset": 208
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -833,7 +833,7 @@
                     "endOffset": 308
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -852,7 +852,7 @@
                     "endOffset": 409
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -871,7 +871,7 @@
                     "endOffset": 495
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -890,7 +890,7 @@
                     "endOffset": 600
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -909,7 +909,7 @@
                     "endOffset": 718
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -928,7 +928,7 @@
                     "endOffset": 825
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -947,7 +947,7 @@
                     "endOffset": 928
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -966,7 +966,7 @@
                     "endOffset": 1025
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -985,7 +985,7 @@
                     "endOffset": 1131
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1004,7 +1004,7 @@
                     "endOffset": 1230
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1023,7 +1023,7 @@
                     "endOffset": 1334
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1042,7 +1042,7 @@
                     "endOffset": 1453
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-fi/values-fi.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-fi\\values-fi.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -1057,17 +1057,17 @@
                     "startLine": 15,
                     "startColumn": 4,
                     "startOffset": 1458,
-                    "endColumn": 194,
-                    "endOffset": 1648
+                    "endColumn": 262,
+                    "endOffset": 1716
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 478,
-                        "endColumn": 198,
-                        "endOffset": 672
+                        "startOffset": 3410,
+                        "endColumn": 266,
+                        "endOffset": 3672
                     }
                 }
             },
@@ -1075,18 +1075,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1653,
-                    "endColumn": 173,
-                    "endOffset": 1822
+                    "startOffset": 1721,
+                    "endColumn": 133,
+                    "endOffset": 1850
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 18,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 2572,
-                        "endColumn": 177,
-                        "endOffset": 2745
+                        "startOffset": 1311,
+                        "endColumn": 133,
+                        "endOffset": 1440
                     }
                 }
             },
@@ -1094,18 +1094,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1827,
-                    "endColumn": 111,
-                    "endOffset": 1934
+                    "startOffset": 1855,
+                    "endColumn": 184,
+                    "endOffset": 2035
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 2276,
-                        "endColumn": 111,
-                        "endOffset": 2383
+                        "startOffset": 1122,
+                        "endColumn": 188,
+                        "endOffset": 1306
                     }
                 }
             },
@@ -1113,18 +1113,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1939,
-                    "endColumn": 271,
-                    "endOffset": 2206
+                    "startOffset": 2040,
+                    "endColumn": 132,
+                    "endOffset": 2168
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 30,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 4395,
-                        "endColumn": 275,
-                        "endOffset": 4666
+                        "startOffset": 989,
+                        "endColumn": 132,
+                        "endOffset": 1117
                     }
                 }
             },
@@ -1132,18 +1132,18 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 2211,
-                    "endColumn": 131,
-                    "endOffset": 2338
+                    "startOffset": 2173,
+                    "endColumn": 128,
+                    "endOffset": 2297
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 2016,
-                        "endColumn": 131,
-                        "endOffset": 2143
+                        "startOffset": 860,
+                        "endColumn": 128,
+                        "endOffset": 984
                     }
                 }
             },
@@ -1151,18 +1151,18 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 2343,
-                    "endColumn": 184,
-                    "endOffset": 2523
+                    "startOffset": 2302,
+                    "endColumn": 208,
+                    "endOffset": 2506
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 1827,
-                        "endColumn": 188,
-                        "endOffset": 2011
+                        "startOffset": 434,
+                        "endColumn": 212,
+                        "endOffset": 642
                     }
                 }
             },
@@ -1170,18 +1170,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 2528,
-                    "endColumn": 131,
-                    "endOffset": 2655
+                    "startOffset": 2511,
+                    "endColumn": 208,
+                    "endOffset": 2715
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 1695,
-                        "endColumn": 131,
-                        "endOffset": 1822
+                        "startOffset": 647,
+                        "endColumn": 212,
+                        "endOffset": 855
                     }
                 }
             },
@@ -1189,18 +1189,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2660,
-                    "endColumn": 168,
-                    "endOffset": 2824
+                    "startOffset": 2720,
+                    "endColumn": 127,
+                    "endOffset": 2843
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 842,
-                        "endColumn": 172,
-                        "endOffset": 1010
+                        "startOffset": 306,
+                        "endColumn": 127,
+                        "endOffset": 429
                     }
                 }
             },
@@ -1208,18 +1208,18 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 2829,
-                    "endColumn": 128,
-                    "endOffset": 2953
+                    "startOffset": 2848,
+                    "endColumn": 170,
+                    "endOffset": 3014
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1566,
-                        "endColumn": 128,
-                        "endOffset": 1690
+                        "startOffset": 2679,
+                        "endColumn": 170,
+                        "endOffset": 2845
                     }
                 }
             },
@@ -1227,18 +1227,18 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 2958,
-                    "endColumn": 208,
-                    "endOffset": 3162
+                    "startOffset": 3019,
+                    "endColumn": 125,
+                    "endOffset": 3140
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1141,
-                        "endColumn": 212,
-                        "endOffset": 1349
+                        "startOffset": 2553,
+                        "endColumn": 125,
+                        "endOffset": 2674
                     }
                 }
             },
@@ -1246,18 +1246,18 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 3167,
-                    "endColumn": 207,
-                    "endOffset": 3370
+                    "startOffset": 3145,
+                    "endColumn": 161,
+                    "endOffset": 3302
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1354,
-                        "endColumn": 211,
-                        "endOffset": 1561
+                        "startOffset": 2391,
+                        "endColumn": 161,
+                        "endOffset": 2548
                     }
                 }
             },
@@ -1265,18 +1265,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 3375,
-                    "endColumn": 125,
-                    "endOffset": 3496
+                    "startOffset": 3307,
+                    "endColumn": 117,
+                    "endOffset": 3420
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1015,
-                        "endColumn": 125,
-                        "endOffset": 1136
+                        "startOffset": 2273,
+                        "endColumn": 117,
+                        "endOffset": 2386
                     }
                 }
             },
@@ -1284,18 +1284,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 3501,
-                    "endColumn": 167,
-                    "endOffset": 3664
+                    "startOffset": 3425,
+                    "endColumn": 135,
+                    "endOffset": 3556
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 24,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 3507,
-                        "endColumn": 167,
-                        "endOffset": 3670
+                        "startOffset": 170,
+                        "endColumn": 135,
+                        "endOffset": 301
                     }
                 }
             },
@@ -1303,18 +1303,18 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 3669,
-                    "endColumn": 122,
-                    "endOffset": 3787
+                    "startOffset": 3561,
+                    "endColumn": 159,
+                    "endOffset": 3716
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 23,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 3384,
-                        "endColumn": 122,
-                        "endOffset": 3502
+                        "startOffset": 4120,
+                        "endColumn": 159,
+                        "endOffset": 4275
                     }
                 }
             },
@@ -1322,18 +1322,18 @@
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 3792,
-                    "endColumn": 164,
-                    "endOffset": 3952
+                    "startOffset": 3721,
+                    "endColumn": 130,
+                    "endOffset": 3847
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 677,
-                        "endColumn": 164,
-                        "endOffset": 837
+                        "startOffset": 3989,
+                        "endColumn": 130,
+                        "endOffset": 4115
                     }
                 }
             },
@@ -1341,18 +1341,18 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 3957,
-                    "endColumn": 169,
-                    "endOffset": 4122
+                    "startOffset": 3852,
+                    "endColumn": 177,
+                    "endOffset": 4025
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 3214,
-                        "endColumn": 169,
-                        "endOffset": 3379
+                        "startOffset": 3811,
+                        "endColumn": 177,
+                        "endOffset": 3984
                     }
                 }
             },
@@ -1360,18 +1360,18 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 4127,
-                    "endColumn": 117,
-                    "endOffset": 4240
+                    "startOffset": 4030,
+                    "endColumn": 133,
+                    "endOffset": 4159
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 25,
                         "startColumn": 4,
-                        "startOffset": 3096,
-                        "endColumn": 117,
-                        "endOffset": 3209
+                        "startOffset": 3677,
+                        "endColumn": 133,
+                        "endOffset": 3806
                     }
                 }
             },
@@ -1379,18 +1379,18 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 4245,
-                    "endColumn": 170,
-                    "endOffset": 4411
+                    "startOffset": 4164,
+                    "endColumn": 252,
+                    "endOffset": 4412
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.4.0\\res\\values-fi\\common_strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 307,
-                        "endColumn": 170,
-                        "endOffset": 473
+                        "startOffset": 170,
+                        "endColumn": 256,
+                        "endOffset": 422
                     }
                 }
             },
@@ -1398,18 +1398,18 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 4416,
-                    "endColumn": 136,
-                    "endOffset": 4548
+                    "startOffset": 4417,
+                    "endColumn": 228,
+                    "endOffset": 4641
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 170,
-                        "endColumn": 136,
-                        "endOffset": 302
+                        "startOffset": 2974,
+                        "endColumn": 232,
+                        "endOffset": 3202
                     }
                 }
             },
@@ -1417,18 +1417,18 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 4553,
-                    "endColumn": 178,
-                    "endOffset": 4727
+                    "startOffset": 4646,
+                    "endColumn": 123,
+                    "endOffset": 4765
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 32,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 4805,
-                        "endColumn": 178,
-                        "endOffset": 4979
+                        "startOffset": 2850,
+                        "endColumn": 123,
+                        "endOffset": 2969
                     }
                 }
             },
@@ -1436,18 +1436,18 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 4732,
-                    "endColumn": 133,
-                    "endOffset": 4861
+                    "startOffset": 4770,
+                    "endColumn": 107,
+                    "endOffset": 4873
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 31,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 4671,
-                        "endColumn": 133,
-                        "endOffset": 4800
+                        "startOffset": 3207,
+                        "endColumn": 107,
+                        "endOffset": 3310
                     }
                 }
             },
@@ -1455,18 +1455,18 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 4866,
-                    "endColumn": 156,
-                    "endOffset": 5018
+                    "startOffset": 4878,
+                    "endColumn": 179,
+                    "endOffset": 5053
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 3675,
-                        "endColumn": 156,
-                        "endOffset": 3827
+                        "startOffset": 1573,
+                        "endColumn": 183,
+                        "endOffset": 1752
                     }
                 }
             },
@@ -1474,18 +1474,18 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 5023,
-                    "endColumn": 230,
-                    "endOffset": 5249
+                    "startOffset": 5058,
+                    "endColumn": 127,
+                    "endOffset": 5181
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 27,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 3957,
-                        "endColumn": 234,
-                        "endOffset": 4187
+                        "startOffset": 1445,
+                        "endColumn": 127,
+                        "endOffset": 1568
                     }
                 }
             },
@@ -1493,18 +1493,18 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 5254,
-                    "endColumn": 124,
-                    "endOffset": 5374
+                    "startOffset": 5186,
+                    "endColumn": 206,
+                    "endOffset": 5388
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 26,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 3832,
-                        "endColumn": 124,
-                        "endOffset": 3952
+                        "startOffset": 2062,
+                        "endColumn": 210,
+                        "endOffset": 2268
                     }
                 }
             },
@@ -1512,18 +1512,18 @@
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 5379,
-                    "endColumn": 107,
-                    "endOffset": 5482
+                    "startOffset": 5393,
+                    "endColumn": 135,
+                    "endOffset": 5524
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 28,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 4192,
-                        "endColumn": 107,
-                        "endOffset": 4295
+                        "startOffset": 1926,
+                        "endColumn": 135,
+                        "endOffset": 2057
                     }
                 }
             },
@@ -1531,18 +1531,18 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 5487,
-                    "endColumn": 179,
-                    "endOffset": 5662
+                    "startOffset": 5529,
+                    "endColumn": 168,
+                    "endOffset": 5693
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 2388,
-                        "endColumn": 183,
-                        "endOffset": 2567
+                        "startOffset": 1757,
+                        "endColumn": 168,
+                        "endOffset": 1921
                     }
                 }
             },
@@ -1550,18 +1550,18 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 5667,
-                    "endColumn": 127,
-                    "endOffset": 5790
+                    "startOffset": 5698,
+                    "endColumn": 94,
+                    "endOffset": 5788
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 2148,
-                        "endColumn": 127,
-                        "endOffset": 2271
+                        "startOffset": 3315,
+                        "endColumn": 94,
+                        "endOffset": 3405
                     }
                 }
             },
@@ -1569,18 +1569,18 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 5795,
-                    "endColumn": 206,
-                    "endOffset": 5997
+                    "startOffset": 5793,
+                    "endColumn": 99,
+                    "endOffset": 5888
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 2885,
-                        "endColumn": 210,
-                        "endOffset": 3091
+                        "startOffset": 4280,
+                        "endColumn": 99,
+                        "endOffset": 4375
                     }
                 }
             },
@@ -1588,208 +1588,18 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 6002,
-                    "endColumn": 134,
-                    "endOffset": 6132
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 2750,
-                        "endColumn": 134,
-                        "endOffset": 2880
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 44,
-                    "startColumn": 4,
-                    "startOffset": 6137,
-                    "endColumn": 94,
-                    "endOffset": 6227
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/values-fi/common_strings.xml",
-                    "position": {
-                        "startLine": 29,
-                        "startColumn": 4,
-                        "startOffset": 4300,
-                        "endColumn": 94,
-                        "endOffset": 4390
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 45,
-                    "startColumn": 4,
-                    "startOffset": 6232,
-                    "endColumn": 99,
-                    "endOffset": 6327
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/values-fi/base_strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 170,
-                        "endColumn": 99,
-                        "endOffset": 265
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 46,
-                    "startColumn": 4,
-                    "startOffset": 6332,
+                    "startOffset": 5893,
                     "endColumn": 112,
-                    "endOffset": 6440
+                    "endOffset": 6001
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/res/values-fi/base_strings.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\values-fi\\base_strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 270,
+                        "startOffset": 4380,
                         "endColumn": 112,
-                        "endOffset": 378
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 47,
-                    "startColumn": 4,
-                    "startOffset": 6445,
-                    "endColumn": 118,
-                    "endOffset": 6559
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-fi/values-fi.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 293,
-                        "endColumn": 118,
-                        "endOffset": 407
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 48,
-                    "startColumn": 4,
-                    "startOffset": 6564,
-                    "endColumn": 110,
-                    "endOffset": 6670
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-fi/values-fi.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 412,
-                        "endColumn": 110,
-                        "endOffset": 518
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 49,
-                    "startColumn": 4,
-                    "startOffset": 6675,
-                    "endColumn": 106,
-                    "endOffset": 6777
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-fi/values-fi.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 523,
-                        "endColumn": 106,
-                        "endOffset": 625
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 50,
-                    "startColumn": 4,
-                    "startOffset": 6782,
-                    "endColumn": 109,
-                    "endOffset": 6887
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-fi/values-fi.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 630,
-                        "endColumn": 109,
-                        "endOffset": 735
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 51,
-                    "startColumn": 4,
-                    "startOffset": 6892,
-                    "endColumn": 90,
-                    "endOffset": 6978
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-fi/values-fi.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 740,
-                        "endColumn": 90,
-                        "endOffset": 826
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 52,
-                    "startColumn": 4,
-                    "startOffset": 6983,
-                    "endColumn": 94,
-                    "endOffset": 7073
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-fi/values-fi.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 831,
-                        "endColumn": 94,
-                        "endOffset": 921
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 53,
-                    "startColumn": 4,
-                    "startOffset": 7078,
-                    "endColumn": 109,
-                    "endOffset": 7183
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.3.0/res/values-fi/wallet_strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 230,
-                        "endColumn": 109,
-                        "endOffset": 335
+                        "endOffset": 4488
                     }
                 }
             }

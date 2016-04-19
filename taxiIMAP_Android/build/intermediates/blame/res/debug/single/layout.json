@@ -1,858 +1,834 @@
 [
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/current_orders_2_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/current_orders_2_new.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\orders_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\orders_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_select_dialog_material.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_media_action.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\layout_tab_text.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\layout_tab_text.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_media_cancel_action.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\item_order_new_short.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\item_order_new_short.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/order_fragment_new2.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/order_fragment_new2.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\current_orders_2.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\current_orders_2.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/layout_snackbar.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_snackbar.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_for_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_for_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/activity_order_details_new1.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/activity_order_details_new1.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\parking_item.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\parking_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/layout_snackbar_include.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_snackbar_include.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_expanded_menu_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\map_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\map_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/parking_card_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/parking_card_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\parking_card_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\parking_card_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/class_dialog.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/class_dialog.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\search_dialog.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\search_dialog.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/classes_tarif.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/classes_tarif.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\order_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\order_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_bar_title_item.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\street_item.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\street_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_for_fragment_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/main_for_fragment_new.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/search_dialog.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/search_dialog.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\item_order_new1.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\item_order_new1.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/activity_order_details_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/activity_order_details_new.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/house_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/house_item.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\prefs.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\prefs.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_activity_chooser_view_list_item.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/item_order_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/item_order_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_lines.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/get_address_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/get_address_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/parking_search.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/parking_search.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\tarif_accept.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\tarif_accept.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/mr_media_route_chooser_dialog.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/layout/mr_media_route_chooser_dialog.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_list_menu_item_icon.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_media.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/map_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/map_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\item_order_new2.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\item_order_new2.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_menu_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\parkings_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\parkings_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_menu_chapter_two.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/main_menu_chapter_two.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/street_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/street_item.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\current_orders_2.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\current_orders_2.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\design_navigation_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_simple_dropdown_hint.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_simple_dropdown_hint.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_menu_chapter_two.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/main_menu_chapter_two.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_order_details_new1.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\fragment_order_details_new1.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/prefs_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/prefs_new.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\item_order_new_short.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\item_order_new_short.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_for_taxometr_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/main_for_taxometr_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/activity_main_taxometr.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/activity_main_taxometr.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_for_taxometr_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_for_taxometr_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/current_orders.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/current_orders.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\activity_order_details_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\activity_order_details_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/ethear_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/ethear_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_menu_chapter_two_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/main_menu_chapter_two_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\order_fragment_new2.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\order_fragment_new2.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_menu_chapter_one_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/main_menu_chapter_one_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_search_view.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_media_cancel_action.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\tarifs.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\tarifs.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_mode_bar.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/select_dialog_multichoice_material.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/layout_snackbar.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_snackbar.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\address_item.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\address_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_list_menu_item_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\map_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\map_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/mr_media_route_controller_material_dialog_b.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/layout/mr_media_route_controller_material_dialog_b.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\house_item.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\house_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/ether_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/ether_item.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_list_menu_item_checkbox.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_menu_chapter_one.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_menu_chapter_one.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/map_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/map_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\layout_tab_icon.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\layout_tab_icon.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/activity_order_details.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/activity_order_details.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_media_action.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/select_dialog_singlechoice_material.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/activity_swipe.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/activity_swipe.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\current_orders.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\current_orders.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_part_chronometer.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\parkings_fragment_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\parkings_fragment_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_popup_menu_item_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/order_fragment_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/order_fragment_new.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\class_dialog.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\class_dialog.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/activity_order_details_new1.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/activity_order_details_new1.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\ether_item.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\ether_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/layout_tab_icon.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_tab_icon.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\custom_layout.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\custom_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\classes_tarif.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\classes_tarif.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_list_menu_item_icon.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\tarif_accept.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\tarif_accept.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_list_menu_item_radio.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_list_menu_item_checkbox.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\parking_item.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\parking_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_subheader.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/item_order_new1.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/item_order_new1.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\ethear_fragment_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\ethear_fragment_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/layout_tab_text.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_tab_text.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_menu_chapter_two.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_menu_chapter_two.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/order_fragment_new1.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/order_fragment_new1.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\design_navigation_item_header.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_media_action.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_search_view.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\orders_fragment_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\orders_fragment_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_activity_chooser_view.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\order_fragment_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\order_fragment_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/custom_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/custom_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\registration_forms.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\registration_forms.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\comments_dialog.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\comments_dialog.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/map_fragment_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/map_fragment_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_for_fragment_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_for_fragment_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/parkings_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/parkings_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\select_dialog_item_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_list_menu_item_radio.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/address_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/address_item.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\own_order.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\own_order.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_menu_chapter_two_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_menu_chapter_two_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/activity_order_details_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/activity_order_details_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\own_order.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\own_order.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/parkings_fragment_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/parkings_fragment_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\activity_order_details_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\activity_order_details_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\order_comment_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\order_comment_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/ethear_fragment_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/ethear_fragment_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\connection.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\connection.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/class_dialog.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/class_dialog.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_dialog_title_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_for_taxometr_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/main_for_taxometr_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\design_navigation_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_activity_chooser_view.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\get_address_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\get_address_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/layout_tab_icon.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_tab_icon.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_select_dialog_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\street_item.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\street_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/order_fragment_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/order_fragment_new.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\house_item.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\house_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/order_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/order_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/mr_media_route_chooser_dialog.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/layout/mr_media_route_chooser_dialog.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\classes_tarif.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\classes_tarif.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/prefs_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/prefs_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/activity_main_taxometr.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/activity_main_taxometr.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/item_order_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/item_order_new.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\item_order_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\item_order_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/order_comment_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/order_comment_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\design_navigation_menu.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/layout_snackbar_include.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_snackbar_include.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\prefs.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\prefs.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_screen_toolbar.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/support_simple_spinner_dropdown_item.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\map_fragment_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\map_fragment_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_media.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/select_dialog_item_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_big_media_narrow.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\tarif_item.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\tarif_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/select_dialog_item_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/parkings_fragment_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/parkings_fragment_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\map_with_ether_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\map_with_ether_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/house_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/house_item.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\item_order_new1.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\item_order_new1.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/item_order_new_short.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/item_order_new_short.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/select_dialog_singlechoice_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\class_dialog.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\class_dialog.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/order_fragment_new2.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/order_fragment_new2.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\parkings_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\parkings_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_bar_up_container.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\order_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\order_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_mode_bar.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/orders_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/orders_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_menu_chapter_two_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_menu_chapter_two_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_screen_toolbar.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_taxometr.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\activity_main_taxometr.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/ethear_fragment_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/ethear_fragment_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_bar_up_container.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/tarifs.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/tarifs.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_lines.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_menu.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/current_orders_2.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/current_orders_2.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\activity_order_details.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\activity_order_details.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_mode_close_item_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_order_details_new1.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\fragment_order_details_new1.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_screen_content_include.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_lines.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/map_fragment_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/map_fragment_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_media.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_alert_dialog_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\item_order.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\item_order.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_activity_chooser_view_list_item.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_media_action.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/parking_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/parking_item.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_media.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_dialog_title_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\parking_search.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\parking_search.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/item_order_new_short.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/item_order_new_short.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/activity_order_details.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/activity_order_details.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_menu_chapter_one.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_menu_chapter_one.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_mode_close_item_material.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/connection.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/connection.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\layout_tab_text.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\layout_tab_text.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\parking_card_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\parking_card_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_separator.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\item_order.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\item_order.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/order_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/order_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/search_dialog.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/search_dialog.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\prefs_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\prefs_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/comments_dialog.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/comments_dialog.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\order_fragment_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\order_fragment_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/order_fragment_new1.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/order_fragment_new1.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\search_dialog.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\search_dialog.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/comments_dialog.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/comments_dialog.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\parkings_fragment_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\parkings_fragment_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/item_order.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/item_order.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_subheader.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/tarif_accept.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/tarif_accept.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/layout_tab_text.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/layout_tab_text.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\select_dialog_item_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/item_parking.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/item_parking.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\map_with_ether_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\map_with_ether_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_screen_simple.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\map_fragment_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\map_fragment_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/get_address_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/get_address_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_separator.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\layout_snackbar_include.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\layout_snackbar_include.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_bar_title_item.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\orders_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\orders_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/prefs.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/prefs.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_menu_chapter_one_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_menu_chapter_one_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/support_simple_spinner_dropdown_item.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\current_orders_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\current_orders_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_menu_chapter_two_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/main_menu_chapter_two_new.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\connection.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\connection.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_popup_menu_item_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_alert_dialog_material.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\current_orders_2_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\current_orders_2_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/ethear_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/ethear_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\item_parking.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\item_parking.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\ethear_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\ethear_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_big_media.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_part_chronometer.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_menu_chapter_one.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/main_menu_chapter_one.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\custom_layout.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\custom_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/current_orders_2.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/current_orders_2.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_simple_dropdown_hint.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_simple_dropdown_hint.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_simple_dropdown_hint.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_simple_dropdown_hint.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/item_order.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/item_order.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\item_order_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\item_order_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_for_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/main_for_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\layout_snackbar.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\layout_snackbar.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/orders_fragment_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/orders_fragment_new.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\ethear_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\ethear_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/registration_forms.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/registration_forms.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\features_dialog.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\features_dialog.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_part_time.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\ether_item.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\ether_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/parking_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/parking_item.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\comments_dialog.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\comments_dialog.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_screen_simple.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\current_orders_2_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\current_orders_2_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_for_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/main_for_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/tarif_accept.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/tarif_accept.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\tarif_item.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\tarif_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/prefs.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/prefs.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/tarif_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/tarif_item.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\order_fragment_new1.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\order_fragment_new1.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_big_media.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_menu_chapter_one_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_menu_chapter_one_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_menu_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\activity_order_details.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\activity_order_details.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_menu_item_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\current_orders.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\current_orders.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/map_with_ether_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/map_with_ether_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/tarif_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/tarif_item.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\item_parking.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\item_parking.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/street_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/street_item.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\tarifs.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\tarifs.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/tarifs.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/tarifs.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_header.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_for_fragment_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_for_fragment_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/orders_fragment_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/orders_fragment_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\design_navigation_item_header.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/custom_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/custom_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/parkings_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/parkings_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\activity_swipe.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\activity_swipe.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/current_orders.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/current_orders.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/own_order.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/own_order.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_for_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_for_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_list_menu_item_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\activity_swipe.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\activity_swipe.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_action_menu_item_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/connection.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/connection.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_taxometr.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\activity_main_taxometr.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/item_order_new2.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/item_order_new2.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_simple_dropdown_hint.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_simple_dropdown_hint.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/registration_forms.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/registration_forms.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/select_dialog_multichoice_material.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\parking_search.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\parking_search.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/item_order_new1.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/item_order_new1.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\features_dialog.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\features_dialog.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_screen_content_include.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\layout_tab_icon.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\layout_tab_icon.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_part_time.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\registration_forms.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\registration_forms.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_item_header.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\item_order_new2.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\item_order_new2.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/abc_expanded_menu_layout.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\current_orders_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\current_orders_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/address_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/address_item.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\orders_fragment_new.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\orders_fragment_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_menu_chapter_one.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/main_menu_chapter_one.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/current_orders_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/current_orders_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\prefs_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\prefs_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_menu_chapter_one_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/main_menu_chapter_one_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_for_taxometr_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_for_taxometr_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/mr_media_route_controller_material_dialog_b.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/layout/mr_media_route_controller_material_dialog_b.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\ethear_fragment_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\ethear_fragment_new.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/item_order_new2.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/item_order_new2.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/mr_media_route_list_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/layout/mr_media_route_list_item.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/current_orders_2_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/current_orders_2_new.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\order_fragment_new2.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\order_fragment_new2.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/classes_tarif.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/classes_tarif.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\order_fragment_new1.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\order_fragment_new1.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/parking_search.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/parking_search.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\layout_snackbar_include.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\layout_snackbar_include.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/current_orders_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/current_orders_new.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/orders_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/orders_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/main_for_fragment_new.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/main_for_fragment_new.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\get_address_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\get_address_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/ether_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/ether_item.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\layout_snackbar.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\layout_snackbar.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/mr_media_route_list_item.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/layout/mr_media_route_list_item.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\design_navigation_menu.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/features_dialog.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/features_dialog.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\main_menu_chapter_two.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\main_menu_chapter_two.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/parking_card_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/parking_card_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\order_comment_fragment.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\order_comment_fragment.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/map_with_ether_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/map_with_ether_fragment.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\address_item.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout\\address_item.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/features_dialog.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/features_dialog.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/activity_swipe.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/activity_swipe.xml"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout/design_navigation_menu.xml"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/own_order.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/own_order.xml"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/item_parking.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/layout/item_parking.xml"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/order_comment_fragment.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/layout/order_comment_fragment.xml"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_big_media_narrow.xml"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/layout/notification_template_lines.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout\\design_navigation_item_subheader.xml"
     }
 ]

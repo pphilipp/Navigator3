@@ -157,7 +157,7 @@ public final class R {
 		public static final int common_open_on_phone = 0x7f070027;
 		public static final int common_signin_button_text = 0x7f070028;
 		public static final int common_signin_button_text_long = 0x7f070029;
-		public static final int decline = 0x7f070041;
+		public static final int decline = 0x7f070042;
 	}
 	public static final class style {
 	}

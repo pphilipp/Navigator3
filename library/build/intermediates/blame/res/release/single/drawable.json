@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/library/build/intermediates/res/merged/release/drawable/vpi__tab_indicator.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/library/src/main/res/drawable/vpi__tab_indicator.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\library\\build\\intermediates\\res\\merged\\release\\drawable\\vpi__tab_indicator.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\library\\src\\main\\res\\drawable\\vpi__tab_indicator.xml"
     },
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/library/build/intermediates/res/merged/release/drawable/vpi__tab_indicator.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/library/src/main/res/drawable/vpi__tab_indicator.xml"
+        "merged": "D:\\innotech\\Workspace\\Navigator3\\library\\build\\intermediates\\res\\merged\\release\\drawable\\vpi__tab_indicator.xml",
+        "source": "D:\\innotech\\Workspace\\Navigator3\\library\\src\\main\\res\\drawable\\vpi__tab_indicator.xml"
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/values-sw600dp-v13/values-sw600dp-v13.xml",
+        "outputFile": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\values-sw600dp-v13\\values-sw600dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 189
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 259
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 338
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 414
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 473
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 544
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 612
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -163,13 +163,13 @@
                     "endOffset": 670
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 186,
+                        "startOffset": 192,
                         "endColumn": 57,
-                        "endOffset": 239
+                        "endOffset": 245
                     }
                 }
             },
@@ -182,13 +182,13 @@
                     "endOffset": 726
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 244,
+                        "startOffset": 251,
                         "endColumn": 55,
-                        "endOffset": 295
+                        "endOffset": 302
                     }
                 }
             },
@@ -201,13 +201,13 @@
                     "endOffset": 772
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 468,
+                        "startOffset": 479,
                         "endColumn": 45,
-                        "endOffset": 509
+                        "endOffset": 520
                     }
                 }
             },
@@ -220,7 +220,7 @@
                     "endOffset": 835
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 899
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 964
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1015
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1066
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1158
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 1204
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -353,13 +353,13 @@
                     "endOffset": 1246
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 426,
+                        "startOffset": 436,
                         "endColumn": 41,
-                        "endOffset": 463
+                        "endOffset": 473
                     }
                 }
             },
@@ -372,13 +372,13 @@
                     "endOffset": 1306
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 300,
+                        "startOffset": 308,
                         "endColumn": 59,
-                        "endOffset": 355
+                        "endOffset": 363
                     }
                 }
             },
@@ -391,13 +391,13 @@
                     "endOffset": 1372
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 360,
+                        "startOffset": 369,
                         "endColumn": 65,
-                        "endOffset": 421
+                        "endOffset": 430
                     }
                 }
             },
@@ -410,7 +410,7 @@
                     "endOffset": 1427
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -429,7 +429,7 @@
                     "endOffset": 1483
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -449,7 +449,7 @@
                     "endOffset": 1665
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -463,7 +463,7 @@
         ]
     },
     {
-        "outputFile": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/values-sw600dp-v13/values-sw600dp-v13.xml",
+        "outputFile": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\values-sw600dp-v13\\values-sw600dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -474,7 +474,7 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -493,7 +493,7 @@
                     "endOffset": 189
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -512,7 +512,7 @@
                     "endOffset": 259
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -531,7 +531,7 @@
                     "endOffset": 338
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -550,7 +550,7 @@
                     "endOffset": 414
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -569,7 +569,7 @@
                     "endOffset": 473
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -588,7 +588,7 @@
                     "endOffset": 544
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -607,7 +607,7 @@
                     "endOffset": 612
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -626,13 +626,13 @@
                     "endOffset": 670
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 186,
+                        "startOffset": 192,
                         "endColumn": 57,
-                        "endOffset": 239
+                        "endOffset": 245
                     }
                 }
             },
@@ -645,13 +645,13 @@
                     "endOffset": 726
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 244,
+                        "startOffset": 251,
                         "endColumn": 55,
-                        "endOffset": 295
+                        "endOffset": 302
                     }
                 }
             },
@@ -664,13 +664,13 @@
                     "endOffset": 772
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 468,
+                        "startOffset": 479,
                         "endColumn": 45,
-                        "endOffset": 509
+                        "endOffset": 520
                     }
                 }
             },
@@ -679,30 +679,11 @@
                     "startLine": 13,
                     "startColumn": 4,
                     "startOffset": 777,
-                    "endColumn": 72,
-                    "endOffset": 845
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.2.0/res/values-sw600dp/values-sw600dp.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 297,
-                        "endColumn": 72,
-                        "endOffset": 365
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 850,
                     "endColumn": 62,
-                    "endOffset": 908
+                    "endOffset": 835
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -714,14 +695,14 @@
             },
             {
                 "to": {
-                    "startLine": 15,
+                    "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 913,
+                    "startOffset": 840,
                     "endColumn": 63,
-                    "endOffset": 972
+                    "endOffset": 899
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -733,14 +714,14 @@
             },
             {
                 "to": {
-                    "startLine": 16,
+                    "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 977,
+                    "startOffset": 904,
                     "endColumn": 64,
-                    "endOffset": 1037
+                    "endOffset": 964
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -752,14 +733,14 @@
             },
             {
                 "to": {
-                    "startLine": 17,
+                    "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1042,
+                    "startOffset": 969,
                     "endColumn": 50,
-                    "endOffset": 1088
+                    "endOffset": 1015
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -771,14 +752,14 @@
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1093,
+                    "startOffset": 1020,
                     "endColumn": 50,
-                    "endOffset": 1139
+                    "endOffset": 1066
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -790,14 +771,14 @@
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1144,
+                    "startOffset": 1071,
                     "endColumn": 91,
-                    "endOffset": 1231
+                    "endOffset": 1158
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -809,14 +790,14 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1236,
+                    "startOffset": 1163,
                     "endColumn": 45,
-                    "endOffset": 1277
+                    "endOffset": 1204
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -828,20 +809,39 @@
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1282,
+                    "startOffset": 1209,
                     "endColumn": 41,
-                    "endOffset": 1319
+                    "endOffset": 1246
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 426,
+                        "startOffset": 436,
                         "endColumn": 41,
-                        "endOffset": 463
+                        "endOffset": 473
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1251,
+                    "endColumn": 59,
+                    "endOffset": 1306
+                },
+                "from": {
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\values-sw600dp\\dimens.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 308,
+                        "endColumn": 59,
+                        "endOffset": 363
                     }
                 }
             },
@@ -849,18 +849,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1324,
-                    "endColumn": 59,
-                    "endOffset": 1379
+                    "startOffset": 1311,
+                    "endColumn": 65,
+                    "endOffset": 1372
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/values-sw600dp/dimens.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\values-sw600dp\\dimens.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 300,
-                        "endColumn": 59,
-                        "endOffset": 355
+                        "startOffset": 369,
+                        "endColumn": 65,
+                        "endOffset": 430
                     }
                 }
             },
@@ -868,31 +868,12 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1384,
-                    "endColumn": 65,
-                    "endOffset": 1445
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/values-sw600dp/dimens.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 360,
-                        "endColumn": 65,
-                        "endOffset": 421
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 1450,
+                    "startOffset": 1377,
                     "endColumn": 54,
-                    "endOffset": 1500
+                    "endOffset": 1427
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -904,14 +885,14 @@
             },
             {
                 "to": {
-                    "startLine": 25,
+                    "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1505,
+                    "startOffset": 1432,
                     "endColumn": 55,
-                    "endOffset": 1556
+                    "endOffset": 1483
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -923,15 +904,15 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1561,
-                    "endLine": 29,
+                    "startOffset": 1488,
+                    "endLine": 28,
                     "endColumn": 12,
-                    "endOffset": 1738
+                    "endOffset": 1665
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\values-sw600dp\\values-sw600dp.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,

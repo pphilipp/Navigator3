@@ -1,14 +1,10 @@
 [
     {
-        "merged": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\xml\\settings.xml",
-        "source": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\xml\\settings.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\xml\\settings.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\xml\\settings.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\xml\\settings.xml",
         "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\xml\\settings.xml"
-    },
-    {
-        "merged": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\25.03navigator3\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\xml\\settings.xml",
-        "source": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\25.03navigator3\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\xml\\settings.xml"
     }
 ]

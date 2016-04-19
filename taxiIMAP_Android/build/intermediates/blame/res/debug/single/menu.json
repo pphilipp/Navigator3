@@ -4,8 +4,8 @@
         "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\main_taxometr.xml"
     },
     {
-        "merged": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\25.03navigator3\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\taxometr_load_.xml",
-        "source": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\25.03navigator3\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\taxometr_load_.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\swipe.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\swipe.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\taxometr_load_.xml",
@@ -16,28 +16,20 @@
         "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\order_details.xml"
     },
     {
-        "merged": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\swipe.xml",
-        "source": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\swipe.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\swipe_screen.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\swipe_screen.xml"
     },
     {
-        "merged": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\taxometr_load_.xml",
-        "source": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\taxometr_load_.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\taxometr_load_.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\taxometr_load_.xml"
     },
     {
-        "merged": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\25.03navigator3\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\main_taxometr.xml",
-        "source": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\25.03navigator3\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\main_taxometr.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\main_taxometr.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\main_taxometr.xml"
     },
     {
-        "merged": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\25.03navigator3\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\order_details.xml",
-        "source": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\25.03navigator3\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\order_details.xml"
-    },
-    {
-        "merged": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\25.03navigator3\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\swipe.xml",
-        "source": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\25.03navigator3\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\swipe.xml"
-    },
-    {
-        "merged": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\swipe_screen.xml",
-        "source": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\swipe_screen.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\order_details.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\order_details.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\swipe.xml",
@@ -46,17 +38,5 @@
     {
         "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\swipe_screen.xml",
         "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\swipe_screen.xml"
-    },
-    {
-        "merged": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\order_details.xml",
-        "source": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\order_details.xml"
-    },
-    {
-        "merged": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\25.03navigator3\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\swipe_screen.xml",
-        "source": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\25.03navigator3\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\swipe_screen.xml"
-    },
-    {
-        "merged": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\menu\\main_taxometr.xml",
-        "source": "D:\\home\\philipp\\AndroidStudioProjects\\innotech\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\menu\\main_taxometr.xml"
     }
 ]
