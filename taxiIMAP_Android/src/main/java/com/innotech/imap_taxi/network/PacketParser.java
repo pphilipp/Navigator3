@@ -56,10 +56,10 @@ class PacketParser {
 		case Packet.TCPMESSAGE_RESPONCE : result = new TCPMessageResponce(data); break;
 		case Packet.CALL_SIGNCHANGED_RESPONCE: result = new CallSignChangedResponce(data); break;
 		case Packet.TAXIMETER_RATES: result = new GetTaximeterRates(data); break;
-		//archivOrders
+		//archiveOrders
 		case Packet.ARCHIV_ORDERS_RESPONSE: result = new DispOrderResponse4(data);  break;
-
-		case Packet.DISTANCE_FROM_STAS: result = new FromStas4(data);  break;
+		//Distance Of Order Answer
+		case Packet.DISTANCE_ORDER_ANSWER_RESPONSE: result = new DistanceOfOrderAnswer(data);  break;
 		
 		default : result = null;
 		}
@@ -206,9 +206,9 @@ class PacketParser {
 			Log.d("archivTest", "archivResponse123");
 			return Packet.ARCHIV_ORDERS_RESPONSE;
 		}
-		else if(val.equals("IMAP.Net.From.Stas")) {
-			Log.d("archivTest", "archivResponse123");
-			return Packet.DISTANCE_FROM_STAS;
+		//Distance Of Order Answer
+		else if(val.equals("IMAP.Net.GetDistanceOfOrderAnswer")) {
+			return Packet.DISTANCE_ORDER_ANSWER_RESPONSE;
 		}
 
 		return Packet.UNKNOWN_RESPONCE;

@@ -49,8 +49,12 @@ import com.innotech.imap_taxi.graph_utils.RouteView;
 import com.innotech.imap_taxi.helpers.ContextHelper;
 import com.innotech.imap_taxi.helpers.RequestHelper;
 import com.innotech.imap_taxi.network.ConnectionHelper;
+import com.innotech.imap_taxi.network.DistanceOfOrderAnswer;
+import com.innotech.imap_taxi.network.MultiPacketListener;
+import com.innotech.imap_taxi.network.OnNetworkPacketListener;
 import com.innotech.imap_taxi.network.RequestBuilder;
 import com.innotech.imap_taxi.network.Utils;
+import com.innotech.imap_taxi.network.packet.Packet;
 import com.innotech.imap_taxi.utile.AlertDHelper;
 import com.innotech.imap_taxi.utile.DbArchHelper;
 import com.innotech.imap_taxi.utile.NotificationService;
@@ -66,7 +70,7 @@ import java.util.TimeZone;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class OrderDetails extends FragmentPacket implements View.OnClickListener{
+public class OrderDetails extends FragmentPacket {
 	private static final String LOG_TAG = OrderDetails.class.getSimpleName();
 	//possible states of order due to view and controls
 	private static final int INCOMING = 1;
@@ -347,6 +351,9 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 						+ orderID);
 			}
 		});
+
+		/**get distance */
+		getOrderDistance();
 
 		noClientListener = new View.OnClickListener() {
 
@@ -964,26 +971,44 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 
 	}// end flip()
 
-	@Override
-	public void onClick(View v) {
-		switch (v.getId()) {
-			case 0: break;
-			case 2: break;
-			case 3: break;
-			case 4: break;
-			case 5: break;
-			case 6: break;
-			case 7: break;
-			case 8: break;
-			case 9: break;
-			case 10: break;
-			case 12: break;
-			case 13: break;
-			case 14: break;
-			case 15: break;
-			default:break;
-		}
+
+
+	private static void getOrderDistance() {
+		/** Request to server for distance packet */
+		createRequestToOrderDistance();
+
+		/** Getting distance packet from server */
+		handleResponseOrderDistance();
 	}
+
+	private static void createRequestToOrderDistance() {
+		/** Request to server for distance packet */
+		byte[] body = RequestBuilder.getDistanceOfOrderAnswer(orderID);
+		byte[] data = RequestBuilder.createSrvTransfereData(
+				RequestBuilder.DEFAULT_CONNECTION_TYPE, ServerData
+						.getInstance().getSrvID(),
+				RequestBuilder.DEFAULT_DESTINATION_ID, ServerData
+						.getInstance().getGuid(), true, body);
+		ConnectionHelper.getInstance().send(data);
+	}
+
+	private static void handleResponseOrderDistance() {
+		/** Getting distance packet from server */
+		MultiPacketListener.getInstance().addListener(
+				Packet.DISTANCE_ORDER_ANSWER_RESPONSE,
+				new OnNetworkPacketListener() {
+					@Override
+					public void onNetworkPacket(Packet packet) {
+						DistanceOfOrderAnswer pack = (DistanceOfOrderAnswer) packet;
+						if (pack.distance != 0) {
+							tvDistance.setText(Utils.intToSpannableStringKm(pack.distance));
+							Log.d("philipp", "pack.distance -> " + pack.distance);
+						}
+					}
+				});
+	}
+
+
 
 	public static void flip(int changeNumber, final RelativeLayout myView) {
 		Context mContext = ContextHelper.getInstance().getCurrentContext();
@@ -1292,9 +1317,6 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 	}
 
 	private static void fillViewsForOrder(final Order order) {
-		/**
-		 * This method is ...
-		 * */
 		ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
 			@Override
 			public void run() {
@@ -1324,8 +1346,8 @@ public class OrderDetails extends FragmentPacket implements View.OnClickListener
 				String price = String.format("%.2f", priceFloat);
 				OrderDetails.tvPrice.setText(getPriceFormat(price));
 
-				// print tvDistance
-				tvDistance.setText(order.getDistanceToOrderPlace());
+				/** print tvDistance (previos realisation with hardcod 22.4km)**/
+//				tvDistance.setText(order.getDistanceToOrderPlace());
 
 				// print additional and comments
 				String featureList = "";

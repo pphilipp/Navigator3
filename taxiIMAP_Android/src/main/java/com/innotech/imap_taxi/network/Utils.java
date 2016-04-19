@@ -9,6 +9,13 @@ import java.util.GregorianCalendar;
 import java.util.TimeZone;
 
 import android.graphics.Color;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.RelativeSizeSpan;
+import android.util.Log;
+
+import com.innotech.imap_taxi.helpers.ContextHelper;
+import com.innotech.imap_taxi3.R;
 
 /**
  * Created with IntelliJ IDEA. User: Kvest Date: 15.09.13 Time: 11:28 To change
@@ -321,4 +328,34 @@ public class Utils {
 				|| (!Character.isDigit(value.charAt(8))) || (!Character
 					.isDigit(value.charAt(9))));
 	}
+
+	public static SpannableString intToSpannableStringKm(int val) {
+		Log.d("philipp", "val = " + String.valueOf(val));
+
+		int left = val / 1000;
+		int right = val % 1000;
+
+		while(right > 9){right/=10;}
+
+		String dist = (left > 100) ? ">100"
+				+ ContextHelper.getInstance().getCurrentContext()
+				.getString(R.string.km)
+				: String.format("%d,%d", left, right)
+				+ ContextHelper.getInstance().getCurrentContext()
+				.getString(R.string.km);
+
+		Log.d("philipp", " String format" + dist);
+
+		SpannableString ss = null;
+		ss = new SpannableString(dist);
+		ss.setSpan(new RelativeSizeSpan(0.4f), dist.length() - 2,
+				dist.length(), 0);
+		ss.setSpan(new ForegroundColorSpan(ContextHelper.getInstance()
+						.getCurrentContext().getResources()
+						.getColor(R.color.greyText)),
+				dist.length() - 2, dist.length(), 0);
+
+		return ss;
+	}
+
 }

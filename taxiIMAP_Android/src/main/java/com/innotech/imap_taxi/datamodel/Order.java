@@ -958,12 +958,12 @@ public class Order {
 		return ss;
 	}
 
+	public void setDistanceToOrderPlace(String distanceToOrderPlace) {
+		this.distanceToOrderPlace = distanceToOrderPlace;
+	}
+
 	@Override
 	public String toString() {
 		return getOrderFullDesc();
-	}
-
-	public void setDistanceToOrderPlace(String distanceToOrderPlace) {
-		this.distanceToOrderPlace = distanceToOrderPlace;
 	}
 }

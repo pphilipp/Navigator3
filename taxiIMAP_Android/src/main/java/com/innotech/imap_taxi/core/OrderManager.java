@@ -16,7 +16,7 @@ import java.util.Date;
 import java.util.List;
 
 public class OrderManager {
-
+private static final String LOG_TAG = OrderManager.class.getSimpleName();
 	private static OrderManager instance;
 	private List<Order> orders;
     public List<DispOrder4> etherOrders;
@@ -40,8 +40,8 @@ public class OrderManager {
 
 	public void addOrder(Order newOrd) {
 
-		Log.i("orderManager", "add order");
-		Log.w("orderManager", newOrd.getOrderType());
+		Log.i(LOG_TAG, "add order");
+		Log.w(LOG_TAG, newOrd.getOrderType());
 
 		boolean found = false;
 		int count = 0;
@@ -57,7 +57,7 @@ public class OrderManager {
 				//orders.add(newOrd);
                 index = count;
 				Log.d("Order Manager",newOrd.getOrderID() + " found in added " + newOrd.getStatus());
-				Log.i("orderManager", "edited order ( performing - " + OrderManager.getInstance().getCountOfOrdersByState(Order.STATE_PERFORMING));
+				Log.i(LOG_TAG, "edited order ( performing - " + OrderManager.getInstance().getCountOfOrdersByState(Order.STATE_PERFORMING));
 
 				found = true;
 				break;
@@ -73,7 +73,7 @@ public class OrderManager {
 			Log.e("IMAP", Utils.dateToTimeString(newOrd.getDate()));
 			orders.add(newOrd); 
 			Log.d("OrderManager",newOrd.getOrderID() + " added " + newOrd.getStatus());
-            Log.i("orderManager", "added order ( performing - " + OrderManager.getInstance().getCountOfOrdersByState(Order.STATE_PERFORMING));
+            Log.d(LOG_TAG, "added order ( performing - " + OrderManager.getInstance().getCountOfOrdersByState(Order.STATE_PERFORMING));
 		}
 
 		ContextHelper.getInstance().runOnCurrentUIThread(
@@ -158,7 +158,7 @@ public class OrderManager {
 
 	public void removeOrder(Order order) {
 
-		Log.i("orderManager", "removeOrder");
+		Log.d(LOG_TAG, "removeOrder");
 		
 		int count = 0;
 		int index = -1;
@@ -183,7 +183,7 @@ public class OrderManager {
 	public Order getOrder(int orderId)
 	{
 
-		//Log.i("orderManager", "getOrder");
+		//Log.d()(LOG_TAG", "getOrder");
 
 		for(Order od : orders)
 		{
@@ -198,12 +198,12 @@ public class OrderManager {
 
 	public void changeOrderState(int orderId, int state) {
 
-		Log.i("orderManager", "changeOrderState" + orderId + " " + state);
+		Log.d(LOG_TAG, "changeOrderState" + orderId + " " + state);
 		for(Order od : orders) {
 			if (od != null && od.getOrderID() == orderId /*&& !(od.getStatus()==Order.STATE_PERFORMING && state!=Order.STATE_MISSED)*/) {
 				Log.d("OrderManager",orderId + " changeOrderState " + od.getStatus() + " to " + state);
 //				LogHelper.w(orderId + " changeOrderState " + od.getStatus() + " to " + state);
-                Log.w("orderManager", "changeOrderState " + od.getStatus() + " to " + state);
+                Log.w(LOG_TAG, "changeOrderState " + od.getStatus() + " to " + state);
                 od.setStatus(state);
                 
 				break;
@@ -218,14 +218,14 @@ public class OrderManager {
 
 	public void setDateTime(int orderId, int parseInt) {
 
-		Log.i("orderManager", "setDateTime " + orderId + " " + parseInt);
+		Log.d(LOG_TAG, "setDateTime " + orderId + " " + parseInt);
 
 		for(Order od : orders)
 		{
 			if (od.getOrderID() == orderId)
 			{
 				long dateTime3 = new Date().getTime() + (parseInt * 60000);
-				Log.i("orderManager", "setDateTime " + " " + dateTime3);
+				Log.d(LOG_TAG, "setDateTime " + " " + dateTime3);
 				od.setDate3(dateTime3);
 				break;
 			}
@@ -234,14 +234,14 @@ public class OrderManager {
 
 	public void setDateNoClient(int orderId, long date) {
 
-		Log.i("orderManager", "setDateNoClient " + orderId);
+		Log.d(LOG_TAG, "setDateNoClient " + orderId);
 
 		for(Order od : orders)
 		{
 			if (od.getOrderID() == orderId)
 			{
 				//long dateTime = new Date().getTime();
-				Log.i("orderManager", "setDateNoClient " + date);
+				Log.d(LOG_TAG, "setDateNoClient " + date);
 				od.dateNoClient = date;
 				break;
 			}

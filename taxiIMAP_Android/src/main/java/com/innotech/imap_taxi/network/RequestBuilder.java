@@ -820,6 +820,25 @@ public class RequestBuilder {
 			}
 		}
 	}
+	/** Create request */
+	public static byte[] getDistanceOfOrderAnswer(int orderID) {
+		BuilderStream stream = null;
+		try {
+			stream = new BuilderStream("IMAP.Net.GetDistanceOfOrder", false);
+
+			//orderID
+			stream.writeInt32(orderID);
+
+			return stream.toByteArray();
+		} catch (IOException ioex) {
+			return (new byte[]{});
+		} finally {
+			try {
+				stream.close();
+			} catch (Exception ex) {
+			}
+		}
+	}
 
 	public static byte[] createUnRegisterOnTaxiParking(int peopleID) {
 		BuilderStream stream = null;

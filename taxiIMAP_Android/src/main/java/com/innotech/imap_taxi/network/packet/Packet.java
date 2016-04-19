@@ -50,8 +50,7 @@ public abstract class Packet {
     public static final int DRIVER_BLOCKED_PACK = 37;
     public static final int TAXIMETER_RATES = 38;
     public static final int ARCHIV_ORDERS_RESPONSE = 39;
-
-    public static final int DISTANCE_FROM_STAS = 40;
+    public static final int DISTANCE_ORDER_ANSWER_RESPONSE = 40;
 
     private int id;
     protected int mPacketNumber;

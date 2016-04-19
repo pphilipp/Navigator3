@@ -8,6 +8,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.PaintDrawable;
@@ -178,9 +180,7 @@ public class SwipeFragment extends FragmentPacket
         mOrders = new ArrayList<DispOrder4>();
         mAdapter = new OrdersAdapterDisp4(mOrders, mContext);
 
-       /**
-        * Not clear what's happened on this @try block.
-        *
+
         try {
             PackageInfo pInfo;
             pInfo = ContextHelper
@@ -189,8 +189,8 @@ public class SwipeFragment extends FragmentPacket
                     .getPackageManager()
                     .getPackageInfo(mContext.getPackageName(), 0);
             UIData.getInstance().setVersion(pInfo.versionName);
-        } catch (NameNotFoundException e) {e.printStackTrace();}
-        */
+        } catch (PackageManager.NameNotFoundException e) {e.printStackTrace();}
+
 
         addPacketListeners();
 
@@ -1459,8 +1459,7 @@ public class SwipeFragment extends FragmentPacket
                     final GetOrdersResponse pack = (GetOrdersResponse) packet;
                     Log.i(LOG_TAG, "GET_ORDERS_RESPONCE goted" + pack.count()); // ok
                     updateMyOrders(pack);
-                    if (pack.count() > 0
-                            && FragmentTransactionManager.getInstance()
+                    if (pack.count() > 0 && FragmentTransactionManager.getInstance()
                             .getId() != FragmentPacket.CURRENTORDERS) {
                         ContextHelper.getInstance().runOnCurrentUIThread(
                             new Runnable() {
@@ -2443,7 +2442,8 @@ public class SwipeFragment extends FragmentPacket
             OrderManager.getInstance().addOrder(order);
         }
 
-        MultiPacketListener.getInstance().addListener(Packet.GET_ROUTES_ANSWER,
+        MultiPacketListener.getInstance().addListener(
+                Packet.GET_ROUTES_ANSWER,
                 new OnNetworkPacketListener() {
                     @Override
                     public void onNetworkPacket(Packet packet) {

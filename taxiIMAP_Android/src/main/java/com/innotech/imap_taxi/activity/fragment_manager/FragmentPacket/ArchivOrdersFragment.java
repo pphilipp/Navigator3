@@ -335,7 +335,8 @@ public class ArchivOrdersFragment extends FragmentPacket {
 
 		// add listener for incoming packet of archiv mOrders
 		MultiPacketListener.getInstance().addListener(
-				Packet.ARCHIV_ORDERS_RESPONSE, new OnNetworkPacketListener() {
+				Packet.ARCHIV_ORDERS_RESPONSE,
+				new OnNetworkPacketListener() {
 
 					@Override
 					public void onNetworkPacket(Packet packet) {
