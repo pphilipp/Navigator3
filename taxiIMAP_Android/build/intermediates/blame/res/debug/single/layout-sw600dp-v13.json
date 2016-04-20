@@ -1,10 +1,6 @@
 [
     {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout-sw600dp-v13/layout_snackbar.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout-sw600dp/layout_snackbar.xml"
-    },
-    {
-        "merged": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout-sw600dp-v13/layout_snackbar.xml",
-        "source": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/res/layout-sw600dp/layout_snackbar.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\layout_snackbar.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\layout-sw600dp\\layout_snackbar.xml"
     }
 ]

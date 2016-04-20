@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/values-v13/values-v13.xml",
+        "outputFile": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\values-v13\\values-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,13 @@
                     "endOffset": 137
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/values-v13/theme.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\values-v13\\theme.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 114,
+                        "startOffset": 116,
                         "endColumn": 93,
-                        "endOffset": 203
+                        "endOffset": 205
                     }
                 }
             },
@@ -30,56 +30,13 @@
                     "endOffset": 224
                 },
                 "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/25.03navigator3/Navigator3/taxiIMAP_Android/src/main/res/values-v13/theme.xml",
+                    "file": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\values-v13\\theme.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 208,
+                        "startOffset": 211,
                         "endColumn": 93,
-                        "endOffset": 297
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/values-v13/values-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 86,
-                    "endOffset": 137
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/values-v13/theme.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 114,
-                        "endColumn": 93,
-                        "endOffset": 203
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 142,
-                    "endColumn": 86,
-                    "endOffset": 224
-                },
-                "from": {
-                    "file": "/home/philipp/AndroidStudioProjects/innotech/Navigator3/taxiIMAP_Android/src/main/res/values-v13/theme.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 208,
-                        "endColumn": 93,
-                        "endOffset": 297
+                        "endOffset": 300
                     }
                 }
             }
