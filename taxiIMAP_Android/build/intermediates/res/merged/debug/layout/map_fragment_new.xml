@@ -16,8 +16,11 @@
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content" android:gravity="bottom" android:layout_gravity="bottom"
-                android:background="@drawable/button_back_blue" android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:background="@drawable/button_back_blue"
+                android:layout_alignParentBottom="true"
                 android:id="@+id/buttonLL">
             <Button
                     android:layout_width="wrap_content"

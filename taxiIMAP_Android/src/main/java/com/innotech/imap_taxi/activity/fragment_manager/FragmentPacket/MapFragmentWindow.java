@@ -68,19 +68,6 @@ public class MapFragmentWindow extends FragmentPacket {
             return myView;
 		}
 
-        try {
-            mMap = ((SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map)).getMap();
-            CameraPosition cameraPosition = new CameraPosition.Builder()
-                    .target(new LatLng(50.4029361, 30.3883177))
-                    .zoom(6)
-                    .build();
-            Log.d("MyMap", "CameraCreate");
-            CameraUpdate cameraUpdate = CameraUpdateFactory.newCameraPosition(cameraPosition);
-            mMap.animateCamera(cameraUpdate);
-        } catch (Exception e) {
-            Log.e("MyMap", "Map create error = " + e.getMessage());
-            e.printStackTrace();
-        }
 
 		try{
 			myView  = inflater.inflate(R.layout.map_fragment_new, container, false);
@@ -104,10 +91,14 @@ public class MapFragmentWindow extends FragmentPacket {
 				@Override
 				public void onClick(View arg0) {
 					if (mMap != null && MyLocationListener.lat != 0.0 && MyLocationListener.lon != 0.0) {
-//						mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(MyLocationListener.lat, MyLocationListener.lon)));
-						mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(MyLocationListener.lat, MyLocationListener.lon),17), 1500, null);
-//                        mMap.addMarker(new MarkerOptions().position(new LatLng(MyLocationListener.lat,MyLocationListener.lon)).draggable(false).title("Вы"));
-					} else {
+						mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(MyLocationListener.lat, MyLocationListener.lon),15), 1500, null);
+                        Marker marker=mMap.addMarker(new MarkerOptions().
+                                position(new LatLng(MyLocationListener.lat,MyLocationListener.lon)).
+                                draggable(false).
+                                title("Вы здесь").
+                                icon(BitmapDescriptorFactory.fromResource(R.drawable.driver_green)));
+                                marker.showInfoWindow();
+                     } else {
 						Toast.makeText(ContextHelper.getInstance().getCurrentContext(), "Идет поиск ...", Toast.LENGTH_SHORT).show();
 					}
 				}
@@ -224,9 +215,25 @@ public class MapFragmentWindow extends FragmentPacket {
 	@Override
 	public void onResume() {
 		super.onResume();
-		Log.d("myLogs", "MapFragmentWindow onResume");
+		Log.d("MyMap", "MapFragmentWindow onResume");
 		Log.d("catchOnResume", "fragId = Map");
         Log.wtf("Map", "onResume");
+
+        try {
+            mMap = ((SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map)).getMap();
+            CameraPosition cameraPosition = new CameraPosition.Builder()
+                    .target(new LatLng(50.4327633,30.597208))
+                    .zoom(8)
+                    .build();
+            Log.d("MyMap", "CameraCreate");
+            CameraUpdate cameraUpdate = CameraUpdateFactory.newCameraPosition(cameraPosition);
+            mMap.animateCamera(cameraUpdate);
+        } catch (Exception e) {
+            Log.e("MyMap", "Map onResume create error = " + e.getMessage());
+            e.printStackTrace();
+        }
+
+
         if(orderId != -1){
             Log.wtf("Map", "requestRoute");
             RequestHelper.getRoutes(orderId);
