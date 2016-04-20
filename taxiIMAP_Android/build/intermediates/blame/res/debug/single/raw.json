@@ -1,19 +1,11 @@
 [
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\msg_new_ether_order.wav",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\raw\\msg_new_ether_order.wav"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\msg_pos_change.wav",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\raw\\msg_pos_change.wav"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\snd_msg.wav",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\raw\\snd_msg.wav"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\msg_stat_pos.wav",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\raw\\msg_stat_pos.wav"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\msg_warn.wav",
@@ -24,32 +16,12 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\raw\\msg_stat_neg.wav"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\snd_msg.wav",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\raw\\snd_msg.wav"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\msg_warn.wav",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\raw\\msg_warn.wav"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\msg_park_ord_change.wav",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\raw\\msg_park_ord_change.wav"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\msg_stat_neg.wav",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\raw\\msg_stat_neg.wav"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\msg_park_ord_change.wav",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\raw\\msg_park_ord_change.wav"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\msg_stat_pos.wav",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\raw\\msg_stat_pos.wav"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\msg_pos_change.wav",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\raw\\msg_pos_change.wav"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\raw\\msg_new_ether_order.wav",

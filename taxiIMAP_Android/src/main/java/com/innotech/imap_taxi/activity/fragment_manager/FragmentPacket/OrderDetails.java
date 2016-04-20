@@ -239,7 +239,7 @@ public class OrderDetails extends FragmentPacket {
 		llRoute.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				MapFragment.orderId = -1;
+				MapFragmentWindow.orderId = -1;
 				FragmentTransactionManager.getInstance().openFragment(
 						FragmentPacket.MAP);
 			}
@@ -335,7 +335,7 @@ public class OrderDetails extends FragmentPacket {
 				// RequestHelper.getRoutes(orderID);
 				System.out.println("getRoutes" + orderID);
 				// ----
-				MapFragment.orderId = orderID;
+				MapFragmentWindow.orderId = orderID;
 				FragmentTransactionManager.getInstance().openFragment(
 						FragmentPacket.MAP);
 			}

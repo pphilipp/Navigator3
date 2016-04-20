@@ -13,12 +13,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.*;
 import com.google.android.gms.maps.model.*;
-import com.innotech.imap_taxi.activity.NavigatorMenuActivity;
-import com.innotech.imap_taxi.activity.fragment_manager.FragmentTransactionManager;
 import com.innotech.imap_taxi.datamodel.ServerData;
 import com.innotech.imap_taxi.helpers.ContextHelper;
 import com.innotech.imap_taxi.helpers.RequestHelper;
@@ -29,7 +25,9 @@ import com.innotech.imap_taxi.network.packet.Packet;
 import com.innotech.imap_taxi.ping.MyLocationListener;
 import com.innotech.imap_taxi3.R;
 
-public class MapFragment extends FragmentPacket {
+
+
+public class MapFragmentWindow extends FragmentPacket {
 
 	private GoogleMap mMap;
 	LatLng myLoc;
@@ -46,7 +44,7 @@ public class MapFragment extends FragmentPacket {
     float lat, lon;
     public static int orderId = -1;
 
-	public MapFragment() {
+	public MapFragmentWindow() {
 		super(MAP);
 	}
 	@Override
@@ -62,18 +60,33 @@ public class MapFragment extends FragmentPacket {
 
     @Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Log.wtf("Map", "onCreateView");
+        Log.wtf("MyMap", "onCreateView");
 
         if (myView!=null)
 		{
 			((ViewGroup)myView.getParent()).removeAllViews();
             return myView;
 		}
+
+        try {
+            mMap = ((SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map)).getMap();
+            CameraPosition cameraPosition = new CameraPosition.Builder()
+                    .target(new LatLng(50.4029361, 30.3883177))
+                    .zoom(6)
+                    .build();
+            Log.d("MyMap", "CameraCreate");
+            CameraUpdate cameraUpdate = CameraUpdateFactory.newCameraPosition(cameraPosition);
+            mMap.animateCamera(cameraUpdate);
+        } catch (Exception e) {
+            Log.e("MyMap", "Map create error = " + e.getMessage());
+            e.printStackTrace();
+        }
+
 		try{
 			myView  = inflater.inflate(R.layout.map_fragment_new, container, false);
 
 
-			btnMe = (Button) myView.findViewById(R.id.btn_show_me);
+            btnMe = (Button) myView.findViewById(R.id.btn_show_me);
 //			btnBack = (Button) view.findViewById(R.id.btn_back);
             zoomIn = (ImageButton) myView.findViewById(R.id.btn_zoom_in);
             zoomOut = (ImageButton) myView.findViewById(R.id.btn_zoom_out);
@@ -117,23 +130,45 @@ public class MapFragment extends FragmentPacket {
                 }
             });
 
-			if (mMap == null) {
+ /*           MapFragment mapFragment = (MapFragment)getFragmentManager().findFragmentById(R.id.map);
+            mapFragment.getMapAsync(this);
+*/
+/*            try {
+                mMap = ((MapFragmentWindow) getFragmentManager()
+                        .findFragmentById(R.id.map)).getMapAsync(this);
+                CameraPosition cameraPosition = new CameraPosition.Builder()
+                        .target(new LatLng(50.4029361, 30.3883177))
+                        .zoom(6)
+                        .build();
+                Log.d("Map", "CameraCreate");
+                CameraUpdate cameraUpdate = CameraUpdateFactory.newCameraPosition(cameraPosition);
+                mMap.animateCamera(cameraUpdate);
+            } catch (Exception e) {
+                Log.e("Map", "Map create error = " + e.getMessage());
+                e.printStackTrace();
+            }
+*/
+/*			if (mMap == null) {
 				mMap = ((SupportMapFragment) getFragmentManager().findFragmentById(
 						R.id.map)).getMap();
                 mMap.setMyLocationEnabled(true);
-
+/*
 				if (mMap != null) {
+                    LatLng Kyev = new LatLng(50.4029361, 30.3883177);
+                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Kyev, 10));
+                    mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+                    mMap.setMyLocationEnabled(true);
 
 //					mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(48.6, 32)));
-					mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(48.6, 32),6), 100, null);
+//					mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(48.6, 32),6), 100, null);
 
                     mMap.getUiSettings().setZoomControlsEnabled(false);
 
 					myLoMmarker = new MarkerOptions().position(new LatLng(0, 0)).title("Это я");
-					myLoMmarker.visible(false);
+					myLoMmarker.visible(true);
 					mMap.addMarker(myLoMmarker);
 				}
-			}
+			}*/
 
 			MultiPacketListener.getInstance().addListener(Packet.GET_ROUTES_ANSWER, new OnNetworkPacketListener() {
 				@Override
@@ -167,7 +202,9 @@ public class MapFragment extends FragmentPacket {
 //            Log.e("MApFragment Exception", e.getMessage());
         }
 		return myView;
-	}
+
+
+    }
 
 	public void drawRouteIfExist(ArrayList<LatLng> l) {
 
@@ -187,7 +224,7 @@ public class MapFragment extends FragmentPacket {
 	@Override
 	public void onResume() {
 		super.onResume();
-		Log.d("myLogs", "MapFragment onResume");
+		Log.d("myLogs", "MapFragmentWindow onResume");
 		Log.d("catchOnResume", "fragId = Map");
         Log.wtf("Map", "onResume");
         if(orderId != -1){
@@ -263,5 +300,4 @@ public class MapFragment extends FragmentPacket {
         myView = null;
         mMap = null;
 	}
-
 }

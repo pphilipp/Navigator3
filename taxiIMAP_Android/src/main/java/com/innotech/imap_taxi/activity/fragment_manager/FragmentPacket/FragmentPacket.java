@@ -1,6 +1,8 @@
 package com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket;
 
+
 import android.support.v4.app.Fragment;
+
 
 /**
  * This class is holder for app fragments parameters.

@@ -38,7 +38,7 @@ import com.crashlytics.android.Crashlytics;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.CurrentOrdersFragment;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.EfirOrder;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.FragmentPacket;
-import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.MapFragment;
+import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.MapFragmentWindow;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.OrderDetails;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket.SwipeFragment;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentTransactionManager;
@@ -261,7 +261,7 @@ public class NavigatorMenuActivity extends FragmentActivity
 	protected void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 		Log.d(LOG_TAG, "onSaveInstanceState()");
-		outState.putInt("orderForMap", MapFragment.orderId);
+		outState.putInt("orderForMap", MapFragmentWindow.orderId);
 		outState.putInt("orderFromEther", EfirOrder.orderId);
 		outState.putInt("fragID", FragmentTransactionManager.getInstance()
 				.getId());
@@ -272,7 +272,7 @@ public class NavigatorMenuActivity extends FragmentActivity
 	protected void onRestoreInstanceState(Bundle savedInstanceState) {
 		super.onRestoreInstanceState(savedInstanceState);
 		Log.d(LOG_TAG, "onRestoreInstanceState");
-		MapFragment.orderId = savedInstanceState.getInt("orderFromMap");
+		MapFragmentWindow.orderId = savedInstanceState.getInt("orderFromMap");
 		EfirOrder.orderId = savedInstanceState.getInt("orderFromEther");
 	}
 
@@ -1070,79 +1070,83 @@ public class NavigatorMenuActivity extends FragmentActivity
 	}
 
 	private void driverStateClick() {
-		List<Order> ord = OrderManager.getInstance().getOrdersByState(
-				Order.STATE_PERFORMING);
-		switch (StateObserver.getInstance().getDriverState()) {
-			case StateObserver.DRIVER_FREE:
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
+        try {
+            List<Order> ord = OrderManager.getInstance().getOrdersByState(
+                    Order.STATE_PERFORMING);
+            switch (StateObserver.getInstance().getDriverState()) {
+                case StateObserver.DRIVER_FREE:
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
 
-						//send busy message to server
+                            //send busy message to server
 
-						byte[] body2 = RequestBuilder.createBodyPPSChangeState("3", 0, mLoginResponse.peopleID);
-						byte[] data2 = RequestBuilder.createSrvTransfereData(RequestBuilder.DEFAULT_CONNECTION_TYPE, mLoginResponse.srvID,
-								RequestBuilder.DEFAULT_DESTINATION_ID, mLoginResponse.GUID, true, body2);
-						ConnectionHelper.getInstance().send(data2);
+                            byte[] body2 = RequestBuilder.createBodyPPSChangeState("3", 0, mLoginResponse.peopleID);
+                            byte[] data2 = RequestBuilder.createSrvTransfereData(RequestBuilder.DEFAULT_CONNECTION_TYPE, mLoginResponse.srvID,
+                                    RequestBuilder.DEFAULT_DESTINATION_ID, mLoginResponse.GUID, true, body2);
+                            ConnectionHelper.getInstance().send(data2);
 
-						stateDriver.setText("ЗАНЯТ");
-						stateDriver.setTextColor(Color.RED);
-						stateDriverInd
-								.setImageResource(R.drawable.driver_orange);
-						StateObserver.getInstance().setDriverState(
-								StateObserver.DRIVER_BUSY);
-						Toast.makeText(
-								ContextHelper.getInstance().getCurrentContext(),
-								ContextHelper
-										.getInstance()
-										.getCurrentContext()
-										.getText(
-												R.string.driver_status_changed_on_busy),
-								Toast.LENGTH_SHORT).show();
-					}
-				});
-				break;
+                            stateDriver.setText("ЗАНЯТ");
+                            stateDriver.setTextColor(Color.RED);
+                            stateDriverInd
+                                    .setImageResource(R.drawable.driver_orange);
+                            StateObserver.getInstance().setDriverState(
+                                    StateObserver.DRIVER_BUSY);
+                            Toast.makeText(
+                                    ContextHelper.getInstance().getCurrentContext(),
+                                    ContextHelper
+                                            .getInstance()
+                                            .getCurrentContext()
+                                            .getText(
+                                                    R.string.driver_status_changed_on_busy),
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                    break;
 
-			case StateObserver.DRIVER_BUSY:
-				if (OrderManager.getInstance().getCountOfOrdersByState(
-						Order.STATE_PERFORMING) < 1) {
-					runOnUiThread(new Runnable() {
-						@Override
-						public void run() {
+                case StateObserver.DRIVER_BUSY:
+                    if (OrderManager.getInstance().getCountOfOrdersByState(
+                            Order.STATE_PERFORMING) < 1) {
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
 
-							//send free message to server
-							byte[] body2 = RequestBuilder.createBodyPPSChangeState("0", 0, mLoginResponse.peopleID);
-							byte[] data2 = RequestBuilder.createSrvTransfereData(RequestBuilder.DEFAULT_CONNECTION_TYPE, mLoginResponse.srvID,
-									RequestBuilder.DEFAULT_DESTINATION_ID, mLoginResponse.GUID, true, body2);
-							ConnectionHelper.getInstance().send(data2);
+                                //send free message to server
+                                byte[] body2 = RequestBuilder.createBodyPPSChangeState("0", 0, mLoginResponse.peopleID);
+                                byte[] data2 = RequestBuilder.createSrvTransfereData(RequestBuilder.DEFAULT_CONNECTION_TYPE, mLoginResponse.srvID,
+                                        RequestBuilder.DEFAULT_DESTINATION_ID, mLoginResponse.GUID, true, body2);
+                                ConnectionHelper.getInstance().send(data2);
 
-							stateDriver.setText("СВОБОДЕН");
-							stateDriver.setTextColor(Color
-									.parseColor("#009900"));
-							stateDriverInd
-									.setImageResource(R.drawable.driver_green);
-							StateObserver.getInstance().setDriverState(
-									StateObserver.DRIVER_FREE);
-						}
-					});
-				} else if (OrderManager.getInstance().getCountOfOrdersByState(
-						Order.STATE_PERFORMING) == 1) {
-					// there is only one current order and we`ll open it
-					int orderID = ord.get(0).getOrderID();
-					OrderDetails.dispOrderId(orderID);
-					FragmentTransactionManager.getInstance().openFragment(
-							FragmentPacket.ORDER_DETAILS);
-				} else {
-					// there are several orders and we`ll open list of orders
-					CurrentOrdersFragment
-							.setState(CurrentOrdersFragment.STATE_PERFORMING);
-					CurrentOrdersFragment
-							.displayOrders(CurrentOrdersFragment.STATE_PERFORMING);
-					FragmentTransactionManager.getInstance().openFragment(
-							FragmentPacket.CURRENTORDERS);
-				}
+                                stateDriver.setText("СВОБОДЕН");
+                                stateDriver.setTextColor(Color
+                                        .parseColor("#009900"));
+                                stateDriverInd
+                                        .setImageResource(R.drawable.driver_green);
+                                StateObserver.getInstance().setDriverState(
+                                        StateObserver.DRIVER_FREE);
+                            }
+                        });
+                    } else if (OrderManager.getInstance().getCountOfOrdersByState(
+                            Order.STATE_PERFORMING) == 1) {
+                        // there is only one current order and we`ll open it
+                        int orderID = ord.get(0).getOrderID();
+                        OrderDetails.dispOrderId(orderID);
+                        FragmentTransactionManager.getInstance().openFragment(
+                                FragmentPacket.ORDER_DETAILS);
+                    } else {
+                        // there are several orders and we`ll open list of orders
+                        CurrentOrdersFragment
+                                .setState(CurrentOrdersFragment.STATE_PERFORMING);
+                        CurrentOrdersFragment
+                                .displayOrders(CurrentOrdersFragment.STATE_PERFORMING);
+                        FragmentTransactionManager.getInstance().openFragment(
+                                FragmentPacket.CURRENTORDERS);
+                    }
 
-				break;
-		}
-	}
+                    break;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -318,18 +318,24 @@ public class ArchivOrdersFragment extends FragmentPacket {
 			}
 		});
 
-		back = (Button) myView.findViewById(R.id.btn_back);
-		if(back != null) {
-			back.setOnClickListener(new View.OnClickListener() {
-				@Override
-				public void onClick(View view) {
-					FragmentTransactionManager.getInstance().openFragment(
-							FragmentPacket.ORDERS);
-				}
-			});
-		}
 
-		datesSpinner = (Spinner) myView.findViewById(R.id.spinner_date);
+		back = (Button) myView.findViewById(R.id.btn_back);
+        try {// sometimes NPE because unknown reason
+            if(back != null) {
+                back.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                Log.d("#172", "Button back");
+                        FragmentTransactionManager.getInstance().openFragment(
+                                FragmentPacket.ORDERS);
+                    }
+                });
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        datesSpinner = (Spinner) myView.findViewById(R.id.spinner_date);
 
 		incl = (CheckBox) myView.findViewById(R.id.chkb_incl);
 

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:2:1-114:12
+ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:2:1-115:12
 	package
 		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml
@@ -24,12 +24,12 @@ MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavi
 MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:25:5-67
 MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:25:5-67
 MERGED from [com.crashlytics.sdk.android:beta:1.1.4] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.1.4\AndroidManifest.xml:9:5-67
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.3.0\AndroidManifest.xml:21:5-66
 	android:name
 		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:6:5-79
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.3.0\AndroidManifest.xml:20:5-78
 	android:name
 		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.READ_PHONE_STATE
@@ -110,14 +110,14 @@ ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\Androi
 		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:34:9-57
 uses-feature#0x00020000
 ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:36:5-38:35
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:22:5-24:33
+MERGED from [com.google.android.gms:play-services-maps:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.3.0\AndroidManifest.xml:22:5-24:33
 	android:glEsVersion
 		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:37:9-41
 	android:required
 		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:38:9-32
 application
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:40:5-113:19
-MERGED from [com.android.support:support-v4:23.0.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
+ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:40:5-114:19
+MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.5.5\AndroidManifest.xml:11:5-20
 MERGED from [com.crashlytics.sdk.android:answers:1.3.6] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.6\AndroidManifest.xml:11:5-20
 MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:27:5-20
@@ -127,14 +127,14 @@ MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavi
 MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:27:5-20
 MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:27:5-20
 MERGED from [com.crashlytics.sdk.android:beta:1.1.4] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.1.4\AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:support-v4:23.0.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.0.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.3.0\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\design\22.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.0.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:43:9-41
 	android:icon
@@ -197,7 +197,7 @@ ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\Androi
 		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:74:18-88
 meta-data#com.google.android.gms.version
 ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:76:9-78:73
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:21:9-23:69
 	android:value
 		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:78:17-70
 	android:name
@@ -217,7 +217,7 @@ ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\Androi
 uses-sdk
 INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [ImapNavigator3:library:unspecified] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\ImapNavigator3\library\unspecified\AndroidManifest.xml:7:5-9:40
-MERGED from [com.android.support:support-v4:23.0.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.5.5\AndroidManifest.xml:7:5-43
 MERGED from [com.crashlytics.sdk.android:answers:1.3.6] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.6\AndroidManifest.xml:7:5-43
 MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:23:5-43
@@ -227,15 +227,15 @@ MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavi
 MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:23:5-43
 MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:23:5-43
 MERGED from [com.crashlytics.sdk.android:beta:1.1.4] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.1.4\AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:support-v4:23.0.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.0.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.3.0\AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-base:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.3.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:design:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\design\22.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.0.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml
 		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml

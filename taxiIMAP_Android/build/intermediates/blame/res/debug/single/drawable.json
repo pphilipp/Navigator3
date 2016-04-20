@@ -1,789 +1,5 @@
 [
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_4.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_4.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_2_points.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_2_points.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_3_points.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_3_points.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\button_blue.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\button_blue.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_menu.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_menu.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_0.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_0.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\date_separator.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\date_separator.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\class_dialog_btn_background.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\class_dialog_btn_background.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_menu.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_menu.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\calend_img.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\calend_img.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_back4.9.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dark_back4.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\class_btn_background.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\class_btn_background.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_back2.9.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dark_back2.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_parkings.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_parkings.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\transparent_button_text.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\transparent_button_text.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\separator3.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\separator3.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\comment_not_active.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\comment_not_active.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_light.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_2_points.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_2_points.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_3_points.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_3_points.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_9.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_prelim_orders.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_prelim_orders.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_8.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_8.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\background_img.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\background_img.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_3_points_lines.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_3_points_lines.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_ch.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_ch.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_button.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\blue_button.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\img_ether.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\img_ether.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\date_separator.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\date_separator.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_6.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_6.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\clock_white.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\clock_white.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_6.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_6.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\navback.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\navback.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\gps_working.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\gps_working.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\night_time.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\night_time.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\additional_not_active.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\additional_not_active.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\main_textview_boards1.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\main_textview_boards1.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_0.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_0.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\gprs_working.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\gprs_working.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\separator2.9.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\separator2.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_orders.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_orders.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_button_back.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_button_back.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_dispatcher.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_dispatcher.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\gear_white.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\gear_white.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\separator.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\separator.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\list_style_button.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\list_style_button.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_marker.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_marker.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_exit.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_exit.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\cash_white.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\cash_white.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\night_time.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\night_time.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\tel_2.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\tel_2.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_map.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_map.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\point_white.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\point_white.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\web2.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\web2.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\own_png.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\own_png.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\snackbar_background.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\drawable\\snackbar_background.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_from.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dot_from.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\seek_progress.9.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\seek_progress.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_dots_right.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\navigation_dots_right.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\search_dialog_btn_background.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\search_dialog_btn_background.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\search_btn.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\search_btn.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_back3.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dark_back3.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\button_back_pressed.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\button_back_pressed.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_preference.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_preference.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_car.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_car.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_2.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_2.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\clock.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\clock.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_menu_active.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_menu_active.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\seek_bar_progress.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\seek_bar_progress.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\no_server_working.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\no_server_working.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\price_background_taxometr.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\price_background_taxometr.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\own_png.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\own_png.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\zoom_out.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\zoom_out.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_7.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_7.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\server_working.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\server_working.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_2_points_line.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_2_points_line.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\background_img.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\background_img.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\login.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\login.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_line.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\blue_line.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\cancel_btn_background.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\cancel_btn_background.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_back.9.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dark_back.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\top_back.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\top_back.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\web2.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\web2.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\shape_black_back.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\shape_black_back.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\point_white.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\point_white.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\light_gradient_button.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\light_gradient_button.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_menu_selector.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_menu_selector.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\pencil_attention.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\pencil_attention.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\button_back_pressed.9.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\button_back_pressed.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\main_textview_boards.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\main_textview_boards.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\pencil.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\pencil.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_edittext.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\custom_edittext.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\pencil_attention.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\pencil_attention.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_marker.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_marker.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_2_points_line.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_2_points_line.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\additional_active.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\additional_active.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\black_button.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\black_button.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\no_cash.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\no_cash.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\background_ether.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\background_ether.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_taxometr.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_taxometr.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\bordyurnyy.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\bordyurnyy.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_unknown_line.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_unknown_line.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_your_orders.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_your_orders.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_edittext.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\custom_edittext.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\vpi__tab_indicator.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\ImapNavigator3\\library\\unspecified\\res\\drawable\\vpi__tab_indicator.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_4.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_4.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_3.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_3.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\showme.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\showme.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\no_cash.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\no_cash.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\class_btn_background.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\class_btn_background.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\bordyurnyyy.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\bordyurnyyy.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_home.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_home.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_0.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_0.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\arrow.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\edditional.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\edditional.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\calend_img.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\calend_img.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\no_gprs_working.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\no_gprs_working.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_3.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_3.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\price_in_order_list.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\price_in_order_list.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\password.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\password.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\search_btn.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\search_btn.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\comment_active.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\comment_active.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\web_order.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\web_order.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_to_unknown.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dot_to_unknown.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_4.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_4.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_3.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_3.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_2.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_2.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_unknown.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_unknown.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\seek_bar_progress.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\seek_bar_progress.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_hide_ether.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_hide_ether.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\login.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\login.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_from.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dot_from.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\button_back_blue.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\button_back_blue.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\edditional.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\edditional.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\clock.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\clock.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_background_new.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_background_new.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_parkings.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_parkings.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\list_style_button.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\list_style_button.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_dots_left.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\navigation_dots_left.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_8.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_8.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\divider90.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\divider90.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\header_style.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\header_style.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\seek_bar_thumb.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\seek_bar_thumb.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\seek_bar_thumb.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\seek_bar_thumb.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_9.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\checkbox_background.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\checkbox_background.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\no_gprs_working.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\no_gprs_working.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_home.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_home.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_button_back.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_button_back.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_to_unknown.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dot_to_unknown.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_hide_ether.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_hide_ether.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\shield.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\shield.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\zoom_out.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\zoom_out.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\skype2.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\skype2.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_menu_selector.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_menu_selector.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\bordyurnyyy.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\bordyurnyyy.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\img_ether.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\img_ether.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\bordyurnyy.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\bordyurnyy.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_exit.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_exit.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\transparent_button.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\transparent_button.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_call_disp.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_call_disp.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_btn_once_again.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_btn_once_again.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_dots_centre.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\navigation_dots_centre.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\create_btn_background.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\create_btn_background.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_your_orders.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_your_orders.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\comment_active.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\comment_active.png"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\joker.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\joker.png"
     },
@@ -796,24 +12,36 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\navigation_dots_right.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\mail2.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\mail2.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_2_points.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_2_points.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\snackbar_background.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\drawable\\snackbar_background.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_3_points.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_3_points.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\button_blue.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\button_blue.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_0.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_0.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\navback.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\navback.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\date_separator.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\date_separator.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\seek_progress.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\seek_progress.9.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_menu.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_menu.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_unknown.png",
@@ -824,16 +52,16 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\cancel_btn_background.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\background_texture.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\background_texture.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\calend_img.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\calend_img.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_5.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_5.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\web_order.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\web_order.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_back4.9.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dark_back4.9.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_exit.png",
@@ -852,6 +80,10 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\timer.png"
     },
     {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_back2.9.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dark_back2.9.png"
+    },
+    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_back3.9.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dark_back3.9.png"
     },
@@ -864,92 +96,116 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\button_back_blue.9.png"
     },
     {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_parkings.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_parkings.xml"
+    },
+    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\additional_active.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\additional_active.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\separator2.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\separator2.9.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\transparent_button_text.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\transparent_button_text.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\day_time.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\day_time.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\light_gradient_button.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\light_gradient_button.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\zoom_in.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\zoom_in.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\comment_not_active.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\comment_not_active.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\background_for_tiles.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\background_for_tiles.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\showme.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\showme.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_9.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_9.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\header_style.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\header_style.xml"
     },
     {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_prelim_orders.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_prelim_orders.xml"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\background_img.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\background_img.png"
+    },
+    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\home.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\home.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\joker.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\joker.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_3_points_lines.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_3_points_lines.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\img_ether.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\img_ether.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\additional_not_active.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\additional_not_active.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_call_disp.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_call_disp.xml"
     },
     {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_1.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_1.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_3.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_3.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\gps_working.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\gps_working.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\and2.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\and2.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\night_time.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\night_time.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_0.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_0.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\main_taxometr_background.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\main_taxometr_background.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_7.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_7.png"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\main_textview_boards1.9.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\main_textview_boards1.9.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\top_separator.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\top_separator.9.png"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_dots_centre.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\navigation_dots_centre.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\gprs_working.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\gprs_working.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\separator2.9.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\separator2.9.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_orders.xml",
@@ -960,12 +216,8 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\class_dialog_btn_background.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_1.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_1.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\from_to_2_points.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\from_to_2_points.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\gear_white.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\gear_white.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\background_texture.xml",
@@ -976,10 +228,6 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\pencil.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\action_bar_search.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\action_bar_search.png"
     },
@@ -988,12 +236,12 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_balance.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\phone_yellow.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\phone_yellow.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\list_style_button.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\list_style_button.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\create_btn_background.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\create_btn_background.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_exit.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_exit.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_clock.png",
@@ -1004,12 +252,12 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_9.png"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_1.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_1.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\tel_2.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\tel_2.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_menu_active.xml",
@@ -1017,35 +265,47 @@
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\main_gradient_back.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\main_gradient_back.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\point_white.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\point_white.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\own_png.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\own_png.xml"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\snackbar_background.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\drawable\\snackbar_background.xml"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_from.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dot_from.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\seek_progress.9.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\seek_progress.9.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\timer.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\timer.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_5.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_5.png"
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\black_button.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\black_button.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_back4.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dark_back4.9.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\search_btn.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\search_btn.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\large_clock.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\large_clock.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_car.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_car.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_2.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_2.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_play.png",
@@ -1060,72 +320,76 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\shield.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\main_gradient_back.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\main_gradient_back.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_3_points_lines.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_3_points_lines.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\and2.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\and2.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_to_is.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dot_to_is.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_5.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_5.png"
     },
     {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\no_server_working.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\no_server_working.png"
+    },
+    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_map.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_map.xml"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\mail2.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\mail2.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_exit.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_exit.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\zoom_out.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\zoom_out.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_7.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_7.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\home.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\home.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\server_working.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\server_working.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\gps_working.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\gps_working.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\login.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\login.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_line.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\blue_line.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_back.9.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dark_back.9.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\clock_white.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\clock_white.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\adress_from.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\adress_from.xml"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\web2.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\web2.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_unknown_line.png",
@@ -1136,20 +400,20 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_6.png"
     },
     {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\top_separator.9.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\top_separator.9.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\no_gps_working.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\no_gps_working.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\light_gradient_button.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\light_gradient_button.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_1.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_1.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_setting.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_setting.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_menu_selector.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_menu_selector.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_dots_left.png",
@@ -1160,52 +424,60 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_4.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\gray_line.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\gray_line.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\fab_background.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\drawable\\fab_background.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\skype2.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\skype2.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\pencil_attention.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\pencil_attention.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\no_server_working.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\no_server_working.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\button_back_pressed.9.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\button_back_pressed.9.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\main_textview_boards.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\main_textview_boards.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\fab_background.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\drawable\\fab_background.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\button_black.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\button_black.png"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_edittext.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\custom_edittext.xml"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_marker.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_marker.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route_2_points_line.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route_2_points_line.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_connect_img.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_connect_img.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_2.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_2.png"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_5.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_5.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\no_cash.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\no_cash.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\background_ether.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\background_ether.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\street_item_background.xml",
@@ -1216,76 +488,52 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\shape_black_back.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\password.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\password.png"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_setting.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_setting.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_play.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_play.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_6.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_6.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_line.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\blue_line.png"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\zoom_in.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\zoom_in.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\button_black.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\button_black.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_your_orders.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_your_orders.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\vpi__tab_indicator.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\ImapNavigator3\\library\\unspecified\\res\\drawable\\vpi__tab_indicator.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\no_gps_working.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\no_gps_working.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\gear_white.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\gear_white.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_4.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_4.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_0.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_0.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\showme.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\showme.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\server_working.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\server_working.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_back.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dark_back.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_9.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\class_btn_background.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\class_btn_background.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_7.png",
@@ -1296,12 +544,16 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\separator.9.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\edditional.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\edditional.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\main_textview_boards.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\main_textview_boards.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\no_gprs_working.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\no_gprs_working.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_3.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_3.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_dispatcher.png",
@@ -1316,44 +568,52 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\button_back.9.png"
     },
     {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\password.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\password.png"
+    },
+    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_to_is.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dot_to_is.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\background_for_tiles.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\background_for_tiles.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\divider.9.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\divider.9.png"
     },
     {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\web_order.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\web_order.png"
+    },
+    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\separator3.9.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\separator3.9.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\street_item_background.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\street_item_background.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_to_unknown.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dot_to_unknown.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_taxometr.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_taxometr.xml"
     },
     {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_3.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_3.png"
+    },
+    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_prelim_orders.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_prelim_orders.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_connect_img.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_connect_img.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\comment_not_active.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\comment_not_active.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_2.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_2.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow.png",
@@ -1364,28 +624,16 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\price_background_taxometr.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\seek_bar_progress.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\seek_bar_progress.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\main_taxometr_background.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\main_taxometr_background.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_hide_ether.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_hide_ether.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_clock.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_clock.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\input_back.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\input_back.9.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\vpi__tab_indicator.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\Navigator3\\library\\unspecified\\res\\drawable\\vpi__tab_indicator.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\divider.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\divider.9.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\cash_white.png",
@@ -1396,64 +644,40 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\search_dialog_btn_background.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_car.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_car.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\clock.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\clock.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\adress_from.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\adress_from.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_background_new.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_background_new.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\large_clock.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\large_clock.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_2.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_2.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\transparent_button_text.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\transparent_button_text.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_8.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_8.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_background_new.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_background_new.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\background_ether.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\background_ether.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_8.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_8.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\gray_line.9.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\gray_line.9.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\action_bar_view.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\action_bar_view.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\seek_bar_thumb.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\seek_bar_thumb.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\dark_back2.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\dark_back2.9.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\up_9.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\up_9.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_btn_once_again.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_btn_once_again.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\checkbox_background.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\checkbox_background.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\tel_2.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\tel_2.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_balance.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\btn_balance.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_ch.png",
@@ -1472,51 +696,67 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\button_back.9.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\button_back.9.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_home.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_home.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\gprs_working.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\gprs_working.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_button_back.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_button_back.xml"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\from_to_2_points.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\from_to_2_points.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\action_bar_search.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\action_bar_search.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\skype2.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\skype2.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\bordyurnyyy.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\bordyurnyyy.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_button.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\blue_button.png"
     },
     {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\route.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\route.xml"
+    },
+    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\action_bar_view.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\action_bar_view.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_ratingbar_full_material.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\bordyurnyy.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\bordyurnyy.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\transparent_button.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\transparent_button.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\down_7.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\down_7.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\checkbox_background.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\checkbox_background.xml"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\menu_btn_once_again.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\menu_btn_once_again.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\button_blue.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\button_blue.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\create_btn_background.xml",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\create_btn_background.xml"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable\\comment_active.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable\\comment_active.png"
     }
 ]

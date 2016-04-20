@@ -167,7 +167,11 @@ public class SwipeFragment extends FragmentPacket
         super.onCreate(savedInstanceState);
         Log.d(LOG_TAG, "onCreate()" + "\n");
         mContext = ContextHelper.getInstance().getCurrentContext();
-        play = PlaySound.getInstance();
+        try {
+            play = PlaySound.getInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         sharedPrefs = PreferenceManager.getDefaultSharedPreferences(mContext);
     }
 
@@ -569,7 +573,7 @@ public class SwipeFragment extends FragmentPacket
                 myOwnOrdersClick();
                 break;
             case R.id.btnmap:
-                MapFragment.orderId = -1;
+                MapFragmentWindow.orderId = -1;
                 FragmentTransactionManager.getInstance().openFragment(
                         FragmentPacket.MAP);
                 break;
@@ -1827,96 +1831,100 @@ public class SwipeFragment extends FragmentPacket
                                     @Override
                                     public void run() {
 
-                                        if (pack.orderID != -1) {
-                                            if (!NotificationService
-                                                    .sendNotific("notif",
-                                                            pack.message, "")) {
-                                                AlertDHelper
-                                                        .showDialogOk(pack.message);
-                                            }
-                                        } else {
-                                            if (!NotificationService
-                                                    .sendNotific("notifSMS",
-                                                            pack.message, "")) {
-                                                AlertDHelper
-                                                        .showDialogOk(pack.message);
-                                                Log.d("Messages", "Message = " + pack.message);
-                                            }
-                                        }
-
-                                        if (!pack.className
-                                                .equals("IMAP.Net.OrderIsNotYours_mesbindata")) {
-                                            if (pack.className
-                                                    .equals("IMAP.Net.OrderIsYours_mesbindata")) {
-                                                isOrderYours = true;
-                                                // OrderManager.getInstance().changeOrderState(pack.orderID,
-                                                // 2);
+                                        try {
+                                            if (pack.orderID != -1) {
+                                                if (!NotificationService
+                                                        .sendNotific("notif",
+                                                                pack.message, "")) {
+                                                    AlertDHelper
+                                                            .showDialogOk(pack.message);
+                                                }
+                                            } else {
+                                                if (!NotificationService
+                                                        .sendNotific("notifSMS",
+                                                                pack.message, "")) {
+                                                    AlertDHelper
+                                                            .showDialogOk(pack.message);
+                                                    Log.d("Messages", "Message = " + pack.message);
+                                                }
                                             }
 
-                                            String address = "";
-                                            if (orderManager.getOrder(pack.orderID) != null) {
-                                                address = orderManager.getOrder(pack.orderID).getStreet();
-                                                address += " " + orderManager.getOrder(pack.orderID).getAddressFact();
+                                            if (!pack.className
+                                                    .equals("IMAP.Net.OrderIsNotYours_mesbindata")) {
+                                                if (pack.className
+                                                        .equals("IMAP.Net.OrderIsYours_mesbindata")) {
+                                                    isOrderYours = true;
+                                                    // OrderManager.getInstance().changeOrderState(pack.orderID,
+                                                    // 2);
+                                                }
+
+                                                String address = "";
+                                                if (orderManager.getOrder(pack.orderID) != null) {
+                                                    address = orderManager.getOrder(pack.orderID).getStreet();
+                                                    address += " " + orderManager.getOrder(pack.orderID).getAddressFact();
+                                                }
+                                                if (orderManager.getOrder(pack.orderID) != null
+                                                        && orderManager.getOrder(pack.orderID).getStatus() == Order.STATE_NEW) {
+                                                    showConfirmToast(isOrderYours, address);
+                                                }
+
+                                                return;
                                             }
-                                            if (orderManager.getOrder(pack.orderID) != null
-                                                    && orderManager.getOrder(pack.orderID).getStatus() == Order.STATE_NEW) {
-                                                showConfirmToast(isOrderYours, address);
+
+                                            List<Order> taken = OrderManager
+                                                    .getInstance()
+                                                    .getOrdersByState(
+                                                            Order.STATE_TAKEN);
+                                            List<Order> perf = OrderManager
+                                                    .getInstance()
+                                                    .getOrdersByState(
+                                                            Order.STATE_PERFORMING);
+
+                                            System.out.println("1 " + taken.size());
+                                            if ((taken.size() == 1)
+                                                    && (perf.size() == 0)) {
+                                                System.out
+                                                        .println("2 "
+                                                                + pack.orderID
+                                                                + " "
+                                                                + taken.get(0)
+                                                                .getOrderID());
+                                                if (pack.orderID == taken.get(0)
+                                                        .getOrderID()) {
+                                                    System.out.println("3 ok");
+
+                                                    StateObserver
+                                                            .getInstance()
+                                                            .setDriverState(
+                                                                    StateObserver.DRIVER_FREE);
+                                                    TextView busy2 = (TextView) ContextHelper
+                                                            .getInstance()
+                                                            .getCurrentActivity()
+                                                            .findViewById(
+                                                                    R.id.btn_busy);
+                                                    busy2.setText("Занят");
+                                                    busy2.setEnabled(true);
+
+                                                    ServerData.getInstance().isFree = true;
+                                                }
                                             }
 
-                                            return;
-                                        }
-
-                                        List<Order> taken = OrderManager
-                                                .getInstance()
-                                                .getOrdersByState(
-                                                        Order.STATE_TAKEN);
-                                        List<Order> perf = OrderManager
-                                                .getInstance()
-                                                .getOrdersByState(
-                                                        Order.STATE_PERFORMING);
-
-                                        System.out.println("1 " + taken.size());
-                                        if ((taken.size() == 1)
-                                                && (perf.size() == 0)) {
-                                            System.out
-                                                    .println("2 "
-                                                            + pack.orderID
-                                                            + " "
-                                                            + taken.get(0)
-                                                            .getOrderID());
-                                            if (pack.orderID == taken.get(0)
-                                                    .getOrderID()) {
-                                                System.out.println("3 ok");
-
-                                                StateObserver
-                                                        .getInstance()
-                                                        .setDriverState(
-                                                                StateObserver.DRIVER_FREE);
-                                                TextView busy2 = (TextView) ContextHelper
-                                                        .getInstance()
-                                                        .getCurrentActivity()
-                                                        .findViewById(
-                                                                R.id.btn_busy);
-                                                busy2.setText("Занят");
-                                                busy2.setEnabled(true);
-
-                                                ServerData.getInstance().isFree = true;
+                                            // временно !!!!!!!!!!!!!!!!!
+                                            // label
+                                            if (orderManager.getOrder(pack.orderID)
+                                                    .getStatus() == Order.STATE_TAKEN) {
+                                                orderManager.changeOrderState(
+                                                        pack.orderID,
+                                                        Order.STATE_MISSED);
+                                                NotificationService.cancelNotif(
+                                                        pack.orderID, "f3");
                                             }
-                                        }
 
-                                        // временно !!!!!!!!!!!!!!!!!
-                                        // label
-                                        if (orderManager.getOrder(pack.orderID)
-                                                .getStatus() == Order.STATE_TAKEN) {
-                                            orderManager.changeOrderState(
-                                                    pack.orderID,
-                                                    Order.STATE_MISSED);
-                                            NotificationService.cancelNotif(
-                                                    pack.orderID, "f3");
-                                        }
-
-                                        if (EfirOrder.orderId == pack.orderID) {
-                                            EfirOrder.startTimer(0);
+                                            if (EfirOrder.orderId == pack.orderID) {
+                                                EfirOrder.startTimer(0);
+                                            }
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
                                         }
                                     }
                                 });

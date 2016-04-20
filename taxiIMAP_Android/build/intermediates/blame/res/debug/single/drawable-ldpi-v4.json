@@ -4,20 +4,8 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\shield.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\add.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\add.png"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\fingerprint_inactive.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\fingerprint_inactive.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\check_box_unchecked.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\check_box_unchecked.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\middle_route.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\middle_route.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\check_box_checked.png",
@@ -28,86 +16,6 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\check_box_unchecked.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\end_route.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\end_route.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\minus.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\minus.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\search_img.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\search_img.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\first_point_route.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\first_point_route.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\additional_active.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\additional_active.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\comment_active.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\comment_active.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\features_small_active.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\features_small_active.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\check_box_checked.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\check_box_checked.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\features_small_active.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\features_small_active.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\comments_small_active.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\comments_small_active.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\comments_small_active.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\comments_small_active.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\fingerprint_inactive.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\fingerprint_inactive.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\middle_route.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\middle_route.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\comments_small_inactive.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\comments_small_inactive.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\features_small_inactive.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\features_small_inactive.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\add_address_from.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\add_address_from.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\comment_active.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\comment_active.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\search_img.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\search_img.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\shield.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\shield.png"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\comment_not_active.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\comment_not_active.png"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\additional_not_active.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\additional_not_active.png"
     },
@@ -116,12 +24,12 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\end_route.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\minus.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\minus.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\minus.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\minus.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\comments_small_inactive.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\comments_small_inactive.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\search_img.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\search_img.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\first_point_route.png",
@@ -140,31 +48,39 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\add.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\fingerprint_active.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\fingerprint_active.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\comment_active.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\comment_active.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\add_address_to.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\add_address_to.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\features_small_active.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\features_small_active.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\additional_active.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\additional_active.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\features_small_inactive.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\features_small_inactive.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\comments_small_active.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\comments_small_active.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\middle_route.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\middle_route.png"
+    },
+    {
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\comments_small_inactive.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\comments_small_inactive.png"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\add_address_to.png",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\add_address_to.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\additional_not_active.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\additional_not_active.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\features_small_inactive.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\features_small_inactive.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\add_address_from.png",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\add_address_from.png"
+        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\add_address_from.png",
+        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-ldpi\\add_address_from.png"
     }
 ]

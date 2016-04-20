@@ -1,9 +1,5 @@
 [
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_main_taxometr.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\activity_main_taxometr.xml"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-land\\prefs_new.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\prefs_new.xml"
     },
@@ -16,14 +12,6 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\map_fragment_new.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-land\\prefs_new.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\prefs_new.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_order_details_new.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\activity_order_details_new.xml"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-land\\orders_fragment_new.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\orders_fragment_new.xml"
     },
@@ -32,27 +20,11 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\activity_main_taxometr.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-land\\map_fragment_new.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\map_fragment_new.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-land\\current_orders_2_new.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\current_orders_2_new.xml"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-land\\activity_order_details_new.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\activity_order_details_new.xml"
     },
     {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-land\\current_orders_2_new.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\current_orders_2_new.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-land\\order_fragment_new.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\order_fragment_new.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-land\\orders_fragment_new.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\taxiIMAP_Android\\src\\main\\res\\layout-land\\orders_fragment_new.xml"
     }
 ]

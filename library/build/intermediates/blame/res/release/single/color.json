@@ -4,15 +4,7 @@
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\library\\src\\main\\res\\color\\vpi__light_theme.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\library\\build\\intermediates\\res\\merged\\release\\color\\vpi__dark_theme.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\library\\src\\main\\res\\color\\vpi__dark_theme.xml"
-    },
-    {
         "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\library\\build\\intermediates\\res\\merged\\release\\color\\vpi__dark_theme.xml",
         "source": "D:\\innotech\\Workspace\\ImapNavigator3\\library\\src\\main\\res\\color\\vpi__dark_theme.xml"
-    },
-    {
-        "merged": "D:\\innotech\\Workspace\\Navigator3\\library\\build\\intermediates\\res\\merged\\release\\color\\vpi__light_theme.xml",
-        "source": "D:\\innotech\\Workspace\\Navigator3\\library\\src\\main\\res\\color\\vpi__light_theme.xml"
     }
 ]
