@@ -228,7 +228,12 @@ public class MapFragmentWindow extends FragmentPacket {
             Log.d("MyMap", "CameraCreate");
             CameraUpdate cameraUpdate = CameraUpdateFactory.newCameraPosition(cameraPosition);
             mMap.animateCamera(cameraUpdate);
-        } catch (Exception e) {
+
+            myLoMmarker = new MarkerOptions().position(new LatLng(0, 0)).title("Это я");
+            myLoMmarker.visible(true);
+            mMap.addMarker(myLoMmarker);
+        }
+        catch (Exception e) {
             Log.e("MyMap", "Map onResume create error = " + e.getMessage());
             e.printStackTrace();
         }
