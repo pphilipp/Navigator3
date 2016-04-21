@@ -30,9 +30,11 @@ import com.innotech.imap_taxi.datamodel.SettingsFromXml;
 import com.innotech.imap_taxi.helpers.ContextHelper;
 import com.innotech.imap_taxi.helpers.RequestHelper;
 import com.innotech.imap_taxi.network.ConnectionHelper;
+import com.innotech.imap_taxi.network.DistanceOfOrderAnswer;
 import com.innotech.imap_taxi.network.MultiPacketListener;
 import com.innotech.imap_taxi.network.OnNetworkPacketListener;
 import com.innotech.imap_taxi.network.RequestBuilder;
+import com.innotech.imap_taxi.network.Utils;
 import com.innotech.imap_taxi.network.packet.Packet;
 import com.innotech.imap_taxi.network.packet.PreOrdersResponse;
 import com.innotech.imap_taxi.network.packet.RefusePreliminaryOrdeResponce;
@@ -69,8 +71,8 @@ public class CurrentOrdersFragment extends FragmentPacket {
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
+		Log.d(LOG_TAG, "onSaveInstanceState()");
 		setUserVisibleHint(true);
-		Log.d(LOG_TAG, "79 onSaveInstanceState");
 	}
 
 	@Override
@@ -428,10 +430,10 @@ public class CurrentOrdersFragment extends FragmentPacket {
 			Log.d("mOrders", "order.size (performing) = " + orders.size());
 			System.out.println("COUNT* ________ "
 					+ OrderManager.getInstance().getCountOfOrdersByState(
-							Order.STATE_PERFORMING));
+					Order.STATE_PERFORMING));
 			System.out.println("COUNT *________ "
 					+ OrderManager.getInstance().getCountOfOrdersByState(
-							Order.STATE_KRYG_ADA));
+					Order.STATE_KRYG_ADA));
 
 			List<Order> orders_krygi = OrderManager.getInstance()
 					.getOrdersByState(Order.STATE_KRYG_ADA);

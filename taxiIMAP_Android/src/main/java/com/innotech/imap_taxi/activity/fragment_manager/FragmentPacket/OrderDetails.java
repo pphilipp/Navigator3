@@ -353,7 +353,8 @@ public class OrderDetails extends FragmentPacket {
 		});
 
 		/**get distance */
-		getOrderDistance();
+		tvDistance.setText(Utils.intToSpannableStringKm(
+				OrderManager.getInstance().getOrder(orderID).getDistanceToOrderPlace()));
 
 		noClientListener = new View.OnClickListener() {
 
@@ -970,45 +971,6 @@ public class OrderDetails extends FragmentPacket {
 		});
 
 	}// end flip()
-
-
-
-	private static void getOrderDistance() {
-		/** Request to server for distance packet */
-		createRequestToOrderDistance();
-
-		/** Getting distance packet from server */
-		handleResponseOrderDistance();
-	}
-
-	private static void createRequestToOrderDistance() {
-		/** Request to server for distance packet */
-		byte[] body = RequestBuilder.getDistanceOfOrderAnswer(orderID);
-		byte[] data = RequestBuilder.createSrvTransfereData(
-				RequestBuilder.DEFAULT_CONNECTION_TYPE, ServerData
-						.getInstance().getSrvID(),
-				RequestBuilder.DEFAULT_DESTINATION_ID, ServerData
-						.getInstance().getGuid(), true, body);
-		ConnectionHelper.getInstance().send(data);
-	}
-
-	private static void handleResponseOrderDistance() {
-		/** Getting distance packet from server */
-		MultiPacketListener.getInstance().addListener(
-				Packet.DISTANCE_ORDER_ANSWER_RESPONSE,
-				new OnNetworkPacketListener() {
-					@Override
-					public void onNetworkPacket(Packet packet) {
-						DistanceOfOrderAnswer pack = (DistanceOfOrderAnswer) packet;
-						if (pack.distance != 0) {
-							tvDistance.setText(Utils.intToSpannableStringKm(pack.distance));
-							Log.d("philipp", "pack.distance -> " + pack.distance);
-						}
-					}
-				});
-	}
-
-
 
 	public static void flip(int changeNumber, final RelativeLayout myView) {
 		Context mContext = ContextHelper.getInstance().getCurrentContext();

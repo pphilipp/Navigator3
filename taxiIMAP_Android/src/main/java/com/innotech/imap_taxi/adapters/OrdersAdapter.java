@@ -237,7 +237,8 @@ public class OrdersAdapter extends BaseAdapter {
 		}
 
 		myHolder.cost.setTypeface(t);
-		myHolder.distance.setText((orders.get(position).getDistanceToOrderPlace()).toString());
+		myHolder.distance.setText(Utils.intToSpannableStringKm(
+				orders.get(position).getDistanceToOrderPlace()));
 		myHolder.time.setText(time);
 		myHolder.orderFrom.setText(addressFrom);
 		myHolder.cost.setText(getPriceFormat(price));

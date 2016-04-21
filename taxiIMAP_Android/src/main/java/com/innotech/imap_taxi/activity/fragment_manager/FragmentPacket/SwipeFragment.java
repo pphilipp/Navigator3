@@ -62,6 +62,7 @@ import com.innotech.imap_taxi.helpers.ContextHelper;
 import com.innotech.imap_taxi.helpers.RequestHelper;
 import com.innotech.imap_taxi.model.UIData;
 import com.innotech.imap_taxi.network.ConnectionHelper;
+import com.innotech.imap_taxi.network.DistanceOfOrderAnswer;
 import com.innotech.imap_taxi.network.MultiPacketListener;
 import com.innotech.imap_taxi.network.OnNetworkErrorListener;
 import com.innotech.imap_taxi.network.OnNetworkPacketListener;
@@ -1497,6 +1498,20 @@ public class SwipeFragment extends FragmentPacket
                 }
             });
 
+        /** Getting distance packet from server */
+        MultiPacketListener.getInstance().addListener(
+                Packet.DISTANCE_ORDER_ANSWER_RESPONSE,
+                new OnNetworkPacketListener() {
+                    @Override
+                    public void onNetworkPacket(Packet packet) {
+                        DistanceOfOrderAnswer pack = (DistanceOfOrderAnswer) packet;
+                        if (pack.distance != 0) {
+                            OrderManager.getInstance().getOrder(pack.orderID)
+                                    .setDistanceToOrderPlace(pack.getDistance());
+                        }
+                    }
+                });
+
         // блокировка водителя
         MultiPacketListener.getInstance().addListener(
             Packet.DRIVER_BLOCKED_PACK, new OnNetworkPacketListener() {
@@ -2448,6 +2463,15 @@ public class SwipeFragment extends FragmentPacket
             order.setFromServer(true);
 
             OrderManager.getInstance().addOrder(order);
+
+            /** Request to server for distance packet order.getOrderID()*/
+            byte[] body = RequestBuilder.getDistanceOfOrderAnswer(order.getOrderID());
+            byte[] data = RequestBuilder.createSrvTransfereData(
+                    RequestBuilder.DEFAULT_CONNECTION_TYPE, ServerData
+                            .getInstance().getSrvID(),
+                    RequestBuilder.DEFAULT_DESTINATION_ID, ServerData
+                            .getInstance().getGuid(), true, body);
+            ConnectionHelper.getInstance().send(data);
         }
 
         MultiPacketListener.getInstance().addListener(

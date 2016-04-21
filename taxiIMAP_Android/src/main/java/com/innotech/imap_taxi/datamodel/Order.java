@@ -69,7 +69,7 @@ public class Order {
 	protected float fare;// Цена поездки
 	protected String dispatcherName;// Имя диспетчера
 	protected String phoneNumber;// Телефон заказчика
-	protected String distanceToOrderPlace;// Distance
+	protected int distanceToOrderPlace;// Distance
 	// protected Vector address;//Коллекция адресов
 	protected List<DispSubOrder> address;
 	protected String comments;
@@ -934,31 +934,11 @@ public class Order {
 		// archive.put("isArchive", isArchive);
 	}
 
-	public SpannableString getDistanceToOrderPlace() {
-		// print distance
-//		distanceToPointOfDelivery != 0 ? distanceToPointOfDelivery / 1000 : 0
-
-		float distToPoint = 22.43586f;
-		String dist = (distToPoint > 100) ? ">100"
-				+ ContextHelper.getInstance().getCurrentContext()
-				.getString(R.string.km) : String.format("%.1f",
-				distToPoint)
-				+ ContextHelper.getInstance().getCurrentContext()
-				.getString(R.string.km);
-
-		SpannableString ss = null;
-		ss = new SpannableString(dist);
-		ss.setSpan(new RelativeSizeSpan(0.4f), dist.length() - 2,
-				dist.length(), 0);
-		ss.setSpan(new ForegroundColorSpan(ContextHelper.getInstance()
-				.getCurrentContext().getResources()
-				.getColor(R.color.greyText)),
-		dist.length() - 2, dist.length(), 0);
-
-		return ss;
+	public int getDistanceToOrderPlace() {
+		return distanceToOrderPlace;
 	}
 
-	public void setDistanceToOrderPlace(String distanceToOrderPlace) {
+	public void setDistanceToOrderPlace(int distanceToOrderPlace) {
 		this.distanceToOrderPlace = distanceToOrderPlace;
 	}
 
