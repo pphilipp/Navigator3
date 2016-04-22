@@ -60,7 +60,8 @@
     <string name="str_UA_money"> грн.</string>
     <string name="str_use_taxometer_is_not_possible">
         Использование Таксометра невозможно. Включите GPS.</string>
-    <string name="str_use_taxometer_need_to_enter">Использование Таксометра невозможно. Необходимо войти на смену.</string>
+    <string name="str_use_taxometer_need_to_enter">
+        Использование Таксометра невозможно. Необходимо войти на смену.</string>
     <string name="str_mock_locations">
         "Похоже что в настройках включен параметр 'фиктивное местоположение' (mock locations). Для работы приложения выключите его!</string>
     <string name="str_notif">Уведомление</string>

@@ -470,7 +470,7 @@ public class SwipeFragment extends FragmentPacket
         Log.d(LOG_TAG, "onResume()");
 
         isExit = false;
-        tvBalance.setText(getResources().getString(R.string.str_balance)
+        tvBalance.setText(getResources().getString(R.string.str_balance ) + " "
                 + UIData.getInstance().getBalance()
                 + getResources().getString(R.string.str_UA_money));
 
