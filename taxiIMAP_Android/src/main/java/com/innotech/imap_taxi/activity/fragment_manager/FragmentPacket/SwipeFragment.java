@@ -1296,7 +1296,7 @@ public class SwipeFragment extends FragmentPacket
                                         public void run() {
                                             // balanceRefresh.setOnClickListener(null);
                                             // balanceRefresh.setVisibility(View.GONE);
-                                            tvBalance.setVisibility(View.GONE);
+//                                            tvBalance.setVisibility(View.GONE);
 
                                         }
                                     });
@@ -1312,10 +1312,10 @@ public class SwipeFragment extends FragmentPacket
                                     new Runnable() {
                                         @Override
                                         public void run() {
-                                            myOwnOrder.setOnClickListener(null);
-                                            myOwnOrder.setVisibility(View.GONE);
-                                            StateObserver.getInstance()
-                                                    .setShowYourOrders(false);
+//                                            myOwnOrder.setOnClickListener(null);
+//                                            myOwnOrder.setVisibility(View.GONE);
+//                                            StateObserver.getInstance()
+//                                                    .setShowYourOrders(false);
                                         }
                                     });
                         } else {
@@ -1337,10 +1337,10 @@ public class SwipeFragment extends FragmentPacket
                                     new Runnable() {
                                         @Override
                                         public void run() {
-                                            parkings.setOnClickListener(null);
-                                            parkings.setVisibility(View.GONE);
-                                            StateObserver.getInstance()
-                                                    .setShowParkings(false);
+//                                            parkings.setOnClickListener(null);
+//                                            parkings.setVisibility(View.GONE);
+//                                            StateObserver.getInstance()
+//                                                    .setShowParkings(false);
                                         }
                                     });
                         } else {
