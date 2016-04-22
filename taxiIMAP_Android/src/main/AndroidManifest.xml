@@ -93,9 +93,13 @@
 
              <!--imap_taxi2 -->
 
- 		   <meta-data
-            android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBVAfzJhy7fZ1_s3UuPnwe47NfkfVAb_Fc" />
+ 		   <!--<meta-data-->
+            <!--android:name="com.google.android.maps.v2.API_KEY"-->
+            <!--android:value="AIzaSyBVAfzJhy7fZ1_s3UuPnwe47NfkfVAb_Fc" />-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
     <!--android:value="AIzaSyDtpZ7gEN6v4hSQozN0ouG2UWZEFpgxSV0" /-->
  		   
 <!--  		   AIzaSyCQGZtttZrBoLGbOq5c2NOnd7ligeDg4t0 -->
