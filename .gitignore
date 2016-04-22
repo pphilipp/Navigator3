@@ -1,3 +1,6 @@
+/library/build
+/gradle
+/build
 /taxiIMAP_Android/taxiIMAP_Android.iml
 /taxiIMAP_Android/fabric.properties
 /taxiIMAP_Android/build
@@ -16,6 +19,7 @@
 bin/
 gen/
 out/
+/taxiIMAP_Android/lint.xml
 
 # Gradle files
 .gradle/
