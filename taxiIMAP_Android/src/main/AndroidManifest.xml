@@ -39,7 +39,7 @@
 
     <application
         android:name="com.innotech.imap_taxi.activity.MyImapApp"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:persistent="true"
@@ -79,41 +79,10 @@
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="f79bd91ef65107c684f7a6dcd15131ab20ab0e7f" />
-        <!--debug-->
 
-        <!--<meta-data-->
-        <!--android:name="com.google.android.maps.v2.API_KEY"-->
-        <!--android:value="AIzaSyCytFleCz03ZS5HBnnd7GPTiM7uVOgN32w" />-->
-
-        <!--debug imap_taxi2-->
-
-        <!--<meta-data-->
-            <!--android:name="com.google.android.maps.v2.API_KEY"-->
-            <!--android:value="AIzaSyBY4Q9soaNfeGx4r-OvNZDQmF1RtsQse88" />-->
-
-             <!--imap_taxi2 -->
-
- 		   <!--<meta-data-->
-            <!--android:name="com.google.android.maps.v2.API_KEY"-->
-            <!--android:value="AIzaSyBVAfzJhy7fZ1_s3UuPnwe47NfkfVAb_Fc" />-->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key"/>
-
-    <!--android:value="AIzaSyDtpZ7gEN6v4hSQozN0ouG2UWZEFpgxSV0" /-->
- 		   
-<!--  		   AIzaSyCQGZtttZrBoLGbOq5c2NOnd7ligeDg4t0 -->
-
-        <!-- imap_taxi_symi -->
-
-        <!--<meta-data-->
-            <!--android:name="com.google.android.maps.v2.API_KEY"-->
-            <!--android:value="AIzaSyARcrmK2K2bRSSrEPaBRX_5Cf2_QXTR54A" />-->
-
-        <!--<meta-data-->
-            <!--android:name="com.google.android.maps.v2.API_KEY"-->
-            <!--android:value="AIzaSyBxEmVk2_CjnrQQl-X1YmPwL-VQzPiofZk" />-->
-
 
     </application>
 </manifest>
