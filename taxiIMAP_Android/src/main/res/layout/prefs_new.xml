@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:background="@drawable/button_back">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/button_back">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,6 +17,12 @@
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
         android:background="@drawable/top_back"/>
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="v.0.0.0"/>
 
     <ScrollView
         android:layout_width="wrap_content"

@@ -22,7 +22,7 @@ import com.innotech.imap_taxi3.R;
 import org.json.JSONException;
 
 public class MainTaxometr extends FragmentActivity {
-    public static final String LOG_TAG = MainTaxometr.class.getSimpleName();
+    private static final String LOG_TAG = MainTaxometr.class.getSimpleName();
     PowerManager mgr;
     PowerManager.WakeLock wakeLock;
 
