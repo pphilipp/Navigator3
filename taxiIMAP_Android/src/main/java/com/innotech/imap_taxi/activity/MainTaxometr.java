@@ -23,7 +23,6 @@ import org.json.JSONException;
 
 public class MainTaxometr extends FragmentActivity {
     public static final String LOG_TAG = MainTaxometr.class.getSimpleName();
-    Button btnBack;
     PowerManager mgr;
     PowerManager.WakeLock wakeLock;
 
@@ -37,22 +36,6 @@ public class MainTaxometr extends FragmentActivity {
 //        wakeLock = mgr.newWakeLock(PowerManager.FULL_WAKE_LOCK, "IMAPWakeLock");
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON,
                 WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-
-        btnBack = (Button) findViewById(R.id.btn_back);
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
-
-    }
-
-    @Override
-    public void onBackPressed() {
-        //// TODO Auto-generated method stub
-        FragmentTransactionManagerTaxometr.getInstance().back();
-        //super.onBackPressed();
     }
 
     @Override
