@@ -188,19 +188,19 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
         Log.d(LOG_TAG, "onCreateView()");
         view = inflater.inflate(R.layout.activity_swipe, container, false);
 
-        mOrders = new ArrayList<DispOrder4>();
-        mAdapter = new OrdersAdapterDisp4(mOrders, mContext);
+//        mOrders = new ArrayList<DispOrder4>();
+//        mAdapter = new OrdersAdapterDisp4(mOrders, mContext);
 
 
-        try {
-            PackageInfo pInfo;
-            pInfo = ContextHelper
-                    .getInstance()
-                    .getCurrentContext()
-                    .getPackageManager()
-                    .getPackageInfo(mContext.getPackageName(), 0);
-            UIData.getInstance().setVersion(pInfo.versionName);
-        } catch (PackageManager.NameNotFoundException e) {e.printStackTrace();}
+//        try {
+//            PackageInfo pInfo;
+//            pInfo = ContextHelper
+//                    .getInstance()
+//                    .getCurrentContext()
+//                    .getPackageManager()
+//                    .getPackageInfo(mContext.getPackageName(), 0);
+//            UIData.getInstance().setVersion(pInfo.versionName);
+//        } catch (PackageManager.NameNotFoundException e) {e.printStackTrace();}
 
 
         addPacketListeners();
@@ -429,7 +429,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
         if (vMap != null) {
             ((ViewGroup) vMap.getParent()).removeAllViews();
         } else {
-            vMap = inflater.inflate(R.layout.map_with_ether_fragment, null);
+//            vMap = inflater.inflate(R.layout.map_with_ether_fragment, null);
 //            mapEther = (ListView) vMap.findViewById(R.id.mapEther);
 //            mapEther.setAdapter(mAdapter);
 //            llNoEther = (LinearLayout) vMap.findViewById(R.id.noEtherLayout);
@@ -943,6 +943,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
     }// end myOwnOrdersClick()
 
     private void addPacketListeners() {
+        /** 1 */
         MultiPacketListener.getInstance().addListener(
                 Packet.LOGIN_RESPONCE,
                 new OnNetworkPacketListener() {
@@ -1103,7 +1104,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
                                 });
                     }
                 });
-        // !!!
+        /** 2 */
         MultiPacketListener.getInstance().addListener(
                 Packet.RELAY_COMMUNICATION_RESPONCE,
                 new OnNetworkPacketListener() {
@@ -1299,6 +1300,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
         // }
         // });
 
+        /** 3 */
         MultiPacketListener.getInstance().addListener(
                 Packet.SETTINGS_XML_RESPONCE,
                 new OnNetworkPacketListener() {
@@ -1384,6 +1386,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
                     }
                 });
 
+        /** 4 */
         MultiPacketListener.getInstance().addListener(
                 Packet.SET_YOUR_ORDERS_ANSWER, new OnNetworkPacketListener() {
                     @Override
@@ -1471,6 +1474,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
                     }
                 });
 
+        /** 5 */
         //check ping response from server
         MultiPacketListener.getInstance().addListener(
                 Packet.PING_RESPONCE,
@@ -1481,6 +1485,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
                     }
                 });
 
+        /** 6 */
         // вычитываем и обновляем запросы после подключения
         MultiPacketListener.getInstance().addListener(
                 Packet.GET_ORDERS_RESPONCE,
@@ -1524,6 +1529,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
                     }
                 });
 
+        /** 7 */
         /** Getting distance packet from server */
         MultiPacketListener.getInstance().addListener(
                 Packet.DISTANCE_ORDER_ANSWER_RESPONSE,
@@ -1538,6 +1544,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
                     }
                 });
 
+        /** 8 */
         // блокировка водителя
         MultiPacketListener.getInstance().addListener(
                 Packet.DRIVER_BLOCKED_PACK, new OnNetworkPacketListener() {
@@ -1570,6 +1577,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
                     }
                 });
 
+        /** 9 */
         MultiPacketListener.getInstance().addListener(
                 Packet.PPSCHANGE_STATE_RESPONCE, new OnNetworkPacketListener() {
                     @Override
@@ -1756,6 +1764,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
                     }
                 });
 
+        /** 10 */
         MultiPacketListener.getInstance().addListener(
                 Packet.SRV_MESSAGE_RESPONCE, new OnNetworkPacketListener() {
                     @Override
@@ -1767,6 +1776,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
                     }
                 });
 
+        /** 11 */
         MultiPacketListener.getInstance().addListener(
                 Packet.CSBALANCE_RESPONCE, new OnNetworkPacketListener() {
 
@@ -1790,6 +1800,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
                     }
                 });
 
+        /** 12 */
         MultiPacketListener.getInstance().addListener(
                 Packet.ETHEAR_ORDER_OVER_ANSWER, new OnNetworkPacketListener() {
 
@@ -1859,6 +1870,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
 
                 });
 
+        /** 13 */
         MultiPacketListener.getInstance().addListener(
                 Packet.TCPMESSAGE_RESPONCE, new OnNetworkPacketListener() {
 
@@ -1972,6 +1984,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
                     }
                 });
 
+        /** 14 */
         MultiPacketListener.getInstance().addListener(Packet.ORDER_RESPONCE4,
                 new OnNetworkPacketListener() {
                     @Override
@@ -2314,6 +2327,7 @@ public class SwipeFragmentPhilippMVC extends FragmentPacket
 
                 });
 
+        /** 15 */
         MultiPacketListener.getInstance().addListener(
                 Packet.CALL_SIGNCHANGED_RESPONCE,
                 new OnNetworkPacketListener() {

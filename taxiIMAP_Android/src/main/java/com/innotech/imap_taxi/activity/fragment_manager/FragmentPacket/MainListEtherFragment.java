@@ -3,6 +3,7 @@ package com.innotech.imap_taxi.activity.fragment_manager.FragmentPacket;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -16,7 +17,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentTransactionManager;
 import com.innotech.imap_taxi.adapters.OrdersAdapterDisp4;
+import com.innotech.imap_taxi.core.OrderManager;
+import com.innotech.imap_taxi.core.StateObserver;
 import com.innotech.imap_taxi.datamodel.DispOrder4;
+import com.innotech.imap_taxi.datamodel.Order;
 import com.innotech.imap_taxi.datamodel.ServerData;
 import com.innotech.imap_taxi.helpers.ContextHelper;
 import com.innotech.imap_taxi3.R;
@@ -35,7 +39,6 @@ public class MainListEtherFragment extends Fragment implements View.OnClickListe
     Button btnOrder;
     Button ethear;
     Button btnTest;
-
     ArrayList<DispOrder4> mOrders;
     Context mContext;
 
@@ -85,6 +88,31 @@ public class MainListEtherFragment extends Fragment implements View.OnClickListe
 
 
         return v;
+    }
+
+    @Override
+    public void onViewStateRestored(Bundle savedInstanceState) {
+        super.onViewStateRestored(savedInstanceState);
+
+        Log.d(LOG_TAG, "onViewStateRestored()");
+
+        if (PreferenceManager.getDefaultSharedPreferences(
+                ContextHelper.getInstance().getCurrentContext()).getBoolean(
+                "prefIsAutoSearch", false)) // autosearch 1 2
+            ethear.setText("ЭФИР("
+                    + String.valueOf(OrderManager.getInstance()
+                    .getCountOfOrdersByState(Order.STATE_NEW)
+                    + OrderManager.getInstance()
+                    .getCountOfOrdersByState(
+                            Order.STATE_KRYG_ADA)) + ")");
+        else
+            ethear.setText("ЭФИР("
+                    + OrderManager.getInstance().getCountOfEfirOrders() + ")");
+        if (StateObserver.getInstance().getDriverState() == StateObserver.DRIVER_BUSY) {
+            btnBusy.setEnabled(false);
+        } else {
+            btnBusy.setEnabled(true);
+        }
     }
 
     @Override

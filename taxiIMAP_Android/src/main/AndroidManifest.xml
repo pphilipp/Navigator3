@@ -58,8 +58,7 @@
         </activity>
 
         <activity
-            android:name="com.innotech.imap_taxi.activity.UserSettingActivity"
-            android:theme="@style/Theme.NoTitle" >
+            android:name="com.innotech.imap_taxi.activity.UserSettingActivity" >
         </activity>
 
         <activity
