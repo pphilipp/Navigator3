@@ -3,67 +3,130 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="horizontal"
               android:layout_width="match_parent"
-              android:layout_height="match_parent" android:background="@drawable/dark_back4">
+              android:layout_height="match_parent"
+              android:background="@drawable/dark_back4">
 
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent" android:gravity="center_vertical" android:layout_marginRight="15dp">
-        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/imageView5"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_marginRight="15dp">
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/imageView5"
                    android:background="@drawable/divider"/>
-        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
-                      android:layout_height="wrap_content" android:background="@android:color/black"
-                      android:paddingLeft="15dp" android:paddingRight="15dp" android:id="@+id/linearLayout"
-                      android:paddingTop="25dp" android:paddingBottom="25dp">
-            <TableLayout android:layout_width="fill_parent" android:layout_height="match_parent"
-                         android:gravity="center_horizontal" android:paddingBottom="10dp">
-                <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent"
+
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@android:color/black"
+                      android:paddingLeft="15dp"
+                      android:paddingRight="15dp"
+                      android:id="@+id/linearLayout"
+                      android:paddingTop="25dp"
+                      android:paddingBottom="25dp">
+
+            <TableLayout android:layout_width="fill_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center_horizontal"
+                         android:paddingBottom="10dp">
+
+                <TableRow android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
                           android:gravity="center_horizontal">
-                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/img_do_my_order"
-                               android:src="@drawable/large_clock" android:layout_gravity="center_vertical"
+
+                    <ImageView android:layout_width="40dp"
+                               android:layout_height="40dp"
+                               android:id="@+id/img_do_my_order"
+                               android:src="@drawable/large_clock"
+                               android:layout_gravity="center_vertical"
                                android:paddingRight="5dp"/>
-                    <DigitalClock android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                  android:id="@+id/digitalClock" android:layout_gravity="center_vertical|right"
-                                  android:textSize="40sp" android:textColor="@color/orangeEditText"/>
+
+                    <DigitalClock android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/digitalClock"
+                                  android:layout_gravity="center_vertical|right"
+                                  android:textSize="40sp"
+                                  android:textColor="@color/orangeEditText"/>
                 </TableRow>
-                <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent"
-                          android:gravity="center_horizontal" android:id="@+id/tableRow">
-                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                <TableRow android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:gravity="center_horizontal"
+                          android:id="@+id/tableRow">
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
                                android:id="@+id/imageView3"/>
-                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                               android:id="@+id/imageView4" android:background="@drawable/separator2"/>
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/imageView4"
+                               android:background="@drawable/separator2"/>
+
                 </TableRow>
+
             </TableLayout>
+
         </LinearLayout>
-        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/imageView2"
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/imageView2"
                    android:background="@drawable/divider"/>
+
     </LinearLayout>
+
     <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/scrollView" android:fillViewport="false">
-        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            android:fillViewport="false">
+
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
                         android:id="@+id/relativeLayout"
                         android:padding="@dimen/button_padding">
-            <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Текущие"
-                    android:id="@+id/btn_curr" android:background="@drawable/light_gradient_button"
-                    android:textColor="@android:color/white" android:layout_marginBottom="15dp"/>
-            <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Архив"
-                    android:id="@+id/btn_arch" android:background="@drawable/light_gradient_button"
-                    android:textColor="@android:color/white" android:layout_below="@+id/btn_curr"
+
+            <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Текущие"
+                    android:id="@+id/btn_curr"
+                    android:background="@drawable/light_gradient_button"
+                    android:textColor="@android:color/white"
                     android:layout_marginBottom="15dp"/>
-            <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Выполненные"
-                    android:id="@+id/btn_done_by_sess" android:background="@drawable/light_gradient_button"
-                    android:textColor="@android:color/white" android:layout_below="@+id/btn_arch"
+
+            <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Архив"
+                    android:id="@+id/btn_arch"
+                    android:background="@drawable/light_gradient_button"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@+id/btn_curr"
                     android:layout_marginBottom="15dp"/>
-            <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Предварительные"
-                    android:id="@+id/btn_pre" android:background="@drawable/light_gradient_button"
-                    android:textColor="@android:color/white" android:layout_below="@+id/btn_done_by_sess"
+
+            <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Предварительные"
+                    android:id="@+id/btn_pre"
+                    android:background="@drawable/light_gradient_button"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@+id/btn_arch"
                     android:layout_marginBottom="15dp"/>
-            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
-                    android:text="Назад" android:id="@+id/btn_back"
-                    android:background="@drawable/light_gradient_button" android:textColor="@android:color/white"
-                    android:layout_below="@+id/btn_pre" android:layout_marginBottom="15dp"/>
+
+            <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Назад"
+                    android:id="@+id/btn_back"
+                    android:background="@drawable/light_gradient_button"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@+id/btn_pre"
+                    android:layout_marginBottom="15dp"/>
+
         </RelativeLayout>
+
     </ScrollView>
+
 </LinearLayout>
