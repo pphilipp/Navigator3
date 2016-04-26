@@ -101,20 +101,10 @@
                 android:textColor="@android:color/white" />
 
             <Button
-                android:id="@+id/btn_done_by_sess"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/btn_arch"
-                android:layout_marginBottom="15dp"
-                android:background="@drawable/light_gradient_button"
-                android:text="Выполненные"
-                android:textColor="@android:color/white" />
-
-            <Button
                 android:id="@+id/btn_pre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/btn_done_by_sess"
+                android:layout_below="@+id/btn_arch"
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/light_gradient_button"
                 android:text="Предварительные"
