@@ -433,10 +433,12 @@ public class SwipeFragment extends FragmentPacket
 
                 mapEther.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
-                    public void onItemClick(AdapterView<?> adapterView,
-                                            View view, int i, long l) {
+                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                         mMap.clear();
                         RequestHelper.getRoutes(mOrders.get(i).orderID);
+
+                        EfirOrder.setOrderId(mOrders.get(i).orderID);
+                        FragmentTransactionManager.getInstance().openFragment(FragmentPacket.ORDER);
                     }
                 });
 
