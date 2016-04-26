@@ -325,7 +325,7 @@
                     android:background="@drawable/input_back"
                     android:paddingStart="7dp"
                     android:gravity="center_vertical|center_horizontal"
-                    android:inputType="number"
+                    android:inputType="phone"
                     android:paddingEnd="7dp"/>
 
                 <TextView
@@ -342,7 +342,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
+                    android:inputType="phone"
                     android:ems="10"
                     android:id="@+id/prefPortMaster"
                     android:paddingStart="7dp"
@@ -368,7 +368,7 @@
                     android:background="@drawable/input_back"
                     android:paddingStart="7dp"
                     android:gravity="center_vertical|center_horizontal"
-                    android:inputType="number"
+                    android:inputType="phone"
                     android:paddingEnd="7dp"/>
 
                 <TextView
@@ -385,7 +385,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
+                    android:inputType="phone"
                     android:ems="10"
                     android:id="@+id/prefPortSlave"
                     android:paddingStart="7dp"
@@ -581,7 +581,7 @@
                     android:id="@+id/prefDispPhone"
                     android:background="@drawable/input_back"
                     android:paddingStart="7dp"
-                    android:inputType="number"
+                    android:inputType="phone"
                     android:gravity="center_vertical|center_horizontal"
                     android:paddingEnd="7dp"/>
 
@@ -599,7 +599,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
+                    android:inputType="phone"
                     android:ems="10"
                     android:id="@+id/prefFontSize"
                     android:paddingStart="7dp"
