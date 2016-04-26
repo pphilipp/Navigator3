@@ -31,17 +31,15 @@ import butterknife.ButterKnife;
 public class MapFragmentWindow extends FragmentPacket implements OnClickListener {
 	private static final String LOG_TAG = MapFragmentWindow.class.getSimpleName();
 	private GoogleMap mMap;
+	public static int orderId = -1;
+	boolean updateMyLoc;
 	LatLng myLoc;
 	MarkerOptions myLoMmarker;
 	@Bind(R.id.btn_show_me) Button btnMe;
-    @Bind(R.id.btn_zoom_in) ImageButton zoomIn;
+	@Bind(R.id.btn_zoom_in) ImageButton zoomIn;
 	@Bind(R.id.btn_zoom_out)ImageButton zoomOut;
-	boolean updateMyLoc;
 	View myView = null;
-    ArrayList<LatLng> lg;
-    float lat;
-	float lon;
-    public static int orderId = -1;
+	ArrayList<LatLng> lg;
 
 	public MapFragmentWindow() {
 		super(MAP);
@@ -67,13 +65,11 @@ public class MapFragmentWindow extends FragmentPacket implements OnClickListener
 			((ViewGroup)myView.getParent()).removeAllViews();
             return myView;
 		}
-
 			myView  = inflater.inflate(R.layout.map_fragment_new, container, false);
 			ButterKnife.bind(this, myView);
 			btnMe.setOnClickListener(this);
 			zoomIn.setOnClickListener(this);
 			zoomOut.setOnClickListener(this);
-
 			routesAnswerPacketListenerImpl();
 
 		return myView;
@@ -86,8 +82,9 @@ public class MapFragmentWindow extends FragmentPacket implements OnClickListener
 					@Override
 					public void onNetworkPacket(Packet packet) {
 						GetRoutesResponse pack = (GetRoutesResponse) packet;
-						Log.e("IMAP", "!!! goted GET_ROUTES_ANSWER "
-								+ pack.orderId + " x:" + pack.geoX.size()
+						Log.d(LOG_TAG, "GET_ROUTES_ANSWER " + "\n"
+								+ "pack.orderId " + pack.orderId
+								+ " x:" + pack.geoX.size()
 								+ " y:" + pack.geoY.size());
 
 						if (pack.geoX.size()>0) {

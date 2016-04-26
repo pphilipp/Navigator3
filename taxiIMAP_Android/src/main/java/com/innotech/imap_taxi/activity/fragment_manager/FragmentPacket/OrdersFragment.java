@@ -18,9 +18,7 @@ import com.innotech.imap_taxi.helpers.ContextHelper;
 import com.innotech.imap_taxi3.R;
 
 public class OrdersFragment extends FragmentPacket {
-
-	private final String TAG = "mOrders";
-
+	private static final String LOG_TAG = OrdersFragment.class.getSimpleName();
 	View myView;
 
 	public OrdersFragment() {
@@ -43,8 +41,11 @@ public class OrdersFragment extends FragmentPacket {
 	}
 	
 	public static class ViewHolder {
-		
-		private Button curr, done, arch, pre, back;
+		private Button curr;
+		private Button done;
+		private Button arch;
+		private Button pre;
+		private Button back;
 		
 		public ViewHolder(View view) {
 			back = (Button) view.findViewById(R.id.btn_back);

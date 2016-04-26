@@ -104,7 +104,7 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class SwipeFragment extends FragmentPacket
+public class SwipeFragmentPhilippMVC extends FragmentPacket
         implements OnTouchListener, OnClickListener {
     public static final String  LOG_TAG = SwipeFragment.class.getSimpleName();
     private static final int RESULT_SETTINGS = 1;
@@ -165,7 +165,7 @@ public class SwipeFragment extends FragmentPacket
     float lat, lon;
     LatLng myLoc;
 
-    public SwipeFragment() {
+    public SwipeFragmentPhilippMVC() {
         super(SWIPE);
     }
 
@@ -208,21 +208,32 @@ public class SwipeFragment extends FragmentPacket
         /** Refactoring zone*/
 
         // create list views for listFragments ViewPAger.
-        List<View> listFragments = new ArrayList<View>();
-        first = inflater.inflate(R.layout.main_menu_chapter_one_new, null);
-        second = inflater.inflate(R.layout.main_menu_chapter_two_new, null);
+        List<Fragment> listFragments = new ArrayList<Fragment>();
+//        first = inflater.inflate(R.layout.main_menu_chapter_one_new, null);
+//        second = inflater.inflate(R.layout.main_menu_chapter_two_new, null);
 
-        etherTxt = (TextView) second.findViewById(R.id.noEther);
-        etherTxt.setTypeface(Typeface.createFromAsset(ContextHelper.getInstance()
-                .getCurrentContext().getAssets(), "fonts/BebasNeueRegular.ttf"));
+//        etherTxt = (TextView) second.findViewById(R.id.noEther);
+//        etherTxt.setTypeface(Typeface.createFromAsset(ContextHelper.getInstance()
+//                .getCurrentContext().getAssets(), "fonts/BebasNeueRegular.ttf"));
 
         initMapView(inflater);
 
-        listFragments.add(first);
-        listFragments.add(second);
-        listFragments.add(vMap);
+//        listFragments.add(first);
+//        listFragments.add(second);
+//        listFragments.add(vMap);
 
-        SamplePagerAdapter pagerAdapter = new SamplePagerAdapter(listFragments);
+        listFragments.add(Fragment.instantiate(
+                ContextHelper.getInstance().getCurrentContext(), MainMenuFragment.class.getName()));
+        listFragments.add(Fragment.instantiate(
+                ContextHelper.getInstance().getCurrentContext(), MainListEtherFragment.class.getName()));
+        listFragments.add(Fragment.instantiate(
+                ContextHelper.getInstance().getCurrentContext(), MainMapSwipeFragment.class.getName()));
+
+
+//        SamplePagerAdapter pagerAdapter = new SamplePagerAdapter(listFragments);
+        PagerAdapter pagerAdapter = new PagerAdapter(getActivity()
+                .getSupportFragmentManager(), listFragments);
+
         ViewPager viewPager = (ViewPager) view.findViewById(R.id.pager);
         viewPager.setOffscreenPageLimit(3);
         viewPager.setAdapter(pagerAdapter);
@@ -235,178 +246,181 @@ public class SwipeFragment extends FragmentPacket
 
 
 
-        zoomBar = (VerticalSeekBar) vMap.findViewById(R.id.zoom_bar);
-        btnZoomIn = (Button) vMap.findViewById(R.id.zoom_in);
-        btnZoomOut = (Button) vMap.findViewById(R.id.zoom_out);
-        btnZoomIn.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mMap != null) {
-                    mMap.animateCamera(CameraUpdateFactory.zoomIn());
-                }
-            }
-        });
+//        zoomBar = (VerticalSeekBar) vMap.findViewById(R.id.zoom_bar);
+//        btnZoomIn = (Button) vMap.findViewById(R.id.zoom_in);
+//        btnZoomOut = (Button) vMap.findViewById(R.id.zoom_out);
+//        btnZoomIn.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (mMap != null) {
+//                    mMap.animateCamera(CameraUpdateFactory.zoomIn());
+//                }
+//            }
+//        });
 
-        btnZoomOut.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mMap != null) {
-                    mMap.animateCamera(CameraUpdateFactory.zoomOut());
-                }
-            }
-        });
+//        btnZoomOut.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (mMap != null) {
+//                    mMap.animateCamera(CameraUpdateFactory.zoomOut());
+//                }
+//            }
+//        });
 
-        // zooming reaction
-        if (mMap != null) {
-            zoomBar.setMaximum((int) mMap.getMaxZoomLevel());
-            zoomBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-                @Override
-                public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                    mMap.animateCamera(CameraUpdateFactory.zoomTo(i));
-                }
-
-                @Override
-                public void onStartTrackingTouch(SeekBar seekBar) {
-
-                }
-
-                @Override
-                public void onStopTrackingTouch(SeekBar seekBar) {
-
-                }
-            });
-            zoomBar.setProgressAndThumb((int) mMap.getCameraPosition().zoom);
-        }
-
-        toggleBtnHide = (ToggleButton) vMap.findViewById(R.id.hide_ether);
-        toggleBtnHide.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b) {
-                    mapEther.setVisibility(View.GONE);
-                    llNoEther.setVisibility(View.GONE);
-                } else if (mAdapter.getCount() > 0) {
-                    mapEther.setVisibility(View.VISIBLE);
-                } else
-                    llNoEther.setVisibility(View.VISIBLE);
-            }
-        });
+//        // zooming reaction
+//        if (mMap != null) {
+//            zoomBar.setMaximum((int) mMap.getMaxZoomLevel());
+//            zoomBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//                @Override
+//                public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+//                    mMap.animateCamera(CameraUpdateFactory.zoomTo(i));
+//                }
+//
+//                @Override
+//                public void onStartTrackingTouch(SeekBar seekBar) {
+//
+//                }
+//
+//                @Override
+//                public void onStopTrackingTouch(SeekBar seekBar) {
+//
+//                }
+//            });
+//            zoomBar.setProgressAndThumb((int) mMap.getCameraPosition().zoom);
+//        }
+//
+//        toggleBtnHide = (ToggleButton) vMap.findViewById(R.id.hide_ether);
+//        toggleBtnHide.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+//                if (b) {
+//                    mapEther.setVisibility(View.GONE);
+//                    llNoEther.setVisibility(View.GONE);
+//                } else if (mAdapter.getCount() > 0) {
+//                    mapEther.setVisibility(View.VISIBLE);
+//                } else
+//                    llNoEther.setVisibility(View.VISIBLE);
+//            }
+//        });
         /**
          *
          * Buttons on menu list fragment
          *
          * **/
-        Typeface menuTypeface = Typeface.createFromAsset(ContextHelper
-                        .getInstance().getCurrentContext().getAssets(),
-                "fonts/BebasNeueRegular.ttf");
-        btnOrders = (Button) first.findViewById(R.id.btnOrders);
-        btnOrders.setTypeface(menuTypeface);
-        btnOrders.setOnClickListener(this);
+//        Typeface menuTypeface = Typeface.createFromAsset(ContextHelper
+//                        .getInstance().getCurrentContext().getAssets(),
+//                "fonts/BebasNeueRegular.ttf");
+//        btnOrders = (Button) first.findViewById(R.id.btnOrders);
+//        btnOrders.setTypeface(menuTypeface);
+//        btnOrders.setOnClickListener(this);
 
-        btnPrelim = (Button) first.findViewById(R.id.btnPrelim);
-        btnPrelim.setTypeface(menuTypeface);
-        btnPrelim.setOnClickListener(this);
+//        btnPrelim = (Button) first.findViewById(R.id.btnPrelim);
+//        btnPrelim.setTypeface(menuTypeface);
+//        btnPrelim.setOnClickListener(this);
 
-        myOwnOrder = (Button) first.findViewById(R.id.btn_do_my_order);
-        myOwnOrder.setTypeface(menuTypeface);
-        myOwnOrder.setOnClickListener(this);
+//        myOwnOrder = (Button) first.findViewById(R.id.btn_do_my_order);
+//        myOwnOrder.setTypeface(menuTypeface);
+//        myOwnOrder.setOnClickListener(this);
 
 
-        parkings = (Button) first.findViewById(R.id.parkingsButton);
-        parkings.setTypeface(menuTypeface);
+//        parkings = (Button) first.findViewById(R.id.parkingsButton);
+//        parkings.setTypeface(menuTypeface);
+//        parkings.setOnClickListener(this);
+//
+//        btnMap = (Button) first.findViewById(R.id.btnmap);
+//        btnMap.setTypeface(menuTypeface);
+//        btnMap.setOnClickListener(this);
 
-        //Parkings button
-        parkings.setOnClickListener(this);
 
-        btnMap = (Button) first.findViewById(R.id.btnmap);
-        btnMap.setTypeface(menuTypeface);
-        btnMap.setOnClickListener(this);
+        /** SECOND VIEW*/
 
-        btnBusy = (Button) second.findViewById(R.id.btn_busy);
-        btnBusy.setTypeface(menuTypeface);
-        btnBusy.setOnClickListener(this);
+//        btnBusy = (Button) second.findViewById(R.id.btn_busy);
+//        btnBusy.setTypeface(menuTypeface);
+//        btnBusy.setOnClickListener(this);
 
-        btnOrder = (Button) second.findViewById(R.id.btn_order);
-        btnOrders.setTypeface(menuTypeface);
-        btnOrder.setOnClickListener(this);
+//        btnOrder = (Button) second.findViewById(R.id.btn_order);
+//        btnOrder.setTypeface(menuTypeface);
+//        btnOrder.setOnClickListener(this);
 
-        ethear = (Button) second.findViewById(R.id.ethear_button);
-        ethear.setTypeface(menuTypeface);
-        ethear.setOnClickListener(this);
+//        ethear = (Button) second.findViewById(R.id.ethear_button);
+//        ethear.setTypeface(menuTypeface);
+//        ethear.setOnClickListener(this);
 
-        tvBalance = (Button) first.findViewById(R.id.balanceButton);
-        tvBalance.setTypeface(menuTypeface);
-        tvVersion = (TextView) first.findViewById(R.id.version);
+//        tvBalance = (Button) first.findViewById(R.id.balanceButton);
+//        tvBalance.setTypeface(menuTypeface);
+//
+//        tvVersion = (TextView) first.findViewById(R.id.version);
 
-        connection = (Button) first.findViewById(R.id.connection);
-        connection.setTypeface(menuTypeface);
+//        connection = (Button) first.findViewById(R.id.connection);
+//        connection.setTypeface(menuTypeface);
         //set connection to server on click button.
-        connection.setOnClickListener(this);
+//        connection.setOnClickListener(this);
+//
+//        if (reCon) {
+//            connection.performClick();
+//            reCon = false;
+//        }
 
-        if (reCon) {
-            connection.performClick();
-            reCon = false;
-        }
-
-        btnTest = (Button) second.findViewById(R.id.test_test);
-        if (ServerData.getInstance().IS_TEST_BUILD)
-            btnTest.setOnClickListener(this);
-        else
-            btnTest.setVisibility(View.GONE);
+//        btnTest = (Button) second.findViewById(R.id.test_test);
+//        if (ServerData.getInstance().IS_TEST_BUILD)
+//            btnTest.setOnClickListener(this);
+//        else
+//            btnTest.setVisibility(View.GONE);
 
         // 2
 
         // version2 = (TextView) second.findViewById(R.id.tvVersion);
 
-        btnCloseConnection = (Button) first.findViewById(R.id.exit);
-        btnCloseConnection.setTypeface(menuTypeface);
-        btnCloseConnection.setOnClickListener(this);
+//        btnCloseConnection = (Button) first.findViewById(R.id.exit);
+//        btnCloseConnection.setTypeface(menuTypeface);
+//        btnCloseConnection.setOnClickListener(this);
+//
+//        btnPrefs = (Button) first.findViewById(R.id.btn_prefs);
+//        btnPrefs.setTypeface(menuTypeface);
+//        btnPrefs.setOnClickListener(this);
+//
+//        btnTaxoMetr = (Button) first.findViewById(R.id.btn_taxometr);
+//        btnTaxoMetr.setTypeface(menuTypeface);
+//        btnTaxoMetr.setOnClickListener(this);
 
-        btnPrefs = (Button) first.findViewById(R.id.btn_prefs);
-        btnPrefs.setTypeface(menuTypeface);
-        btnPrefs.setOnClickListener(this);
+//        btnSendCrash = (Button) first.findViewById(R.id.sendCrash);
+//        btnSendCrash.setOnClickListener(this);
+//        btnSendCrash.setTypeface(menuTypeface);
 
-        btnTaxoMetr = (Button) first.findViewById(R.id.btn_taxometr);
-        btnTaxoMetr.setTypeface(menuTypeface);
-        btnTaxoMetr.setOnClickListener(this);
+// //        lvOrders = (ListView) second.findViewById(R.id.etherList);
+//        llNoEtherSecond = (LinearLayout) second.findViewById(R.id.noEtherLayout);
+//        lvOrders.setAdapter(mAdapter);
 
-        lvOrders = (ListView) second.findViewById(R.id.etherList);
-        llNoEtherSecond = (LinearLayout) second.findViewById(R.id.noEtherLayout);
-        lvOrders.setAdapter(mAdapter);
-        switchListView(mAdapter);
-        lvOrders.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView,
-                                    View view, int i, long l) {
+//        switchListView(mAdapter);
 
-                Log.i(LOG_TAG, "Open description " + i + "\n");
+//        lvOrders.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//
+//                Log.i(LOG_TAG, "Open description " + i + "\n");
+//
+//                EfirOrder.setOrderId(mOrders.get(i).orderID);
+//                FragmentTransactionManager.getInstance().openFragment(
+//                        FragmentPacket.ORDER);
+//            }
+//        });
 
-                EfirOrder.setOrderId(mOrders.get(i).orderID);
-                FragmentTransactionManager.getInstance().openFragment(
-                        FragmentPacket.ORDER);
-            }
-        });
 
-        final PaintDrawable p = (PaintDrawable) GraphUtils.buttonStyle(connection);
 
-        btnSendCrash = (Button) first.findViewById(R.id.sendCrash);
-        btnSendCrash.setOnClickListener(this);
-        btnSendCrash.setTypeface(menuTypeface);
-
-        // set buttons style
-        btnSendCrash.setBackground(p);
-        connection.setBackground(p);
-        btnOrders.setBackground(p);
-        myOwnOrder.setBackground(p);
-        btnMap.setBackground(p);
-        (first.findViewById(R.id.balanceButton))
-                .setBackground(p);
-        btnPrelim.setBackground(p);
-        btnTaxoMetr.setBackground(p);
-        parkings.setBackground(p);
-        btnPrefs.setBackground(p);
-        btnCloseConnection.setBackground(p);
-        btnSendCrash.setOnTouchListener(this);
+//        // set buttons style
+//        final PaintDrawable p = (PaintDrawable) GraphUtils.buttonStyle(connection);
+//        btnSendCrash.setBackground(p);
+//        connection.setBackground(p);
+//        btnOrders.setBackground(p);
+//        myOwnOrder.setBackground(p);
+//        btnMap.setBackground(p);
+//        (first.findViewById(R.id.balanceButton)).setBackground(p);
+//        btnPrelim.setBackground(p);
+//        btnTaxoMetr.setBackground(p);
+//        parkings.setBackground(p);
+//        btnPrefs.setBackground(p);
+//        btnCloseConnection.setBackground(p);
+//        btnSendCrash.setOnTouchListener(this);
 
         return view;
     } //end onCreateView()
@@ -416,14 +430,14 @@ public class SwipeFragment extends FragmentPacket
             ((ViewGroup) vMap.getParent()).removeAllViews();
         } else {
             vMap = inflater.inflate(R.layout.map_with_ether_fragment, null);
-            mapEther = (ListView) vMap.findViewById(R.id.mapEther);
-            mapEther.setAdapter(mAdapter);
-            llNoEther = (LinearLayout) vMap.findViewById(R.id.noEtherLayout);
-            TextView mapNoEtherTxt = (TextView) vMap.findViewById(R.id.noEther);
-            Typeface tf = Typeface.createFromAsset(ContextHelper.getInstance()
-                            .getCurrentContext().getAssets(),
-                    "fonts/BebasNeueRegular.ttf");
-            mapNoEtherTxt.setTypeface(tf);
+//            mapEther = (ListView) vMap.findViewById(R.id.mapEther);
+//            mapEther.setAdapter(mAdapter);
+//            llNoEther = (LinearLayout) vMap.findViewById(R.id.noEtherLayout);
+//            TextView mapNoEtherTxt = (TextView) vMap.findViewById(R.id.noEther);
+//            Typeface tf = Typeface.createFromAsset(ContextHelper.getInstance()
+//                            .getCurrentContext().getAssets(),
+//                    "fonts/BebasNeueRegular.ttf");
+//            mapNoEtherTxt.setTypeface(tf);
             switchListView(mAdapter);
 
             if (mMap == null) {
@@ -442,10 +456,6 @@ public class SwipeFragment extends FragmentPacket
 
                 if (mMap != null) {
                     mMap.setMyLocationEnabled(true);
-
-                    // mMap.moveCamera(CameraUpdateFactory.newLatLng(new
-                    // LatLng(48.6, 32)));
-
                     mMap.getUiSettings().setZoomControlsEnabled(false);
 
                     mMap.setOnCameraChangeListener(new GoogleMap.OnCameraChangeListener() {
@@ -595,10 +605,10 @@ public class SwipeFragment extends FragmentPacket
                         FragmentPacket.MAP);
                 break;
             case R.id.btnPrelim:
-                 CurrentOrdersFragment
-                         .displayOrders(CurrentOrdersFragment.STATE_PRE);
-                        FragmentTransactionManager.getInstance()
-                                .openFragment(CURRENTORDERS);
+                CurrentOrdersFragment
+                        .displayOrders(CurrentOrdersFragment.STATE_PRE);
+                FragmentTransactionManager.getInstance()
+                        .openFragment(CURRENTORDERS);
                 break;
             case  R.id.parkingsButton:
                 FragmentTransactionManager.getInstance().openFragment(
@@ -606,26 +616,26 @@ public class SwipeFragment extends FragmentPacket
                 break;
             case R.id.btn_busy:
                 busyClick();
-            break;
+                break;
             case R.id.btn_taxometr:
                 taxometrClick();
                 break;
             case R.id.btn_order:
-            FragmentTransactionManager.getInstance().openFragment(
+                FragmentTransactionManager.getInstance().openFragment(
                         FragmentPacket.ORDERS);
-            break;
+                break;
             case R.id.ethear_button:
-            FragmentTransactionManager.getInstance().openFragment(
+                FragmentTransactionManager.getInstance().openFragment(
                         FragmentPacket.ETHEAR);
-            break;
+                break;
             case R.id.test_test:
-            testClick();
-            break;
+                testClick();
+                break;
             case R.id.exit:
-            exitClick();
-            break;
+                exitClick();
+                break;
             case R.id.btn_prefs:
-            ContextHelper
+                ContextHelper
                         .getInstance()
                         .getCurrentActivity()
                         .startActivityForResult(
@@ -633,7 +643,7 @@ public class SwipeFragment extends FragmentPacket
                                         .getCurrentContext(),
                                         UserSettingActivity.class),
                                 RESULT_SETTINGS);
-            break;
+                break;
             case R.id.sendCrash :
                 showConfirmToast(false, "Address ");
                 break;
@@ -717,9 +727,9 @@ public class SwipeFragment extends FragmentPacket
                                 ContextHelper.getInstance()
                                         .getCurrentActivity()
                                         .stopService(new Intent(ContextHelper
-                                                                .getInstance()
-                                                                .getCurrentActivity(),
-                                                        SocketService.class));
+                                                .getInstance()
+                                                .getCurrentActivity(),
+                                                SocketService.class));
                                 ContextHelper.getInstance()
                                         .getCurrentActivity()
                                         .finish();
@@ -764,7 +774,7 @@ public class SwipeFragment extends FragmentPacket
             RunPingAndGeo.getInstance().stop();
             ContextHelper.getInstance().getCurrentContext()
                     .stopService(new Intent(ContextHelper.getInstance()
-                                    .getCurrentContext(),SocketService.class));
+                            .getCurrentContext(),SocketService.class));
             try {
                 Thread.sleep(500l);
             } catch (InterruptedException e) {e.printStackTrace();}
@@ -958,7 +968,7 @@ public class SwipeFragment extends FragmentPacket
                             Log.d(LOG_TAG, "ANSWER_OK createRegister");
 
                             byte[] body = RequestBuilder.createBodyRegisterOnRelay(ServerData
-                                                .getInstance().getNick(), true, loginResponse.peopleID);
+                                    .getInstance().getNick(), true, loginResponse.peopleID);
                             byte[] data = RequestBuilder
                                     .createSrvTransfereData(RequestBuilder.DEFAULT_CONNECTION_TYPE,
                                             loginResponse.srvID,
@@ -1038,7 +1048,7 @@ public class SwipeFragment extends FragmentPacket
                                         public void run() {
                                             AlertDHelper
                                                     .showDialogOk(
-                                                "Нет прав. Проверьте, правильно ли введёны данные в полях Логин, Позывный, Пароль");
+                                                            "Нет прав. Проверьте, правильно ли введёны данные в полях Логин, Позывный, Пароль");
                                             // ConnectionHelper.getInstance().stop();
                                         }
                                     });
@@ -1465,54 +1475,54 @@ public class SwipeFragment extends FragmentPacket
         MultiPacketListener.getInstance().addListener(
                 Packet.PING_RESPONCE,
                 new OnNetworkPacketListener() {
-            @Override
-            public void onNetworkPacket(Packet packet) {
-                Log.d(LOG_TAG, "PING_RESPONCE Test ping response.");
-            }
-        });
+                    @Override
+                    public void onNetworkPacket(Packet packet) {
+                        Log.d(LOG_TAG, "PING_RESPONCE Test ping response.");
+                    }
+                });
 
         // вычитываем и обновляем запросы после подключения
         MultiPacketListener.getInstance().addListener(
-            Packet.GET_ORDERS_RESPONCE,
+                Packet.GET_ORDERS_RESPONCE,
                 new OnNetworkPacketListener() {
-                @Override
-                public void onNetworkPacket(Packet packet) {
-                    final GetOrdersResponse pack = (GetOrdersResponse) packet;
-                    Log.i(LOG_TAG, "GET_ORDERS_RESPONCE goted" + pack.count()); // ok
-                    updateMyOrders(pack);
-                    if (pack.count() > 0 && FragmentTransactionManager.getInstance()
-                            .getId() != FragmentPacket.CURRENTORDERS) {
-                        ContextHelper.getInstance().runOnCurrentUIThread(
-                            new Runnable() {
-                                @Override
-                                public void run() {
-                                    // 333
-                                    int ordersAmount = pack.count();
-                                    ordersAmount = OrderManager
-                                            .getInstance()
-                                            .getCountOfOrdersByState(
-                                                    Order.STATE_PERFORMING);
-                                    if (ordersAmount > 0) {
-                                        mAlertText = "У вас "
-                                                + ordersAmount;
-                                        if (ordersAmount == 1) {
-                                            mAlertText += " текущий заказ.";
-                                        } else if (ordersAmount > 1
-                                                && ordersAmount < 5) {
-                                            mAlertText += " текущих заказа.";
-                                        } else {
-                                            mAlertText += " текущих заказов.";
+                    @Override
+                    public void onNetworkPacket(Packet packet) {
+                        final GetOrdersResponse pack = (GetOrdersResponse) packet;
+                        Log.i(LOG_TAG, "GET_ORDERS_RESPONCE goted" + pack.count()); // ok
+                        updateMyOrders(pack);
+                        if (pack.count() > 0 && FragmentTransactionManager.getInstance()
+                                .getId() != FragmentPacket.CURRENTORDERS) {
+                            ContextHelper.getInstance().runOnCurrentUIThread(
+                                    new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            // 333
+                                            int ordersAmount = pack.count();
+                                            ordersAmount = OrderManager
+                                                    .getInstance()
+                                                    .getCountOfOrdersByState(
+                                                            Order.STATE_PERFORMING);
+                                            if (ordersAmount > 0) {
+                                                mAlertText = "У вас "
+                                                        + ordersAmount;
+                                                if (ordersAmount == 1) {
+                                                    mAlertText += " текущий заказ.";
+                                                } else if (ordersAmount > 1
+                                                        && ordersAmount < 5) {
+                                                    mAlertText += " текущих заказа.";
+                                                } else {
+                                                    mAlertText += " текущих заказов.";
+                                                }
+                                                mAlertText += " Вы можете работать с ними через меню 'Заказ' -> 'Текущие'";
+                                                AlertDHelper
+                                                        .showDialogOk(mAlertText);
+                                            }
                                         }
-                                        mAlertText += " Вы можете работать с ними через меню 'Заказ' -> 'Текущие'";
-                                        AlertDHelper
-                                                .showDialogOk(mAlertText);
-                                    }
-                                }
-                        });
+                                    });
+                        }
+                        // updateMyOrders(pack);
                     }
-                    // updateMyOrders(pack);
-                }
-            });
+                });
 
         /** Getting distance packet from server */
         MultiPacketListener.getInstance().addListener(
@@ -1530,35 +1540,35 @@ public class SwipeFragment extends FragmentPacket
 
         // блокировка водителя
         MultiPacketListener.getInstance().addListener(
-            Packet.DRIVER_BLOCKED_PACK, new OnNetworkPacketListener() {
-                @Override
-                public void onNetworkPacket(Packet packet) {
-                    final DriverBlockedPack pack = (DriverBlockedPack) packet;
+                Packet.DRIVER_BLOCKED_PACK, new OnNetworkPacketListener() {
+                    @Override
+                    public void onNetworkPacket(Packet packet) {
+                        final DriverBlockedPack pack = (DriverBlockedPack) packet;
 
-                    Log.d(LOG_TAG,"goted DRIVER_BLOCKED_PACK " + pack.lockWith + " " + pack.lockTo); // ok
+                        Log.d(LOG_TAG,"goted DRIVER_BLOCKED_PACK " + pack.lockWith + " " + pack.lockTo); // ok
 
-                    disconnect();
+                        disconnect();
 
-                    ContextHelper.getInstance().runOnCurrentUIThread(
-                        new Runnable() {
-                            @Override
-                            public void run() {
-                                mAlertText = "Водитель заблокирован";
+                        ContextHelper.getInstance().runOnCurrentUIThread(
+                                new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        mAlertText = "Водитель заблокирован";
 
-                                if (pack.isForever) {
-                                    mAlertText += " навсегда";
-                                } else {
-                                    mAlertText += " по "
-                                            + Utils.dateToTimeString(pack.lockTo)
-                                            + " "
-                                            + Utils.dateToDateString(pack.lockTo);
-                                }
-                                mAlertText += " по причине " + pack.lockDescription + ".";
-                                AlertDHelper.showDialogOk(mAlertText);
-                            }
-                    });
-                }
-            });
+                                        if (pack.isForever) {
+                                            mAlertText += " навсегда";
+                                        } else {
+                                            mAlertText += " по "
+                                                    + Utils.dateToTimeString(pack.lockTo)
+                                                    + " "
+                                                    + Utils.dateToDateString(pack.lockTo);
+                                        }
+                                        mAlertText += " по причине " + pack.lockDescription + ".";
+                                        AlertDHelper.showDialogOk(mAlertText);
+                                    }
+                                });
+                    }
+                });
 
         MultiPacketListener.getInstance().addListener(
                 Packet.PPSCHANGE_STATE_RESPONCE, new OnNetworkPacketListener() {
@@ -2645,55 +2655,71 @@ public class SwipeFragment extends FragmentPacket
         return false;
     }
 
-    public class SamplePagerAdapter extends PagerAdapter {
-        List<View> pages = null;
+    //    public class SamplePagerAdapter extends PagerAdapter {
+//        List<View> pages = null;
+//
+//        public SamplePagerAdapter(List<View> pages) {
+//            this.pages = pages;
+//        }
+//
+//        @Override
+//        public Object instantiateItem(View collection, int position) {
+//            View v = pages.get(position);
+//            ((ViewPager) collection).addView(v, 0);
+//            return v;
+//        }
+//
+//        @Override
+//        public void destroyItem(View collection, int position, Object view) {
+//            // ((ViewPager) collection).removeView((View) view);
+//        }
+//
+//        @Override
+//        public int getCount() {
+//            return pages.size();
+//        }
+//
+//        @Override
+//        public boolean isViewFromObject(View view, Object object) {
+//            return view.equals(object);
+//        }
+//
+//        @Override
+//        public void finishUpdate(View arg0) {
+//        }
+//
+//        @Override
+//        public void restoreState(Parcelable arg0, ClassLoader arg1) {
+//        }
+//
+//        @Override
+//        public Parcelable saveState() {
+//            return null;
+//        }
+//
+//        @Override
+//        public void startUpdate(View arg0) {
+//
+//        }
+//    }
+    public class PagerAdapter extends FragmentPagerAdapter{
+        private List<Fragment> fragments;
 
-        public SamplePagerAdapter(List<View> pages) {
-            this.pages = pages;
+        public PagerAdapter(FragmentManager fm,List<Fragment> fragments) {
+            super(fm);
+            this.fragments = fragments;
         }
 
         @Override
-        public Object instantiateItem(View collection, int position) {
-            View v = pages.get(position);
-            ((ViewPager) collection).addView(v, 0);
-            return v;
-        }
-
-        @Override
-        public void destroyItem(View collection, int position, Object view) {
-            // ((ViewPager) collection).removeView((View) view);
+        public Fragment getItem(int position) {
+            return this.fragments.get(position);
         }
 
         @Override
         public int getCount() {
-            return pages.size();
-        }
-
-        @Override
-        public boolean isViewFromObject(View view, Object object) {
-            return view.equals(object);
-        }
-
-        @Override
-        public void finishUpdate(View arg0) {
-        }
-
-        @Override
-        public void restoreState(Parcelable arg0, ClassLoader arg1) {
-        }
-
-        @Override
-        public Parcelable saveState() {
-            return null;
-        }
-
-        @Override
-        public void startUpdate(View arg0) {
-
+            return this.fragments.size();
         }
     }
-
-
 
     public void drawRouteIfExist(ArrayList<LatLng> l) {
 

@@ -10,6 +10,7 @@
         android:layout_height="fill_parent"
         android:layout_weight="1"
         />
+
     <com.viewpagerindicator.CirclePageIndicator
         android:id="@+id/indicator"
         android:layout_height="wrap_content"
@@ -18,4 +19,5 @@
         app:fillColor="#66F8AB15"
         app:pageColor="#66000000"
         />
+
 </LinearLayout>
