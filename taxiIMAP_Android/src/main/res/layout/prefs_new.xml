@@ -566,6 +566,7 @@
                     android:textColor="@android:color/white"
                     android:textStyle="bold"
                     android:paddingBottom="5dp"
+                    android:inputType="number"
                     android:paddingTop="10dp"/>
 
                 <EditText
