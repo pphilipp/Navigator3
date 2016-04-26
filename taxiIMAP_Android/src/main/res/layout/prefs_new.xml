@@ -566,7 +566,6 @@
                     android:textColor="@android:color/white"
                     android:textStyle="bold"
                     android:paddingBottom="5dp"
-                    android:inputType="number"
                     android:paddingTop="10dp"/>
 
                 <EditText
@@ -575,6 +574,7 @@
                     android:id="@+id/prefDispPhone"
                     android:background="@drawable/input_back"
                     android:paddingStart="7dp"
+                    android:inputType="number"
                     android:gravity="center_vertical|center_horizontal"
                     android:paddingEnd="7dp"/>
 
