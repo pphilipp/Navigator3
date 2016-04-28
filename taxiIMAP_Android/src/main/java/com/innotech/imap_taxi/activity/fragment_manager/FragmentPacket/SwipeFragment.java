@@ -2476,13 +2476,11 @@ public class SwipeFragment extends FragmentPacket
 
             }
 
-            System.out.println("!!!!!!!!!!!!!!! " + folder);
-
             order.setFromServer(true);
 
             OrderManager.getInstance().addOrder(order);
 
-            /** Request to server for distance packet order.getOrderID()*/
+            /** Request to server for distance packet {order.getOrderID()}*/
             byte[] body = RequestBuilder.getDistanceOfOrderAnswer(order.getOrderID());
             byte[] data = RequestBuilder.createSrvTransfereData(
                     RequestBuilder.DEFAULT_CONNECTION_TYPE, ServerData

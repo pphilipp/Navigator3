@@ -933,6 +933,13 @@ public class Order {
 		// archive.put("accepted", accepted);
 		// archive.put("isArchive", isArchive);
 	}
+	public String getEntrance() {
+		return this.entrance;
+	}
+
+	public void setEntrance(String entrance) {
+		this.entrance = entrance;
+	}
 
 	public int getDistanceToOrderPlace() {
 		return distanceToOrderPlace;

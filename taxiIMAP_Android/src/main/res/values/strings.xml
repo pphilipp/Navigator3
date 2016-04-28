@@ -78,6 +78,7 @@
     <string name="str_executing">Выполняю</string>
     <string name="str_no_client">НЕТ КЛИЕНТА</string>
     <string name="str_execute">Выполнил</string>
+    <string name="str_address_to">Нет конечного адреса</string>
     <!--<string name="str_folder_doing"></string>-->
 
 </resources>

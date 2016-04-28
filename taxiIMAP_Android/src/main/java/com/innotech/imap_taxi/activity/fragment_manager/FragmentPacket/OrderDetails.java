@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Parcelable;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.text.Html;
@@ -49,12 +50,8 @@ import com.innotech.imap_taxi.graph_utils.RouteView;
 import com.innotech.imap_taxi.helpers.ContextHelper;
 import com.innotech.imap_taxi.helpers.RequestHelper;
 import com.innotech.imap_taxi.network.ConnectionHelper;
-import com.innotech.imap_taxi.network.DistanceOfOrderAnswer;
-import com.innotech.imap_taxi.network.MultiPacketListener;
-import com.innotech.imap_taxi.network.OnNetworkPacketListener;
 import com.innotech.imap_taxi.network.RequestBuilder;
 import com.innotech.imap_taxi.network.Utils;
-import com.innotech.imap_taxi.network.packet.Packet;
 import com.innotech.imap_taxi.utile.AlertDHelper;
 import com.innotech.imap_taxi.utile.DbArchHelper;
 import com.innotech.imap_taxi.utile.NotificationService;
@@ -1284,19 +1281,10 @@ public class OrderDetails extends FragmentPacket {
 			public void run() {
 				tvAutoClassTxt.setText(convertToVerticalView(order.autoClass));
 				llColorLayout.setBackgroundColor(order.colorClass);
-				String addressFact = (order.getAddressFact() != null
-						|| !order.getAddressFact().equals("0")
-						|| !order.getAddressFact().equals(""))
-						? order.getAddressFact() : "";
-				tvAdressFrom1.setText(order.getStreet() + ", " + addressFact);
-				// tvAdressFrom2.setText(OrderManager.getInstance().getOrder(oldOrderId).getAddress().get(0).from);
-				String addressTo = "No addressTo";
-				if (order.getAddress().size() > 0) {
-					addressTo = order.getAddress().get(
-							order.getAddress().size() - 1).to;
-				}
 
-				tvAdressTo.setText(addressTo);
+				tvAdressFrom1.setText(validationTextViewAddressFrom(order));
+				tvAdressTo.setText(validationTextViewAddressTo(order));
+
 				String regionFromOrder = (order.getRegion() != null && !order
 						.getRegion().equals("")) ? order.getRegion()
 						: ContextHelper.getInstance().getCurrentContext()
@@ -1485,6 +1473,46 @@ public class OrderDetails extends FragmentPacket {
 				//end btnTest
 			}
 		});
+	}
+
+	private static String validationTextViewAddressTo(Order order) {
+		String addressTo = ContextHelper.getInstance().getCurrentContext().getResources()
+				.getString(R.string.str_address_to);
+
+		if (order.getAddress().size() > 0) {
+			addressTo = order.getAddress().get(order.getAddress().size() - 1).to;
+		}
+
+		StringBuilder address = new StringBuilder(
+				ContextHelper.getInstance().getCurrentContext().getResources()
+						.getString(R.string.str_address_to));
+
+		return addressTo;
+	}
+
+	@NonNull
+	private static String validationTextViewAddressFrom(Order order) {
+		StringBuffer addressFrom = new StringBuffer();
+//		addressFrom.append(order.getOrderID());
+		addressFrom.append(order.getStreet());
+		addressFrom.append(order.getHouse().equals("0")
+				|| order.getHouse().equals("")
+				|| order.getHouse() == null
+				? "" : ", д." + order.getHouse());
+		addressFrom.append(order.getFlat().equals("00")
+				|| order.getFlat().equals("")
+				|| order.getFlat() == null
+				? "" : ", кв." + order.getFlat());
+		addressFrom.append(order.getEntrance().equals("00")
+				|| order.getEntrance().equals("")
+				|| order.getEntrance() == null
+				? "" : ", пар." + order.getEntrance());
+		addressFrom.append(order.getBuilding().equals("00")
+				|| order.getBuilding().equals("")
+				|| order.getBuilding() == null
+				? "" : ", корп." + order.getBuilding());
+
+		return addressFrom.toString();
 	}
 
 	// arrive timer
