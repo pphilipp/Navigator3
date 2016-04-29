@@ -94,8 +94,7 @@ public class OrdersAdapter extends BaseAdapter {
 			myHolder.orderFrom.setSelected(true);*/
 
 			if (longView) {
-				myHolder.orderTo = (TextView) convertView
-						.findViewById(R.id.toTxt);
+				myHolder.orderTo = (TextView) convertView.findViewById(R.id.toTxt);
 				//marquee
 				/*myHolder.orderTo.setEllipsize(TextUtils.TruncateAt.MARQUEE);
 				myHolder.orderTo.setSingleLine(true);
@@ -139,7 +138,8 @@ public class OrdersAdapter extends BaseAdapter {
 		float priceFloat = (orders.get(position).getFare() == 0) ? 0 : orders
 				.get(position).getFare();
 		String price = String.format("%.2f", priceFloat);
-		String addressTo = "No addressTo";
+		String addressTo = ContextHelper.getInstance().getCurrentContext()
+				.getResources().getString(R.string.str_address_to);
 //		String addressFrom = (orders.get(position).getAddress() != null) ? orders
 //				.get(position).getAddressFact() : "No addressFrom";
 
