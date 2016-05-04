@@ -3,8 +3,7 @@
     <style name="Theme.NoTitle" parent="@android:style/Theme.Light.NoTitleBar">
 
     </style>
-    <style name="Theme.NoTitle.Black" parent="@android:style/Theme.NoTitleBar">
 
-    </style>
+
 
 </resources>

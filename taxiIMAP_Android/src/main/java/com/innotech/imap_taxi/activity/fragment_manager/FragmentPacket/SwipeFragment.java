@@ -279,6 +279,8 @@ public class SwipeFragment extends FragmentPacket
         }
 
         toggleBtnHide = (ToggleButton) vMap.findViewById(R.id.hide_ether);
+
+        if(toggleBtnHide != null)
         toggleBtnHide.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {

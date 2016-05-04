@@ -324,6 +324,7 @@
                     android:id="@+id/prefServerMaster"
                     android:background="@drawable/input_back"
                     android:paddingStart="7dp"
+                    android:textColor="#444"
                     android:gravity="center_vertical|center_horizontal"
                     android:inputType="phone"
                     android:paddingEnd="7dp"/>
@@ -346,6 +347,7 @@
                     android:ems="10"
                     android:id="@+id/prefPortMaster"
                     android:paddingStart="7dp"
+                    android:textColor="#444"
                     android:background="@drawable/input_back"
                     android:gravity="center_vertical|center_horizontal"
                     android:paddingEnd="7dp"/>
@@ -367,6 +369,7 @@
                     android:id="@+id/prefServerSlave"
                     android:background="@drawable/input_back"
                     android:paddingStart="7dp"
+                    android:textColor="#444"
                     android:gravity="center_vertical|center_horizontal"
                     android:inputType="phone"
                     android:paddingEnd="7dp"/>
@@ -387,6 +390,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="phone"
                     android:ems="10"
+                    android:textColor="#444"
                     android:id="@+id/prefPortSlave"
                     android:paddingStart="7dp"
                     android:background="@drawable/input_back"
@@ -580,6 +584,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/prefDispPhone"
                     android:background="@drawable/input_back"
+                    android:textColor="#444"
                     android:paddingStart="7dp"
                     android:inputType="phone"
                     android:gravity="center_vertical|center_horizontal"
@@ -601,6 +606,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="phone"
                     android:ems="10"
+                    android:textColor="#444"
                     android:id="@+id/prefFontSize"
                     android:paddingStart="7dp"
                     android:background="@drawable/input_back"
