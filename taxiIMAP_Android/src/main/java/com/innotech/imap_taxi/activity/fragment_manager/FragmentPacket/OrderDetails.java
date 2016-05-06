@@ -34,13 +34,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.innotech.imap_taxi.activity.UserSettingActivity;
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentTransactionManager;
+import com.innotech.imap_taxi.adapters.AddressAdapter;
 import com.innotech.imap_taxi.core.OrderManager;
 import com.innotech.imap_taxi.core.StateObserver;
+import com.innotech.imap_taxi.datamodel.Address;
+import com.innotech.imap_taxi.datamodel.DispOrder;
 import com.innotech.imap_taxi.datamodel.DispOrder.DispSubOrder;
 import com.innotech.imap_taxi.datamodel.Order;
 import com.innotech.imap_taxi.datamodel.ServerData;
@@ -115,6 +119,7 @@ public class OrderDetails extends FragmentPacket {
 	private static LinearLayout llFlipClock;
 	private static LinearLayout llRoute;
 	private static LinearLayout llRouteInfoLayout;
+	private static ListView addressListView;
 	private static ViewPager mPager;
 	public static Button btnArrived;
 	public static Button btnDo;
@@ -138,6 +143,12 @@ public class OrderDetails extends FragmentPacket {
 	private static View viewComments;
 	private static View viewFeatures;
 	private static PageIndicator mIndicator;
+
+	private static Context mContext;
+	//list of addresses in this order
+	private static List<Address> route;
+	private static AddressAdapter mAdapter;
+
 	// private static Button btnArrived1;
 	// private static RelativeLayout edditionalInfoLayout;
 	private static TextView extraTxt;
@@ -149,8 +160,9 @@ public class OrderDetails extends FragmentPacket {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
+		Log.d(LOG_TAG, "onCreateView()");
 		View view = inflater.inflate(R.layout.fragment_order_details_new1, container, false);
-
+		mContext = ContextHelper.getInstance().getCurrentContext();
 		// define Layouts for FlipClock
 		rlTenMinLayout = (RelativeLayout) view.findViewById(R.id.tenMinLayout);
 		rlMinLayout = (RelativeLayout) view.findViewById(R.id.minLayout);
@@ -218,10 +230,10 @@ public class OrderDetails extends FragmentPacket {
 		Typeface t = Typeface.createFromAsset(ContextHelper.getInstance()
 				.getCurrentContext().getAssets(), "fonts/Roboto-Condensed.ttf");
 
-		tvAdressFrom1.setTypeface(t);
-		tvAdressTo.setTypeface(t);
-		tvRegion.setTypeface(t);
-		tvAdditionalTxt.setTypeface(t);
+//		tvAdressFrom1.setTypeface(t);
+//		tvAdressTo.setTypeface(t);
+//		tvRegion.setTypeface(t);
+//		tvAdditionalTxt.setTypeface(t);
 
 		t = Typeface.createFromAsset(ContextHelper.getInstance()
 				.getCurrentContext().getAssets(), "fonts/BebasNeueRegular.ttf");
@@ -252,11 +264,29 @@ public class OrderDetails extends FragmentPacket {
 		viewFeatures = inflater.inflate(R.layout.order_comment_fragment, null);
 		mIndicator = (CirclePageIndicator) view.findViewById(R.id.indicator);
 
+		addressListView = (ListView) view.findViewById(R.id.address_listview);
+		initRoutOrder(orderID);
+		addressListView.setAdapter(mAdapter);
+		Log.d(LOG_TAG, "route.size()------->" + route.size());
+
+		//fill address listView
+		if (mAdapter == null) {
+			mAdapter = new AddressAdapter(mContext, route);
+		} else {
+			ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
+				@Override
+				public void run() {
+					mAdapter.upDateList(route);
+				}
+			});
+		}
+
 		return view;
 	}// end onCreateView
 
 	@Override
 	public void onViewStateRestored(Bundle savedInstanceState) {
+		Log.d(LOG_TAG, "onViewStateRestored()");
 		// tells the fragment that all of the saved state of its view hierarchy has been restored
 		super.onViewStateRestored(savedInstanceState);
 		if (isArchiveOrder && mOrder != null) {
@@ -270,6 +300,7 @@ public class OrderDetails extends FragmentPacket {
 	@Override
 	public void onResume() {
 		super.onResume();
+		Log.d(LOG_TAG, "onResume()");
 		if (Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(
 				ContextHelper.getInstance().getCurrentContext()).getString(
 				UserSettingActivity.KEY_TEXT_SIZE, "")) != 0) {
@@ -280,10 +311,23 @@ public class OrderDetails extends FragmentPacket {
 											.getCurrentContext())
 							.getString(UserSettingActivity.KEY_TEXT_SIZE, "")) + 14);
 		}
+
+		//check if there are new addresses
+		Address newAddress = GetAddressFragment.getCurrentAddress();
+		if (newAddress != null && route != null) {
+			route.add(newAddress);
+			if (mAdapter != null) {
+				mAdapter.upDateList(route);
+			}
+		}
+		//upDate fragment
+		initRoutOrder(orderID);
+
 	}
 
 	@Override
 	public void onStop() {
+		Log.d(LOG_TAG, "onStop()");
 		super.onStop();
 		if (countDownTimer3 != null) {
 			countDownTimer3.cancel();
@@ -292,12 +336,13 @@ public class OrderDetails extends FragmentPacket {
 
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
-		super.onSaveInstanceState(outState);
 		Log.d(LOG_TAG, "onSaveInstanceState()");
+		super.onSaveInstanceState(outState);
 		setUserVisibleHint(true);
 	}
 
 	public static void setOrderId(final int orderID) {
+		Log.d(LOG_TAG, "setOrderId()");
 		OrderDetails.orderID = orderID;
 		isArchiveOrder = false;
 
@@ -318,6 +363,7 @@ public class OrderDetails extends FragmentPacket {
 		});
 
 		final Order ord = OrderManager.getInstance().getOrder(orderID);
+		Log.d(LOG_TAG, "current order ----->" + ord.getOrderID());
 
 		// for btnTest accept order without button
 		/*OrderManager.getInstance().getOrder(orderID).accepted = true;
@@ -967,7 +1013,7 @@ public class OrderDetails extends FragmentPacket {
 			}
 		});
 
-	}// end flip()
+	}// end setOrderId()
 
 	public static void flip(int changeNumber, final RelativeLayout myView) {
 		Context mContext = ContextHelper.getInstance().getCurrentContext();
@@ -1276,14 +1322,15 @@ public class OrderDetails extends FragmentPacket {
 	}
 
 	private static void fillViewsForOrder(final Order order) {
+		Log.d(LOG_TAG, "fillViewsForOrder()");
 		ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
 			@Override
 			public void run() {
 				tvAutoClassTxt.setText(convertToVerticalView(order.autoClass));
 				llColorLayout.setBackgroundColor(order.colorClass);
 
-				tvAdressFrom1.setText(validationTextViewAddressFrom(order));
-				tvAdressTo.setText(validationTextViewAddressTo(order));
+//				tvAdressFrom1.setText(validationTextViewAddressFrom(order));
+//				tvAdressTo.setText(validationTextViewAddressTo(order));
 
 				String regionFromOrder = (order.getRegion() != null && !order
 						.getRegion().equals("")) ? order.getRegion()
@@ -1467,12 +1514,84 @@ public class OrderDetails extends FragmentPacket {
 				if (order.getAddress().size() > 1) {
 					routeType = 3;
 				}
-				//btnTest to draw route
-
-				routeView.setRouteType(routeType);
-				//end btnTest
 			}
 		});
+
+		/**
+		 * Init rout from order and fill data to listView.
+		 * */
+		initRoutOrder(order.getOrderID());
+		addressListView.setAdapter(mAdapter);
+		//fill address listView
+		if (mAdapter == null) {
+			mAdapter = new AddressAdapter(mContext, route);
+		}
+		else {
+			ContextHelper.getInstance().runOnCurrentUIThread(new Runnable() {
+				@Override
+				public void run() {
+					mAdapter.upDateList(route);
+				}
+			});
+		}
+	} //end fillViewsForOrders()
+
+	private static void initRoutOrder(int orderID) {
+		/**
+		 * Getting all rout from current order and fill collection for adapter.
+		 * */
+		Log.d(LOG_TAG, "initRoutOrder()");
+		Log.d(LOG_TAG, "orderId = " + orderID);
+		Order currentOrder = OrderManager.getInstance().getOrder(orderID);
+
+		//initialize routes list
+		if (route == null) {
+			route = new ArrayList<>();
+		}
+
+		if (currentOrder != null && route.size() == 0) {
+
+			/** get Address from and setUp it */
+			final Address fromAddress = new Address();
+			fromAddress.setStreetName(currentOrder.getStreet());
+
+			//get house number
+			final String addressFact = (currentOrder.getAddressFact() != null
+					|| !currentOrder.getAddressFact().equals("0")
+					|| !currentOrder.getAddressFact().equals(""))
+					? currentOrder.getAddressFact()
+					: "";
+			fromAddress.setHouse(addressFact);
+
+			//Entrance
+			fromAddress.setEntrance((currentOrder.getParade() != null
+					&& !currentOrder.getParade().equals(""))
+					? currentOrder.getParade()
+					: "");
+
+			//flat
+			fromAddress.setFlat((currentOrder.getFlat() != null
+					&& !currentOrder.getFlat().equals(""))
+					? currentOrder.getFlat()
+					: "");
+
+			route.add(fromAddress);
+
+			/** get subOrders */
+			for (DispOrder.DispSubOrder subOrder : currentOrder.getAddress()) {
+				Log.d(LOG_TAG, "SubOrder");
+				final Address toAddress = new Address();
+				String[] splitAddr = subOrder.to.split(",");
+				final String curStreet = splitAddr[0];
+				final String curHouse = splitAddr[1].trim();
+				toAddress.setStreetName(curStreet);
+				Log.d(LOG_TAG, curStreet);
+				//getStreetThread.start();
+				toAddress.setHouse(curHouse);
+
+				route.add(toAddress);
+			}
+		}
 	}
 
 	private static String validationTextViewAddressTo(Order order) {

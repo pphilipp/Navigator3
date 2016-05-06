@@ -28,7 +28,6 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.innotech.imap_taxi.activity.fragment_manager.FragmentTransactionManager;
 import com.innotech.imap_taxi.adapters.AddressAdapter;
 import com.innotech.imap_taxi.datamodel.Address;
@@ -39,11 +38,9 @@ import com.innotech.imap_taxi.datamodel.street;
 import com.innotech.imap_taxi.helpers.ContextHelper;
 import com.innotech.imap_taxi.network.postRequests.ServiceConnection;
 import com.innotech.imap_taxi3.R;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -51,47 +48,47 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 /**
  * Created by Sergey on 12.11.2015.
  * Fragment provides editing of the current order
  */
-public class OwnOrder extends FragmentPacket {
+public class OwnOrder extends FragmentPacket implements View.OnClickListener{
     public static final String LOG_TAG = OwnOrder.class.getSimpleName();
 
     //tag for logs
     private static final String TAG = "OWN_ORDER";
     //car class choose button
-    private Button classBtn;
+    @Bind(R.id.class_btn) Button classBtn;
     //cancel edit and quit button
-    private Button cancelBtn;
+    @Bind(R.id.cancel_btn) Button cancelBtn;
     //store and send new odrder ot server button
-    private Button createBtn;
+    @Bind(R.id.create_btn) Button createBtn;
     //Text field for order cost
-    private TextView costTxt;
+    @Bind(R.id.costTxt) TextView costTxt;
     private Context mContext;
     private Typeface mTypeface;
 
     //Additional features indicator
-    private ImageView featuresImage;
+    @Bind(R.id.features_image) ImageView featuresImage;
     //Comments indicator
-    private ImageView commentsImage;
+    @Bind(R.id.comments_image) ImageView commentsImage;
     //wtf?
-    private ImageView fingerPrintImage;
+    @Bind(R.id.finger_print_image) ImageView fingerPrintImage;
 
     //listview for addresses in route
-    private ListView addressListView;
-
-    private AddressAdapter mAdapter;
+    @Bind(R.id.address_listview) ListView addressListView;
 
     //layout container for additional features. It must be visible if feature list is not blank
-    private LinearLayout featuresLayout;
+    @Bind(R.id.features_layout) LinearLayout featuresLayout;
     //text view for feature list
-    private TextView featuresTxt;
+    @Bind(R.id.features_list_txt) TextView featuresTxt;
 
     //add/delete address buttons
-    private ImageView addAddressImage;
-    private ImageView minusAddressImage;
+    @Bind(R.id.add_address_img) ImageView addAddressImage;
+    @Bind(R.id.minus_address_img) ImageView minusAddressImage;
 
     //class auto
     private final int allClass = 4;
@@ -119,8 +116,9 @@ public class OwnOrder extends FragmentPacket {
     //current order price
     private String currentPrice;
     //progressBar which is shown while fetching cost
-    private ProgressBar costProgress;
+    @Bind(R.id.cost_progress) ProgressBar costProgress;
     private String defaultComments = "";
+    private AddressAdapter mAdapter;
 
     //set order for this view
     public static void setCurrentOrder(Order mOrder) {
@@ -135,9 +133,8 @@ public class OwnOrder extends FragmentPacket {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View ownOrderView = inflater.inflate(R.layout.own_order,
-                container, false);
-
+        View ownOrderView = inflater.inflate(R.layout.own_order, container, false);
+        ButterKnife.bind(this, ownOrderView);
         mContext = ContextHelper.getInstance().getCurrentContext();
 
         //get remote server
@@ -146,7 +143,6 @@ public class OwnOrder extends FragmentPacket {
             @Override
             public void run() {
                 sc.getServer();
-
                 Log.d(LOG_TAG, "get remote server");
             }
         });
@@ -157,106 +153,22 @@ public class OwnOrder extends FragmentPacket {
                 .getCurrentContext().getAssets(), "fonts/Roboto-Condensed.ttf");
 
         //define view elements and set typeFace
-        classBtn = (Button) ownOrderView.findViewById(R.id.class_btn);
         classBtn.setTypeface(mTypeface);
-        cancelBtn = (Button) ownOrderView.findViewById(R.id.cancel_btn);
         cancelBtn.setTypeface(mTypeface);
-        createBtn = (Button) ownOrderView.findViewById(R.id.create_btn);
         createBtn.setTypeface(mTypeface);
-        costTxt = (TextView) ownOrderView.findViewById(R.id.costTxt);
         costTxt.setTypeface(mTypeface);
-
-        featuresImage = (ImageView) ownOrderView.findViewById(R.id.features_image);
-        commentsImage = (ImageView) ownOrderView.findViewById(R.id.comments_image);
-        fingerPrintImage = (ImageView) ownOrderView.findViewById(R.id.finger_print_image);
-
-        featuresLayout = (LinearLayout) ownOrderView.findViewById(R.id.features_layout);
-        featuresTxt = (TextView) ownOrderView.findViewById(R.id.features_list_txt);
         featuresTxt.setTypeface(mTypeface);
 
-        costProgress = (ProgressBar) ownOrderView.findViewById(R.id.cost_progress);
-
-        addressListView = (ListView) ownOrderView.findViewById(R.id.address_listview);
-
-
         //setUp onClickListeners
-        classBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showClassDialog(mContext);
-            }
-        });
-        featuresImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showFeaturesDialog(mContext);
-            }
-        });
-        commentsImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showCommentDialog(mContext);
-            }
-        });
-
-        //quit back to order details
-        cancelBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransactionManager.getInstance().back();
-            }
-        });
-
-        //send order to server
-        createBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sendOrder();
-
-            }
-        });
-
-        //get add/minus buttons and assign click events
-        addAddressImage = (ImageView) ownOrderView.findViewById(R.id.add_address_img);
-        minusAddressImage = (ImageView) ownOrderView.findViewById(R.id.minus_address_img);
-
+        classBtn.setOnClickListener(this);
+        featuresImage.setOnClickListener(this);
+        commentsImage.setOnClickListener(this);
+        cancelBtn.setOnClickListener(this);
+        createBtn.setOnClickListener(this);
         //add address to route. new address wil be appended to the end of the current route
-        addAddressImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //start add address fragment and send there current order
-                GetAddressFragment.setCurrentOrder(currentOrder);
-                FragmentTransactionManager.getInstance().openFragment(FragmentPacket.GET_ADDRESS);
-            }
-        });
-
+        addAddressImage.setOnClickListener(this);
         //delete last address from the route. it is impossible to delete address "from"
-        minusAddressImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //we can not delete address "from"
-                if (route.size() > 1) {
-                    route.remove(route.size() - 1);
-                    //upDate list
-                    mAdapter.upDateList(route);
-                    if (route.size() > 1) {
-                        //upDate price
-                        upDatePriceFromServer();
-                    } else {
-                        //if there is only one address set 0 price
-                        costTxt.setText(getPriceFormat("0.00"));
-                    }
-                    Toast.makeText(mContext, mContext.getResources().getString(R.string.address_deleted), Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(mContext, mContext.getResources().getString(R.string.address_cannt_be_deleted), Toast.LENGTH_SHORT).show();
-                }
-                //log list of products
-                for (Address mAddress : route) {
-                    Log.d(TAG, "minus button check address = " + mAddress.getStreetName());
-                }
-
-            }
-        });
+        minusAddressImage.setOnClickListener(this);
 
         //update all fields
         upDateOwnOrderState();
@@ -666,7 +578,7 @@ public class OwnOrder extends FragmentPacket {
             Thread getStreetIDThread = new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    Log.d(TAG, "from = " + fromAddress.getStreetName());
+                    Log.d(LOG_TAG, "from = " + fromAddress.getStreetName());
                     fromAddress.setStreetID(getStreetID(fromAddress.getStreetName()));
                     fromAddress.setHouseID(getHouseID(fromAddress.getStreetID(), addressFact));
                 }
@@ -683,20 +595,20 @@ public class OwnOrder extends FragmentPacket {
                     currentOrder.getFlat() : "");
 
             route.add(fromAddress);
+
             //get subOrders
             for (DispOrder.DispSubOrder subOrder : currentOrder.getAddress()) {
-                Log.d(TAG, "SubOrder");
+                Log.d(LOG_TAG, "SubOrder");
                 final Address toAddress = new Address();
                 String[] splitAddr = subOrder.to.split(",");
                 final String curStreet = splitAddr[0];
                 final String curHouse = splitAddr[1].trim();
                 toAddress.setStreetName(curStreet);
-                Log.d(TAG, curStreet);
-                Log.d(TAG, curStreet);
+                Log.d(LOG_TAG, curStreet);
                 Thread getStreetThread = new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        Log.d(TAG, "to = " + curStreet);
+                        Log.d(LOG_TAG, "to = " + curStreet);
                         toAddress.setStreetID(getStreetID(curStreet));
                         toAddress.setHouseID(getHouseID(toAddress.getStreetID(), curHouse));
                     }
@@ -704,6 +616,7 @@ public class OwnOrder extends FragmentPacket {
                 executor.execute(getStreetThread);
                 //getStreetThread.start();
                 toAddress.setHouse(curHouse);
+
                 route.add(toAddress);
             }
 
@@ -1008,6 +921,59 @@ public class OwnOrder extends FragmentPacket {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.class_btn :
+                //send order to server
+                showClassDialog(mContext);
+                break;
+            case R.id.features_image :
+                showFeaturesDialog(mContext);
+                break;
+            case R.id.comments_image :
+                //quit back to order details
+                showCommentDialog(mContext);
+                break;
+            case R.id.cancel_btn :
+                FragmentTransactionManager.getInstance().back();
+                break;
+            case R.id.create_btn:
+                //send order to server
+               sendOrder();
+                break;
+            case R.id.add_address_img :
+                GetAddressFragment.setCurrentOrder(currentOrder);
+                FragmentTransactionManager.getInstance()
+                        .openFragment(FragmentPacket.GET_ADDRESS);
+                break;
+
+            case R.id.minus_address_img :
+                //we can not delete address "from"
+                if (route.size() > 1) {
+                    route.remove(route.size() - 1);
+                    //upDate list
+                    mAdapter.upDateList(route);
+                    if (route.size() > 1) {
+                        //upDate price
+                        upDatePriceFromServer();
+                    } else {
+                        //if there is only one address set 0 price
+                        costTxt.setText(getPriceFormat("0.00"));
+                    }
+                    Toast.makeText(mContext, mContext.getResources().getString(R.string.address_deleted), Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(mContext, mContext.getResources().getString(R.string.address_cannt_be_deleted), Toast.LENGTH_SHORT).show();
+                }
+                //log list of products
+                for (Address mAddress : route) {
+                    Log.d(TAG, "minus button check address = " + mAddress.getStreetName());
+                }
+
+            break;
+        }
     }
 
     /**
