@@ -192,6 +192,7 @@ public class NavigatorMenuActivity extends FragmentActivity
 			dialog.cancel();
 			// dialog.get
 		}
+		//test git
 		/*
 		 * Editor ed= ContextHelper.getInstance().getSharedPreferences().edit();
 		 * ed.putBoolean("onpause", true); ed.commit();
