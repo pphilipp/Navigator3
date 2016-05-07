@@ -480,8 +480,8 @@ public class NavigatorMenuActivity extends FragmentActivity
 	}
 
 	private void initTypefaceFontsElements() {
-		digitalClock.setTypeface(Typeface.createFromAsset(getAssets(),
-				"fonts/TickingTimebombBB.ttf"));
+//		digitalClock.setTypeface(Typeface.createFromAsset(getAssets(),
+//				"fonts/TickingTimebombBB.ttf"));
 		driverNo.setTypeface(Typeface.createFromAsset(getAssets(),
 				"fonts/digital-7.ttf"));
 	}
