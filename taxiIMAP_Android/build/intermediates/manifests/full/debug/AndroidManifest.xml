@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.innotech.imap_taxi3"
     android:versionCode="55"
-    android:versionName="3.1.0.66" >
+    android:versionName="3.1.70" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -45,11 +45,11 @@
 
     <application
         android:name="com.innotech.imap_taxi.activity.MyImapApp"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:persistent="true"
-        android:theme="@style/Theme.NoTitle" >
+        android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         <activity
             android:name="com.innotech.imap_taxi.activity.NavigatorMenuActivity"
             android:alwaysRetainTaskState="true"
@@ -62,9 +62,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.innotech.imap_taxi.activity.UserSettingActivity"
-            android:theme="@style/Theme.NoTitle" >
+        <activity android:name="com.innotech.imap_taxi.activity.UserSettingActivity" >
         </activity>
         <activity
             android:name="com.innotech.imap_taxi.activity.MainTaxometr"
@@ -83,45 +81,9 @@
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="f79bd91ef65107c684f7a6dcd15131ab20ab0e7f" />
-        <!-- debug -->
-
-
-        <!-- <meta-data -->
-        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
-        <!-- android:value="AIzaSyCytFleCz03ZS5HBnnd7GPTiM7uVOgN32w" /> -->
-
-
-        <!-- debug imap_taxi2 -->
-
-
-        <!-- <meta-data -->
-        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
-        <!-- android:value="AIzaSyBY4Q9soaNfeGx4r-OvNZDQmF1RtsQse88" /> -->
-
-
-        <!-- imap_taxi2 -->
-
         <meta-data
-            android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBVAfzJhy7fZ1_s3UuPnwe47NfkfVAb_Fc" />
-        <!-- android:value="AIzaSyDtpZ7gEN6v4hSQozN0ouG2UWZEFpgxSV0" / -->
-
-
-        <!-- AIzaSyCQGZtttZrBoLGbOq5c2NOnd7ligeDg4t0 -->
-
-
-        <!-- imap_taxi_symi -->
-
-
-        <!-- <meta-data -->
-        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
-        <!-- android:value="AIzaSyARcrmK2K2bRSSrEPaBRX_5Cf2_QXTR54A" /> -->
-
-
-        <!-- <meta-data -->
-        <!-- android:name="com.google.android.maps.v2.API_KEY" -->
-        <!-- android:value="AIzaSyBxEmVk2_CjnrQQl-X1YmPwL-VQzPiofZk" /> -->
-
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
     </application>
 
 </manifest>

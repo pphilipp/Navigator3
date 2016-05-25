@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-small-v4\\order_fragment.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout-small\\order_fragment.xml"
+        "merged": "/Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout-small-v4/activity_order_details.xml",
+        "source": "/Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/res/layout-small/activity_order_details.xml"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\layout-small-v4\\activity_order_details.xml",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\layout-small\\activity_order_details.xml"
+        "merged": "/Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/layout-small-v4/order_fragment.xml",
+        "source": "/Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/res/layout-small/order_fragment.xml"
     }
 ]

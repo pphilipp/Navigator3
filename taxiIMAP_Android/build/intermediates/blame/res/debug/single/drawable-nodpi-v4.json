@@ -1,14 +1,14 @@
 [
     {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\background_pattern.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-nodpi\\background_pattern.png"
+        "merged": "/Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable-nodpi-v4/background_pattern.png",
+        "source": "/Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/res/drawable-nodpi/background_pattern.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\back_pattern.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-nodpi\\back_pattern.png"
+        "merged": "/Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable-nodpi-v4/back_pattern.png",
+        "source": "/Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/res/drawable-nodpi/back_pattern.png"
     },
     {
-        "merged": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\back_pattern1.png",
-        "source": "D:\\innotech\\Workspace\\ImapNavigator3\\taxiIMAP_Android\\src\\main\\res\\drawable-nodpi\\back_pattern1.png"
+        "merged": "/Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/res/merged/debug/drawable-nodpi-v4/back_pattern1.png",
+        "source": "/Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/res/drawable-nodpi/back_pattern1.png"
     }
 ]

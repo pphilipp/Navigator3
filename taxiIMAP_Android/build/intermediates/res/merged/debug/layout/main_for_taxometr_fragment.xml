@@ -7,42 +7,6 @@
     <FrameLayout
         android:id="@+id/fgrmContTaxoMetr"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/linearLayout9"/>
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:background="@drawable/divider"
-        android:layout_above="@+id/linearLayout9"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@drawable/dark_back2"
-        android:gravity="center_vertical|center_horizontal"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/linearLayout9">
-
-        <Button
-            android:id="@+id/btn_back"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:background="@drawable/transparent_button"
-            android:gravity="center_vertical|center_horizontal"
-            android:padding="5dp"
-            android:text="Назад"
-            android:textColor="@drawable/transparent_button_text"
-            android:textSize="@dimen/transparent_button_text_size" />
-    </LinearLayout>
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

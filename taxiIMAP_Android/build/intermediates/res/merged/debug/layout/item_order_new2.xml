@@ -30,28 +30,27 @@
         android:layout_weight="9.8"
         android:weightSum="9.7" >
 
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/timeAndDist"
             android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="1.8"
-            android:orientation="vertical" >
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0" >
 
             <TextView
                 android:id="@+id/timeTxt"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_weight="1"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="time"
+                android:layout_height="wrap_content"
+                tools:text="@string/str_zero_time"
+                android:gravity="center_horizontal"
                 android:textColor="@color/orangeEditText"
-                android:textSize="36sp" />
+                android:textSize="40sp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1" >
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" >-->
 
                 <TextView
                     android:id="@+id/distance_tv"
@@ -59,14 +58,15 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:background="@drawable/price_in_order_list"
-                    android:gravity="center_vertical|center_horizontal"
+                    android:gravity="center_horizontal"
                     tools:text="distance"
                     android:textColor="#F5F5F5"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:layout_below="@+id/timeTxt"/>
 
-            </FrameLayout>
+            <!--</FrameLayout>-->
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/routeImLayout"
@@ -126,7 +126,7 @@
             android:id="@+id/mainInfo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="5.4"
+            android:layout_weight="5.2"
             android:orientation="vertical" >
 
             <TextView

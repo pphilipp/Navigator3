@@ -1,244 +1,242 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:2:1-115:12
-	package
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:3:5-38
-		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml
-		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml
-	android:versionName
-		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml
-		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:2:1-87:12
 	xmlns:android
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:2:11-69
+	package
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml
+		INJECTED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml
+		INJECTED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml
-		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml
+		INJECTED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml
+		INJECTED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:5:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.5.5\AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.3.6] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.6\AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:25:5-67
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.8\AndroidManifest.xml:9:5-67
-MERGED from [com.crashlytics.sdk.android:answers:1.3.6] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.6\AndroidManifest.xml:9:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:25:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:25:5-67
-MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:25:5-67
-MERGED from [com.crashlytics.sdk.android:beta:1.1.4] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.1.4\AndroidManifest.xml:9:5-67
-MERGED from [com.google.android.gms:play-services-maps:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.3.0\AndroidManifest.xml:21:5-66
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.5/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:25:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.8/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:25:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:25:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:25:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.1.4] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.4/AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:21:5-66
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:5:22-64
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:6:5-79
-MERGED from [com.google.android.gms:play-services-maps:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.3.0\AndroidManifest.xml:20:5-78
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:6:5-79
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:20:5-78
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:6:22-76
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:7:5-75
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:7:5-75
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:7:22-72
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:7:22-72
 uses-permission#android.permission.WAKE_LOCK
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:8:5-68
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:8:5-68
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:8:22-65
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:8:22-65
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:9:5-81
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:9:22-78
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:9:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:10:5-79
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:10:22-76
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:10:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:11:5-81
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:11:22-78
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:11:22-78
 uses-permission#android.permission.CALL_PHONE
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:12:5-69
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:12:5-69
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:12:22-66
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:12:22-66
 uses-permission#android.permission.VIBRATE
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:13:5-66
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:13:5-66
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:13:22-63
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:13:22-63
 uses-permission#android.permission.ACCESS_GPS
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:14:5-69
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:14:5-69
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:14:22-66
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:14:22-66
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:15:5-98
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:15:5-98
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:15:22-95
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:15:22-95
 uses-permission#android.permission.PREVENT_POWER_KEY
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:16:5-76
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:16:5-76
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:16:22-73
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:16:22-73
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:17:5-71
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:17:5-71
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:17:22-68
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:17:22-68
 supports-screens
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:19:5-22:40
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:19:5-22:40
 	android:largeScreens
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:21:9-36
-	android:xlargeScreens
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:22:9-37
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:21:9-36
 	android:anyDensity
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:20:9-34
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:20:9-34
+	android:xlargeScreens
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:22:9-37
 uses-feature#android.hardware.telephony
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:24:5-26:36
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:24:5-26:36
 	android:required
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:26:9-33
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:26:9-33
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:25:9-50
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:25:9-50
 uses-feature#android.hardware.location
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:27:5-29:36
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:27:5-29:36
 	android:required
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:29:9-33
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:29:9-33
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:28:9-49
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:28:9-49
 uses-feature#android.hardware.location.gps
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:30:5-32:36
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:30:5-32:36
 	android:required
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:32:9-33
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:32:9-33
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:31:9-53
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:31:9-53
 uses-feature#android.hardware.location.network
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:33:5-35:36
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:33:5-35:36
 	android:required
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:35:9-33
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:35:9-33
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:34:9-57
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:34:9-57
 uses-feature#0x00020000
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:36:5-38:35
-MERGED from [com.google.android.gms:play-services-maps:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.3.0\AndroidManifest.xml:22:5-24:33
-	android:glEsVersion
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:37:9-41
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:36:5-38:35
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:22:5-24:33
 	android:required
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:38:9-32
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:38:9-32
+	android:glEsVersion
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:37:9-41
 application
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:40:5-114:19
-MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.5.5\AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.3.6] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.6\AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:27:5-20
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.8\AndroidManifest.xml:11:5-20
-MERGED from [com.crashlytics.sdk.android:answers:1.3.6] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.6\AndroidManifest.xml:11:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:27:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:27:5-20
-MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:27:5-20
-MERGED from [com.crashlytics.sdk.android:beta:1.1.4] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.1.4\AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.3.0\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\design\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:40:5-86:19
+MERGED from [com.android.support:support-v4:23.0.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.5/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:27:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.8/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:27:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:27:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:27:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.1.4] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.4/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-v4:23.0.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:22.2.1] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:43:9-41
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:43:9-41
 	android:icon
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:42:9-45
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:42:9-43
+	android:theme
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:46:9-73
 	android:largeHeap
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:44:9-33
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:44:9-33
 	android:persistent
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:45:9-34
-	android:theme
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:46:9-45
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:45:9-34
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:41:9-65
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:41:9-65
 activity#com.innotech.imap_taxi.activity.NavigatorMenuActivity
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:48:9-58:20
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:48:9-58:20
 	android:label
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:52:13-45
-	android:launchMode
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:53:13-44
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:52:13-45
 	android:configChanges
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:50:13-74
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:50:13-74
+	android:name
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:49:13-81
 	android:alwaysRetainTaskState
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:51:13-49
-	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:49:13-81
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:51:13-49
+	android:launchMode
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:53:13-44
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:54:13-57:29
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:54:13-57:29
 action#android.intent.action.MAIN
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:55:17-69
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:55:17-69
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:55:25-66
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:55:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:56:17-77
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:56:17-77
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:56:27-74
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:56:27-74
 activity#com.innotech.imap_taxi.activity.UserSettingActivity
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:60:9-63:20
-	android:theme
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:62:13-49
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:60:9-62:20
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:61:13-79
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:61:13-79
 activity#com.innotech.imap_taxi.activity.MainTaxometr
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:65:9-68:20
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:64:9-67:20
 	android:label
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:67:13-65
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:66:13-65
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:66:13-72
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:65:13-72
 service#com.innotech.imap_taxi.network.SocketService
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:70:9-72:42
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:69:9-71:42
 	android:stopWithTask
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:72:13-40
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:71:13-40
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:71:13-72
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:70:13-72
 service#com.innotech.imap_taxi.utile.NotificationService
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:73:9-84
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:72:9-84
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:73:18-81
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:72:18-81
 service#com.innotech.imap_taxi.voice.CommandsRecognitionService
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:74:9-90
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:73:9-90
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:74:18-88
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:73:18-88
 meta-data#com.google.android.gms.version
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:76:9-78:73
-MERGED from [com.google.android.gms:play-services-basement:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:21:9-23:69
-	android:value
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:78:17-70
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:75:9-77:73
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:77:17-62
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:76:17-62
+	android:value
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:77:17-70
 meta-data#io.fabric.ApiKey
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:79:9-81:72
-	android:value
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:81:13-69
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:78:9-80:72
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:80:13-44
-meta-data#com.google.android.maps.v2.API_KEY
-ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:96:7-98:71
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:79:13-44
 	android:value
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:98:13-68
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:80:13-69
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:82:9-84:54
 	android:name
-		ADDED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml:97:13-62
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:83:13-58
+	android:value
+		ADDED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml:84:13-52
 uses-sdk
-INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [ImapNavigator3:library:unspecified] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\ImapNavigator3\library\unspecified\AndroidManifest.xml:7:5-9:40
-MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.5.5\AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.3.6] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.6\AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:23:5-43
-MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.8\AndroidManifest.xml:7:5-43
-MERGED from [com.crashlytics.sdk.android:answers:1.3.6] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.6\AndroidManifest.xml:7:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:23:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:23:5-43
-MERGED from [io.fabric.sdk.android:fabric:1.3.10] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\AndroidManifest.xml:23:5-43
-MERGED from [com.crashlytics.sdk.android:beta:1.1.4] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.1.4\AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.3.0\AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-base:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.3.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.3.0] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\design\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.1] D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
+INJECTED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [Navigator3:library:unspecified] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/Navigator3/library/unspecified/AndroidManifest.xml:7:5-9:40
+MERGED from [com.android.support:support-v4:23.0.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.5.5/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:23:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.3.8/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.3.6/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:23:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:23:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.10/AndroidManifest.xml:23:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.1.4] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.4/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:support-v4:23.0.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:22.2.1] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/design/22.2.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.0/AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
-		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml
-		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml
+		INJECTED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml
+		INJECTED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml
-		INJECTED from D:\innotech\Workspace\ImapNavigator3\taxiIMAP_Android\src\main\AndroidManifest.xml
+		INJECTED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml
+		INJECTED from /Users/philipp/AndroidStudioProjects/Navigator3/taxiIMAP_Android/src/main/AndroidManifest.xml
